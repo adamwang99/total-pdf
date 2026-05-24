@@ -99,7 +99,7 @@ export default function OnboardingModalSlide({
         )}
         {slideDefinition.hero.type === "logo" && (
           <img
-            src={`${BASE_PATH}/branding/StirlingPDFLogoNoTextLightHC.svg`}
+            src={`${BASE_PATH}/branding/TotalPDFLogoNoTextLightHC.svg`}
             alt="Stirling logo"
           />
         )}

@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "Stirling-PDF",
+  "productName": "Total PDF",
   "version": "2.11.0",
-  "identifier": "stirling.pdf.dev",
+  "identifier": "aiworld.totalpdf.app",
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:5173",
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "Stirling-PDF",
+        "title": "Total PDF",
         "width": 1280,
         "height": 800,
         "resizable": true,
@@ -23,7 +23,7 @@
   },
   "bundle": {
     "active": true,
-    "publisher": "Stirling PDF Inc.",
+    "publisher": "AI World",
     "targets": ["deb", "rpm", "appimage", "dmg", "msi"],
     "icon": [
       "icons/icon.png",
@@ -46,10 +46,10 @@
     ],
     "linux": {
       "deb": {
-        "desktopTemplate": "stirling-pdf.desktop"
+        "desktopTemplate": "total-pdf.desktop"
       },
       "rpm": {
-        "desktopTemplate": "stirling-pdf.desktop"
+        "desktopTemplate": "total-pdf.desktop"
       },
       "appimage": {
         "bundleMediaFramework": false
@@ -81,7 +81,7 @@
     },
     "deep-link": {
       "desktop": {
-        "schemes": ["stirlingpdf"]
+        "schemes": ["totalpdf"]
       }
     }
   }

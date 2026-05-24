@@ -33,7 +33,7 @@ import UpdateModal from "@app/components/shared/UpdateModal";
 import { useFrontendVersionInfo } from "@app/hooks/useFrontendVersionInfo";
 
 const DEFAULT_AUTO_UNZIP_FILE_LIMIT = 4;
-const BANNER_DISMISSED_KEY = "stirlingpdf_features_banner_dismissed";
+const BANNER_DISMISSED_KEY = "totalpdf_features_banner_dismissed";
 
 interface GeneralSectionProps {
   hideTitle?: boolean;
@@ -200,7 +200,7 @@ const GeneralSection: React.FC<GeneralSectionProps> = ({
               )}
             </Text>
             <Anchor
-              href="https://docs.stirlingpdf.com/Configuration/System%20and%20Security/"
+              href="https://docs.totalpdf.com/Configuration/System%20and%20Security/"
               target="_blank"
               size="sm"
               style={{ color: "var(--mantine-color-blue-6)" }}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500">
+<rect width="1600" height="500" fill="white"/>
+<rect x="60" y="90" width="320" height="320" rx="48" fill="#0f172a"/>
+<rect x="110" y="150" width="220" height="240" rx="36" fill="white"/>
+<polygon points="270,150 330,150 330,210" fill="#e2e8f0"/>
+<line x1="270" y1="150" x2="270" y2="210" stroke="#cbd5e1" stroke-width="4"/>
+<line x1="270" y1="210" x2="330" y2="210" stroke="#cbd5e1" stroke-width="4"/>
+<rect x="130" y="205" width="160" height="22" rx="11" fill="#2563eb"/>
+<rect x="130" y="255" width="160" height="22" rx="11" fill="#0ea5e9"/>
+<rect x="130" y="305" width="160" height="22" rx="11" fill="#22c55e"/>
+<text x="435" y="220" font-size="180" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700" fill="#0f172a">Total PDF</text>
+<text x="435" y="320" font-size="70" font-family="DejaVu Sans, Arial, sans-serif" fill="#475569">Desktop PDF toolkit</text>
+</svg>

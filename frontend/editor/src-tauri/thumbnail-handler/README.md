@@ -1,10 +1,10 @@
 # Windows PDF Thumbnail Handler
 
-A lightweight COM DLL that provides PDF page-preview thumbnails in Windows Explorer when Stirling-PDF is the default PDF application.
+A lightweight COM DLL that provides PDF page-preview thumbnails in Windows Explorer when Total PDF is the default PDF application.
 
 ## Why this exists
 
-When Stirling-PDF registers as the default PDF handler, Windows associates `.pdf` files with Stirling's ProgID. Without a thumbnail handler on that ProgID, Explorer falls back to showing the application icon (the big S logo) instead of a page preview. This DLL restores thumbnail previews by implementing the Windows Shell `IThumbnailProvider` COM interface.
+When Total PDF registers as the default PDF handler, Windows associates `.pdf` files with Total PDF ProgID. Without a thumbnail handler on that ProgID, Explorer falls back to showing the application icon (the big S logo) instead of a page preview. This DLL restores thumbnail previews by implementing the Windows Shell `IThumbnailProvider` COM interface.
 
 ## How it works
 

@@ -40,7 +40,7 @@ interface HotkeyContextValue {
 
 const HotkeyContext = createContext<HotkeyContextValue | undefined>(undefined);
 
-const STORAGE_KEY = "stirlingpdf.hotkeys";
+const STORAGE_KEY = "totalpdf.hotkeys";
 
 const generateDefaultHotkeys = (
   toolEntries: [ToolId, ToolRegistryEntry][],

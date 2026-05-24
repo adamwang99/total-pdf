@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Stirling-PDF
+Name=Total PDF
 Comment=Locally hosted web application that allows you to perform various operations on PDF files
 TryExec={{exec}}
 Exec={{exec}} %F

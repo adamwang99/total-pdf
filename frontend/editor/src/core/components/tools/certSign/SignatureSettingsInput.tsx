@@ -116,7 +116,7 @@ const SignatureSettingsInput = ({
             size="xs"
           />
           <Switch
-            label={t("certSign.showLogo", "Show Stirling PDF Logo")}
+            label={t("certSign.showLogo", "Show Total PDF Logo")}
             checked={value.showLogo || false}
             onChange={(event) =>
               handleChange("showLogo", event.currentTarget.checked)

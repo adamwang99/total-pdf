@@ -18,9 +18,9 @@ describe("useLogoAssets - Logo Asset Files", () => {
     "favicon.ico",
     "logo192.png",
     "logo512.png",
-    "StirlingPDFLogoWhiteText.svg",
-    "StirlingPDFLogoBlackText.svg",
-    "StirlingPDFLogoGreyText.svg",
+    "TotalPDFLogoWhiteText.svg",
+    "TotalPDFLogoBlackText.svg",
+    "TotalPDFLogoGreyText.svg",
   ];
 
   const logoVariants: LogoVariant[] = ["modern", "classic"];

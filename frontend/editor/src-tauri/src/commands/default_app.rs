@@ -1,6 +1,6 @@
 use crate::utils::add_log;
 
-/// Check if Stirling PDF is the default PDF handler
+/// Check if Total PDF is the default PDF handler
 #[tauri::command]
 pub fn is_default_pdf_handler() -> Result<bool, String> {
     add_log("🔍 Checking if app is default PDF handler".to_string());
@@ -21,7 +21,7 @@ pub fn is_default_pdf_handler() -> Result<bool, String> {
     }
 }
 
-/// Attempt to set/prompt for Stirling PDF as default PDF handler
+/// Attempt to set/prompt for Total PDF as default PDF handler
 #[tauri::command]
 pub fn set_as_default_pdf_handler() -> Result<String, String> {
     add_log("⚙️ Attempting to set as default PDF handler".to_string());
@@ -223,7 +223,7 @@ fn check_default_linux() -> Result<bool, String> {
     add_log(format!("Linux PDF handler: {}", handler.trim()));
 
     // Check if it's our .desktop file
-    let is_default = handler.trim() == "stirling-pdf.desktop";
+    let is_default = handler.trim() == "total-pdf.desktop";
     Ok(is_default)
 }
 
@@ -233,7 +233,7 @@ fn set_default_linux() -> Result<String, String> {
 
     // Use xdg-mime to set the default application for PDF files
     let result = Command::new("xdg-mime")
-        .args(["default", "stirling-pdf.desktop", "application/pdf"])
+        .args(["default", "total-pdf.desktop", "application/pdf"])
         .output()
         .map_err(|e| format!("Failed to set default app: {}", e))?;
 

@@ -85,7 +85,7 @@ export default function Footer({
           id="survey"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://stirlingpdf.info/s/cm28y3niq000o56dv7liv8wsu"
+          href="https://totalpdf.info/s/cm28y3niq000o56dv7liv8wsu"
         >
           {t("survey.nav", "Survey")}
         </a>
@@ -117,7 +117,7 @@ export default function Footer({
           className="footer-link px-3"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/Stirling-Tools/Stirling-PDF"
+          href="https://github.com/aiworldvn/total-pdf"
         >
           {t("footer.issues", "GitHub")}
         </a>

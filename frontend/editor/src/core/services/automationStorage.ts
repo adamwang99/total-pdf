@@ -15,7 +15,7 @@ export interface AutomationConfig {
 }
 
 class AutomationStorage {
-  private dbName = "StirlingPDF_Automations";
+  private dbName = "TotalPDF_Automations";
   private dbVersion = 1;
   private storeName = "automations";
   private db: IDBDatabase | null = null;

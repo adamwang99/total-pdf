@@ -73,7 +73,7 @@ fn find_bundled_jre(resource_dir: &PathBuf) -> Result<PathBuf, String> {
     Ok(java_executable)
 }
 
-// Find the Stirling-PDF JAR file
+// Find the Total PDF JAR file
 fn find_stirling_jar(resource_dir: &PathBuf) -> Result<PathBuf, String> {
     let libs_dir = resource_dir.join("libs");
     let mut jar_files: Vec<_> = std::fs::read_dir(&libs_dir)
@@ -85,7 +85,7 @@ fn find_stirling_jar(resource_dir: &PathBuf) -> Result<PathBuf, String> {
         .filter_map(|entry| entry.ok())
         .filter(|entry| {
             let path = entry.path();
-            // Match any .jar file containing "stirling-pdf" (case-insensitive)
+            // Match any .jar file containing "total-pdf" (case-insensitive)
             path.extension().and_then(|s| s.to_str()).map(|ext| ext.eq_ignore_ascii_case("jar")).unwrap_or(false)
                 && path.file_name()
                     .and_then(|f| f.to_str())
@@ -165,7 +165,7 @@ fn copy_dir_recursive(src: &Path, dest: &Path) -> std::io::Result<()> {
     Ok(())
 }
 
-// Create, configure and run the Java command to run Stirling-PDF JAR
+// Create, configure and run the Java command to run Total PDF JAR
 fn run_stirling_pdf_jar(app: &tauri::AppHandle, java_path: &PathBuf, jar_path: &PathBuf) -> Result<(), String> {
     // Get platform-specific application data directory for Tauri mode
     let app_data_dir = app_data_dir();
@@ -208,7 +208,7 @@ fn run_stirling_pdf_jar(app: &tauri::AppHandle, java_path: &PathBuf, jar_path: &
         "-DBROWSER_OPEN=false",
         "-DSTIRLING_PDF_TAURI_MODE=true",
         &log_path_option,
-        "-Dlogging.file.name=stirling-pdf.log",
+        "-Dlogging.file.name=total-pdf.log",
         "-Dserver.port=0",  // Let OS assign an available port
         "-Dsecurity.enableLogin=false",  // Disable login for desktop mode
         "-Dsecurity.csrfDisabled=true",  // Disable CSRF for desktop mode
@@ -424,7 +424,7 @@ pub async fn start_backend(
         e
     })?;
 
-    // Find the Stirling-PDF JAR
+    // Find the Total PDF JAR
     let jar_path = find_stirling_jar(&resource_dir).map_err(|e| {
         reset_starting_flag();
         e

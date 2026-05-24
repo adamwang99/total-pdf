@@ -1,8 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 import { ToolId } from "@app/types/toolId";
 
-const RECENT_TOOLS_KEY = "stirlingpdf.recentTools";
-const FAVORITE_TOOLS_KEY = "stirlingpdf.favoriteTools";
+const RECENT_TOOLS_KEY = "totalpdf.recentTools";
+const FAVORITE_TOOLS_KEY = "totalpdf.favoriteTools";
 
 export function useToolHistory() {
   const [recentTools, setRecentTools] = useState<ToolId[]>([]);

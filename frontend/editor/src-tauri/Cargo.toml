@@ -1,8 +1,8 @@
 [package]
-name = "stirling-pdf"
+name = "total-pdf"
 version = "0.1.0"
-description = "Stirling-PDF Desktop Application"
-authors = ["Stirling-PDF Contributors"]
+description = "Total PDF Desktop Application"
+authors = ["AI World"]
 license = ""
 repository = ""
 edition = "2021"

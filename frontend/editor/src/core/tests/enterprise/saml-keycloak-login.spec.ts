@@ -7,7 +7,7 @@ import { bypassOnboarding } from "@app/tests/helpers/api-stubs";
  *
  * Requires the docker-compose-keycloak-saml stack:
  *   - Keycloak on http://localhost:9080 with realm `stirling-saml`
- *   - Stirling-PDF on http://localhost:8080 with PREMIUM_KEY set and
+ *   - Total PDF on http://localhost:8080 with PREMIUM_KEY set and
  *     security.saml2.enabled=true
  *
  * Validates:

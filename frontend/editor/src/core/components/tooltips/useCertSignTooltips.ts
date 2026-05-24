@@ -84,7 +84,7 @@ export const useCertSignTooltips = (): TooltipContent => {
           ),
           t(
             "certSign.tooltip.signing.bullet5",
-            "Use server certificate for simple 'Sign with Stirling-PDF' option",
+            "Use server certificate for simple 'Sign with Total PDF' option",
           ),
         ],
       },

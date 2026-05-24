@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
   <key>NSLocalNetworkUsageDescription</key>
-  <string>Stirling-PDF needs access to your local network to connect to self-hosted servers.</string>
+  <string>Total PDF needs access to your local network to connect to self-hosted servers.</string>
 </dict>
 </plist>

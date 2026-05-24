@@ -136,7 +136,7 @@ export const ReviewSessionStep: React.FC<ReviewSessionStepProps> = ({
               {signatureSettings.showLogo
                 ? t(
                     "groupSigning.steps.review.logoShown",
-                    "Stirling PDF logo shown",
+                    "Total PDF logo shown",
                   )
                 : t("groupSigning.steps.review.logoHidden", "No logo")}
             </Text>

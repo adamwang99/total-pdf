@@ -78,7 +78,7 @@ export function createQuickKey(file: File): string {
   return `${file.name}|${file.size}|${file.lastModified}`;
 }
 
-// Stirling PDF file with embedded UUID - replaces loose File + FileId parameter passing
+// Total PDF file with embedded UUID - replaces loose File + FileId parameter passing
 export interface StirlingFile extends File {
   readonly fileId: FileId;
   readonly quickKey: string; // Fast deduplication key: name|size|lastModified

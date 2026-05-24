@@ -86,7 +86,7 @@ const isStandard14Font = (font: PdfJsonFont): boolean => {
 
 /**
  * Checks if a font has a fallback available on the backend.
- * These fonts are embedded in the Stirling PDF backend and can be used
+ * These fonts are embedded in the Total PDF backend and can be used
  * for PDF export even if not in the original PDF.
  *
  * Based on PdfJsonFallbackFontService.java

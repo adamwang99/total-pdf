@@ -55,10 +55,10 @@ const EmptyFilesState: React.FC = () => {
           </Text>
         </Stack>
 
-        {/* Stirling PDF Logo */}
+        {/* Total PDF Logo */}
         <Group gap="xs" align="center">
           <Wordmark
-            alt="Stirling PDF"
+            alt="Total PDF"
             muted
             style={{ height: "2.2rem", width: "auto" }}
           />

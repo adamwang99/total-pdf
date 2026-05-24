@@ -1,5 +1,5 @@
 /**
- * FileContext - Manages PDF files for Stirling PDF multi-tool workflow
+ * FileContext - Manages PDF files for Total PDF multi-tool workflow
  *
  * Handles file state, memory management, and resource cleanup for large PDFs (up to 100GB+).
  * Users upload PDFs once and chain tools (split → merge → compress → view) without reloading.

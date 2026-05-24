@@ -143,7 +143,7 @@ class IndexedDBManager {
 
           // Perform data migration for files database
           if (
-            config.name === "stirling-pdf-files" &&
+            config.name === "total-pdf-files" &&
             storeConfig.name === "files" &&
             store
           ) {
@@ -304,7 +304,7 @@ class IndexedDBManager {
 // Pre-defined database configurations
 export const DATABASE_CONFIGS = {
   FILES: {
-    name: "stirling-pdf-files",
+    name: "total-pdf-files",
     version: 3,
     stores: [
       {
@@ -322,7 +322,7 @@ export const DATABASE_CONFIGS = {
   } as DatabaseConfig,
 
   DRAFTS: {
-    name: "stirling-pdf-drafts",
+    name: "total-pdf-drafts",
     version: 1,
     stores: [
       {
@@ -333,7 +333,7 @@ export const DATABASE_CONFIGS = {
   } as DatabaseConfig,
 
   PREFERENCES: {
-    name: "stirling-pdf-preferences",
+    name: "total-pdf-preferences",
     version: 1,
     stores: [
       {

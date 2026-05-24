@@ -364,7 +364,7 @@ const UpdateModal: React.FC<UpdateModalProps> = ({
                       <Group gap="xs">
                         <Button
                           component="a"
-                          href={`https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v${version.version}`}
+                          href={`https://github.com/aiworldvn/total-pdf/releases/tag/v${version.version}`}
                           target="_blank"
                           variant="light"
                           size="xs"
@@ -493,7 +493,7 @@ const UpdateModal: React.FC<UpdateModalProps> = ({
           <Button
             variant="light"
             component="a"
-            href="https://github.com/Stirling-Tools/Stirling-PDF/releases"
+            href="https://github.com/aiworldvn/total-pdf/releases"
             target="_blank"
             rightSection={<OpenInNewIcon style={{ fontSize: 16 }} />}
           >

@@ -18,7 +18,7 @@ import type { Page } from "@playwright/test";
 async function clearAutomationStorage(page: Page): Promise<void> {
   await page.addInitScript(() => {
     try {
-      indexedDB.deleteDatabase("StirlingPDF_Automations");
+      indexedDB.deleteDatabase("TotalPDF_Automations");
     } catch {
       // First-page-load case where IDB hasn't been opened yet — safe to ignore.
     }
@@ -179,7 +179,7 @@ test.describe("12. Automation Page — Import / Export", () => {
       const persistedIcon = await page.evaluate(
         () =>
           new Promise<string | undefined>((resolve) => {
-            const req = indexedDB.open("StirlingPDF_Automations", 1);
+            const req = indexedDB.open("TotalPDF_Automations", 1);
             req.onsuccess = () => {
               const db = req.result;
               const tx = db.transaction("automations", "readonly");

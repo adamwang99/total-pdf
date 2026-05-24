@@ -336,7 +336,7 @@ const FileSidebar = forwardRef<HTMLDivElement, FileSidebarProps>(
             <MenuIcon className="file-sidebar-menu-icon" />
             {!collapsed && (
               <Wordmark
-                alt="Stirling PDF"
+                alt="Total PDF"
                 className="file-sidebar-brand-text sidebar-content-fade"
               />
             )}

@@ -47,7 +47,7 @@ const FullscreenToolSurface = ({
   // Enable focus trap when surface is active
   useFocusTrap(surfaceRef, true);
 
-  const brandAltText = t("home.mobile.brandAlt", "Stirling PDF logo");
+  const brandAltText = t("home.mobile.brandAlt", "Total PDF logo");
 
   const style = geometry
     ? {

@@ -20,7 +20,7 @@ export const AUTOMATION_CONSTANTS = {
   CONVERT_OPERATION_TYPE: "convert",
 
   // Storage keys
-  DB_NAME: "StirlingPDF_Automations",
+  DB_NAME: "TotalPDF_Automations",
   DB_VERSION: 1,
   STORE_NAME: "automations",
 

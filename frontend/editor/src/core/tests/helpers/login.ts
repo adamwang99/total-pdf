@@ -35,7 +35,7 @@ export async function skipOnboarding(page: Page): Promise<void> {
 }
 
 /**
- * Shared login helper for Stirling-PDF E2E tests.
+ * Shared login helper for Total PDF E2E tests.
  * Logs in with the given credentials and waits for the dashboard to load.
  *
  * Default credentials are `admin / adminadmin` — set by the live-setup

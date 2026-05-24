@@ -119,7 +119,7 @@ export default function HomePage() {
       (v) => v.workbenchId === navigationState.workbench,
     )?.hideToolPanel ?? false;
 
-  const brandAltText = t("home.mobile.brandAlt", "Stirling PDF logo");
+  const brandAltText = t("home.mobile.brandAlt", "Total PDF logo");
 
   const handleSelectMobileView = useCallback((view: MobileView) => {
     setActiveMobileView(view);
@@ -214,7 +214,7 @@ export default function HomePage() {
   const baseUrl = useBaseUrl();
 
   // Update document meta when tool changes
-  const appName = config?.appNameNavbar || "Stirling PDF";
+  const appName = config?.appNameNavbar || "Total PDF";
   useDocumentMeta({
     title: selectedTool ? `${selectedTool.name} - ${appName}` : appName,
     description:

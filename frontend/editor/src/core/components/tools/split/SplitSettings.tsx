@@ -206,7 +206,7 @@ const SplitSettings = ({
   const renderByPageDividerForm = () => (
     <Stack gap="sm">
       <Anchor
-        href="https://stirlingpdf.io/files/Auto%20Splitter%20Divider%20(with%20instructions).pdf"
+        href="https://totalpdf.io/files/Auto%20Splitter%20Divider%20(with%20instructions).pdf"
         target="_blank"
         size="sm"
         style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}

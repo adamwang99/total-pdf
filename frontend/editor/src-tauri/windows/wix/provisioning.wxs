@@ -22,7 +22,7 @@
     <DirectoryRef Id="TARGETDIR">
       <Component Id="ThumbnailHandlerClsidComponent" Guid="*">
         <RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{2D2FBE3A-9A88-4308-A52E-7EF63CA7CF48}">
-          <RegistryValue Type="string" Value="Stirling-PDF Thumbnail Handler" KeyPath="yes" />
+          <RegistryValue Type="string" Value="Total-PDF Thumbnail Handler" KeyPath="yes" />
         </RegistryKey>
         <RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{2D2FBE3A-9A88-4308-A52E-7EF63CA7CF48}\InprocServer32">
           <RegistryValue Type="string" Value="[INSTALLDIR]stirling_thumbnail_handler.dll" />
@@ -64,13 +64,13 @@
     <CustomAction
       Id="SetWriteProvisioningFilePerUser"
       Property="WriteProvisioningFilePerUser"
-      Value="--output &quot;[AppDataFolder]Stirling-PDF\stirling-provisioning.json&quot; --url &quot;[STIRLING_SERVER_URL]&quot; --lock &quot;[STIRLING_LOCK_CONNECTION]&quot;"
+      Value="--output &quot;[AppDataFolder]Total-PDF\stirling-provisioning.json&quot; --url &quot;[STIRLING_SERVER_URL]&quot; --lock &quot;[STIRLING_LOCK_CONNECTION]&quot;"
     />
 
     <CustomAction
       Id="SetWriteProvisioningFileAllUsers"
       Property="WriteProvisioningFileAllUsers"
-      Value="--output &quot;[CommonAppDataFolder]Stirling-PDF\stirling-provisioning.json&quot; --url &quot;[STIRLING_SERVER_URL]&quot; --lock &quot;[STIRLING_LOCK_CONNECTION]&quot;"
+      Value="--output &quot;[CommonAppDataFolder]Total-PDF\stirling-provisioning.json&quot; --url &quot;[STIRLING_SERVER_URL]&quot; --lock &quot;[STIRLING_LOCK_CONNECTION]&quot;"
     />
 
     <InstallExecuteSequence>

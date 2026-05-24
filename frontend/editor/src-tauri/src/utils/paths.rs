@@ -6,25 +6,25 @@ pub fn app_data_dir() -> PathBuf {
         PathBuf::from(home)
             .join("Library")
             .join("Application Support")
-            .join("Stirling-PDF")
+            .join("Total-PDF")
     } else if cfg!(target_os = "windows") {
         let appdata = std::env::var("APPDATA")
             .unwrap_or_else(|_| std::env::temp_dir().to_string_lossy().to_string());
-        PathBuf::from(appdata).join("Stirling-PDF")
+        PathBuf::from(appdata).join("Total-PDF")
     } else {
         let home = std::env::var("HOME").unwrap_or_else(|_| "/tmp".to_string());
-        PathBuf::from(home).join(".config").join("Stirling-PDF")
+        PathBuf::from(home).join(".config").join("Total-PDF")
     }
 }
 
 pub fn system_provisioning_dir() -> Option<PathBuf> {
     if cfg!(target_os = "windows") {
         let program_data = std::env::var("PROGRAMDATA").ok()?;
-        Some(PathBuf::from(program_data).join("Stirling-PDF"))
+        Some(PathBuf::from(program_data).join("Total-PDF"))
     } else if cfg!(target_os = "macos") {
-        Some(PathBuf::from("/Library").join("Application Support").join("Stirling-PDF"))
+        Some(PathBuf::from("/Library").join("Application Support").join("Total-PDF"))
     } else if cfg!(target_os = "linux") {
-        Some(PathBuf::from("/etc").join("stirling-pdf"))
+        Some(PathBuf::from("/etc").join("total-pdf"))
     } else {
         None
     }

@@ -18,7 +18,7 @@ import type { Page } from "@playwright/test";
 async function clearAutomationStorage(page: Page): Promise<void> {
   await page.addInitScript(() => {
     try {
-      indexedDB.deleteDatabase("StirlingPDF_Automations");
+      indexedDB.deleteDatabase("TotalPDF_Automations");
     } catch {
       // First-page-load case where IDB hasn't been opened yet — safe to ignore.
     }
