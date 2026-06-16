@@ -32,7 +32,7 @@ export const useDefaultApp = () => {
           title: t("defaultApp.success.title", "Default App Set"),
           body: t(
             "defaultApp.success.message",
-            "Stirling PDF is now your default PDF editor",
+            "Total PDF is now your default PDF editor",
           ),
         });
         setIsDefault(true);
@@ -42,7 +42,7 @@ export const useDefaultApp = () => {
           title: t("defaultApp.settingsOpened.title", "Settings Opened"),
           body: t(
             "defaultApp.settingsOpened.message",
-            "Please select Stirling PDF in the file association dialogue",
+            "Please select Total PDF in the file association dialogue",
           ),
         });
       }

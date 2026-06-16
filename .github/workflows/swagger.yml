@@ -74,7 +74,7 @@ jobs:
 
       - name: Set API version as published and default on SwaggerHub
         run: |
-          curl -X PUT -H "Authorization: ${SWAGGERHUB_API_KEY}" "https://api.swaggerhub.com/apis/${SWAGGERHUB_USER}/Stirling-PDF/${{ steps.versionNumber.outputs.versionNumber }}/settings/lifecycle" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"published\":true,\"default\":true}"
+          curl -X PUT -H "Authorization: ${SWAGGERHUB_API_KEY}" "https://api.swaggerhub.com/apis/${SWAGGERHUB_USER}/Total-PDF/${{ steps.versionNumber.outputs.versionNumber }}/settings/lifecycle" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"published\":true,\"default\":true}"
         env:
           SWAGGERHUB_API_KEY: ${{ secrets.SWAGGERHUB_API_KEY }}
           SWAGGERHUB_USER: "Frooodle"

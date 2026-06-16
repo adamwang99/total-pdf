@@ -105,17 +105,17 @@ public class EEAppConfig {
 
             // Copy creator if not set in premium but set in enterprise and different from default
             if ((premiumMetadata.getCreator() == null
-                            || "Stirling-PDF".equals(premiumMetadata.getCreator()))
+                            || "Total-PDF".equals(premiumMetadata.getCreator()))
                     && enterpriseMetadata.getCreator() != null
-                    && !"Stirling-PDF".equals(enterpriseMetadata.getCreator())) {
+                    && !"Total-PDF".equals(enterpriseMetadata.getCreator())) {
                 premiumMetadata.setCreator(enterpriseMetadata.getCreator());
             }
 
             // Copy producer if not set in premium but set in enterprise and different from default
             if ((premiumMetadata.getProducer() == null
-                            || "Stirling-PDF".equals(premiumMetadata.getProducer()))
+                            || "Total-PDF".equals(premiumMetadata.getProducer()))
                     && enterpriseMetadata.getProducer() != null
-                    && !"Stirling-PDF".equals(enterpriseMetadata.getProducer())) {
+                    && !"Total-PDF".equals(enterpriseMetadata.getProducer())) {
                 premiumMetadata.setProducer(enterpriseMetadata.getProducer());
             }
         }

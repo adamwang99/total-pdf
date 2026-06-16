@@ -878,11 +878,11 @@ description = "İsteğe bağlı özellikleri ve işlevleri yapılandırın."
 title = "Özellikler"
 
 [admin.settings.features.serverCertificate]
-description = "\"Stirling-PDF ile İmzala\" işlevi için sunucu tarafı sertifika oluşturmayı yapılandırın"
+description = "\"Total-PDF ile İmzala\" işlevi için sunucu tarafı sertifika oluşturmayı yapılandırın"
 label = "Sunucu Sertifikası"
 
 [admin.settings.features.serverCertificate.enabled]
-description = "\"Stirling-PDF ile İmzala\" seçeneği için sunucu tarafı sertifikayı etkinleştir"
+description = "\"Total-PDF ile İmzala\" seçeneği için sunucu tarafı sertifikayı etkinleştir"
 label = "Sunucu Sertifikasını Etkinleştir"
 
 [admin.settings.features.serverCertificate.organizationName]
@@ -1030,7 +1030,7 @@ description = "Çerez politikası için URL veya dosya adı"
 label = "Çerez Politikası"
 
 [admin.settings.legal.disclaimer]
-message = "Bu hukuki belgeleri özelleştirerek, GDPR ve diğer AB veri koruma gereksinimleri dahil olmak üzere yürürlükteki tüm yasa ve yönetmeliklere uygunluğu sağlamaktan tamamen siz sorumlu olursunuz. Yalnızca şu durumlarda bu ayarları değiştirin: (1) kişisel/özel bir örnek çalıştırıyorsanız, (2) AB yargı yetkisi dışında bulunuyor ve yerel yasal yükümlülüklerinizi anlıyorsanız veya (3) uygun hukuki danışmanlık aldıysanız ve tüm kullanıcı verileri ile yasal uyumluluktan yalnızca sizin sorumlu olduğunuzu kabul ediyorsanız. Stirling-PDF ve geliştiricileri yasal yükümlülüklerinizden sorumlu değildir."
+message = "Bu hukuki belgeleri özelleştirerek, GDPR ve diğer AB veri koruma gereksinimleri dahil olmak üzere yürürlükteki tüm yasa ve yönetmeliklere uygunluğu sağlamaktan tamamen siz sorumlu olursunuz. Yalnızca şu durumlarda bu ayarları değiştirin: (1) kişisel/özel bir örnek çalıştırıyorsanız, (2) AB yargı yetkisi dışında bulunuyor ve yerel yasal yükümlülüklerinizi anlıyorsanız veya (3) uygun hukuki danışmanlık aldıysanız ve tüm kullanıcı verileri ile yasal uyumluluktan yalnızca sizin sorumlu olduğunuzu kabul ediyorsanız. Total-PDF ve geliştiricileri yasal yükümlülüklerinizden sorumlu değildir."
 title = "Hukuki Sorumluluk Uyarısı"
 
 [admin.settings.legal.impressum]
@@ -1402,7 +1402,7 @@ description = "Etkinleştirildiğinde yalnızca listelenen kullanıcı kimlikler
 label = "Belirli Kullanıcı Kimliklerine İzin Ver"
 
 [admin.settings.telegram.enabled]
-description = "Kullanıcıların yapılandırdığınız Telegram botu üzerinden Stirling PDF ile etkileşim kurmasına izin verin."
+description = "Kullanıcıların yapılandırdığınız Telegram botu üzerinden Total PDF ile etkileşim kurmasına izin verin."
 label = "Telegram Botunu Etkinleştir"
 
 [admin.settings.telegram.feedback]
@@ -1479,7 +1479,7 @@ settingsOverview = "Burası <strong>Ayarlar Paneli</strong>. Yönetici ayarları
 systemCustomization = "UI'yi özelleştirmenin kapsamlı yolları var: <strong>Sistem Ayarları</strong> uygulama adını ve dilleri değiştirmenizi sağlar, <strong>Özellikler</strong> sunucu sertifikası yönetimine olanak tanır ve <strong>Uç Noktalar</strong> kullanıcılarınız için belirli araçları etkinleştirip devre dışı bırakmanızı sağlar."
 teamsAndUsers = "Buradan <strong>Takımları</strong> ve bireysel kullanıcıları yönetin. Yeni kullanıcıları e-posta, paylaşılabilir bağlantılarla davet edebilir veya onlar için özel hesaplar oluşturabilirsiniz."
 welcome = "<strong>Yönetici Turu</strong>'na hoş geldiniz! Sistem yöneticileri için mevcut güçlü kurumsal özellikleri ve ayarları keşfedelim."
-wrapUp = "Yönetici turu bu kadar! Stirling PDF'i kuruluşlar için güçlü, özelleştirilebilir bir çözüm haline getiren kurumsal özellikleri gördünüz. Bu tura istediğiniz zaman <strong>Yardım</strong> menüsünden erişebilirsiniz."
+wrapUp = "Yönetici turu bu kadar! Total PDF'i kuruluşlar için güçlü, özelleştirilebilir bir çözüm haline getiren kurumsal özellikleri gördünüz. Bu tura istediğiniz zaman <strong>Yardım</strong> menüsünden erişebilirsiniz."
 
 [adminUserSettings]
 actions = "Eylemler"
@@ -1516,11 +1516,11 @@ webOnlyUser = "Sadece Web Kullanıcısı"
 disable = "Analizi Devre Dışı Bırak"
 enable = "Analizi Etkinleştir"
 learnMore = "Daha fazla bilgi edinin"
-paragraph1 = "Stirling PDF, ürünü geliştirmemize yardımcı olmak için isteğe bağlı analizleri içerir. Kişisel bilgileri veya dosya içeriklerini asla takip etmiyoruz."
-paragraph2 = "Stirling PDF’in büyümesine destek olmak ve kullanıcılarımızı daha iyi anlayabilmemiz için analizleri etkinleştirmeyi düşünebilirsiniz."
+paragraph1 = "Total PDF, ürünü geliştirmemize yardımcı olmak için isteğe bağlı analizleri içerir. Kişisel bilgileri veya dosya içeriklerini asla takip etmiyoruz."
+paragraph2 = "Total PDF’in büyümesine destek olmak ve kullanıcılarımızı daha iyi anlayabilmemiz için analizleri etkinleştirmeyi düşünebilirsiniz."
 privacyAssurance = "Herhangi bir kişisel bilgiyi veya dosyalarınızın içeriğini takip etmiyoruz."
 settings = "Analiz ayarlarını config/settings.yml dosyasından değiştirebilirsiniz"
-title = "Stirling PDF’i daha iyi hale getirmek ister misiniz?"
+title = "Total PDF’i daha iyi hale getirmek ister misiniz?"
 
 [annotation]
 annotationStyle = "Açıklama stili"
@@ -1923,7 +1923,7 @@ tags = "pdf,bölme,belge,organizasyon"
 description = "Yazdır, Ekle, Tara, yükle ve belgelerinizi otomatik olarak ayırmamıza izin ver. Elle sıralama yapmaya gerek yok."
 dividerDownload2 = "'Otomatik Ayırıcı Ayırıcı (talimatlarla).pdf' indir"
 duplexMode = "Çift Taraflı Mod (Ön ve arka tarama)"
-formPrompt = "Stirling-PDF Sayfa ayırıcıları içeren PDF'i gönderin:"
+formPrompt = "Total-PDF Sayfa ayırıcıları içeren PDF'i gönderin:"
 header = "PDF'i Otomatik Böl"
 submit = "Gönder"
 tags = "QR-tabanlı,ayır,tarama-segmenti,düzenle"
@@ -1932,7 +1932,7 @@ title = "PDF'i Otomatik Böl"
 [autoSplitPDF.selectText]
 1 = "Aşağıdan bazı ayırıcı sayfaları yazdırın (Siyah ve beyaz olabilir)."
 2 = "Ayırıcı sayfayı aralarına ekleyerek tüm belgelerinizi birden tara."
-3 = "Tek büyük taranmış PDF dosyasını yükleyin ve gerisini Stirling PDF'in halletmesine izin verin."
+3 = "Tek büyük taranmış PDF dosyasını yükleyin ve gerisini Total PDF'in halletmesine izin verin."
 4 = "Ayırıcı sayfalar otomatik olarak tespit edilir ve kaldırılır, düzgün bir final belgesi garantilidir."
 
 [backendHealth]
@@ -2491,7 +2491,7 @@ bullet1 = "PEM, PKCS12, JKS ve sunucu sertifika biçimlerini destekler"
 bullet2 = "PDF üzerinde imzayı gösterme veya gizleme seçeneği"
 bullet3 = "Neden, konum ve imzalayan adını ekleyin"
 bullet4 = "Görünür imzaların hangi sayfaya yerleştirileceğini seçin"
-bullet5 = "Basit 'Stirling PDF ile İmzala' seçeneği için sunucu sertifikasını kullanın"
+bullet5 = "Basit 'Total PDF ile İmzala' seçeneği için sunucu sertifikasını kullanın"
 text = "Bir PDF'yi imzalamak için dijital bir sertifikaya (PEM, PKCS12 veya JKS gibi) ihtiyacınız vardır. İmzayı belgede görünür yapmayı veya yalnızca güvenlik için görünmez tutmayı seçebilirsiniz."
 title = "İmza Ekleme"
 
@@ -3015,14 +3015,14 @@ chartAriaLabel = "Kredi kullanımı: dahil {{includedUsed}} / {{includedTotal}},
 copyKeyAriaLabel = "API anahtarını kopyala"
 creditsRemaining = "Kalan Krediler"
 description = "Stirling'in PDF araç paketine erişmek için API anahtarınız. Projenize kopyalayın veya yenisini üretmek için yenileyin."
-docsDescription = "Stirling PDF ile entegrasyon hakkında daha fazla bilgi edinin:"
+docsDescription = "Total PDF ile entegrasyon hakkında daha fazla bilgi edinin:"
 docsLink = "API Dokümantasyonu"
 docsTitle = "API Dokümantasyonu"
 generateError = "API anahtarınızı oluşturamadık."
 goToAccount = "Hesaba Git"
 guestInfo = "Misafir kullanıcılar API anahtarı alamaz. Uygulamalarınızda kullanabileceğiniz bir API anahtarı almak için bir hesap oluşturun."
 includedCredits = "Dahil edilen krediler"
-intro = "API anahtarınızı kullanarak Stirling PDF'in işleme yeteneklerine programatik olarak erişin."
+intro = "API anahtarınızı kullanarak Total PDF'in işleme yeteneklerine programatik olarak erişin."
 label = "API Anahtarı"
 lastApiUse = "Son API Kullanımı"
 nextReset = "Sonraki Sıfırlama"
@@ -3196,7 +3196,7 @@ showPreferencesBtn = "Tercihleri Yönet"
 title = "Çerezleri Nasıl Kullanıyoruz"
 
 [cookieBanner.popUp.description]
-1 = "Stirling PDF’yi sizin için daha iyi çalıştırmak için çerezler ve diğer teknolojileri kullanıyoruz — araçlarımızı geliştirmemize ve seveceğiniz özellikler oluşturmamıza yardımcı oluyorlar."
+1 = "Total PDF’yi sizin için daha iyi çalıştırmak için çerezler ve diğer teknolojileri kullanıyoruz — araçlarımızı geliştirmemize ve seveceğiniz özellikler oluşturmamıza yardımcı oluyorlar."
 2 = "İstemiyorsanız, ‘Hayır Teşekkürler’ butonuna tıklayarak yalnızca temel, gerekli çerezleri etkinleştirebilirsiniz."
 
 [cookieBanner.preferencesModal]
@@ -3209,12 +3209,12 @@ subtitle = "Çerez Kullanımı"
 title = "Onay Tercih Merkezi"
 
 [cookieBanner.preferencesModal.analytics]
-description = "Bu çerezler, araçlarımızın nasıl kullanıldığını anlamamıza yardımcı olur, böylece topluluğumuzun en çok değer verdiği özellikleri geliştirmeye odaklanabiliriz. İçiniz rahat olsun — Stirling PDF, belgelerinizin içeriğini asla takip etmez ve etmeyecektir."
+description = "Bu çerezler, araçlarımızın nasıl kullanıldığını anlamamıza yardımcı olur, böylece topluluğumuzun en çok değer verdiği özellikleri geliştirmeye odaklanabiliriz. İçiniz rahat olsun — Total PDF, belgelerinizin içeriğini asla takip etmez ve etmeyecektir."
 title = "Analitik"
 
 [cookieBanner.preferencesModal.description]
-1 = "Stirling PDF, deneyiminizi geliştirmek ve araçlarımızın nasıl kullanıldığını anlamak için çerezler ve benzeri teknolojiler kullanır. Bu, performansı iyileştirmemize, önemsediğiniz özellikleri geliştirmemize ve kullanıcılarımıza sürekli destek sağlamamıza yardımcı olur."
-2 = "Stirling PDF, kullandığınız belgelerin içeriğini asla takip edemez veya erişemez."
+1 = "Total PDF, deneyiminizi geliştirmek ve araçlarımızın nasıl kullanıldığını anlamak için çerezler ve benzeri teknolojiler kullanır. Bu, performansı iyileştirmemize, önemsediğiniz özellikleri geliştirmemize ve kullanıcılarımıza sürekli destek sağlamamıza yardımcı olur."
+2 = "Total PDF, kullandığınız belgelerin içeriğini asla takip edemez veya erişemez."
 3 = "Gizliliğiniz ve güveniniz bizim için en önemli şeydir."
 
 [cookieBanner.preferencesModal.necessary]
@@ -3383,7 +3383,7 @@ unexpectedError = "Dosya işlenirken bir hata oluştu. Lütfen tekrar deneyin."
 [defaultApp]
 description = "Bunu daha sonra sistem ayarlarından değiştirebilirsiniz."
 dismiss = "Kapat"
-message = "Stirling PDF'yi varsayılan PDF düzenleyiciniz olarak ayarlamak ister misiniz?"
+message = "Total PDF'yi varsayılan PDF düzenleyiciniz olarak ayarlamak ister misiniz?"
 notNow = "Şimdi Değil"
 setDefault = "Varsayılan Yap"
 title = "Varsayılan PDF Uygulaması Olarak Ayarla"
@@ -3393,15 +3393,15 @@ message = "Varsayılan PDF işleyicisi ayarlanamadı"
 title = "Hata"
 
 [defaultApp.prompt]
-message = "PDF dosyalarını açmak için varsayılan uygulamanız Stirling PDF olsun."
+message = "PDF dosyalarını açmak için varsayılan uygulamanız Total PDF olsun."
 title = "Varsayılan PDF Düzenleyici Olarak Ayarla"
 
 [defaultApp.settingsOpened]
-message = "Lütfen sistem ayarlarınızda Stirling PDF'yi seçin"
+message = "Lütfen sistem ayarlarınızda Total PDF'yi seçin"
 title = "Ayarlar Açıldı"
 
 [defaultApp.success]
-message = "Stirling PDF artık varsayılan PDF düzenleyiciniz"
+message = "Total PDF artık varsayılan PDF düzenleyiciniz"
 title = "Varsayılan Uygulama Ayarlandı"
 
 [editTableOfContents]
@@ -3543,9 +3543,9 @@ visitsTooltip = "Ziyaret: {0} (toplamın %{1}’i)"
 
 [enterpriseEdition]
 button = "Pro Sürümüne Yükselt"
-ssoAdvert = "Daha fazla kullanıcı yönetimi özelliği mi arıyorsunuz? Stirling PDF Pro'ya göz atın"
+ssoAdvert = "Daha fazla kullanıcı yönetimi özelliği mi arıyorsunuz? Total PDF Pro'ya göz atın"
 warning = "Bu özellik yalnızca Pro kullanıcılarına sunulmaktadır."
-yamlAdvert = "Stirling PDF Pro, YAML yapılandırma dosyalarını ve diğer SSO özelliklerini destekler."
+yamlAdvert = "Total PDF Pro, YAML yapılandırma dosyalarını ve diğer SSO özelliklerini destekler."
 
 [error]
 _value = "Hata"
@@ -4021,7 +4021,7 @@ invisible = "Görünmez (yalnızca metaveri)"
 location = "Konum:"
 logo = "Logo:"
 logoHidden = "Logo yok"
-logoShown = "Stirling PDF logosu gösteriliyor"
+logoShown = "Total PDF logosu gösteriliyor"
 participantCount = "{{count}} katılımcı sırayla imzalayacak"
 participants = "Katılımcılar"
 reason = "Neden:"
@@ -4073,7 +4073,7 @@ title = "Sıralı İmzalama"
 dismiss = "Afişi kapat"
 message = "Çalışmanızı kaydetmek, daha fazla özelliğe erişmek ve projeyi desteklemek için ücretsiz bir hesap oluşturun."
 signUp = "Ücretsiz Kaydol"
-title = "Misafir olarak Stirling PDF kullanıyorsunuz!"
+title = "Misafir olarak Total PDF kullanıyorsunuz!"
 
 [home]
 alphabetical = "Alfabetik"
@@ -4247,7 +4247,7 @@ tags = "birleştir,kat,topla"
 title = "Birleştir"
 
 [home.mobile]
-brandAlt = "Stirling PDF logosu"
+brandAlt = "Total PDF logosu"
 openFiles = "Dosyaları aç"
 swipeHint = "Görünümler arasında geçmek için sola veya sağa kaydırın"
 tools = "Araçlar"
@@ -4287,7 +4287,7 @@ tags = "düzenle,yeniden_sırala,yeniden_düzenle"
 title = "Düzenle"
 
 [home.pdfTextEditor]
-desc = "Gruplu metin düzenleme ve PDF yeniden oluşturma ile Stirling PDF JSON dışa aktarımlarını gözden geçirin ve düzenleyin"
+desc = "Gruplu metin düzenleme ve PDF yeniden oluşturma ile Total PDF JSON dışa aktarımlarını gözden geçirin ve düzenleyin"
 tags = "edit text,modify text,change text,edit content,update text,rewrite,correct,amend,redline,revise,text editor,content editor"
 title = "PDF Metin Düzenleyici"
 
@@ -4493,14 +4493,14 @@ passwordTooShort = "Parola en az 6 karakter olmalıdır"
 signIn = "Giriş yap"
 validating = "Davet doğrulanıyor..."
 validationError = "Davet bağlantısı doğrulanamadı"
-welcome = "Stirling PDF'ye hoş geldiniz"
+welcome = "Total PDF'ye hoş geldiniz"
 welcomeSubtitle = "Başlamak için hesap kurulumunuzu tamamlayın"
 welcomeTitle = "Davet edildiniz!"
 
 [landing]
 addFiles = "Dosya Ekle"
 heroSubtitle = "Başlamak için bir PDF bırakın veya mevcut bir PDF ekleyin."
-heroTitle = "Stirling PDF"
+heroTitle = "Total PDF"
 mobileUpload = "Mobil Cihazdan Yükle"
 openFromComputer = "Bilgisayardan aç"
 uploadFromComputer = "Bilgisayardan yükle"
@@ -4602,7 +4602,7 @@ signinTitle = "Lütfen giriş yapınız."
 signInWith = "Şununla giriş yap"
 signOut = "Çıkış Yap"
 ssoSignIn = "Tek Oturum Açma ile Giriş Yap"
-subtitle = "Stirling PDF'de yeniden oturum açın"
+subtitle = "Total PDF'de yeniden oturum açın"
 title = "Giriş Yap"
 toManySessions = "Çok fazla aktif oturumunuz var"
 unexpectedError = "Beklenmeyen hata: {{message}}"
@@ -4621,7 +4621,7 @@ subtitle = "PDF'leri sansürlemek, imzalamak, okumak ve işlemek için bir düzi
 title = "İstediğiniz bilgiyi göstermek/korumak için PDF'leri düzenleyin"
 
 [login.slides.overview]
-alt = "Stirling PDF genel bakış"
+alt = "Total PDF genel bakış"
 subtitle = "PDF'ler için gizlilik odaklı bir bulut paketi; belgeleri dönüştürmenize, imzalamanıza, sansürlemenize ve yönetmenize olanak tanır, ayrıca 50+ başka güçlü araçla birlikte gelir."
 title = "PDF ihtiyaçlarınızın tümü için tek adresiniz."
 
@@ -4787,7 +4787,7 @@ message = "Kimlik doğrulama başarılı olmadı. Bu pencereyi kapatıp tekrar d
 title = "Kimlik Doğrulama Başarısız"
 
 [oauth.success]
-message = "Bu pencereyi kapatabilir ve Stirling PDF'ye dönebilirsiniz."
+message = "Bu pencereyi kapatabilir ve Total PDF'ye dönebilirsiniz."
 title = "Kimlik Doğrulama Başarılı"
 
 [ocr]
@@ -4911,7 +4911,7 @@ runButton = "Araç yapılandırıldıktan sonra bu düğme, aracı seçili tüm 
 selectControls = "<strong>Sağ Panel</strong>, tüm aktif PDF'leri hızlıca seçip seçimi kaldırmanızı sağlayan düğmelerin yanı sıra uygulamanın temasını veya dilini değiştirme düğmelerini içerir."
 selectCropTool = "Araçlardan birinin nasıl kullanılacağını göstermek için <strong>Kırp</strong> aracını seçelim."
 startTour = "Turu Başlat"
-startTourDescription = "Stirling PDF'in temel özelliklerinde rehberli bir tura çıkın"
+startTourDescription = "Total PDF'in temel özelliklerinde rehberli bir tura çıkın"
 toolInterface = "Burası <strong>Kırp</strong> aracının arayüzü. Gördüğünüz gibi, üzerinde çalışacak PDF dosyaları henüz eklemediğimiz için pek bir şey yok."
 viewer = "<strong>Görüntüleyici</strong>, PDF'lerinizi okumanıza ve açıklama eklemenize olanak tanır."
 viewSwitcher = "PDF'lerinizi nasıl görüntülemek istediğinizi seçmek için bu denetimleri kullanın."
@@ -4934,7 +4934,7 @@ titleWithOs = "{{osLabel}} için indir"
 [onboarding.freeTrial]
 afterTrialWithoutPayment = "Denemeniz bittiğinde ücretsiz katmanla devam edeceksiniz. Pro erişimini sürdürmek için bir ödeme yöntemi ekleyin."
 afterTrialWithPayment = "Deneme bittiğinde Pro aboneliğiniz otomatik olarak başlayacak."
-body = "Deneme süreniz boyunca Stirling PDF Pro özelliklerine tam erişiminiz var. Sınırsız dönüştürme, daha büyük dosya boyutları ve öncelikli işlemden yararlanın."
+body = "Deneme süreniz boyunca Total PDF Pro özelliklerine tam erişiminiz var. Sınırsız dönüştürme, daha büyük dosya boyutları ve öncelikli işlemden yararlanın."
 daysRemaining = "{{days}} gün kaldı"
 daysRemainingSingular = "{{days}} gün kaldı"
 title = "30 Günlük Pro Denemeniz"
@@ -4960,7 +4960,7 @@ skip = "Şimdilik atla"
 upgrade = "Şimdi yükselt →"
 
 [onboarding.tourOverview]
-body = "Stirling PDF V2 onlarca araç ve yenilenmiş bir düzenle gelir. Nelerin değiştiğini ve ihtiyaç duyduğunuz özellikleri nerede bulacağınızı görmek için kısa bir tura çıkın."
+body = "Total PDF V2 onlarca araç ve yenilenmiş bir düzenle gelir. Nelerin değiştiğini ve ihtiyaç duyduğunuz özellikleri nerede bulacağınızı görmek için kısa bir tura çıkın."
 title = "Tur Genel Bakış"
 
 [onboarding.welcomeModal]
@@ -4969,10 +4969,10 @@ dontShowAgain = "Bir Daha Gösterme"
 helpHint = "Bu tura her zaman sol alttaki <strong>Yardım</strong> düğmesinden erişebilirsiniz."
 maybeLater = "Belki Sonra"
 startTour = "Turu Başlat"
-title = "Stirling PDF'ye Hoş Geldiniz!"
+title = "Total PDF'ye Hoş Geldiniz!"
 
 [onboarding.welcomeSlide]
-body = "Stirling PDF artık her boyuttan ekip için hazır. Bu güncelleme yeni bir düzen, güçlü yeni yönetici yetenekleri ve en çok istenen özelliği içerir - <strong>Metni Düzenle</strong>."
+body = "Total PDF artık her boyuttan ekip için hazır. Bu güncelleme yeni bir düzen, güçlü yeni yönetici yetenekleri ve en çok istenen özelliği içerir - <strong>Metni Düzenle</strong>."
 title = "Stirling'e hoş geldiniz"
 
 [onboarding.whatsNew]
@@ -5794,7 +5794,7 @@ included = "Dahil"
 name = "Ücretsiz"
 
 [plan.licenseWarning]
-body = "{{total}} kullanıcınız var ancak ücretsiz katman sunucu başına yalnızca {{limit}} destekler. Stirling PDF'nin sorunsuz çalışması için yükseltin."
+body = "{{total}} kullanıcınız var ancak ücretsiz katman sunucu başına yalnızca {{limit}} destekler. Total PDF'nin sorunsuz çalışması için yükseltin."
 cta = "Planlara bak"
 overLimit = "{{limit}} sayısından fazla"
 title = "Ücretsiz öz barındırma sınırına ulaşıldı"
@@ -6733,8 +6733,8 @@ hideTools = "Kullanılamayan araçları gizle ▴"
 messageNoFallback = "Sunucunuz geri gelene kadar araçlar kullanılamaz."
 messageWithFallback = "Bazı araçlar sunucu bağlantısı gerektirir."
 showTools = "Kullanılamayan araçları görüntüle ▾"
-title = "Stirling-PDF sunucunuza ulaşılamıyor"
-toolNotAvailableLocally = "Stirling-PDF sunucunuz çevrimdışı ve \"{{endpoint}}\" yerel arka uçta kullanılamıyor."
+title = "Total-PDF sunucunuza ulaşılamıyor"
+toolNotAvailableLocally = "Total-PDF sunucunuz çevrimdışı ve \"{{endpoint}}\" yerel arka uçta kullanılamıyor."
 
 [session]
 expired = "Oturumunuzun süresi doldu. Lütfen sayfayı yenileyip tekrar deneyin."
@@ -6806,7 +6806,7 @@ autoUnzipFileLimitDescription = "ZIP'ten çıkarılacak azami dosya sayısı"
 autoUnzipFileLimitTooltip = "Yalnızca ZIP bu kadar ya da daha az dosya içeriyorsa çıkar. Daha büyük ZIP'leri çıkarmak için daha yüksek ayarlayın."
 autoUnzipTooltip = "API işlemlerinden dönen ZIP dosyalarını otomatik olarak çıkarır. ZIP dosyalarını olduğu gibi tutmak için devre dışı bırakın. Bu, otomasyon iş akışlarını etkilemez."
 defaultPdfEditor = "Varsayılan PDF düzenleyici"
-defaultPdfEditorActive = "Stirling PDF varsayılan PDF düzenleyiciniz"
+defaultPdfEditorActive = "Total PDF varsayılan PDF düzenleyiciniz"
 defaultPdfEditorChecking = "Kontrol ediliyor..."
 defaultPdfEditorInactive = "Varsayılan olarak başka bir uygulama ayarlı"
 defaultPdfEditorSet = "Zaten Varsayılan"
@@ -7023,13 +7023,13 @@ teams = "Ekipler"
 title = "Çalışma Alanı"
 
 [setup]
-description = "Stirling PDF'yi nasıl kullanmak istediğinizi seçerek başlayın"
-welcome = "Stirling PDF'ye hoş geldiniz"
+description = "Total PDF'yi nasıl kullanmak istediğinizi seçerek başlayın"
+welcome = "Total PDF'ye hoş geldiniz"
 
 [setup.login]
 connectingTo = "Bağlanılıyor:"
 hideInstructions = "Yönergeleri gizle"
-instructions = "Stirling PDF sunucunuzda oturum açmayı etkinleştirmek için:"
+instructions = "Total PDF sunucunuzda oturum açmayı etkinleştirmek için:"
 instructionsEnvVar = "Ortam değişkenini ayarlayın:"
 instructionsOrYml = "Veya settings.yml içinde:"
 instructionsRestart = "Ardından değişikliklerin etkili olması için sunucunuzu yeniden başlatın."
@@ -7067,7 +7067,7 @@ description = "Stirling hesabınızla oturum açın"
 title = "Stirling Cloud"
 
 [setup.mode.selfhosted]
-description = "Kendi Stirling PDF sunucunuza bağlanın"
+description = "Kendi Total PDF sunucunuza bağlanın"
 title = "Öz Barındırılan Sunucu"
 
 [setup.saas]
@@ -7111,11 +7111,11 @@ step3 = "Sunucuyu yeniden başlatın"
 title = "Giriş Etkin Değil"
 
 [setup.server.type]
-saas = "Stirling PDF SaaS"
+saas = "Total PDF SaaS"
 selfhosted = "Öz barındırılan sunucu"
 
 [setup.server.url]
-description = "Öz barındırılan Stirling PDF sunucunuzun tam URL'sini girin"
+description = "Öz barındırılan Total PDF sunucunuzun tam URL'sini girin"
 label = "Sunucu URL'si"
 
 [setup.step1]
@@ -7340,7 +7340,7 @@ passwordsDoNotMatch = "Şifreler eşleşmiyor"
 passwordTooShort = "Şifre en az 6 karakter olmalıdır"
 pleaseFillAllFields = "Lütfen tüm alanları doldurun"
 signUp = "Kaydol"
-subtitle = "Başlamak için Stirling PDF ile başlayın"
+subtitle = "Başlamak için Total PDF ile başlayın"
 title = "Hesap oluşturun"
 unexpectedError = "Beklenmeyen hata: {{message}}"
 useEmailInstead = "Bunun yerine E-posta Kullan"
@@ -7627,7 +7627,7 @@ download = "İndir"
 downloaded = "İndirildi"
 downloadFailed = "Bu dosya indirilemedi."
 downloadsCount = "İndirme: {{count}}"
-emailWarningBody = "Bu bir e-posta adresine benziyor. Bu kişi henüz bir Stirling PDF kullanıcısı değilse dosyaya erişemez."
+emailWarningBody = "Bu bir e-posta adresine benziyor. Bu kişi henüz bir Total PDF kullanıcısı değilse dosyaya erişemez."
 emailWarningConfirm = "Yine de paylaş"
 emailWarningTitle = "E-posta adresi"
 errorTitle = "Paylaşım başarısız"
@@ -7657,7 +7657,7 @@ manageTitle = "Paylaşımı Yönet"
 noActivity = "Henüz etkinlik yok."
 noLinks = "Henüz etkin paylaşım bağlantısı yok."
 noSharedUsers = "Henüz hiçbir kullanıcının erişimi yok."
-openInApp = "Stirling PDF'de Aç"
+openInApp = "Total PDF'de Aç"
 ownerLabel = "Sahip"
 ownerOnly = "Paylaşımı yalnızca sahibi yönetebilir."
 ownerUnknown = "Bilinmiyor"
@@ -7718,28 +7718,28 @@ trialing = "Deneme"
 
 [survey]
 button = "Ankete Katıl"
-changes = "Stirling-PDF son ankete göre değişti! Daha fazla bilgi için blog yazımıza göz atın:"
+changes = "Total-PDF son ankete göre değişti! Daha fazla bilgi için blog yazımıza göz atın:"
 changes2 = "Bu değişikliklerle birlikte ücretli kurumsal destek ve fon alıyoruz"
-description = "Stirling-PDF'te izleme yok, bu yüzden Stirling-PDF'i iyileştirmek için kullanıcılarımızdan geri bildirim almak istiyoruz!"
+description = "Total-PDF'te izleme yok, bu yüzden Total-PDF'i iyileştirmek için kullanıcılarımızdan geri bildirim almak istiyoruz!"
 disabled = "(Anket açılır penceresi sonraki güncellemelerde devre dışı bırakılacak ancak sayfanın alt kısmında yer alacaktır)"
 dontShowAgain = "Tekrar gösterme"
 nav = "Anket"
 please = "Lütfen anketimize katılmayı düşünün!"
-title = "Stirling-PDF Anketi"
+title = "Total-PDF Anketi"
 
 [survey.meeting]
-1 = "Eğer Stirling PDF'i iş yerinizde kullanıyorsanız, sizinle görüşmek isteriz. 15 dakikalık bir kullanıcı keşif oturumu karşılığında teknik destek sunuyoruz."
+1 = "Eğer Total PDF'i iş yerinizde kullanıyorsanız, sizinle görüşmek isteriz. 15 dakikalık bir kullanıcı keşif oturumu karşılığında teknik destek sunuyoruz."
 2 = "Bu fırsat sayesinde:"
 3 = "Kurulum, entegrasyonlar veya sorun giderme konularında yardım alabilirsiniz"
 4 = "Performans, uç durumlar ve eksik özellikler hakkında doğrudan geri bildirim sağlayabilirsiniz"
-5 = "Stirling PDF’i gerçek dünya kurumsal kullanımı için daha iyi hale getirmemize yardımcı olabilirsiniz"
+5 = "Total PDF’i gerçek dünya kurumsal kullanımı için daha iyi hale getirmemize yardımcı olabilirsiniz"
 6 = "İlgileniyorsanız, ekibimizden doğrudan zaman ayırabilirsiniz. (Yalnızca İngilizce)"
-7 = "Kullanım senaryolarınızı dinlemeyi ve Stirling PDF’i daha da iyi hale getirmeyi sabırsızlıkla bekliyoruz!"
+7 = "Kullanım senaryolarınızı dinlemeyi ve Total PDF’i daha da iyi hale getirmeyi sabırsızlıkla bekliyoruz!"
 button = "Görüşme Planla"
 notInterested = "Kurumsal kullanıcı değilseniz ve/veya görüşmeye ilgi duymuyorsanız"
 
 [swagger]
-desc = "Stirling PDF API uç noktalarını görüntüleyin ve test edin"
+desc = "Total PDF API uç noktalarını görüntüleyin ve test edin"
 header = "API Dokümantasyonu"
 tags = "api,dokümantasyon,swagger,uç noktalar,geliştirme"
 title = "API Dokümantasyonu"
@@ -7883,7 +7883,7 @@ favorites = "Favoriler"
 heading = "Tüm araçlar (tam ekran görünüm)"
 noResults = "Aramanızı ayarlamayı deneyin veya ihtiyacınızı bulmak için açıklamaları aç/kapatın."
 recommended = "Önerilen"
-selfHostedOffline = "Stirling-PDF sunucunuzu gerektirir (şu anda çevrimdışı):"
+selfHostedOffline = "Total-PDF sunucunuzu gerektirir (şu anda çevrimdışı):"
 showDetails = "Ayrıntıları Göster"
 unavailable = "Sunucu yöneticisi tarafından devre dışı bırakıldı:"
 unavailableDependency = "Kullanılamıyor - sunucuda gerekli araç eksik:"
@@ -7892,7 +7892,7 @@ unfavorite = "Favorilerden kaldır"
 [toolPanel.modePrompt]
 chooseFullscreen = "Tam ekran modunu kullan"
 chooseSidebar = "Kenar çubuğu modunu kullan"
-description = "Her iki düzeni önizleyin ve Stirling PDF araçlarını nasıl keşfetmek istediğinize karar verin."
+description = "Her iki düzeni önizleyin ve Total PDF araçlarını nasıl keşfetmek istediğinize karar verin."
 dismiss = "Belki sonra"
 fullscreenDescription = "Birini seçene kadar çalışma alanını kaplayan bir katalogda tüm araçlara göz atın."
 fullscreenTitle = "Tam ekran modu - (eski)"
@@ -7986,7 +7986,7 @@ attentionBody = "Daha fazla bilgi görmek için yöneticinizin oturum açması g
 attentionBodyAdmin = "Bu sunucunun uyumlu kalması için lisans gereksinimlerini gözden geçirin."
 attentionTitle = "Bu sunucunun yönetici dikkatine ihtiyacı var"
 dismiss = "Afişi kapat"
-message = "Sınırsız kullanıcı ve gelişmiş özelliklerle Stirling PDF'den en iyi şekilde yararlanın"
+message = "Sınırsız kullanıcı ve gelişmiş özelliklerle Total PDF'den en iyi şekilde yararlanın"
 seeInfo = "Bilgileri gör"
 title = "Sunucu Planına Yükseltin"
 upgradeButton = "Şimdi Yükselt"
@@ -8108,7 +8108,7 @@ continued = "Devamı"
 downloads = "İndirmeler"
 entryLabel = "İmza Özeti"
 filesEvaluated = "{{count}} dosya değerlendirildi"
-footer = "Stirling PDF ile doğrulandı"
+footer = "Total PDF ile doğrulandı"
 generatedAt = "Oluşturuldu"
 noPdf = "PDF raporu başarılı bir doğrulamadan sonra kullanılabilir olacaktır."
 page = "Sayfa"

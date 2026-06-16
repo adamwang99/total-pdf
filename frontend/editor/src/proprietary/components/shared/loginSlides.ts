@@ -23,7 +23,7 @@ export const buildLoginSlides = (
   return [
     {
       src: heroImage,
-      alt: t("login.slides.overview.alt", "Stirling PDF overview"),
+      alt: t("login.slides.overview.alt", "Total PDF overview"),
       title: t(
         "login.slides.overview.title",
         "Your one-stop-shop for all your PDF needs.",

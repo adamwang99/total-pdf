@@ -1,8 +1,8 @@
-# Stirling-PDF Developer Guide
+# Total-PDF Developer Guide
 
 ## 1. Introduction
 
-Stirling-PDF is a robust, locally hosted, web-based PDF manipulation tool. **Stirling 2.0** represents a complete frontend rewrite with a modern React SPA (Single Page Application).
+Total-PDF is a robust, locally hosted, web-based PDF manipulation tool. **Stirling 2.0** represents a complete frontend rewrite with a modern React SPA (Single Page Application).
 
 This guide focuses on developing for Stirling 2.0, including both the React frontend and Spring Boot backend development workflows.
 
@@ -58,7 +58,7 @@ This guide focuses on developing for Stirling 2.0, including both the React fron
 
    ```bash
    git clone https://github.com/Stirling-Tools/Stirling-PDF.git
-   cd Stirling-PDF
+   cd Total-PDF
    ```
 
 2. Install Docker and JDK 25 if not already installed.
@@ -76,11 +76,11 @@ This guide focuses on developing for Stirling 2.0, including both the React fron
       4. Install the required extensions from the list.
 
 4. Lombok Setup
-Stirling-PDF uses Lombok to reduce boilerplate code. Some IDEs, like Eclipse, don't support Lombok out of the box. To set up Lombok in your development environment:
+Total-PDF uses Lombok to reduce boilerplate code. Some IDEs, like Eclipse, don't support Lombok out of the box. To set up Lombok in your development environment:
 Visit the [Lombok website](https://projectlombok.org/setup/) for installation instructions specific to your IDE.
 
 5. Add environment variable
-For local testing, you should generally be testing the full 'Security' version of Stirling PDF. To do this, you must add the environment flag DISABLE_ADDITIONAL_FEATURES=false to your system and/or IDE build/run step.
+For local testing, you should generally be testing the full 'Security' version of Total PDF. To do this, you must add the environment flag DISABLE_ADDITIONAL_FEATURES=false to your system and/or IDE build/run step.
 5. **Frontend Setup (Required for Stirling 2.0)**
    Navigate to the frontend directory and install dependencies using npm.
 
@@ -116,7 +116,7 @@ Stirling 2.0 uses client-side file storage:
 - **URL Parameters**: Support for deep linking and tool state persistence
 
 ### Tauri Desktop App Development
-Stirling-PDF can be packaged as a cross-platform desktop application using Tauri with PDF file association support and bundled JRE.
+Total-PDF can be packaged as a cross-platform desktop application using Tauri with PDF file association support and bundled JRE.
 
 Using Taskfile: `task desktop:dev` (development) or `task desktop:build` (production build).
 
@@ -125,7 +125,7 @@ See [the frontend README](frontend/README.md#tauri) for detailed build instructi
 ## 5. Project Structure
 
 ```bash
-Stirling-PDF/
+Total-PDF/
 ├── .github/               # GitHub-specific files (workflows, issue templates)
 ├── configs/               # Configuration files used by stirling at runtime (generated at runtime)
 ├── frontend/              # Frontend workspace (Stirling 2.0)
@@ -184,7 +184,7 @@ Stirling-PDF/
 
 ## 6. Docker-based Development
 
-Stirling-PDF offers several Docker versions:
+Total-PDF offers several Docker versions:
 
 - Full: All features included
 - Ultra-Lite: Basic PDF operations only
@@ -192,7 +192,7 @@ Stirling-PDF offers several Docker versions:
 
 ### Example Docker Compose Files
 
-Stirling-PDF provides several example Docker Compose files in the `exampleYmlFiles` directory, such as:
+Total-PDF provides several example Docker Compose files in the `exampleYmlFiles` directory, such as:
 
 - `docker-compose-latest.yml`: Latest version without login and security features
 - `docker-compose-latest-security.yml`: Latest version with login and security features enabled
@@ -203,7 +203,7 @@ These files provide pre-configured setups for different scenarios. For example, 
 ```yaml
 services:
   stirling-pdf:
-    container_name: Stirling-PDF-Security
+    container_name: Total-PDF-Security
     image: docker.stirlingpdf.com/stirlingtools/stirling-pdf:latest
     deploy:
       resources:
@@ -227,9 +227,9 @@ services:
       PGID: 1002
       UMASK: "022"
       SYSTEM_DEFAULTLOCALE: en-US
-      UI_APPNAME: Stirling-PDF
-      UI_HOMEDESCRIPTION: Demo site for Stirling-PDF Latest with Security
-      UI_APPNAMENAVBAR: Stirling-PDF Latest
+      UI_APPNAME: Total-PDF
+      UI_HOMEDESCRIPTION: Demo site for Total-PDF Latest with Security
+      UI_APPNAMENAVBAR: Total-PDF Latest
       SYSTEM_MAXFILESIZE: "100"
       METRICS_ENABLED: "true"
       SYSTEM_GOOGLEVISIBILITY: "true"
@@ -259,7 +259,7 @@ task docker:logs             # tail logs
 
 #### Manual Docker Builds
 
-Stirling-PDF uses different Docker images for various configurations. The build process is controlled by environment variables and uses specific Dockerfile variants. Here's how to build the Docker images:
+Total-PDF uses different Docker images for various configurations. The build process is controlled by environment variables and uses specific Dockerfile variants. Here's how to build the Docker images:
 
 1. Set the security environment variable:
 
@@ -309,7 +309,7 @@ task check   # full quality gate: lint + typecheck + test
 
 ### Comprehensive Testing Script
 
-Stirling-PDF also provides a `test.sh` script in the root directory for Docker integration tests. This script builds all versions of Stirling-PDF, checks that each version works, and runs Cucumber tests. It's recommended to run this script before submitting a final pull request.
+Total-PDF also provides a `test.sh` script in the root directory for Docker integration tests. This script builds all versions of Total-PDF, checks that each version works, and runs Cucumber tests. It's recommended to run this script before submitting a final pull request.
 
 To run the test script:
 
@@ -343,14 +343,14 @@ For React frontend development:
 
 ### Local Testing (Java and UI Components)
 
-For quick iterations and development of Java backend, JavaScript, and UI components, you can run and test Stirling-PDF locally without Docker. This approach allows you to work on and verify changes to:
+For quick iterations and development of Java backend, JavaScript, and UI components, you can run and test Total-PDF locally without Docker. This approach allows you to work on and verify changes to:
 
 - Java backend logic
 - RESTful API endpoints
 - JavaScript functionality
 - User interface components and styling
 
-To run Stirling-PDF locally:
+To run Total-PDF locally:
 
 1. Compile and run the project using built-in IDE methods or by running:
 
@@ -402,7 +402,7 @@ API documentation is available at `/swagger-ui/index.html` when running the appl
 
 ## 10. Customization
 
-Stirling-PDF can be customized through environment variables or a `settings.yml` file. Key customization options include:
+Total-PDF can be customized through environment variables or a `settings.yml` file. Key customization options include:
 
 - Application name and branding
 - Security settings
@@ -421,7 +421,7 @@ Refer to the main README for a full list of customization options.
 
 ## 11. Language Translations
 
-For managing language translations that affect multiple files, Stirling-PDF provides a helper script:
+For managing language translations that affect multiple files, Total-PDF provides a helper script:
 
 ```bash
 /scripts/replace_translation_line.sh
@@ -567,9 +567,9 @@ For Stirling 2.0, new features are built as React components:
   }
   ```
 
-## Adding New Translations to Existing Language Files in Stirling-PDF
+## Adding New Translations to Existing Language Files in Total-PDF
 
-When adding a new feature or modifying existing ones in Stirling-PDF, you'll need to add new translation entries to the existing language files. Here's a step-by-step guide:
+When adding a new feature or modifying existing ones in Total-PDF, you'll need to add new translation entries to the existing language files. Here's a step-by-step guide:
 
 ### 1. Locate Existing Language Files
 

@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
 {
-    "name": "Stirling-PDF Dev Container",
+    "name": "Total-PDF Dev Container",
     "build": {
         // Sets the run context to one level up instead of the .devcontainer folder.
         "context": "..",
@@ -18,7 +18,7 @@
     "forwardPorts": [8080, 2002, 2003],
     "portsAttributes": {
         "8080": {
-            "label": "Stirling-PDF Dev Port"
+            "label": "Total-PDF Dev Port"
         },
         "2002": {
             "label": "unoserver Port"

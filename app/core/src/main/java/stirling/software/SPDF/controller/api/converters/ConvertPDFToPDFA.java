@@ -2225,7 +2225,7 @@ public class ConvertPDFToPDFA {
             }
         }
 
-        info.setProducer("Stirling-PDF Sanitizer");
+        info.setProducer("Total-PDF Sanitizer");
     }
 
     private void removeForbiddenActions(PDDocument doc) {

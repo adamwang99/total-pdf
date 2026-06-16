@@ -25,7 +25,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
                 Enterprise database administration for production data management and business continuity.
 
                 This endpoint group provides database administration capabilities for organizations
-                operating Stirling PDF in production environments.
+                operating Total PDF in production environments.
 
                 Common use cases:
                 • Business continuity, disaster recovery, and regulatory compliance requirements

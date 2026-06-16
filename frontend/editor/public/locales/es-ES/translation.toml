@@ -878,11 +878,11 @@ description = "Configura funciones y funcionalidades opcionales."
 title = "Funciones"
 
 [admin.settings.features.serverCertificate]
-description = "Configurar la generación de certificados del lado del servidor para la funcionalidad \"Firmar con Stirling-PDF\""
+description = "Configurar la generación de certificados del lado del servidor para la funcionalidad \"Firmar con Total-PDF\""
 label = "Certificado del servidor"
 
 [admin.settings.features.serverCertificate.enabled]
-description = "Habilitar el certificado del lado del servidor para la opción \"Firmar con Stirling-PDF\""
+description = "Habilitar el certificado del lado del servidor para la opción \"Firmar con Total-PDF\""
 label = "Habilitar certificado del servidor"
 
 [admin.settings.features.serverCertificate.organizationName]
@@ -1030,7 +1030,7 @@ description = "URL o nombre de archivo de la política de cookies"
 label = "Política de cookies"
 
 [admin.settings.legal.disclaimer]
-message = "Al personalizar estos documentos legales, asumes la responsabilidad total de garantizar el cumplimiento de todas las leyes y normativas aplicables, incluidas, entre otras, el RGPD y otros requisitos de protección de datos de la UE. Solo modifica estos ajustes si: (1) operas una instancia personal/privada, (2) estás fuera de la jurisdicción de la UE y entiendes tus obligaciones legales locales, o (3) has obtenido el asesoramiento legal adecuado y aceptas la responsabilidad exclusiva de todos los datos de los usuarios y del cumplimiento legal. Stirling-PDF y sus desarrolladores no asumen ninguna responsabilidad por tus obligaciones legales."
+message = "Al personalizar estos documentos legales, asumes la responsabilidad total de garantizar el cumplimiento de todas las leyes y normativas aplicables, incluidas, entre otras, el RGPD y otros requisitos de protección de datos de la UE. Solo modifica estos ajustes si: (1) operas una instancia personal/privada, (2) estás fuera de la jurisdicción de la UE y entiendes tus obligaciones legales locales, o (3) has obtenido el asesoramiento legal adecuado y aceptas la responsabilidad exclusiva de todos los datos de los usuarios y del cumplimiento legal. Total-PDF y sus desarrolladores no asumen ninguna responsabilidad por tus obligaciones legales."
 title = "Advertencia de responsabilidad legal"
 
 [admin.settings.legal.impressum]
@@ -1402,7 +1402,7 @@ description = "Cuando está habilitado, solo los ID de usuario listados pueden u
 label = "Permitir ID de usuario específicos"
 
 [admin.settings.telegram.enabled]
-description = "Permite a los usuarios interactuar con Stirling PDF a través de tu bot de Telegram configurado."
+description = "Permite a los usuarios interactuar con Total PDF a través de tu bot de Telegram configurado."
 label = "Habilitar bot de Telegram"
 
 [admin.settings.telegram.feedback]
@@ -1467,7 +1467,7 @@ settingsOverview = "Este es el <strong>Panel de configuración</strong>. Los aju
 systemCustomization = "Disponemos de amplias formas de personalizar la interfaz: <strong>System Settings</strong> te permite cambiar el nombre e idiomas de la aplicación, <strong>Features</strong> permite gestionar el certificado del servidor y <strong>Endpoints</strong> te permite habilitar o deshabilitar herramientas específicas para tus usuarios."
 teamsAndUsers = "Administra aquí los <strong>Equipos</strong> y usuarios individuales. Puedes invitar nuevos usuarios por correo electrónico, enlaces compartibles o crear tú mismo cuentas personalizadas para ellos."
 welcome = "¡Bienvenido al <strong>recorrido de administrador</strong>! Vamos a explorar las potentes funciones y ajustes empresariales disponibles para los administradores del sistema."
-wrapUp = "¡Ese es el recorrido de administrador! Has visto las funciones empresariales que hacen de Stirling PDF una solución potente y personalizable para organizaciones. Accede a este recorrido en cualquier momento desde el menú de <strong>Ayuda</strong>."
+wrapUp = "¡Ese es el recorrido de administrador! Has visto las funciones empresariales que hacen de Total PDF una solución potente y personalizable para organizaciones. Accede a este recorrido en cualquier momento desde el menú de <strong>Ayuda</strong>."
 
 [adminUserSettings]
 actions = "Acciones"
@@ -1504,11 +1504,11 @@ webOnlyUser = "Usuario solo web"
 disable = "Deshabilitar analíticas"
 enable = "Habilitar analíticas"
 learnMore = "Más información"
-paragraph1 = "Stirling PDF ha optado por analíticas para ayudarnos a mejorar el producto. No rastreamos ninguna información personal ni contenido de archivos."
-paragraph2 = "Considere habilitar analíticas para ayudar a Stirling-PDF a crecer y permitirnos comprender mejor a nuestros usuarios."
+paragraph1 = "Total PDF ha optado por analíticas para ayudarnos a mejorar el producto. No rastreamos ninguna información personal ni contenido de archivos."
+paragraph2 = "Considere habilitar analíticas para ayudar a Total-PDF a crecer y permitirnos comprender mejor a nuestros usuarios."
 privacyAssurance = "No rastreamos información personal ni el contenido de sus archivos."
 settings = "Puede cambiar la configuración de analíticas en el archivo config/settings.yml"
-title = "¿Quieres mejorar Stirling PDF?"
+title = "¿Quieres mejorar Total PDF?"
 
 [annotation]
 annotationStyle = "Estilo de anotación"
@@ -1911,7 +1911,7 @@ tags = "pdf,dividir,documento,organización"
 description = "Imprime, inserta, escanea o carga, y deja que separemos automáticamente tus documentos. No se necesita clasificación manual."
 dividerDownload2 = "Descargar 'Divisor automático (con instrucciones).pdf'"
 duplexMode = "Modo Dúplex (Escaneado de ambas caras)"
-formPrompt = "Entregar PDF conteniendo divisores de página de Stirling-PDF:"
+formPrompt = "Entregar PDF conteniendo divisores de página de Total-PDF:"
 header = "Dividir PDF automáticamente"
 submit = "Entregar"
 tags = "Marcado por QR,separar,segmento de escaneo,organizar"
@@ -1920,7 +1920,7 @@ title = "Dividir PDF automáticamente"
 [autoSplitPDF.selectText]
 1 = "Imprimir algunas hojas divisorias desde la parte inferior (Blanco y negro está bien)."
 2 = "Escanea todos tus documentos a la vez insertando la hoja divisoria entre ellos."
-3 = "Carga un único archivo PDF escaneado de gran tamaño y deja que Stirling PDF se encargue del resto."
+3 = "Carga un único archivo PDF escaneado de gran tamaño y deja que Total PDF se encargue del resto."
 4 = "Las páginas divisorias son automáticamente detectadas y eliminadas, garantizando un buen documento final."
 
 [backendHealth]
@@ -2479,7 +2479,7 @@ bullet1 = "Compatible con formatos PEM, PKCS12, JKS y certificado de servidor"
 bullet2 = "Opción de mostrar u ocultar firma en el PDF"
 bullet3 = "Añadir motivo, ubicación y nombre del firmante"
 bullet4 = "Elegir en qué página colocar firmas visibles"
-bullet5 = "Usar certificado de servidor para la opción simple 'Firmar con Stirling-PDF'"
+bullet5 = "Usar certificado de servidor para la opción simple 'Firmar con Total-PDF'"
 text = "Para firmar un PDF, necesita un certificado digital (como PEM, PKCS12 o JKS). Puede elegir hacer visible la firma en el documento o mantenerla invisible solo para seguridad."
 title = "Añadir firmas"
 
@@ -3003,14 +3003,14 @@ chartAriaLabel = "Uso de créditos: incluidos {{includedUsed}} de {{includedTota
 copyKeyAriaLabel = "Copiar clave API"
 creditsRemaining = "Créditos Restantes"
 description = "Tu clave API para acceder al conjunto de herramientas PDF de Stirling. Cópiala en tu proyecto o actualízala para generar una nueva."
-docsDescription = "Más información sobre cómo integrar con Stirling PDF:"
+docsDescription = "Más información sobre cómo integrar con Total PDF:"
 docsLink = "Documentación de la API"
 docsTitle = "Documentación de la API"
 generateError = "No pudimos generar tu clave API."
 goToAccount = "Ir a Cuenta"
 guestInfo = "Los usuarios invitados no reciben claves API. Crea una cuenta para obtener una clave API que puedas usar en tus aplicaciones."
 includedCredits = "Créditos incluidos"
-intro = "Usa tu clave de API para acceder de forma programática a las capacidades de procesamiento de Stirling PDF."
+intro = "Usa tu clave de API para acceder de forma programática a las capacidades de procesamiento de Total PDF."
 label = "Clave API"
 lastApiUse = "Último Uso de API"
 nextReset = "Próximo Restablecimiento"
@@ -3184,7 +3184,7 @@ showPreferencesBtn = "Gestionar preferencias"
 title = "Cómo usamos las cookies"
 
 [cookieBanner.popUp.description]
-1 = "Usamos cookies y otras tecnologías para optimizar el funcionamiento de Stirling PDF, lo que contribuye a mejorar nuestras herramientas y a seguir desarrollando funciones que serán de su interés."
+1 = "Usamos cookies y otras tecnologías para optimizar el funcionamiento de Total PDF, lo que contribuye a mejorar nuestras herramientas y a seguir desarrollando funciones que serán de su interés."
 2 = "Si prefiere no hacerlo, al hacer clic en 'No gracias' se activarán únicamente las cookies esenciales necesarias para que todo funcione correctamente."
 
 [cookieBanner.preferencesModal]
@@ -3197,12 +3197,12 @@ subtitle = "Uso de cookies"
 title = "Centro de Preferencias de Consentimiento"
 
 [cookieBanner.preferencesModal.analytics]
-description = "Estas cookies nos ayudan a entender cómo se están utilizando nuestras herramientas, para que podamos centrarnos en desarrollar las funciones que nuestra comunidad valora más. Tenga la seguridad de que Stirling PDF no puede y nunca podrá rastrear el contenido de los documentos con los que trabaja."
+description = "Estas cookies nos ayudan a entender cómo se están utilizando nuestras herramientas, para que podamos centrarnos en desarrollar las funciones que nuestra comunidad valora más. Tenga la seguridad de que Total PDF no puede y nunca podrá rastrear el contenido de los documentos con los que trabaja."
 title = "Análisis"
 
 [cookieBanner.preferencesModal.description]
-1 = "Stirling PDF utiliza cookies y tecnologías similares para mejorar su experiencia y entender cómo se usan nuestras herramientas. Esto nos ayuda a mejorar el rendimiento, desarrollar las funciones que le interesan y proporcionar soporte continuo a nuestros usuarios."
-2 = "Stirling PDF no puede—y nunca podrá—rastrear ni acceder al contenido de los documentos que utiliza."
+1 = "Total PDF utiliza cookies y tecnologías similares para mejorar su experiencia y entender cómo se usan nuestras herramientas. Esto nos ayuda a mejorar el rendimiento, desarrollar las funciones que le interesan y proporcionar soporte continuo a nuestros usuarios."
+2 = "Total PDF no puede—y nunca podrá—rastrear ni acceder al contenido de los documentos que utiliza."
 3 = "Su privacidad y confianza son el núcleo de lo que hacemos."
 
 [cookieBanner.preferencesModal.necessary]
@@ -3371,7 +3371,7 @@ unexpectedError = "Se produjo un error al procesar el archivo. Inténtalo nuevam
 [defaultApp]
 description = "Puede cambiarlo más tarde en la configuración del sistema."
 dismiss = "Descartar"
-message = "¿Desea establecer Stirling PDF como su editor de PDF predeterminado?"
+message = "¿Desea establecer Total PDF como su editor de PDF predeterminado?"
 notNow = "Ahora no"
 setDefault = "Establecer como predeterminado"
 title = "Establecer como aplicación PDF predeterminada"
@@ -3381,15 +3381,15 @@ message = "No se pudo establecer el gestor de PDF predeterminado"
 title = "Error"
 
 [defaultApp.prompt]
-message = "Haga que Stirling PDF sea su aplicación predeterminada para abrir archivos PDF."
+message = "Haga que Total PDF sea su aplicación predeterminada para abrir archivos PDF."
 title = "Establecer como editor de PDF predeterminado"
 
 [defaultApp.settingsOpened]
-message = "Seleccione Stirling PDF en la configuración del sistema"
+message = "Seleccione Total PDF en la configuración del sistema"
 title = "Configuración abierta"
 
 [defaultApp.success]
-message = "Stirling PDF es ahora su editor de PDF predeterminado"
+message = "Total PDF es ahora su editor de PDF predeterminado"
 title = "Configurada la aplicación predeterminada"
 
 [editTableOfContents]
@@ -3531,9 +3531,9 @@ visitsTooltip = "Visitas: {0} ({1}% del total)"
 
 [enterpriseEdition]
 button = "Actualizar a Pro"
-ssoAdvert = "¿Busca más funciones de administración de usuarios? Consulte Stirling PDF Pro"
+ssoAdvert = "¿Busca más funciones de administración de usuarios? Consulte Total PDF Pro"
 warning = "Esta característica está únicamente disponible para usuarios Pro."
-yamlAdvert = "Stirling PDF Pro admite archivos YAML y otras características SSO."
+yamlAdvert = "Total PDF Pro admite archivos YAML y otras características SSO."
 
 [error]
 _value = "Error"
@@ -4009,7 +4009,7 @@ invisible = "Invisible (solo metadatos)"
 location = "Ubicación:"
 logo = "Logotipo:"
 logoHidden = "Sin logotipo"
-logoShown = "Se muestra el logotipo de Stirling PDF"
+logoShown = "Se muestra el logotipo de Total PDF"
 participantCount = "{{count}} participante(s) firmará(n) en orden"
 participants = "Participantes"
 reason = "Motivo:"
@@ -4061,7 +4061,7 @@ title = "Firma secuencial"
 dismiss = "Descartar banner"
 message = "Cree una cuenta gratuita para guardar su trabajo, acceder a más funciones y apoyar el proyecto."
 signUp = "Registrarse Gratis"
-title = "¡Está usando Stirling PDF como invitado!"
+title = "¡Está usando Total PDF como invitado!"
 
 [home]
 alphabetical = "Alfabético"
@@ -4235,7 +4235,7 @@ tags = "combinar,unir,juntar"
 title = "Unir"
 
 [home.mobile]
-brandAlt = "Logotipo de Stirling PDF"
+brandAlt = "Logotipo de Total PDF"
 openFiles = "Abrir archivos"
 swipeHint = "Desliza a izquierda o derecha para cambiar de vista"
 tools = "Herramientas"
@@ -4275,7 +4275,7 @@ tags = "organizar,reorganizar,reordenar"
 title = "Organizador"
 
 [home.pdfTextEditor]
-desc = "Revise y edite exportaciones JSON de Stirling PDF con edición de texto agrupada y regeneración de PDF"
+desc = "Revise y edite exportaciones JSON de Total PDF con edición de texto agrupada y regeneración de PDF"
 tags = "editar texto,modificar texto,cambiar texto,editar contenido,actualizar texto,reescribir,corregir,modificar,revisar,editor de texto,editor de contenido"
 title = "Editor de texto PDF"
 
@@ -4481,14 +4481,14 @@ passwordTooShort = "La contraseña debe tener al menos 6 caracteres"
 signIn = "Iniciar sesión"
 validating = "Validando invitación..."
 validationError = "No se pudo validar el enlace de invitación"
-welcome = "Bienvenido a Stirling PDF"
+welcome = "Bienvenido a Total PDF"
 welcomeSubtitle = "Completa la configuración de tu cuenta para empezar"
 welcomeTitle = "¡Has sido invitado!"
 
 [landing]
 addFiles = "Agregar Archivos"
 heroSubtitle = "Suelte o añada un PDF existente para empezar."
-heroTitle = "Stirling PDF"
+heroTitle = "Total PDF"
 mobileUpload = "Subir desde el móvil"
 openFromComputer = "Abrir desde el ordenador"
 uploadFromComputer = "Cargar desde el ordenador"
@@ -4590,7 +4590,7 @@ signinTitle = "Por favor, inicia sesión"
 signInWith = "Iniciar sesión con"
 signOut = "Cerrar Sesión"
 ssoSignIn = "Iniciar sesión a través del inicio de sesión único"
-subtitle = "Vuelve a iniciar sesión en Stirling PDF"
+subtitle = "Vuelve a iniciar sesión en Total PDF"
 title = "Iniciar sesión"
 toManySessions = "Tienes demasiadas sesiones activas"
 unexpectedError = "Error inesperado: {{message}}"
@@ -4609,7 +4609,7 @@ subtitle = "Con más de una docena de herramientas para ocultar, firmar, leer y 
 title = "Edite PDFs para mostrar/proteger la información que quiera"
 
 [login.slides.overview]
-alt = "Vista general de Stirling PDF"
+alt = "Vista general de Total PDF"
 subtitle = "Una suite en la nube centrada en la privacidad para PDF que le permite convertir, firmar, ocultar y gestionar documentos, junto con 50+ herramientas potentes."
 title = "Su solución integral para todas sus necesidades de PDF."
 
@@ -4775,7 +4775,7 @@ message = "La autenticación no se realizó correctamente. Puede cerrar esta ven
 title = "Autenticación fallida"
 
 [oauth.success]
-message = "Puede cerrar esta ventana y volver a Stirling PDF."
+message = "Puede cerrar esta ventana y volver a Total PDF."
 title = "Autenticación correcta"
 
 [ocr]
@@ -4899,7 +4899,7 @@ runButton = "Una vez configurada la herramienta, este botón te permite ejecutar
 selectControls = "El <strong>panel derecho</strong> contiene botones para seleccionar/deseleccionar rápidamente todos tus PDFs activos, junto con botones para cambiar el tema o el idioma de la aplicación."
 selectCropTool = "Seleccionemos la herramienta <strong>Recortar</strong> para mostrar cómo usar una de las herramientas."
 startTour = "Iniciar recorrido"
-startTourDescription = "Realiza un recorrido guiado por las funciones clave de Stirling PDF"
+startTourDescription = "Realiza un recorrido guiado por las funciones clave de Total PDF"
 toolInterface = "Esta es la interfaz de la herramienta <strong>Recortar</strong>. Como puedes ver, no hay mucho porque aún no hemos añadido ningún archivo PDF con el que trabajar."
 viewer = "El <strong>Visor</strong> te permite leer y anotar tus PDFs."
 viewSwitcher = "Usa estos controles para elegir cómo quieres ver tus PDFs."
@@ -4922,7 +4922,7 @@ titleWithOs = "Descargar para {{osLabel}}"
 [onboarding.freeTrial]
 afterTrialWithoutPayment = "Tras finalizar tu prueba, continuarás en nuestro plan gratuito. Añade un método de pago para mantener el acceso Pro."
 afterTrialWithPayment = "Tu suscripción Pro comenzará automáticamente cuando finalice la prueba."
-body = "Tienes acceso completo a las funciones de Stirling PDF Pro durante tu prueba. Disfruta de conversiones ilimitadas, tamaños de archivo mayores y procesamiento prioritario."
+body = "Tienes acceso completo a las funciones de Total PDF Pro durante tu prueba. Disfruta de conversiones ilimitadas, tamaños de archivo mayores y procesamiento prioritario."
 daysRemaining = "{{days}} días restantes"
 daysRemainingSingular = "{{days}} día restante"
 title = "Tu Prueba Pro de 30 Días"
@@ -4948,7 +4948,7 @@ skip = "Omitir por ahora"
 upgrade = "Actualizar ahora →"
 
 [onboarding.tourOverview]
-body = "Stirling PDF V2 incluye decenas de herramientas y un diseño renovado. Haz un recorrido rápido para ver qué cambió y dónde encontrar las funciones que necesitas."
+body = "Total PDF V2 incluye decenas de herramientas y un diseño renovado. Haz un recorrido rápido para ver qué cambió y dónde encontrar las funciones que necesitas."
 title = "Resumen del recorrido"
 
 [onboarding.welcomeModal]
@@ -4957,10 +4957,10 @@ dontShowAgain = "No mostrar de nuevo"
 helpHint = "Siempre puedes acceder a este recorrido desde el botón <strong>Ayuda</strong> en la parte inferior izquierda."
 maybeLater = "Quizás más tarde"
 startTour = "Iniciar recorrido"
-title = "¡Bienvenido a Stirling PDF!"
+title = "¡Bienvenido a Total PDF!"
 
 [onboarding.welcomeSlide]
-body = "Stirling PDF ya está listo para equipos de todos los tamaños. Esta actualización incluye un nuevo diseño, potentes capacidades de administración y nuestra función más solicitada: <strong>Editar texto</strong>."
+body = "Total PDF ya está listo para equipos de todos los tamaños. Esta actualización incluye un nuevo diseño, potentes capacidades de administración y nuestra función más solicitada: <strong>Editar texto</strong>."
 title = "Bienvenido a Stirling"
 
 [onboarding.whatsNew]
@@ -5782,7 +5782,7 @@ included = "Incluido"
 name = "Gratis"
 
 [plan.licenseWarning]
-body = "Tiene {{total}} usuarios, pero el nivel gratuito solo admite {{limit}} por servidor. Actualice para que Stirling PDF siga funcionando sin problemas."
+body = "Tiene {{total}} usuarios, pero el nivel gratuito solo admite {{limit}} por servidor. Actualice para que Total PDF siga funcionando sin problemas."
 cta = "Ver planes"
 overLimit = "más de {{limit}}"
 title = "Alcanzado el límite gratuito en autoalojado"
@@ -6723,8 +6723,8 @@ hideTools = "Ocultar herramientas no disponibles ▴"
 messageNoFallback = "Las herramientas no estarán disponibles hasta que tu servidor vuelva a estar en línea."
 messageWithFallback = "Alguna herramientas requieren conexión con el servidor."
 showTools = "Ver herramientas no disponibles ▾"
-title = "Tu servidor de Stirling-PDF está inaccesible"
-toolNotAvailableLocally = "Tu servidor Stirling-PDF está sin conexión y \"{{endpoint}}\" no está disponible en el backend local."
+title = "Tu servidor de Total-PDF está inaccesible"
+toolNotAvailableLocally = "Tu servidor Total-PDF está sin conexión y \"{{endpoint}}\" no está disponible en el backend local."
 
 [session]
 expired = "Su sesión ha caducado. Actualice la página e inténtelo de nuevo."
@@ -6796,7 +6796,7 @@ autoUnzipFileLimitDescription = "Número máximo de archivos a extraer de un ZIP
 autoUnzipFileLimitTooltip = "Solo descomprime si el ZIP contiene esta cantidad de archivos o menos. Establécelo más alto para extraer ZIPs más grandes."
 autoUnzipTooltip = "Extrae automáticamente archivos ZIP devueltos por operaciones de la API. Desactívalo para mantener los ZIP intactos. Esto no afecta a los flujos de trabajo de automatización."
 defaultPdfEditor = "Editor de PDF predeterminado"
-defaultPdfEditorActive = "Stirling PDF es su editor de PDF predeterminado"
+defaultPdfEditorActive = "Total PDF es su editor de PDF predeterminado"
 defaultPdfEditorChecking = "Comprobando..."
 defaultPdfEditorInactive = "Otra aplicación está establecida como predeterminada"
 defaultPdfEditorSet = "Ya es predeterminado"
@@ -7013,13 +7013,13 @@ teams = "Equipos"
 title = "Espacio de trabajo"
 
 [setup]
-description = "Empiece eligiendo cómo quiere usar Stirling PDF"
-welcome = "Bienvenido a Stirling PDF"
+description = "Empiece eligiendo cómo quiere usar Total PDF"
+welcome = "Bienvenido a Total PDF"
 
 [setup.login]
 connectingTo = "Conectando a:"
 hideInstructions = "Ocultar instrucciones"
-instructions = "Para habilitar el inicio de sesión en su servidor de Stirling PDF:"
+instructions = "Para habilitar el inicio de sesión en su servidor de Total PDF:"
 instructionsEnvVar = "Establezca la variable de entorno:"
 instructionsOrYml = "O en settings.yml:"
 instructionsRestart = "Luego reinicie su servidor para que los cambios surtan efecto."
@@ -7057,7 +7057,7 @@ description = "Inicie sesión con su cuenta de Stirling"
 title = "Stirling Cloud"
 
 [setup.mode.selfhosted]
-description = "Conéctese a su propio servidor de Stirling PDF"
+description = "Conéctese a su propio servidor de Total PDF"
 title = "Servidor autoalojado"
 
 [setup.saas]
@@ -7101,11 +7101,11 @@ step3 = "Reinicie el servidor"
 title = "Inicio de sesión no habilitado"
 
 [setup.server.type]
-saas = "Stirling PDF SaaS"
+saas = "Total PDF SaaS"
 selfhosted = "Servidor autoalojado"
 
 [setup.server.url]
-description = "Introduzca la URL completa de su servidor autoalojado de Stirling PDF"
+description = "Introduzca la URL completa de su servidor autoalojado de Total PDF"
 label = "URL del servidor"
 
 [setup.step1]
@@ -7330,7 +7330,7 @@ passwordsDoNotMatch = "Las contraseñas no coinciden"
 passwordTooShort = "La contraseña debe tener al menos 6 caracteres"
 pleaseFillAllFields = "Por favor, complete todos los campos"
 signUp = "Registrarse"
-subtitle = "Únase a Stirling PDF para comenzar"
+subtitle = "Únase a Total PDF para comenzar"
 title = "Crear una cuenta"
 unexpectedError = "Error inesperado: {{message}}"
 useEmailInstead = "Usar correo electrónico en su lugar"
@@ -7617,7 +7617,7 @@ download = "Descargar"
 downloaded = "Descargado"
 downloadFailed = "No se puede descargar este archivo."
 downloadsCount = "Descargas: {{count}}"
-emailWarningBody = "Parece una dirección de correo electrónico. Si esta persona no es ya usuaria de Stirling PDF, no podrá acceder al archivo."
+emailWarningBody = "Parece una dirección de correo electrónico. Si esta persona no es ya usuaria de Total PDF, no podrá acceder al archivo."
 emailWarningConfirm = "Compartir de todos modos"
 emailWarningTitle = "Dirección de correo electrónico"
 errorTitle = "Error al compartir"
@@ -7647,7 +7647,7 @@ manageTitle = "Gestionar uso compartido"
 noActivity = "Aún no hay actividad."
 noLinks = "Aún no hay enlaces activos para compartir."
 noSharedUsers = "Aún no hay usuarios con acceso."
-openInApp = "Abrir en Stirling PDF"
+openInApp = "Abrir en Total PDF"
 ownerLabel = "Propietario"
 ownerOnly = "Solo el propietario puede gestionar el uso compartido."
 ownerUnknown = "Desconocido"
@@ -7708,28 +7708,28 @@ trialing = "Prueba"
 
 [survey]
 button = "Realizar encuesta"
-changes = "¡Stirling-PDF ha cambiado desde la última encuesta! Para obtener más información, revise nuestro artículo de blog aquí:"
+changes = "¡Total-PDF ha cambiado desde la última encuesta! Para obtener más información, revise nuestro artículo de blog aquí:"
 changes2 = "Con estos cambios estamos obteniendo apoyo y financiamiento empresarial"
-description = "Stirling-PDF no tiene seguimiento, por lo que queremos escuchar a nuestros usuarios para mejorar Stirling-PDF."
+description = "Total-PDF no tiene seguimiento, por lo que queremos escuchar a nuestros usuarios para mejorar Total-PDF."
 disabled = "(La ventana emergente de la encuesta se desactivará en las siguientes actualizaciones, pero estará disponible al pie de la página.)"
 dontShowAgain = "No volver a mostrar"
 nav = "Encuesta"
 please = "¡Considere realizar nuestra encuesta!"
-title = "Encuesta Stirling-PDF"
+title = "Encuesta Total-PDF"
 
 [survey.meeting]
-1 = "Si está utilizando Stirling-PDF en el trabajo, nos encantaría hablar con usted. Ofrecemos sesiones de soporte técnico a cambio de una sesión de descubrimiento de usuario de 15 minutos."
+1 = "Si está utilizando Total-PDF en el trabajo, nos encantaría hablar con usted. Ofrecemos sesiones de soporte técnico a cambio de una sesión de descubrimiento de usuario de 15 minutos."
 2 = "Es una oportunidad para:"
 3 = "Obtenga ayuda con la implementación, integraciones o solución de problemas"
 4 = "Brinde comentarios directos sobre el rendimiento, casos extremos y carencia de funciones"
-5 = "Ayúdenos a mejorar Stirling-PDF para su uso en entornos empresariales reales"
+5 = "Ayúdenos a mejorar Total-PDF para su uso en entornos empresariales reales"
 6 = "Si está interesado, puede agendar una reunión con nuestro equipo directamente. (Sólo en inglés)"
-7 = "¡Esperamos conocer sus casos de uso y mejorar aún más Stirling-PDF!"
+7 = "¡Esperamos conocer sus casos de uso y mejorar aún más Total-PDF!"
 button = "Reservar reunión"
 notInterested = "¿No es una empresa o no está interesado en una reunión?"
 
 [swagger]
-desc = "Ver y probar los endpoints de la API de Stirling PDF"
+desc = "Ver y probar los endpoints de la API de Total PDF"
 header = "Documentación de API"
 tags = "api,documentación,swagger,endpoints,desarrollo"
 title = "Documentación de API"
@@ -7873,7 +7873,7 @@ favorites = "Favoritos"
 heading = "Todas las herramientas (vista de pantalla completa)"
 noResults = "Intenta ajustar tu búsqueda o activar/desactivar las descripciones para encontrar lo que necesitas."
 recommended = "Recomendado"
-selfHostedOffline = "Requiere tu servidor Stirling-PDF (actualmente sin conexión):"
+selfHostedOffline = "Requiere tu servidor Total-PDF (actualmente sin conexión):"
 showDetails = "Mostrar detalles"
 unavailable = "Desactivado por el administrador del servidor:"
 unavailableDependency = "No disponible - falta la herramienta requerida en el servidor:"
@@ -7882,7 +7882,7 @@ unfavorite = "Quitar de favoritos"
 [toolPanel.modePrompt]
 chooseFullscreen = "Usar modo pantalla completa"
 chooseSidebar = "Usar modo barra lateral"
-description = "Previsualiza ambos diseños y decide cómo quieres explorar las herramientas de Stirling PDF."
+description = "Previsualiza ambos diseños y decide cómo quieres explorar las herramientas de Total PDF."
 dismiss = "Quizás más tarde"
 fullscreenDescription = "Explora todas las herramientas en un catálogo que cubre el espacio de trabajo hasta que elijas una."
 fullscreenTitle = "Modo pantalla completa - (heredado)"
@@ -7976,7 +7976,7 @@ attentionBody = "Su administrador debe iniciar sesión para ver más informació
 attentionBodyAdmin = "Revise los requisitos de licencia para mantener este servidor conforme."
 attentionTitle = "Este servidor necesita atención del administrador"
 dismiss = "Descartar banner"
-message = "Aproveche al máximo Stirling PDF con usuarios ilimitados y funciones avanzadas"
+message = "Aproveche al máximo Total PDF con usuarios ilimitados y funciones avanzadas"
 seeInfo = "Ver información"
 title = "Actualice al plan Server"
 upgradeButton = "Actualizar ahora"
@@ -8098,7 +8098,7 @@ continued = "Continuación"
 downloads = "Descargas"
 entryLabel = "Resumen de firma"
 filesEvaluated = "{{count}} archivos evaluados"
-footer = "Validado mediante Stirling PDF"
+footer = "Validado mediante Total PDF"
 generatedAt = "Generado"
 noPdf = "El informe PDF estará disponible tras una validación correcta."
 page = "Página"

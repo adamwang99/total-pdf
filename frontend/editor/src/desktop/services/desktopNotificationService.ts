@@ -7,7 +7,7 @@ import {
 } from "@tauri-apps/plugin-notification";
 import i18n from "@app/i18n";
 
-const APP_TITLE = "Stirling-PDF";
+const APP_TITLE = "Total-PDF";
 
 async function shouldShowBackgroundNotification(): Promise<boolean> {
   if (!isTauri()) {

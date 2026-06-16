@@ -25,7 +25,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
                 System configuration management for deployment optimization and operational control.
 
                 This endpoint group provides system configuration capabilities for organizations
-                deploying and operating Stirling PDF in various environments.
+                deploying and operating Total PDF in various environments.
 
                 Common use cases:
                 • Environment-specific deployment and performance tuning for varying workloads

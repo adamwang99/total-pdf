@@ -1,7 +1,7 @@
 import { defineConfig, devices } from "@playwright/test";
 
 /**
- * Stirling-PDF E2E Test Configuration
+ * Total-PDF E2E Test Configuration
  *
  * The suite is split into two projects:
  *   - `stubbed` — backend-free specs that mock `/api/v1/*` via `page.route()`.

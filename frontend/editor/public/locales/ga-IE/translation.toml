@@ -878,11 +878,11 @@ description = "Cumraigh gnéithe roghnacha agus feidhmiúlacht."
 title = "Gnéithe"
 
 [admin.settings.features.serverCertificate]
-description = "Cumraigh giniúint deimhnithe ar thaobh an fhreastalaí don fheidhmiúlacht \"Sínigh le Stirling-PDF\""
+description = "Cumraigh giniúint deimhnithe ar thaobh an fhreastalaí don fheidhmiúlacht \"Sínigh le Total-PDF\""
 label = "Deimhniú Freastalaí"
 
 [admin.settings.features.serverCertificate.enabled]
-description = "Cumasaigh deimhniú taobh an fhreastalaí don rogha \"Sínigh le Stirling-PDF\""
+description = "Cumasaigh deimhniú taobh an fhreastalaí don rogha \"Sínigh le Total-PDF\""
 label = "Cumasaigh Deimhniú Freastalaí"
 
 [admin.settings.features.serverCertificate.organizationName]
@@ -1030,7 +1030,7 @@ description = "URL nó ainm comhaid do bheartas fianán"
 label = "Beartas Fianán"
 
 [admin.settings.legal.disclaimer]
-message = "Trí na doiciméid dhlíthiúla seo a shaincheapadh, glacann tú freagracht iomlán as comhlíonadh a chinntiú le gach dlí agus rialachán i bhfeidhm, lena n‑áirítear ach gan a bheith teoranta do GDPR agus ceanglais chosanta sonraí AE eile. Ná modhnaigh na socruithe seo ach amháin má: (1) tá cás pearsanta/príobháideach á rith agat, (2) tá tú lasmuigh de dhlínse an AE agus tuigeann tú do chuid dualgas dlíthiúil áitiúil, nó (3) tá comhairle dhlí chuí faighte agat agus glacann tú leat freagracht iomlán as sonraí úsáideoirí agus comhlíonadh dlíthiúil. Ní ghlacann Stirling-PDF ná a fhorbróirí aon dliteanas as do chuid dualgas dlíthiúil."
+message = "Trí na doiciméid dhlíthiúla seo a shaincheapadh, glacann tú freagracht iomlán as comhlíonadh a chinntiú le gach dlí agus rialachán i bhfeidhm, lena n‑áirítear ach gan a bheith teoranta do GDPR agus ceanglais chosanta sonraí AE eile. Ná modhnaigh na socruithe seo ach amháin má: (1) tá cás pearsanta/príobháideach á rith agat, (2) tá tú lasmuigh de dhlínse an AE agus tuigeann tú do chuid dualgas dlíthiúil áitiúil, nó (3) tá comhairle dhlí chuí faighte agat agus glacann tú leat freagracht iomlán as sonraí úsáideoirí agus comhlíonadh dlíthiúil. Ní ghlacann Total-PDF ná a fhorbróirí aon dliteanas as do chuid dualgas dlíthiúil."
 title = "Rabhadh Freagrachta Dlí"
 
 [admin.settings.legal.impressum]
@@ -1402,7 +1402,7 @@ description = "Nuair a chumasaítear é, ní féidir ach leis na IDanna úsáide
 label = "Ceadaigh IDanna Úsáideora Sonracha"
 
 [admin.settings.telegram.enabled]
-description = "Ceadaigh d’úsáideoirí idirghníomhú le Stirling PDF tríd do bot Telegram cumraithe."
+description = "Ceadaigh d’úsáideoirí idirghníomhú le Total PDF tríd do bot Telegram cumraithe."
 label = "Cumasaigh Bot Telegram"
 
 [admin.settings.telegram.feedback]
@@ -1479,7 +1479,7 @@ settingsOverview = "Seo é an <strong>Painéal Socruithe</strong>. Tá socruithe
 systemCustomization = "Tá bealaí fairsinge againn chun an comhéadan úsáideora a shaincheapadh: Ligeann <strong>Socruithe Córais</strong> duit ainm agus teangacha an aip a athrú, ceadaíonn <strong>Gnéithe</strong> bainistíocht teastais freastalaí, agus ligeann <strong>Deireadhphointí</strong> duit uirlisí sonracha a chumasú nó a dhíchumasú do d'úsáideoirí."
 teamsAndUsers = "Bainistigh <strong>Foirne</strong> agus úsáideoirí aonair anseo. Is féidir leat úsáideoirí nua a thabhairt isteach trí r-phost, naisc inroinnte, nó cuntais shaincheaptha a chruthú dóibh tú féin."
 welcome = "Fáilte go dtí an <strong>Turas Riaracháin</strong>! Déanaimis iniúchadh ar na gnéithe agus na socruithe cumhachtacha fiontraíochta atá ar fáil do riarthóirí córais."
-wrapUp = "Sin é an turas riaracháin! Chonaic tú na gnéithe fiontraíochta a dhéanann Stirling PDF ina réiteach cumhachtach, saincheaptha d’eagraíochtaí. Is féidir an turas seo a rochtain am ar bith ón roghchlár <strong>Cabhair</strong>."
+wrapUp = "Sin é an turas riaracháin! Chonaic tú na gnéithe fiontraíochta a dhéanann Total PDF ina réiteach cumhachtach, saincheaptha d’eagraíochtaí. Is féidir an turas seo a rochtain am ar bith ón roghchlár <strong>Cabhair</strong>."
 
 [adminUserSettings]
 actions = "Gníomhartha"
@@ -1517,7 +1517,7 @@ disable = "Díchumasaigh anailísíocht"
 enable = "Cumasaigh anailísíocht"
 learnMore = "Tuilleadh eolais"
 paragraph1 = "Tá rogha an diúltaithe ag PDF Stirling chun cabhrú linn an táirge a fheabhsú. Ní rianaimid aon fhaisnéis phearsanta nó ábhar comhaid."
-paragraph2 = "Smaoinigh le do thoil ar anailísíocht a chumasú chun cabhrú le Stirling-PDF fás agus chun ligean dúinn ár n-úsáideoirí a thuiscint níos fearr."
+paragraph2 = "Smaoinigh le do thoil ar anailísíocht a chumasú chun cabhrú le Total-PDF fás agus chun ligean dúinn ár n-úsáideoirí a thuiscint níos fearr."
 privacyAssurance = "Ní dhéanaimid rianú ar aon fhaisnéis phearsanta ná ar ábhar do chuid comhad."
 settings = "Is féidir leat na socruithe don anailísíocht a athrú sa chomhad config/settings.yml"
 title = "An bhfuil fonn ort PDF Stirling a fheabhsú?"
@@ -1923,7 +1923,7 @@ tags = "pdf, scoilt, doiciméad, eagraíocht"
 description = "Priontáil, Ionsáigh, Scan, uaslódáil, agus lig dúinn do dhoiciméid a scaradh go huathoibríoch. Níl gá le sórtáil obair láimhe."
 dividerDownload2 = "Íoslódáil 'Auto Splitter Divider (le treoracha).pdf'"
 duplexMode = "Mód Duplex (scanadh tosaigh agus cúil)"
-formPrompt = "Cuir PDF isteach ina bhfuil roinnteoirí Leathanaigh Stirling-PDF:"
+formPrompt = "Cuir PDF isteach ina bhfuil roinnteoirí Leathanaigh Total-PDF:"
 header = "Auto Scoilt PDF"
 submit = "Cuir isteach"
 tags = "QR-bhunaithe, ar leith, scanadh-deighleog, eagrú"
@@ -1932,7 +1932,7 @@ title = "Auto Scoilt PDF"
 [autoSplitPDF.selectText]
 1 = "Priontáil roinnt bileoga roinnteoirí thíos (tá dubh agus bán go breá)."
 2 = "Scan do dhoiciméid go léir ag an am céanna tríd an leathán roinnteora a chur isteach eatarthu."
-3 = "Uaslódáil an comhad PDF mór scanta amháin agus lig do Stirling PDF an chuid eile a láimhseáil."
+3 = "Uaslódáil an comhad PDF mór scanta amháin agus lig do Total PDF an chuid eile a láimhseáil."
 4 = "Déantar leathanaigh roinnteoirí a bhrath agus a bhaint go huathoibríoch, rud a ráthaíonn doiciméad deiridh néata."
 
 [backendHealth]
@@ -2491,7 +2491,7 @@ bullet1 = "Tacaíonn sé le formáidí PEM, PKCS12, JKS agus teastas an fhreasta
 bullet2 = "Rogha an síniú a thaispeáint nó a cheilt ar an PDF"
 bullet3 = "Cuir cúis, suíomh, agus ainm an tsíní leis"
 bullet4 = "Roghnaigh cén leathanach a gcuirfear sínithe infheicthe air"
-bullet5 = "Úsáid teastas an fhreastalaí don rogha shimplí 'Sign with Stirling-PDF'"
+bullet5 = "Úsáid teastas an fhreastalaí don rogha shimplí 'Sign with Total-PDF'"
 text = "Chun PDF a shíniú, teastaíonn teastas digiteach uait (mar PEM, PKCS12, nó JKS). Is féidir leat an síniú a dhéanamh infheicthe ar an doiciméad nó é a choinneáil dofheicthe ar mhaithe le slándáil amháin."
 title = "Sínithe a Chur Leis"
 
@@ -3015,14 +3015,14 @@ chartAriaLabel = "Úsáid creidmheasanna: san áireamh {{includedUsed}} as {{inc
 copyKeyAriaLabel = "Cóipeáil eochair API"
 creditsRemaining = "Creidiúintí Fágtha"
 description = "Do eochair API chun rochtain a fháil ar shraith uirlisí PDF Stirling. Cóipeáil chuig do thionscadal í nó déan athnuachan chun ceann nua a ghiniúint."
-docsDescription = "Tuilleadh eolais faoi chomhtháthú le Stirling PDF:"
+docsDescription = "Tuilleadh eolais faoi chomhtháthú le Total PDF:"
 docsLink = "Doiciméadú API"
 docsTitle = "Doiciméadú API"
 generateError = "Níor éirigh linn d’eochair API a ghiniúint."
 goToAccount = "Téigh chuig an gCuntas"
 guestInfo = "Ní fhaigheann úsáideoirí aíochta eochracha API. Cruthaigh cuntas chun eochair API a fháil is féidir leat a úsáid i d’fheidhmchláir."
 includedCredits = "Creidmheasanna san áireamh"
-intro = "Úsáid do eochair API chun rochtain ríomhchláraithe a fháil ar chumais phróiseála Stirling PDF."
+intro = "Úsáid do eochair API chun rochtain ríomhchláraithe a fháil ar chumais phróiseála Total PDF."
 label = "Eochair API"
 lastApiUse = "Úsáid API is déanaí"
 nextReset = "An chéad athshocrú eile"
@@ -3196,7 +3196,7 @@ showPreferencesBtn = "Bainistigh sainroghanna"
 title = "Conas a Úsáidimid Fianáin"
 
 [cookieBanner.popUp.description]
-1 = "Úsáidimid fianáin agus teicneolaíochtaí eile chun Stirling PDF a dhéanamh níos fearr duit—ag cabhrú linn ár n-uirlisí a fheabhsú agus gnéithe a thógáil a thaitneoidh leat."
+1 = "Úsáidimid fianáin agus teicneolaíochtaí eile chun Total PDF a dhéanamh níos fearr duit—ag cabhrú linn ár n-uirlisí a fheabhsú agus gnéithe a thógáil a thaitneoidh leat."
 2 = "Mura mian leat, ní chuirfear ar chumas ach na fianáin riachtanacha atá riachtanach chun go n-oibreoidh rudaí go réidh má chliceálann tú ar 'Níl Go raibh maith agat'."
 
 [cookieBanner.preferencesModal]
@@ -3209,12 +3209,12 @@ subtitle = "Úsáid Fianáin"
 title = "Lárionad Sainroghanna Toilithe"
 
 [cookieBanner.preferencesModal.analytics]
-description = "Cuidíonn na fianáin seo linn a thuiscint conas a úsáidtear ár n-uirlisí, ionas gur féidir linn díriú ar na gnéithe is tábhachtaí dár bpobal a thógáil. Bí cinnte—ní féidir le Stirling PDF agus ní dhéanfaidh sé riamh ábhar na ndoiciméad a n-oibríonn tú leo a rianú."
+description = "Cuidíonn na fianáin seo linn a thuiscint conas a úsáidtear ár n-uirlisí, ionas gur féidir linn díriú ar na gnéithe is tábhachtaí dár bpobal a thógáil. Bí cinnte—ní féidir le Total PDF agus ní dhéanfaidh sé riamh ábhar na ndoiciméad a n-oibríonn tú leo a rianú."
 title = "Anailísíocht"
 
 [cookieBanner.preferencesModal.description]
-1 = "Úsáideann Stirling PDF fianáin agus teicneolaíochtaí cosúil leo chun do thaithí a fheabhsú agus chun tuiscint a fháil ar conas a úsáidtear ár n-uirlisí. Cabhraíonn sé seo linn feidhmíocht a fheabhsú, na gnéithe a bhfuil cúram agat fúthu a fhorbairt, agus tacaíocht leanúnach a sholáthar dár n-úsáideoirí."
-2 = "Ní féidir le Stirling PDF—agus ní dhéanfaidh sé riamh—ábhar na ndoiciméad a úsáideann tú a rianú ná a rochtain."
+1 = "Úsáideann Total PDF fianáin agus teicneolaíochtaí cosúil leo chun do thaithí a fheabhsú agus chun tuiscint a fháil ar conas a úsáidtear ár n-uirlisí. Cabhraíonn sé seo linn feidhmíocht a fheabhsú, na gnéithe a bhfuil cúram agat fúthu a fhorbairt, agus tacaíocht leanúnach a sholáthar dár n-úsáideoirí."
+2 = "Ní féidir le Total PDF—agus ní dhéanfaidh sé riamh—ábhar na ndoiciméad a úsáideann tú a rianú ná a rochtain."
 3 = "Tá do phríobháideachas agus do mhuinín i gcroílár ár gcuid oibre."
 
 [cookieBanner.preferencesModal.necessary]
@@ -3383,7 +3383,7 @@ unexpectedError = "Tharla earráid agus an comhad á phróiseáil. Bain triail e
 [defaultApp]
 description = "Is féidir leat é seo a athrú níos déanaí i socruithe do chórais."
 dismiss = "Dún"
-message = "Ar mhaith leat Stirling PDF a shocrú mar d’eagarthóir réamhshocraithe PDF?"
+message = "Ar mhaith leat Total PDF a shocrú mar d’eagarthóir réamhshocraithe PDF?"
 notNow = "Ní Anois"
 setDefault = "Socraigh mar Réamhshocraithe"
 title = "Socraigh mar Aip PDF Réamhshocraithe"
@@ -3393,15 +3393,15 @@ message = "Theip ar shocrú láimhseálaí PDF réamhshocraithe"
 title = "Earráid"
 
 [defaultApp.prompt]
-message = "Déan Stirling PDF mar d’fheidhmchlár réamhshocraithe chun comhaid PDF a oscailt."
+message = "Déan Total PDF mar d’fheidhmchlár réamhshocraithe chun comhaid PDF a oscailt."
 title = "Socraigh mar Eagarthóir PDF Réamhshocraithe"
 
 [defaultApp.settingsOpened]
-message = "Roghnaigh Stirling PDF i socruithe do chórais"
+message = "Roghnaigh Total PDF i socruithe do chórais"
 title = "Socruithe Oscailte"
 
 [defaultApp.success]
-message = "Is é Stirling PDF d’eagarthóir PDF réamhshocraithe anois"
+message = "Is é Total PDF d’eagarthóir PDF réamhshocraithe anois"
 title = "Aip Réamhshocraithe Socraithe"
 
 [editTableOfContents]
@@ -3543,9 +3543,9 @@ visitsTooltip = "Cuairteanna: {0} ({1}% den iomlán)"
 
 [enterpriseEdition]
 button = "Uasghrádú go Pro"
-ssoAdvert = "Tá tuilleadh gnéithe bainistíochta úsáideoirí á lorg? Seiceáil Stirling PDF Pro"
+ssoAdvert = "Tá tuilleadh gnéithe bainistíochta úsáideoirí á lorg? Seiceáil Total PDF Pro"
 warning = "Níl an ghné seo ar fáil ach d'úsáideoirí Pro."
-yamlAdvert = "Tacaíonn Stirling PDF Pro le comhaid cumraíochta YAML agus gnéithe SSO eile."
+yamlAdvert = "Tacaíonn Total PDF Pro le comhaid cumraíochta YAML agus gnéithe SSO eile."
 
 [error]
 _value = "Earráid"
@@ -4021,7 +4021,7 @@ invisible = "Dofheicthe (meiteashonraí amháin)"
 location = "Suíomh:"
 logo = "Lógó:"
 logoHidden = "Gan lógó"
-logoShown = "Lógó Stirling PDF le feiceáil"
+logoShown = "Lógó Total PDF le feiceáil"
 participantCount = "Sínneoidh {{count}} rannpháirtí in ord"
 participants = "Rannpháirtithe"
 reason = "Fáth:"
@@ -4073,7 +4073,7 @@ title = "Sínithe Seicheamhach"
 dismiss = "Dún an meirge"
 message = "Cruthaigh cuntas saor in aisce chun do chuid oibre a shábháil, rochtain a fháil ar níos mó gnéithe, agus tacú leis an tionscadal."
 signUp = "Cláraigh saor in aisce"
-title = "Tá tú ag úsáid Stirling PDF mar aoi!"
+title = "Tá tú ag úsáid Total PDF mar aoi!"
 
 [home]
 alphabetical = "Aibítreach"
@@ -4247,7 +4247,7 @@ tags = "cumaisc,ceangail,aontaigh"
 title = "Cumaisc"
 
 [home.mobile]
-brandAlt = "Lógó Stirling PDF"
+brandAlt = "Lógó Total PDF"
 openFiles = "Oscail comhaid"
 swipeHint = "Svaidhpeáil ar chlé nó ar dheis chun radhairc a athrú"
 tools = "Uirlisí"
@@ -4493,14 +4493,14 @@ passwordTooShort = "Caithfidh an focal faire a bheith ar a laghad 6 charachtar"
 signIn = "Sínigh isteach"
 validating = "Cuireadh á bhailíochtú..."
 validationError = "Theip ar bhailíochtú an naisc chuireadh"
-welcome = "Fáilte go Stirling PDF"
+welcome = "Fáilte go Total PDF"
 welcomeSubtitle = "Críochnaigh socrú do chuntais chun tosú"
 welcomeTitle = "Tugadh cuireadh duit!"
 
 [landing]
 addFiles = "Cuir Comhaid Leis"
 heroSubtitle = "Scaoil isteach nó cuir PDF atá ann cheana leis chun tosú."
-heroTitle = "Stirling PDF"
+heroTitle = "Total PDF"
 mobileUpload = "Uaslódáil ó Shoghluaiste"
 openFromComputer = "Oscail ón ríomhaire"
 uploadFromComputer = "Uaslódáil ón ríomhaire"
@@ -4602,7 +4602,7 @@ signinTitle = "Sínigh isteach le do thoil"
 signInWith = "Logáil isteach le"
 signOut = "Logáil Amach"
 ssoSignIn = "Logáil isteach trí Chlárú Aonair"
-subtitle = "Sínigh isteach arís i Stirling PDF"
+subtitle = "Sínigh isteach arís i Total PDF"
 title = "Sínigh isteach"
 toManySessions = "Tá an iomarca seisiún gníomhach agat"
 unexpectedError = "Earráid gan choinne: {{message}}"
@@ -4621,7 +4621,7 @@ subtitle = "Le breis agus dosaen uirlis chun cabhrú leat PDFanna a dhubhú, a s
 title = "Cuir PDFanna in eagar chun an t-eolas is mian leat a thaispeáint nó a dhaingniú"
 
 [login.slides.overview]
-alt = "Forbhreathnú Stirling PDF"
+alt = "Forbhreathnú Total PDF"
 subtitle = "Sraith néal-bhunaithe le príobháideachas ar dtús do PDFanna a ligeann duit tiontú, síniú, dubhú agus bainistiú a dhéanamh ar cháipéisí, móide 50+ uirlis chumhachtach eile."
 title = "Do shiopa aon-stad do gach riachtanas PDF."
 
@@ -4787,7 +4787,7 @@ message = "Níor éirigh leis an bhfíordheimhniú. Is féidir leat an fhuinneog
 title = "Theip ar an bhfíordheimhniú"
 
 [oauth.success]
-message = "Is féidir leat an fhuinneog seo a dhúnadh agus filleadh ar Stirling PDF."
+message = "Is féidir leat an fhuinneog seo a dhúnadh agus filleadh ar Total PDF."
 title = "Fíordheimhniú Rathúil"
 
 [ocr]
@@ -4911,7 +4911,7 @@ runButton = "Nuair a bheidh an uirlis cumraithe, ligfidh an cnaipe seo duit an u
 selectControls = "Tá cnaipí sa <strong>Ráil Dheas</strong> chun do PDFanna gníomhacha go léir a roghnú nó a dhíroghnú go tapa, mar aon le cnaipí chun téama nó teanga an fheidhmchláir a athrú."
 selectCropTool = "Roghnaímis an uirlis <strong>Bearradh</strong> chun a léiriú conas ceann de na huirlisí a úsáid."
 startTour = "Tosaigh an Turas"
-startTourDescription = "Téigh ar thuras treoraithe de phríomhghnéithe Stirling PDF"
+startTourDescription = "Téigh ar thuras treoraithe de phríomhghnéithe Total PDF"
 toolInterface = "Seo comhéadan na huirlise <strong>Bearradh</strong>. Mar a fheiceann tú, níl mórán ann fós mar nár chuir muid aon chomhaid PDF leis le hoibriú leo go fóill."
 viewer = "Ligeann an <strong>Amharcán</strong> duit do PDFanna a léamh agus a anótáil."
 viewSwitcher = "Úsáid na rialtáin seo chun a roghnú conas is mian leat do PDFanna a fheiceáil."
@@ -4934,7 +4934,7 @@ titleWithOs = "Íoslódáil do {{osLabel}}"
 [onboarding.freeTrial]
 afterTrialWithoutPayment = "Tar éis do thréimhse trialach a chríochnú, leanfaidh tú leis an sraith saor in aisce. Cuir modh íocaíochta leis chun rochtain Pro a choinneáil."
 afterTrialWithPayment = "Tosóidh do shíntiús Pro go huathoibríoch nuair a chríochnóidh an triail."
-body = "Tá rochtain iomlán agat ar ghnéithe Stirling PDF Pro le linn na trialach. Bain taitneamh as comhshó gan teorainn, méideanna comhaid níos mó, agus próiseáil le tosaíocht."
+body = "Tá rochtain iomlán agat ar ghnéithe Total PDF Pro le linn na trialach. Bain taitneamh as comhshó gan teorainn, méideanna comhaid níos mó, agus próiseáil le tosaíocht."
 daysRemaining = "{{days}} lá fágtha"
 daysRemainingSingular = "{{days}} lá fágtha"
 title = "Do thriail Pro 30 lá"
@@ -4960,7 +4960,7 @@ skip = "Scipeáil faoi láthair"
 upgrade = "Uasghrádaigh anois →"
 
 [onboarding.tourOverview]
-body = "Tagann Stirling PDF V2 le mórán uirlisí agus leagan amach athnuaite. Tabhair cuairt ghearr chun a fheiceáil cad a d'athraigh agus cá háit le fáil na gnéithe atá uait."
+body = "Tagann Total PDF V2 le mórán uirlisí agus leagan amach athnuaite. Tabhair cuairt ghearr chun a fheiceáil cad a d'athraigh agus cá háit le fáil na gnéithe atá uait."
 title = "Forbhreathnú ar an Turas"
 
 [onboarding.welcomeModal]
@@ -4969,10 +4969,10 @@ dontShowAgain = "Ná Taispeáin Arís"
 helpHint = "Is féidir an turas seo a rochtain am ar bith níos déanaí ón gcnaipe <strong>Cabhair</strong> ag bun na láimhe clé."
 maybeLater = "B'fhéidir Níos Déanaí"
 startTour = "Tosaigh an Turas"
-title = "Fáilte go Stirling PDF!"
+title = "Fáilte go Total PDF!"
 
 [onboarding.welcomeSlide]
-body = "Tá Stirling PDF réidh anois do fhoirne de gach méid. Cuimsíonn an nuashonrú seo leagan amach nua, cumais riaracháin chumhachtacha nua, agus ár ngné is mó a iarradh - <strong>Cuir Téacs in Eagar</strong>."
+body = "Tá Total PDF réidh anois do fhoirne de gach méid. Cuimsíonn an nuashonrú seo leagan amach nua, cumais riaracháin chumhachtacha nua, agus ár ngné is mó a iarradh - <strong>Cuir Téacs in Eagar</strong>."
 title = "Fáilte go Stirling"
 
 [onboarding.whatsNew]
@@ -5794,7 +5794,7 @@ included = "San áireamh"
 name = "Saor"
 
 [plan.licenseWarning]
-body = "Tá {{total}} úsáideoir agat ach ní thacaíonn an sraith saor in aisce ach le {{limit}} in aghaidh an fhreastalaí. Uasghrádaigh chun Stirling PDF a choinneáil ag rith go réidh."
+body = "Tá {{total}} úsáideoir agat ach ní thacaíonn an sraith saor in aisce ach le {{limit}} in aghaidh an fhreastalaí. Uasghrádaigh chun Total PDF a choinneáil ag rith go réidh."
 cta = "Féach ar phleananna"
 overLimit = "níos mó ná {{limit}}"
 title = "Sroichtear teorainn féin-óstáilte saor in aisce"
@@ -6733,8 +6733,8 @@ hideTools = "Folaigh uirlisí nach bhfuil ar fáil ▴"
 messageNoFallback = "Ní bheidh uirlisí ar fáil go dtí go mbeidh do fhreastalaí ar líne arís."
 messageWithFallback = "Teastaíonn ceangal le freastalaí ó chuid d’uirlisí."
 showTools = "Féach uirlisí nach bhfuil ar fáil ▾"
-title = "Ní féidir do fhreastalaí Stirling-PDF a bhaint amach"
-toolNotAvailableLocally = "Tá do fhreastalaí Stirling-PDF as líne agus níl \"{{endpoint}}\" ar fáil ar an gcúlcheann áitiúil."
+title = "Ní féidir do fhreastalaí Total-PDF a bhaint amach"
+toolNotAvailableLocally = "Tá do fhreastalaí Total-PDF as líne agus níl \"{{endpoint}}\" ar fáil ar an gcúlcheann áitiúil."
 
 [session]
 expired = "Tá do sheisiún imithe in éag. Athnuaigh an leathanach agus bain triail eile as."
@@ -6806,7 +6806,7 @@ autoUnzipFileLimitDescription = "Uasmhéid comhad le baint as ZIP"
 autoUnzipFileLimitTooltip = "Dífhuascail ach amháin má tá an oiread seo comhad sa ZIP nó níos lú. Socraigh níos airde chun ZIPanna níos mó a bhaint."
 autoUnzipTooltip = "Baineann sé comhaid ZIP a fhilleann ó oibríochtaí API go huathoibríoch. Díchumasaigh chun comhaid ZIP a choinneáil slán. Ní théann sé seo i bhfeidhm ar shreafaí oibre uathoibrithe."
 defaultPdfEditor = "Eagarthóir PDF réamhshocraithe"
-defaultPdfEditorActive = "Is é Stirling PDF d’eagarthóir PDF réamhshocraithe"
+defaultPdfEditorActive = "Is é Total PDF d’eagarthóir PDF réamhshocraithe"
 defaultPdfEditorChecking = "Á sheiceáil..."
 defaultPdfEditorInactive = "Tá feidhmchlár eile socraithe mar réamhshocrú"
 defaultPdfEditorSet = "Réamhshocraithe Cheana"
@@ -7023,13 +7023,13 @@ teams = "Foirne"
 title = "Spás Oibre"
 
 [setup]
-description = "Tosaigh trí roghnú conas is mian leat Stirling PDF a úsáid"
-welcome = "Fáilte go Stirling PDF"
+description = "Tosaigh trí roghnú conas is mian leat Total PDF a úsáid"
+welcome = "Fáilte go Total PDF"
 
 [setup.login]
 connectingTo = "Ag ceangal le:"
 hideInstructions = "Folaigh na treoracha"
-instructions = "Chun logáil isteach a chumasú ar do fhreastalaí Stirling PDF:"
+instructions = "Chun logáil isteach a chumasú ar do fhreastalaí Total PDF:"
 instructionsEnvVar = "Socraigh an athróg chomhshaoil:"
 instructionsOrYml = "Nó i settings.yml:"
 instructionsRestart = "Ansin atosaigh do fhreastalaí chun go mbeidh na hathruithe i bhfeidhm."
@@ -7067,7 +7067,7 @@ description = "Sínigh isteach le do chuntas Stirling"
 title = "Stirling Cloud"
 
 [setup.mode.selfhosted]
-description = "Ceangail le do fhreastalaí Stirling PDF féin"
+description = "Ceangail le do fhreastalaí Total PDF féin"
 title = "Freastalaí Féin-Óstáilte"
 
 [setup.saas]
@@ -7111,11 +7111,11 @@ step3 = "Atosaigh an freastalaí"
 title = "Níl an Logáil Isteach Cumasaithe"
 
 [setup.server.type]
-saas = "Stirling PDF SaaS"
+saas = "Total PDF SaaS"
 selfhosted = "Freastalaí féin-óstáilte"
 
 [setup.server.url]
-description = "Cuir isteach URL iomlán do fhreastalaí Stirling PDF féin-óstáilte"
+description = "Cuir isteach URL iomlán do fhreastalaí Total PDF féin-óstáilte"
 label = "URL an fhreastalaí"
 
 [setup.step1]
@@ -7340,7 +7340,7 @@ passwordsDoNotMatch = "Níl na focail faire ag teacht le chéile"
 passwordTooShort = "Ní mór don fhocal faire a bheith ar a laghad 6 charachtar ar fhad"
 pleaseFillAllFields = "Líon isteach na réimsí go léir, le do thoil"
 signUp = "Cláraigh"
-subtitle = "Bí le Stirling PDF chun tosú"
+subtitle = "Bí le Total PDF chun tosú"
 title = "Cruthaigh cuntas"
 unexpectedError = "Earráid gan choinne: {{message}}"
 useEmailInstead = "Úsáid Ríomhphost Ina Ionad"
@@ -7627,7 +7627,7 @@ download = "Íoslódáil"
 downloaded = "Íosluchtaithe"
 downloadFailed = "Níorbh fhéidir an comhad seo a íoslódáil."
 downloadsCount = "Íoslódálacha: {{count}}"
-emailWarningBody = "Is cosúil gur seoladh ríomhphoist é seo. Mura bhfuil an duine seo ina úsáideoir Stirling PDF cheana, ní bheidh sé in ann rochtain a fháil ar an gcomhad."
+emailWarningBody = "Is cosúil gur seoladh ríomhphoist é seo. Mura bhfuil an duine seo ina úsáideoir Total PDF cheana, ní bheidh sé in ann rochtain a fháil ar an gcomhad."
 emailWarningConfirm = "Comhroinn mar sin féin"
 emailWarningTitle = "Seoladh ríomhphoist"
 errorTitle = "Theip ar chomhroinnt"
@@ -7657,7 +7657,7 @@ manageTitle = "Bainistigh Comhroinnt"
 noActivity = "Níl aon ghníomhaíocht fós."
 noLinks = "Níl aon naisc chomhroinnte gníomhacha fós."
 noSharedUsers = "Níl aon úsáideoirí le rochtain fós."
-openInApp = "Oscail i Stirling PDF"
+openInApp = "Oscail i Total PDF"
 ownerLabel = "Úinéir"
 ownerOnly = "Ní féidir ach leis an úinéir roinnt a bhainistiú."
 ownerUnknown = "Anaithnid"
@@ -7718,28 +7718,28 @@ trialing = "Triail"
 
 [survey]
 button = "Tóg Suirbhé"
-changes = "Tá Stirling-PDF athraithe ón suirbhé deireanach! Le tuilleadh a fháil amach féach ar ár mblagphost anseo:"
+changes = "Tá Total-PDF athraithe ón suirbhé deireanach! Le tuilleadh a fháil amach féach ar ár mblagphost anseo:"
 changes2 = "De bharr na n-athruithe seo táimid ag fáil tacaíochta gnó agus maoiniú íoctha"
-description = "Níl aon rian ar Stirling-PDF agus mar sin ba mhaith linn cloisteáil ónár n-úsáideoirí chun feabhas a chur ar Stirling-PDF!"
+description = "Níl aon rian ar Total-PDF agus mar sin ba mhaith linn cloisteáil ónár n-úsáideoirí chun feabhas a chur ar Total-PDF!"
 disabled = "(Díchumasófar aníos an tsuirbhé sna nuashonruithe seo a leanas ach beidh siad ar fáil ag bun an leathanaigh)"
 dontShowAgain = "Ná taispeáin arís"
 nav = "Suirbhé"
 please = "Smaoinigh ar ár suirbhé a dhéanamh le do thoil!"
-title = "Suirbhé Stirling-PDF"
+title = "Suirbhé Total-PDF"
 
 [survey.meeting]
-1 = "Má tá tú ag úsáid Stirling PDF ag an obair, ba bhreá linn labhairt leat. Tá seisiúin tacaíochta teicniúla á dtairiscint againn mar mhalairt ar sheisiún iniúchta úsáideora 15 nóiméad."
+1 = "Má tá tú ag úsáid Total PDF ag an obair, ba bhreá linn labhairt leat. Tá seisiúin tacaíochta teicniúla á dtairiscint againn mar mhalairt ar sheisiún iniúchta úsáideora 15 nóiméad."
 2 = "Seo deis chun:"
 3 = "Cabhair a fháil le himscaradh, comhtháthuithe, nó fabhtcheartú"
 4 = "Aiseolas díreach a thabhairt ar fheidhmíocht, cásanna imeallacha, agus bearnaí gnéithe"
-5 = "Cuidiú linn Stirling PDF a fheabhsú le haghaidh úsáid fhíorshaoil i bhfiontraíocht"
+5 = "Cuidiú linn Total PDF a fheabhsú le haghaidh úsáid fhíorshaoil i bhfiontraíocht"
 6 = "Má tá suim agat, is féidir leat am a chur in áirithe lenár bhfoireann go díreach. (Béarla amháin)"
-7 = "Ag súil le do chásanna úsáide a phlé agus Stirling PDF a dhéanamh níos fearr fós!"
+7 = "Ag súil le do chásanna úsáide a phlé agus Total PDF a dhéanamh níos fearr fós!"
 button = "Cuir cruinniú in áirithe"
 notInterested = "Nach gnó tú agus/nó níl suim agat i gcruinniú?"
 
 [swagger]
-desc = "Féach agus tástáil na hionaidchríocha API Stirling PDF"
+desc = "Féach agus tástáil na hionaidchríocha API Total PDF"
 header = "Doiciméadú API"
 tags = "api,doiciméadú,swagger,críochphointí,forbairt"
 title = "Doiciméadú API"
@@ -7883,7 +7883,7 @@ favorites = "Ceanáin"
 heading = "Gach uirlis (radharc lánscáileáin)"
 noResults = "Bain triail as do chuardach a choigeartú nó tuairiscí a scoránaigh chun an rud atá uait a aimsiú."
 recommended = "Molta"
-selfHostedOffline = "Teastaíonn do fhreastalaí Stirling-PDF uaidh (faoi láthair as líne):"
+selfHostedOffline = "Teastaíonn do fhreastalaí Total-PDF uaidh (faoi láthair as líne):"
 showDetails = "Taispeáin Sonraí"
 unavailable = "Díchumasaithe ag riarthóir freastalaí:"
 unavailableDependency = "Níl ar fáil - uirlis riachtanach ar iarraidh ar an bhfreastalaí:"
@@ -7892,7 +7892,7 @@ unfavorite = "Bain den Cheanáin"
 [toolPanel.modePrompt]
 chooseFullscreen = "Úsáid mód lánscáileáin"
 chooseSidebar = "Úsáid mód barra taoibh"
-description = "Réamhamharc ar an dá leagan amach agus socraigh conas is mian leat uirlisí Stirling PDF a iniúchadh."
+description = "Réamhamharc ar an dá leagan amach agus socraigh conas is mian leat uirlisí Total PDF a iniúchadh."
 dismiss = "B'fhéidir níos déanaí"
 fullscreenDescription = "Brabhsáil gach uirlis i gcatalóg a chlúdaíonn an spás oibre go dtí go roghnaíonn tú ceann."
 fullscreenTitle = "Mód lánscáileáin - (oidhreachta)"
@@ -7986,7 +7986,7 @@ attentionBody = "Ní mór do d’riarthóir síniú isteach chun tuilleadh eolai
 attentionBodyAdmin = "Athbhreithnigh na riachtanais ceadúnais chun an freastalaí seo a choinneáil comhlíontach."
 attentionTitle = "Teastaíonn aird riarthóra ón bhfreastalaí seo"
 dismiss = "Dún meirge"
-message = "Bain an leas is fearr as Stirling PDF le húsáideoirí neamhtheoranta agus gnéithe ardleibhéil"
+message = "Bain an leas is fearr as Total PDF le húsáideoirí neamhtheoranta agus gnéithe ardleibhéil"
 seeInfo = "Féach eolas"
 title = "Uasghrádaigh go Plean Freastalaí"
 upgradeButton = "Uasghrádaigh Anois"
@@ -8108,7 +8108,7 @@ continued = "Ar lean"
 downloads = "Íoslódálacha"
 entryLabel = "Achoimre ar Shínithe"
 filesEvaluated = "Measúnaíodh {{count}} comhad"
-footer = "Bailíochtaithe trí Stirling PDF"
+footer = "Bailíochtaithe trí Total PDF"
 generatedAt = "Ginte"
 noPdf = "Beidh tuarascáil PDF ar fáil tar éis bailíochtaithe rathúla."
 page = "Leathanach"

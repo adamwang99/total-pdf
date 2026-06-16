@@ -1,7 +1,7 @@
 # Audit System Help
 
 ## About the Audit System
-The Stirling PDF audit system records user actions and system events for security monitoring, compliance, and troubleshooting purposes.
+The Total PDF audit system records user actions and system events for security monitoring, compliance, and troubleshooting purposes.
 
 ## Audit Levels
 

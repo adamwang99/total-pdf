@@ -64,7 +64,7 @@ export default function ApiKeys() {
       <Text size="sm" c="dimmed">
         {t(
           "config.apiKeys.intro",
-          "Use your API key to programmatically access Stirling PDF's processing capabilities.",
+          "Use your API key to programmatically access Total PDF's processing capabilities.",
         )}
       </Text>
 
@@ -90,7 +90,7 @@ export default function ApiKeys() {
             <Text size="sm" c="dimmed">
               {t(
                 "config.apiKeys.docsDescription",
-                "Learn more about integrating with Stirling PDF:",
+                "Learn more about integrating with Total PDF:",
               )}
             </Text>
             <Stack gap={4}>

@@ -176,7 +176,7 @@ jobs:
           echo "Looking for: app/core/build/libs/stirling-pdf-${{ needs.determine-matrix.outputs.version }}.jar"
           ls -la app/core/build/libs/
           mkdir -p ./jar-dist
-          cp app/core/build/libs/stirling-pdf-${{ needs.determine-matrix.outputs.version }}.jar ./jar-dist/Stirling-PDF${{ matrix.variant.file_suffix }}.jar
+          cp app/core/build/libs/stirling-pdf-${{ needs.determine-matrix.outputs.version }}.jar ./jar-dist/Total-PDF${{ matrix.variant.file_suffix }}.jar
 
       - name: Upload JAR artifacts
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
@@ -593,21 +593,21 @@ jobs:
           if [ "${{ matrix.platform }}" = "windows-latest" ]; then
             # Only ship the MSI installer on Windows. The loose exe and WiX toolset exes
             # are not the user-facing installer - the MSI contains the signed inner exe.
-            find . -name "*.msi" -exec cp {} "../../../dist/Stirling-PDF-${{ matrix.name }}.msi" \;
+            find . -name "*.msi" -exec cp {} "../../../dist/Total-PDF-${{ matrix.name }}.msi" \;
           elif [ "${{ matrix.platform }}" = "macos-15" ]; then
-            find . -name "*.dmg" -exec cp {} "../../../dist/Stirling-PDF-${{ matrix.name }}.dmg" \;
-            find . -name "*.app" -exec cp -r {} "../../../dist/Stirling-PDF-${{ matrix.name }}.app" \;
+            find . -name "*.dmg" -exec cp {} "../../../dist/Total-PDF-${{ matrix.name }}.dmg" \;
+            find . -name "*.app" -exec cp -r {} "../../../dist/Total-PDF-${{ matrix.name }}.app" \;
           else
-            find . -name "*.deb" -exec cp {} "../../../dist/Stirling-PDF-${{ matrix.name }}.deb" \;
-            find . -name "*.rpm" -exec cp {} "../../../dist/Stirling-PDF-${{ matrix.name }}.rpm" \;
-            find . -name "*.AppImage" -exec cp {} "../../../dist/Stirling-PDF-${{ matrix.name }}.AppImage" \;
+            find . -name "*.deb" -exec cp {} "../../../dist/Total-PDF-${{ matrix.name }}.deb" \;
+            find . -name "*.rpm" -exec cp {} "../../../dist/Total-PDF-${{ matrix.name }}.rpm" \;
+            find . -name "*.AppImage" -exec cp {} "../../../dist/Total-PDF-${{ matrix.name }}.AppImage" \;
           fi
 
       - name: Upload build artifacts
         if: always() && steps.digicert-setup.conclusion != 'failure'
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: Stirling-PDF-${{ matrix.name }}
+          name: Total-PDF-${{ matrix.name }}
           path: ./dist/*
           retention-days: 1
 
@@ -626,7 +626,7 @@ jobs:
       - name: Download all Tauri artifacts
         uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
-          pattern: Stirling-PDF-*
+          pattern: Total-PDF-*
           path: ./artifacts/tauri
 
       - name: Download JAR artifact (default)

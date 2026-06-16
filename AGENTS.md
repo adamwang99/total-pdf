@@ -47,7 +47,7 @@ Set `DOCKER_ENABLE_SECURITY=true` environment variable to enable security featur
 
 ### Python Development (AI Engine)
 
-The engine is a Python reasoning service for Stirling: it plans and interprets work, but it does not own durable state, and it does not execute Stirling PDF operations directly. Keep the service narrow: typed contracts in, typed contracts out, with AI only where it adds reasoning value. The frontend calls the Python engine via Java as a proxy.
+The engine is a Python reasoning service for Stirling: it plans and interprets work, but it does not own durable state, and it does not execute Total PDF operations directly. Keep the service narrow: typed contracts in, typed contracts out, with AI only where it adds reasoning value. The frontend calls the Python engine via Java as a proxy.
 
 #### Python Commands
 All engine commands run from the repo root using Task:

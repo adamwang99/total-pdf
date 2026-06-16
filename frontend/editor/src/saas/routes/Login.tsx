@@ -47,12 +47,12 @@ export default function Login() {
 
   // Set document meta
   useDocumentMeta({
-    title: `${t("login.title", "Sign in")} - Stirling PDF`,
+    title: `${t("login.title", "Sign in")} - Total PDF`,
     description: t(
       "app.description",
       "The Free Adobe Acrobat alternative (10M+ Downloads)",
     ),
-    ogTitle: `${t("login.title", "Sign in")} - Stirling PDF`,
+    ogTitle: `${t("login.title", "Sign in")} - Total PDF`,
     ogDescription: t(
       "app.description",
       "The Free Adobe Acrobat alternative (10M+ Downloads)",
@@ -231,7 +231,7 @@ export default function Login() {
     <AuthLayout isEmailFormExpanded={showEmailForm}>
       <LoginHeader
         title={t("login.login")}
-        subtitle={t("login.subtitle", "Sign back in to Stirling PDF")}
+        subtitle={t("login.subtitle", "Sign back in to Total PDF")}
       />
 
       <ErrorMessage error={error} />

@@ -94,7 +94,7 @@ jobs:
         # The compose stacks set KC_HOSTNAME=kubernetes.docker.internal so
         # Keycloak issues redirect URIs against that host. Docker Desktop
         # auto-resolves it; GHA runners don't. Map it to 127.0.0.1 so the
-        # browser-driven OAuth flow lands back on Stirling-PDF correctly.
+        # browser-driven OAuth flow lands back on Total-PDF correctly.
         run: |
           echo "127.0.0.1 kubernetes.docker.internal" | sudo tee -a /etc/hosts
 
@@ -144,7 +144,7 @@ jobs:
           done
           docker compose -f docker-compose-keycloak-oauth.yml logs --tail=200 keycloak-oauth
           exit 1
-      - name: Boot Stirling-PDF (frontend baked in, OAuth env)
+      - name: Boot Total-PDF (frontend baked in, OAuth env)
         env:
           SECURITY_ENABLELOGIN: "true"
           SECURITY_LOGINMETHOD: "all"
@@ -209,7 +209,7 @@ jobs:
           test -s saml-public-cert.crt
           test -s keycloak-saml-cert.pem
           echo "✓ SAML certs prepared"
-      - name: Boot Stirling-PDF (frontend baked in, SAML env)
+      - name: Boot Total-PDF (frontend baked in, SAML env)
         env:
           SECURITY_ENABLELOGIN: "true"
           SECURITY_LOGINMETHOD: "all"
@@ -255,7 +255,7 @@ jobs:
         run: |
           rm -f app/core/configs/stirling-pdf-DB*.mv.db
           rm -rf app/core/configs/backup
-      - name: Boot Stirling-PDF (frontend baked in, premium only)
+      - name: Boot Total-PDF (frontend baked in, premium only)
         env:
           SECURITY_INITIALLOGIN_USERNAME: admin
           SECURITY_INITIALLOGIN_PASSWORD: adminadmin

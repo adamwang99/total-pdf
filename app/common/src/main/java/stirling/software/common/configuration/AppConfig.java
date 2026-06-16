@@ -71,7 +71,7 @@ public class AppConfig {
 
     @Bean(name = "appName")
     public String appName() {
-        return "Stirling PDF";
+        return "Total PDF";
     }
 
     @Bean(name = "appVersion")
@@ -105,7 +105,7 @@ public class AppConfig {
     @Bean(name = "navBarText")
     public String navBarText() {
         String navBar = applicationProperties.getUi().getAppNameNavbar();
-        return (navBar != null) ? navBar : "Stirling PDF";
+        return (navBar != null) ? navBar : "Total PDF";
     }
 
     @Bean(name = "enableAlphaFunctionality")
@@ -200,9 +200,9 @@ public class AppConfig {
         return applicationProperties.getSystem().isAnalyticsEnabled();
     }
 
-    @Bean(name = "StirlingPDFLabel")
+    @Bean(name = "TotalPDFLabel")
     public String stirlingPDFLabel() {
-        return "Stirling-PDF" + " v" + appVersion();
+        return "Total-PDF" + " v" + appVersion();
     }
 
     @Bean(name = "UUID")

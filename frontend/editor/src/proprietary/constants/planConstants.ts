@@ -1,7 +1,7 @@
 import type { PlanFeature } from "@app/types/license";
 
 /**
- * Shared plan feature definitions for Stirling PDF Self-Hosted
+ * Shared plan feature definitions for Total PDF Self-Hosted
  * Used by both dynamic (Stripe) and static (fallback) plan displays
  */
 

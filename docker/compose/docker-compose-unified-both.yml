@@ -1,4 +1,4 @@
-# Example Docker Compose for Unified Stirling-PDF Container
+# Example Docker Compose for Unified Total-PDF Container
 # MODE=BOTH (default): Frontend + Backend in single container on port 8080
 
 services:
@@ -22,7 +22,7 @@ services:
       # Backend runs internally on this port when MODE=BOTH
       BACKEND_INTERNAL_PORT: 8081
 
-      # Standard Stirling-PDF configuration
+      # Standard Total-PDF configuration
       DISABLE_ADDITIONAL_FEATURES: "false"
       DOCKER_ENABLE_SECURITY: "false"
       PUID: 1000

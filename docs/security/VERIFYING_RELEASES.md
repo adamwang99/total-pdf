@@ -1,8 +1,8 @@
-# Verifying Stirling-PDF Release Artifacts
+# Verifying Total-PDF Release Artifacts
 
 Every Linux release artifact (`.AppImage`, `.rpm`, `.deb`) is signed with the
-**Stirling-PDF release signing key**. Users are encouraged to verify downloads
-before running them, especially when obtaining Stirling-PDF from a mirror,
+**Total-PDF release signing key**. Users are encouraged to verify downloads
+before running them, especially when obtaining Total-PDF from a mirror,
 redistributor, or any source other than the official
 [GitHub Releases page](https://github.com/Stirling-Tools/Stirling-PDF/releases).
 
@@ -50,10 +50,10 @@ Tauri's AppImage bundler embeds the signature inside the AppImage itself via
 
 ```bash
 # --appimage-signature prints the embedded signature
-./Stirling-PDF_*.AppImage --appimage-signature > sig.asc
-./Stirling-PDF_*.AppImage --appimage-offset                  # shows the offset
+./Total-PDF_*.AppImage --appimage-signature > sig.asc
+./Total-PDF_*.AppImage --appimage-offset                  # shows the offset
 # Verify the payload signature against the key
-gpg --verify sig.asc Stirling-PDF_*.AppImage
+gpg --verify sig.asc Total-PDF_*.AppImage
 ```
 
 A successful result looks like:
@@ -73,7 +73,7 @@ sudo rpm --import docs/security/signing-key.pub   # if working from a clone
 sudo rpm --import https://raw.githubusercontent.com/Stirling-Tools/Stirling-PDF/main/docs/security/signing-key.pub
 
 # Verify the package
-rpm --checksig Stirling-PDF-*.rpm
+rpm --checksig Total-PDF-*.rpm
 # Expected output ends with: "digests signatures OK"
 ```
 
@@ -83,7 +83,7 @@ Debian packages are signed with a detached `.asc` file distributed alongside
 the `.deb` on the release page:
 
 ```bash
-gpg --verify Stirling-PDF-*.deb.asc Stirling-PDF-*.deb
+gpg --verify Total-PDF-*.deb.asc Total-PDF-*.deb
 ```
 
 ## What if verification fails?

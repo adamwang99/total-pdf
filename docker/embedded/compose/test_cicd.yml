@@ -25,7 +25,7 @@ services:
       SYSTEM_DEFAULTLOCALE: en-US
       UI_APPNAME: Total PDF
       UI_HOMEDESCRIPTION: Total PDF — Your complete PDF toolkit
-      UI_APPNAMENAVBAR: Stirling-PDF Latest-fat
+      UI_APPNAMENAVBAR: Total-PDF Latest-fat
       SYSTEM_MAXFILESIZE: "100"
       METRICS_ENABLED: "true"
       SYSTEM_GOOGLEVISIBILITY: "true"

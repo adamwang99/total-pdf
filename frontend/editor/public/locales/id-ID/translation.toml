@@ -878,11 +878,11 @@ description = "Konfigurasikan fitur dan fungsionalitas opsional."
 title = "Fitur"
 
 [admin.settings.features.serverCertificate]
-description = "Konfigurasikan pembuatan sertifikat sisi server untuk fungsi \"Sign with Stirling-PDF\""
+description = "Konfigurasikan pembuatan sertifikat sisi server untuk fungsi \"Sign with Total-PDF\""
 label = "Sertifikat Server"
 
 [admin.settings.features.serverCertificate.enabled]
-description = "Aktifkan sertifikat sisi server untuk opsi \"Sign with Stirling-PDF\""
+description = "Aktifkan sertifikat sisi server untuk opsi \"Sign with Total-PDF\""
 label = "Aktifkan Sertifikat Server"
 
 [admin.settings.features.serverCertificate.organizationName]
@@ -1030,7 +1030,7 @@ description = "URL atau nama file untuk kebijakan cookie"
 label = "Kebijakan Cookie"
 
 [admin.settings.legal.disclaimer]
-message = "Dengan menyesuaikan dokumen legal ini, Anda menanggung tanggung jawab penuh untuk memastikan kepatuhan terhadap semua hukum dan peraturan yang berlaku, termasuk namun tidak terbatas pada GDPR dan persyaratan perlindungan data UE lainnya. Hanya ubah pengaturan ini jika: (1) Anda mengoperasikan instance pribadi/pribadi, (2) Anda berada di luar yurisdiksi UE dan memahami kewajiban hukum lokal Anda, atau (3) Anda telah memperoleh nasihat hukum yang tepat dan menerima tanggung jawab penuh atas semua data pengguna dan kepatuhan hukum. Stirling-PDF dan para pengembangnya tidak menanggung kewajiban atas kewajiban hukum Anda."
+message = "Dengan menyesuaikan dokumen legal ini, Anda menanggung tanggung jawab penuh untuk memastikan kepatuhan terhadap semua hukum dan peraturan yang berlaku, termasuk namun tidak terbatas pada GDPR dan persyaratan perlindungan data UE lainnya. Hanya ubah pengaturan ini jika: (1) Anda mengoperasikan instance pribadi/pribadi, (2) Anda berada di luar yurisdiksi UE dan memahami kewajiban hukum lokal Anda, atau (3) Anda telah memperoleh nasihat hukum yang tepat dan menerima tanggung jawab penuh atas semua data pengguna dan kepatuhan hukum. Total-PDF dan para pengembangnya tidak menanggung kewajiban atas kewajiban hukum Anda."
 title = "Peringatan Tanggung Jawab Hukum"
 
 [admin.settings.legal.impressum]
@@ -1402,7 +1402,7 @@ description = "Saat diaktifkan, hanya ID pengguna yang terdaftar yang dapat meng
 label = "Izinkan ID Pengguna Tertentu"
 
 [admin.settings.telegram.enabled]
-description = "Izinkan pengguna berinteraksi dengan Stirling PDF melalui bot Telegram yang Anda konfigurasi."
+description = "Izinkan pengguna berinteraksi dengan Total PDF melalui bot Telegram yang Anda konfigurasi."
 label = "Aktifkan Bot Telegram"
 
 [admin.settings.telegram.feedback]
@@ -1479,7 +1479,7 @@ settingsOverview = "Ini adalah <strong>Settings Panel</strong>. Pengaturan admin
 systemCustomization = "Kami memiliki banyak cara untuk menyesuaikan UI: <strong>System Settings</strong> memungkinkan Anda mengubah nama aplikasi dan bahasa, <strong>Features</strong> memungkinkan pengelolaan sertifikat server, dan <strong>Endpoints</strong> memungkinkan Anda mengaktifkan atau menonaktifkan alat tertentu untuk pengguna Anda."
 teamsAndUsers = "Kelola <strong>Teams</strong> dan pengguna individu di sini. Anda dapat mengundang pengguna baru melalui email, tautan yang dapat dibagikan, atau membuat akun kustom untuk mereka sendiri."
 welcome = "Selamat datang di <strong>Tur Admin</strong>! Mari jelajahi fitur dan pengaturan enterprise yang kuat yang tersedia untuk administrator sistem."
-wrapUp = "Itulah tur admin! Anda telah melihat fitur enterprise yang menjadikan Stirling PDF solusi yang kuat dan dapat disesuaikan untuk organisasi. Akses tur ini kapan saja dari menu <strong>Bantuan</strong>."
+wrapUp = "Itulah tur admin! Anda telah melihat fitur enterprise yang menjadikan Total PDF solusi yang kuat dan dapat disesuaikan untuk organisasi. Akses tur ini kapan saja dari menu <strong>Bantuan</strong>."
 
 [adminUserSettings]
 actions = "Tindakan"
@@ -1516,11 +1516,11 @@ webOnlyUser = "Pengguna Khusus Web"
 disable = "Nonaktifkan analitik"
 enable = "Aktifkan analitik"
 learnMore = "Pelajari lebih lanjut"
-paragraph1 = "Stirling PDF memiliki analitik yang dapat diaktifkan untuk membantu kami meningkatkan produk. Kami tidak melacak informasi pribadi atau konten berkas."
-paragraph2 = "Silakan pertimbangkan untuk mengaktifkan analitik agar Stirling PDF dapat berkembang dan untuk memungkinkan kami memahami pengguna kami dengan lebih baik."
+paragraph1 = "Total PDF memiliki analitik yang dapat diaktifkan untuk membantu kami meningkatkan produk. Kami tidak melacak informasi pribadi atau konten berkas."
+paragraph2 = "Silakan pertimbangkan untuk mengaktifkan analitik agar Total PDF dapat berkembang dan untuk memungkinkan kami memahami pengguna kami dengan lebih baik."
 privacyAssurance = "Kami tidak melacak info pribadi atau konten file Anda."
 settings = "Anda dapat mengubah pengaturan untuk analitik di berkas config/settings.yml"
-title = "Apakah Anda ingin membuat Stirling PDF lebih baik?"
+title = "Apakah Anda ingin membuat Total PDF lebih baik?"
 
 [annotation]
 annotationStyle = "Gaya anotasi"
@@ -1923,7 +1923,7 @@ tags = "pdf, membagi, dokumen, organisasi"
 description = "Cetak, Sisipkan, Pindai, unggah, dan biarkan kami memisahkan dokumen Anda secara otomatis. Tidak perlu menyortir secara manual."
 dividerDownload2 = "Unduh 'Pembagi Pembagi Otomatis (dengan instruksi).pdf'"
 duplexMode = "Mode Dupleks (Pemindaian depan dan belakang)"
-formPrompt = "Kirimkan PDF yang berisi pembagi Halaman Stirling-PDF:"
+formPrompt = "Kirimkan PDF yang berisi pembagi Halaman Total-PDF:"
 header = "Pisahkan PDF secara otomatis"
 submit = "Kirim"
 tags = "Berbasis QR, pisahkan, pindai segmen, atur"
@@ -1932,7 +1932,7 @@ title = "PDF Pisah Otomatis"
 [autoSplitPDF.selectText]
 1 = "Cetak beberapa lembar pembatas dari bawah (Hitam putih tidak masalah)."
 2 = "Pindai semua dokumen Anda sekaligus dengan memasukkan lembar pembatas di antaranya."
-3 = "Unggah satu berkas PDF besar yang dipindai dan biarkan Stirling PDF menangani sisanya."
+3 = "Unggah satu berkas PDF besar yang dipindai dan biarkan Total PDF menangani sisanya."
 4 = "Halaman pembatas secara otomatis terdeteksi dan dihapus, menjamin dokumen akhir yang rapi."
 
 [backendHealth]
@@ -2491,7 +2491,7 @@ bullet1 = "Mendukung format sertifikat PEM, PKCS12, JKS, dan server"
 bullet2 = "Opsi untuk menampilkan atau menyembunyikan tanda tangan pada PDF"
 bullet3 = "Tambahkan alasan, lokasi, dan nama penanda tangan"
 bullet4 = "Pilih halaman tempat meletakkan tanda tangan yang terlihat"
-bullet5 = "Gunakan sertifikat server untuk opsi sederhana 'Sign with Stirling-PDF'"
+bullet5 = "Gunakan sertifikat server untuk opsi sederhana 'Sign with Total-PDF'"
 text = "Untuk menandatangani PDF, Anda memerlukan sertifikat digital (seperti PEM, PKCS12, atau JKS). Anda dapat memilih agar tanda tangan terlihat pada dokumen atau tetap tidak terlihat hanya untuk keamanan."
 title = "Menambahkan Tanda Tangan"
 
@@ -3015,14 +3015,14 @@ chartAriaLabel = "Penggunaan kredit: termasuk {{includedUsed}} dari {{includedTo
 copyKeyAriaLabel = "Salin kunci API"
 creditsRemaining = "Sisa Kredit"
 description = "Kunci API Anda untuk mengakses rangkaian alat PDF Stirling. Salin ke proyek Anda atau segarkan untuk membuat yang baru."
-docsDescription = "Pelajari lebih lanjut tentang integrasi dengan Stirling PDF:"
+docsDescription = "Pelajari lebih lanjut tentang integrasi dengan Total PDF:"
 docsLink = "Dokumentasi API"
 docsTitle = "Dokumentasi API"
 generateError = "Kami tidak dapat membuat kunci API Anda."
 goToAccount = "Buka Akun"
 guestInfo = "Pengguna tamu tidak menerima kunci API. Buat akun untuk mendapatkan kunci API yang dapat Anda gunakan di aplikasi Anda."
 includedCredits = "Kredit yang disertakan"
-intro = "Gunakan kunci API Anda untuk mengakses kemampuan pemrosesan Stirling PDF secara terprogram."
+intro = "Gunakan kunci API Anda untuk mengakses kemampuan pemrosesan Total PDF secara terprogram."
 label = "Kunci API"
 lastApiUse = "Penggunaan API Terakhir"
 nextReset = "Reset Berikutnya"
@@ -3196,7 +3196,7 @@ showPreferencesBtn = "Kelola preferensi"
 title = "Bagaimana kami menggunakan Cookie"
 
 [cookieBanner.popUp.description]
-1 = "Kami menggunakan cookie dan teknologi lain untuk membuat Stirling PDF bekerja lebih baik untuk Anda—membantu kami meningkatkan alat dan terus membangun fitur yang Anda sukai."
+1 = "Kami menggunakan cookie dan teknologi lain untuk membuat Total PDF bekerja lebih baik untuk Anda—membantu kami meningkatkan alat dan terus membangun fitur yang Anda sukai."
 2 = "If you’d rather not, clicking 'No Thanks' will only enable the essential cookies needed to keep things running smoothly."
 
 [cookieBanner.preferencesModal]
@@ -3209,12 +3209,12 @@ subtitle = "Penggunaan Cookie"
 title = "Pusat Preferensi Persetujuan"
 
 [cookieBanner.preferencesModal.analytics]
-description = "Cookie ini membantu kami memahami bagaimana alat kami digunakan, sehingga kami dapat fokus membangun fitur yang paling dihargai komunitas kami. Tenang—Stirling PDF tidak dan tidak akan pernah melacak konten dokumen yang Anda kerjakan."
+description = "Cookie ini membantu kami memahami bagaimana alat kami digunakan, sehingga kami dapat fokus membangun fitur yang paling dihargai komunitas kami. Tenang—Total PDF tidak dan tidak akan pernah melacak konten dokumen yang Anda kerjakan."
 title = "Analitik"
 
 [cookieBanner.preferencesModal.description]
-1 = "Stirling PDF menggunakan cookie dan teknologi serupa untuk meningkatkan pengalaman Anda dan memahami bagaimana alat kami digunakan. Ini membantu kami meningkatkan kinerja, mengembangkan fitur yang Anda pedulikan, dan memberikan dukungan berkelanjutan kepada pengguna kami."
-2 = "Stirling PDF tidak dapat—dan tidak akan pernah—melacak atau mengakses konten dokumen yang Anda gunakan."
+1 = "Total PDF menggunakan cookie dan teknologi serupa untuk meningkatkan pengalaman Anda dan memahami bagaimana alat kami digunakan. Ini membantu kami meningkatkan kinerja, mengembangkan fitur yang Anda pedulikan, dan memberikan dukungan berkelanjutan kepada pengguna kami."
+2 = "Total PDF tidak dapat—dan tidak akan pernah—melacak atau mengakses konten dokumen yang Anda gunakan."
 3 = "Privasi dan kepercayaan Anda adalah inti dari apa yang kami lakukan."
 
 [cookieBanner.preferencesModal.necessary]
@@ -3383,7 +3383,7 @@ unexpectedError = "Terjadi kesalahan saat memproses file. Silakan coba lagi."
 [defaultApp]
 description = "Anda dapat mengubahnya nanti di pengaturan sistem."
 dismiss = "Tutup"
-message = "Ingin menjadikan Stirling PDF sebagai editor PDF default Anda?"
+message = "Ingin menjadikan Total PDF sebagai editor PDF default Anda?"
 notNow = "Jangan Sekarang"
 setDefault = "Jadikan Default"
 title = "Jadikan Aplikasi PDF Default"
@@ -3393,15 +3393,15 @@ message = "Gagal menyetel penangan PDF default"
 title = "Error"
 
 [defaultApp.prompt]
-message = "Jadikan Stirling PDF aplikasi default untuk membuka file PDF."
+message = "Jadikan Total PDF aplikasi default untuk membuka file PDF."
 title = "Jadikan Editor PDF Default"
 
 [defaultApp.settingsOpened]
-message = "Silakan pilih Stirling PDF di pengaturan sistem Anda"
+message = "Silakan pilih Total PDF di pengaturan sistem Anda"
 title = "Pengaturan Dibuka"
 
 [defaultApp.success]
-message = "Stirling PDF sekarang adalah editor PDF default Anda"
+message = "Total PDF sekarang adalah editor PDF default Anda"
 title = "Aplikasi Default Disetel"
 
 [editTableOfContents]
@@ -3543,9 +3543,9 @@ visitsTooltip = "Kunjungan: {0} ({1}% dari total)"
 
 [enterpriseEdition]
 button = "Upgrade ke Pro"
-ssoAdvert = "Mencari lebih banyak fitur manajemen pengguna? Lihat Stirling PDF Pro"
+ssoAdvert = "Mencari lebih banyak fitur manajemen pengguna? Lihat Total PDF Pro"
 warning = "Fitur ini hanya tersedia untuk pengguna Pro."
-yamlAdvert = "Stirling PDF Pro mendukung berkas konfigurasi YAML dan fitur SSO lainnya."
+yamlAdvert = "Total PDF Pro mendukung berkas konfigurasi YAML dan fitur SSO lainnya."
 
 [error]
 _value = "Kesalahan"
@@ -4021,7 +4021,7 @@ invisible = "Tidak terlihat (hanya metadata)"
 location = "Lokasi:"
 logo = "Logo:"
 logoHidden = "Tanpa logo"
-logoShown = "Logo Stirling PDF ditampilkan"
+logoShown = "Logo Total PDF ditampilkan"
 participantCount = "{{count}} peserta akan menandatangani secara berurutan"
 participants = "Peserta"
 reason = "Alasan:"
@@ -4073,7 +4073,7 @@ title = "Penandatanganan Berurutan"
 dismiss = "Tutup banner"
 message = "Buat akun gratis untuk menyimpan pekerjaan Anda, mengakses lebih banyak fitur, dan mendukung proyek ini."
 signUp = "Daftar Gratis"
-title = "Anda menggunakan Stirling PDF sebagai tamu!"
+title = "Anda menggunakan Total PDF sebagai tamu!"
 
 [home]
 alphabetical = "Alfabetis"
@@ -4247,7 +4247,7 @@ tags = "gabung,satukan,seragamkan"
 title = "Menggabungkan"
 
 [home.mobile]
-brandAlt = "logo Stirling PDF"
+brandAlt = "logo Total PDF"
 openFiles = "Buka file"
 swipeHint = "Geser ke kiri atau kanan untuk mengganti tampilan"
 tools = "Alat"
@@ -4287,7 +4287,7 @@ tags = "atur,susun-ulang,ubah-urutan"
 title = "Mengatur"
 
 [home.pdfTextEditor]
-desc = "Tinjau dan edit ekspor Stirling PDF JSON dengan pengeditan teks terkelompok dan pembuatan ulang PDF"
+desc = "Tinjau dan edit ekspor Total PDF JSON dengan pengeditan teks terkelompok dan pembuatan ulang PDF"
 tags = "edit text,modify text,change text,edit content,update text,rewrite,correct,amend,redline,revise,text editor,content editor"
 title = "Editor Teks PDF"
 
@@ -4493,14 +4493,14 @@ passwordTooShort = "Kata sandi harus minimal 6 karakter"
 signIn = "Masuk"
 validating = "Memvalidasi undangan..."
 validationError = "Gagal memvalidasi tautan undangan"
-welcome = "Selamat datang di Stirling PDF"
+welcome = "Selamat datang di Total PDF"
 welcomeSubtitle = "Lengkapi penyiapan akun Anda untuk memulai"
 welcomeTitle = "Anda telah diundang!"
 
 [landing]
 addFiles = "Tambahkan File"
 heroSubtitle = "Seret dan letakkan atau tambahkan PDF yang sudah ada untuk memulai."
-heroTitle = "Stirling PDF"
+heroTitle = "Total PDF"
 mobileUpload = "Unggah dari Ponsel"
 openFromComputer = "Buka dari komputer"
 uploadFromComputer = "Unggah dari komputer"
@@ -4602,7 +4602,7 @@ signinTitle = "Silakan masuk"
 signInWith = "Masuk dengan"
 signOut = "Keluar"
 ssoSignIn = "Masuk melalui Single Sign - on"
-subtitle = "Masuk kembali ke Stirling PDF"
+subtitle = "Masuk kembali ke Total PDF"
 title = "Masuk"
 toManySessions = "Anda memiliki terlalu banyak sesi aktif"
 unexpectedError = "Kesalahan tak terduga: {{message}}"
@@ -4621,7 +4621,7 @@ subtitle = "Dengan lebih dari selusin alat untuk membantu Anda menyensor, menand
 title = "Edit PDF untuk menampilkan/mengamankan informasi yang Anda inginkan"
 
 [login.slides.overview]
-alt = "Sekilas Stirling PDF"
+alt = "Sekilas Total PDF"
 subtitle = "Suite cloud berfokus privasi untuk PDF yang memungkinkan Anda mengonversi, menandatangani, menyensor, dan mengelola dokumen, ditambah 50+ alat hebat lainnya."
 title = "Satu tempat untuk semua kebutuhan PDF Anda."
 
@@ -4787,7 +4787,7 @@ message = "Autentikasi tidak berhasil. Anda dapat menutup jendela ini dan mencob
 title = "Autentikasi Gagal"
 
 [oauth.success]
-message = "Anda dapat menutup jendela ini dan kembali ke Stirling PDF."
+message = "Anda dapat menutup jendela ini dan kembali ke Total PDF."
 title = "Autentikasi Berhasil"
 
 [ocr]
@@ -4911,7 +4911,7 @@ runButton = "Setelah alat dikonfigurasi, tombol ini memungkinkan Anda menjalanka
 selectControls = "<strong>Right Rail</strong> berisi tombol untuk dengan cepat memilih/membatalkan pilihan semua PDF aktif Anda, bersama dengan tombol untuk mengubah tema atau bahasa aplikasi."
 selectCropTool = "Mari pilih alat <strong>Crop</strong> untuk mendemonstrasikan cara menggunakan salah satu alat."
 startTour = "Mulai Tur"
-startTourDescription = "Ikuti tur terpandu tentang fitur utama Stirling PDF"
+startTourDescription = "Ikuti tur terpandu tentang fitur utama Total PDF"
 toolInterface = "Ini adalah antarmuka alat <strong>Crop</strong>. Seperti yang Anda lihat, belum banyak karena kita belum menambahkan file PDF untuk dikerjakan."
 viewer = "<strong>Viewer</strong> memungkinkan Anda membaca dan memberi anotasi pada PDF."
 viewSwitcher = "Gunakan kontrol ini untuk memilih bagaimana Anda ingin melihat PDF Anda."
@@ -4934,7 +4934,7 @@ titleWithOs = "Unduh untuk {{osLabel}}"
 [onboarding.freeTrial]
 afterTrialWithoutPayment = "Setelah uji coba berakhir, Anda akan tetap menggunakan paket gratis kami. Tambahkan metode pembayaran untuk mempertahankan akses Pro."
 afterTrialWithPayment = "Langganan Pro Anda akan dimulai otomatis saat uji coba berakhir."
-body = "Selama uji coba, Anda memiliki akses penuh ke fitur Stirling PDF Pro. Nikmati konversi tanpa batas, ukuran berkas lebih besar, dan pemrosesan prioritas."
+body = "Selama uji coba, Anda memiliki akses penuh ke fitur Total PDF Pro. Nikmati konversi tanpa batas, ukuran berkas lebih besar, dan pemrosesan prioritas."
 daysRemaining = "Tersisa {{days}} hari"
 daysRemainingSingular = "Tersisa {{days}} hari"
 title = "Uji Coba Pro 30 Hari Anda"
@@ -4960,7 +4960,7 @@ skip = "Lewati dulu"
 upgrade = "Upgrade sekarang →"
 
 [onboarding.tourOverview]
-body = "Stirling PDF V2 hadir dengan puluhan alat dan tata letak yang diperbarui. Ikuti tur singkat untuk melihat apa yang berubah dan di mana menemukan fitur yang Anda butuhkan."
+body = "Total PDF V2 hadir dengan puluhan alat dan tata letak yang diperbarui. Ikuti tur singkat untuk melihat apa yang berubah dan di mana menemukan fitur yang Anda butuhkan."
 title = "Ringkasan Tur"
 
 [onboarding.welcomeModal]
@@ -4969,10 +4969,10 @@ dontShowAgain = "Jangan Tampilkan Lagi"
 helpHint = "Anda selalu dapat mengakses tur ini nanti dari tombol <strong>Bantuan</strong> di kiri bawah."
 maybeLater = "Mungkin Nanti"
 startTour = "Mulai Tur"
-title = "Selamat datang di Stirling PDF!"
+title = "Selamat datang di Total PDF!"
 
 [onboarding.welcomeSlide]
-body = "Stirling PDF kini siap untuk tim dari semua ukuran. Pembaruan ini mencakup tata letak baru, kemampuan admin yang kuat, dan fitur paling banyak diminta - <strong>Edit Text</strong>."
+body = "Total PDF kini siap untuk tim dari semua ukuran. Pembaruan ini mencakup tata letak baru, kemampuan admin yang kuat, dan fitur paling banyak diminta - <strong>Edit Text</strong>."
 title = "Selamat datang di Stirling"
 
 [onboarding.whatsNew]
@@ -5794,7 +5794,7 @@ included = "Termasuk"
 name = "Gratis"
 
 [plan.licenseWarning]
-body = "Anda memiliki {{total}} pengguna tetapi level gratis hanya mendukung {{limit}} per server. Upgrade agar Stirling PDF tetap berjalan lancar."
+body = "Anda memiliki {{total}} pengguna tetapi level gratis hanya mendukung {{limit}} per server. Upgrade agar Total PDF tetap berjalan lancar."
 cta = "Lihat paket"
 overLimit = "lebih dari {{limit}}"
 title = "Batas gratis self-hosted tercapai"
@@ -6733,8 +6733,8 @@ hideTools = "Sembunyikan alat yang tidak tersedia ▴"
 messageNoFallback = "Alat tidak tersedia hingga server Anda kembali online."
 messageWithFallback = "Beberapa alat memerlukan koneksi server."
 showTools = "Lihat alat yang tidak tersedia ▾"
-title = "Server Stirling-PDF Anda tidak dapat dijangkau"
-toolNotAvailableLocally = "Server Stirling-PDF Anda sedang offline dan \"{{endpoint}}\" tidak tersedia pada backend lokal."
+title = "Server Total-PDF Anda tidak dapat dijangkau"
+toolNotAvailableLocally = "Server Total-PDF Anda sedang offline dan \"{{endpoint}}\" tidak tersedia pada backend lokal."
 
 [session]
 expired = "Sesi Anda telah kedaluwarsa. Silakan muat ulang halaman dan coba lagi."
@@ -6806,7 +6806,7 @@ autoUnzipFileLimitDescription = "Jumlah maksimum file yang diekstrak dari ZIP"
 autoUnzipFileLimitTooltip = "Hanya unzip jika ZIP berisi sebanyak ini atau lebih sedikit. Atur lebih tinggi untuk mengekstrak ZIP yang lebih besar."
 autoUnzipTooltip = "Secara otomatis mengekstrak file ZIP yang dikembalikan dari operasi API. Nonaktifkan untuk menjaga file ZIP tetap utuh. Ini tidak memengaruhi alur otomasi."
 defaultPdfEditor = "Editor PDF default"
-defaultPdfEditorActive = "Stirling PDF adalah editor PDF default Anda"
+defaultPdfEditorActive = "Total PDF adalah editor PDF default Anda"
 defaultPdfEditorChecking = "Memeriksa..."
 defaultPdfEditorInactive = "Aplikasi lain disetel sebagai default"
 defaultPdfEditorSet = "Sudah Default"
@@ -7023,13 +7023,13 @@ teams = "Tim"
 title = "Ruang kerja"
 
 [setup]
-description = "Mulai dengan memilih cara Anda ingin menggunakan Stirling PDF"
-welcome = "Selamat datang di Stirling PDF"
+description = "Mulai dengan memilih cara Anda ingin menggunakan Total PDF"
+welcome = "Selamat datang di Total PDF"
 
 [setup.login]
 connectingTo = "Menghubungkan ke:"
 hideInstructions = "Sembunyikan instruksi"
-instructions = "Untuk mengaktifkan login pada server Stirling PDF Anda:"
+instructions = "Untuk mengaktifkan login pada server Total PDF Anda:"
 instructionsEnvVar = "Setel variabel lingkungan:"
 instructionsOrYml = "Atau di settings.yml:"
 instructionsRestart = "Kemudian mulai ulang server Anda agar perubahan diterapkan."
@@ -7067,7 +7067,7 @@ description = "Masuk dengan akun Stirling Anda"
 title = "Stirling Cloud"
 
 [setup.mode.selfhosted]
-description = "Sambungkan ke server Stirling PDF Anda sendiri"
+description = "Sambungkan ke server Total PDF Anda sendiri"
 title = "Server Self-Hosted"
 
 [setup.saas]
@@ -7111,11 +7111,11 @@ step3 = "Mulai ulang server"
 title = "Login Tidak Diaktifkan"
 
 [setup.server.type]
-saas = "Stirling PDF SaaS"
+saas = "Total PDF SaaS"
 selfhosted = "Server self-hosted"
 
 [setup.server.url]
-description = "Masukkan URL lengkap server Stirling PDF self-hosted Anda"
+description = "Masukkan URL lengkap server Total PDF self-hosted Anda"
 label = "URL Server"
 
 [setup.step1]
@@ -7340,7 +7340,7 @@ passwordsDoNotMatch = "Kata sandi tidak cocok"
 passwordTooShort = "Kata sandi harus setidaknya 6 karakter"
 pleaseFillAllFields = "Harap isi semua bidang"
 signUp = "Daftar"
-subtitle = "Bergabunglah dengan Stirling PDF untuk memulai"
+subtitle = "Bergabunglah dengan Total PDF untuk memulai"
 title = "Buat akun"
 unexpectedError = "Kesalahan tak terduga: {{message}}"
 useEmailInstead = "Gunakan Email"
@@ -7627,7 +7627,7 @@ download = "Unduh"
 downloaded = "Diunduh"
 downloadFailed = "Tidak dapat mengunduh file ini."
 downloadsCount = "Unduhan: {{count}}"
-emailWarningBody = "Ini terlihat seperti alamat email. Jika orang ini belum menjadi pengguna Stirling PDF, mereka tidak akan dapat mengakses file."
+emailWarningBody = "Ini terlihat seperti alamat email. Jika orang ini belum menjadi pengguna Total PDF, mereka tidak akan dapat mengakses file."
 emailWarningConfirm = "Tetap bagikan"
 emailWarningTitle = "Alamat email"
 errorTitle = "Gagal berbagi"
@@ -7657,7 +7657,7 @@ manageTitle = "Kelola Berbagi"
 noActivity = "Belum ada aktivitas."
 noLinks = "Belum ada tautan berbagi aktif."
 noSharedUsers = "Belum ada pengguna yang memiliki akses."
-openInApp = "Buka di Stirling PDF"
+openInApp = "Buka di Total PDF"
 ownerLabel = "Pemilik"
 ownerOnly = "Hanya pemilik yang dapat mengelola berbagi."
 ownerUnknown = "Tidak diketahui"
@@ -7718,28 +7718,28 @@ trialing = "Uji Coba"
 
 [survey]
 button = "Ikuti Survei"
-changes = "Stirling-PDF telah berubah sejak survei terakhir! Untuk mengetahui lebih lanjut, silakan periksa posting blog kami di sini:"
+changes = "Total-PDF telah berubah sejak survei terakhir! Untuk mengetahui lebih lanjut, silakan periksa posting blog kami di sini:"
 changes2 = "Dengan perubahan ini, kami mendapatkan dukungan bisnis yang dibayar dan pendanaan"
-description = "Stirling-PDF tidak memiliki pelacakan, jadi kami ingin mendengar dari pengguna kami untuk meningkatkan Stirling-PDF!"
+description = "Total-PDF tidak memiliki pelacakan, jadi kami ingin mendengar dari pengguna kami untuk meningkatkan Total-PDF!"
 disabled = "(Popup survei akan dinonaktifkan dalam pembaruan berikutnya tetapi tersedia di bagian bawah halaman)"
 dontShowAgain = "Jangan tampilkan lagi"
 nav = "Survei"
 please = "Silakan pertimbangkan untuk mengikuti survei kami!"
-title = "Survei Stirling-PDF"
+title = "Survei Total-PDF"
 
 [survey.meeting]
-1 = "Jika Anda menggunakan Stirling PDF di tempat kerja, kami ingin berbicara dengan Anda. Kami menawarkan sesi dukungan teknis sebagai imbalan untuk sesi penjajakan pengguna selama 15 menit."
+1 = "Jika Anda menggunakan Total PDF di tempat kerja, kami ingin berbicara dengan Anda. Kami menawarkan sesi dukungan teknis sebagai imbalan untuk sesi penjajakan pengguna selama 15 menit."
 2 = "Ini adalah kesempatan untuk:"
 3 = "Mendapatkan bantuan untuk penerapan, integrasi, atau pemecahan masalah"
 4 = "Memberikan umpan balik langsung tentang kinerja, kasus tepi, dan celah fitur"
-5 = "Membantu kami menyempurnakan Stirling PDF untuk penggunaan perusahaan di dunia nyata"
+5 = "Membantu kami menyempurnakan Total PDF untuk penggunaan perusahaan di dunia nyata"
 6 = "Jika Anda tertarik, Anda dapat memesan waktu langsung dengan tim kami. (Hanya berbahasa Inggris)"
-7 = "Kami menantikan untuk menggali kasus penggunaan Anda dan membuat Stirling PDF menjadi lebih baik lagi!"
+7 = "Kami menantikan untuk menggali kasus penggunaan Anda dan membuat Total PDF menjadi lebih baik lagi!"
 button = "Pesan pertemuan"
 notInterested = "Bukan bisnis dan/atau tidak tertarik untuk mengadakan pertemuan?"
 
 [swagger]
-desc = "Lihat dan uji endpoint API Stirling PDF"
+desc = "Lihat dan uji endpoint API Total PDF"
 header = "Dokumentasi API"
 tags = "api,dokumentasi,swagger,endpoint,pengembangan"
 title = "Dokumentasi API"
@@ -7883,7 +7883,7 @@ favorites = "Favorit"
 heading = "Semua alat (tampilan layar penuh)"
 noResults = "Coba sesuaikan pencarian Anda atau aktifkan deskripsi untuk menemukan yang Anda butuhkan."
 recommended = "Direkomendasikan"
-selfHostedOffline = "Memerlukan server Stirling-PDF Anda (saat ini offline):"
+selfHostedOffline = "Memerlukan server Total-PDF Anda (saat ini offline):"
 showDetails = "Tampilkan Detail"
 unavailable = "Dinonaktifkan oleh admin server:"
 unavailableDependency = "Tidak tersedia - alat yang diperlukan tidak ada di server:"
@@ -7892,7 +7892,7 @@ unfavorite = "Hapus dari Favorit"
 [toolPanel.modePrompt]
 chooseFullscreen = "Gunakan mode layar penuh"
 chooseSidebar = "Gunakan mode bilah sisi"
-description = "Pratinjau kedua tata letak dan tentukan bagaimana Anda ingin menjelajahi alat Stirling PDF."
+description = "Pratinjau kedua tata letak dan tentukan bagaimana Anda ingin menjelajahi alat Total PDF."
 dismiss = "Mungkin nanti"
 fullscreenDescription = "Jelajahi setiap alat dalam katalog yang menutupi ruang kerja hingga Anda memilih satu."
 fullscreenTitle = "Mode layar penuh - (lama)"
@@ -7986,7 +7986,7 @@ attentionBody = "Admin Anda perlu masuk untuk melihat info lebih lanjut. Harap h
 attentionBodyAdmin = "Tinjau persyaratan lisensi untuk menjaga kepatuhan server ini."
 attentionTitle = "Server ini memerlukan perhatian admin"
 dismiss = "Tutup banner"
-message = "Dapatkan manfaat maksimal Stirling PDF dengan pengguna tak terbatas dan fitur lanjutan"
+message = "Dapatkan manfaat maksimal Total PDF dengan pengguna tak terbatas dan fitur lanjutan"
 seeInfo = "Lihat info"
 title = "Upgrade ke Paket Server"
 upgradeButton = "Upgrade Sekarang"
@@ -8108,7 +8108,7 @@ continued = "Bersambung"
 downloads = "Unduhan"
 entryLabel = "Ringkasan Tanda Tangan"
 filesEvaluated = "{{count}} file dievaluasi"
-footer = "Divalidasi melalui Stirling PDF"
+footer = "Divalidasi melalui Total PDF"
 generatedAt = "Dibuat"
 noPdf = "Laporan PDF akan tersedia setelah validasi berhasil."
 page = "Halaman"

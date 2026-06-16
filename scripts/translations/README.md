@@ -1,10 +1,10 @@
 # Translation Management Scripts
 
-This directory contains Python scripts for managing frontend translations in Stirling PDF. These tools help analyze, merge, validate, and manage translations against the en-GB golden truth file.
+This directory contains Python scripts for managing frontend translations in Total PDF. These tools help analyze, merge, validate, and manage translations against the en-GB golden truth file.
 
 ## Current Format: TOML
 
-**Stirling PDF uses TOML format for translations** in `frontend/editor/public/locales/{lang}/translation.toml`.
+**Total PDF uses TOML format for translations** in `frontend/editor/public/locales/{lang}/translation.toml`.
 
 **All scripts now support TOML format!**
 
@@ -276,7 +276,7 @@ python3 scripts/translations/auto_translate.py es-ES --skip-verification
 
 **Features:**
 - Fully automated end-to-end translation pipeline
-- Uses GPT-5 with specialized prompts for Stirling PDF
+- Uses GPT-5 with specialized prompts for Total PDF
 - Preserves all placeholders ({n}, {{variable}}, etc.)
 - Maintains consistent terminology
 - Validates translations automatically
@@ -325,7 +325,7 @@ python3 scripts/translations/batch_translator.py batch.json --language it-IT --s
 
 **Features:**
 - Translates JSON batch files using OpenAI GPT-5
-- Specialized system prompts for Stirling PDF translations
+- Specialized system prompts for Total PDF translations
 - Automatic placeholder validation
 - Supports pattern matching for multiple files
 - Configurable model selection (gpt-5, gpt-5-mini, gpt-5-nano)

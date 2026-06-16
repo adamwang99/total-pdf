@@ -42,7 +42,7 @@ This email should convert to a PDF that includes:
 
 Important Notes:
 - This is a test email only
-- Generated for Stirling PDF testing
+- Generated for Total PDF testing
 - Contains no sensitive information
 - Should preserve email formatting in PDF
 
@@ -92,7 +92,7 @@ Content-Transfer-Encoding: 7bit
     <h3 style="color: #6c757d;">Important Notes:</h3>
     <ul>
         <li>This is a test email only</li>
-        <li>Generated for Stirling PDF testing</li>
+        <li>Generated for Total PDF testing</li>
         <li>Contains no sensitive information</li>
         <li>Should preserve email formatting in PDF</li>
     </ul>

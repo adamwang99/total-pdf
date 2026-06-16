@@ -78,9 +78,9 @@ services:
       PREMIUM_KEY: "${PREMIUM_KEY:-00000000-0000-0000-0000-000000000000}"
       PREMIUM_ENABLED: "true"
       PREMIUM_PROFEATURES_SSOAUTOLOGIN: "${PREMIUM_PROFEATURES_SSOAUTOLOGIN:-false}"
-      UI_APPNAME: Stirling-PDF OAuth Test
+      UI_APPNAME: Total-PDF OAuth Test
       UI_HOMEDESCRIPTION: Keycloak OAuth2/OIDC Test Instance
-      UI_APPNAMENAVBAR: Stirling-PDF OAuth
+      UI_APPNAMENAVBAR: Total-PDF OAuth
       SYSTEM_MAXFILESIZE: "100"
 
       # OAuth2 Configuration (Keycloak-specific path)

@@ -17,7 +17,7 @@ import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * Central registry for tracking temporary files created by Stirling-PDF. Maintains a thread-safe
+ * Central registry for tracking temporary files created by Total-PDF. Maintains a thread-safe
  * collection of paths with their creation timestamps.
  */
 @Slf4j

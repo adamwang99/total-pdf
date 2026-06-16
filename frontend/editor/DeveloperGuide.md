@@ -1,6 +1,6 @@
 # Frontend Developer Guide
 
-This document is a guide to the main frontend architectural rules in Stirling-PDF.
+This document is a guide to the main frontend architectural rules in Total-PDF.
 
 ## Mode-Specific Code
 

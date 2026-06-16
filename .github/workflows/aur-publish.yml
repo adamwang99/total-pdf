@@ -59,8 +59,8 @@ jobs:
             sha256sum "$file" | awk '{print $1}'
           }
 
-          DEB_SHA=$(download_sha256 "${BASE}/Stirling-PDF-linux-x86_64.deb")
-          JAR_SHA=$(download_sha256 "${BASE}/Stirling-PDF-with-login.jar")
+          DEB_SHA=$(download_sha256 "${BASE}/Total-PDF-linux-x86_64.deb")
+          JAR_SHA=$(download_sha256 "${BASE}/Total-PDF-with-login.jar")
 
           echo "deb_sha256=$DEB_SHA" >> "$GITHUB_OUTPUT"
           echo "jar_sha256=$JAR_SHA" >> "$GITHUB_OUTPUT"
@@ -110,7 +110,7 @@ jobs:
         with:
           pkgname: stirling-pdf-desktop
           pkgbuild: .github/aur/stirling-pdf-desktop/PKGBUILD
-          commit_username: Stirling PDF Inc
+          commit_username: Total PDF Inc
           commit_email: contact@stirlingpdf.com
           ssh_private_key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
           commit_message: "Update to v${{ needs.get-release-info.outputs.version }}"
@@ -122,7 +122,7 @@ jobs:
       #   with:
       #     pkgname: stirling-pdf-server-bin
       #     pkgbuild: .github/aur/stirling-pdf-server-bin/PKGBUILD
-      #     commit_username: Stirling PDF Inc
+      #     commit_username: Total PDF Inc
       #     commit_email: contact@stirlingpdf.com
       #     ssh_private_key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
       #     commit_message: "Update to v${{ needs.get-release-info.outputs.version }}"

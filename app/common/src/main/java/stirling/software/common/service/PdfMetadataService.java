@@ -24,7 +24,7 @@ public class PdfMetadataService {
 
     public PdfMetadataService(
             ApplicationProperties applicationProperties,
-            @Qualifier("StirlingPDFLabel") String stirlingPDFLabel,
+            @Qualifier("TotalPDFLabel") String stirlingPDFLabel,
             @Qualifier("runningProOrHigher") boolean runningProOrHigher,
             @Autowired(required = false) UserServiceInterface userService) {
         this.applicationProperties = applicationProperties;

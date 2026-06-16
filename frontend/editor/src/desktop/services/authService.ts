@@ -465,7 +465,7 @@ export class AuthService {
         else if (errMsg.includes("404") || errMsg.includes("not found")) {
           this.setAuthStatus("unauthenticated", null);
           throw new Error(
-            "Login endpoint not found. Please ensure you are connecting to a valid Stirling PDF server.",
+            "Login endpoint not found. Please ensure you are connecting to a valid Total PDF server.",
             {
               cause: error,
             },

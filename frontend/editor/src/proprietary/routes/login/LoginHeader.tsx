@@ -16,7 +16,7 @@ export default function LoginHeader({
       className={`login-header${centerOnly ? " login-header-centered" : ""}`}
     >
       <div className="login-header-logos">
-        <Wordmark alt="Stirling PDF" className="login-logo-text" />
+        <Wordmark alt="Total PDF" className="login-logo-text" />
       </div>
       {title && <h1 className="login-title">{title}</h1>}
       {subtitle && <p className="login-subtitle">{subtitle}</p>}

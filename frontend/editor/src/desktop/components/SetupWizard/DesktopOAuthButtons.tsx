@@ -55,7 +55,7 @@ export const DesktopOAuthButtons: React.FC<DesktopOAuthButtonsProps> = ({
         title: t("oauth.success.title", "Authentication Successful"),
         message: t(
           "oauth.success.message",
-          "You can close this window and return to Stirling PDF.",
+          "You can close this window and return to Total PDF.",
         ),
         isError: false,
       });

@@ -878,11 +878,11 @@ description = "Választható funkciók és képességek konfigurálása."
 title = "Funkciók"
 
 [admin.settings.features.serverCertificate]
-description = "Szerveroldali tanúsítvány létrehozásának konfigurálása a \"Sign with Stirling-PDF\" funkcióhoz"
+description = "Szerveroldali tanúsítvány létrehozásának konfigurálása a \"Sign with Total-PDF\" funkcióhoz"
 label = "Szerver tanúsítvány"
 
 [admin.settings.features.serverCertificate.enabled]
-description = "Szerveroldali tanúsítvány engedélyezése a \"Sign with Stirling-PDF\" opcióhoz"
+description = "Szerveroldali tanúsítvány engedélyezése a \"Sign with Total-PDF\" opcióhoz"
 label = "Szerver tanúsítvány engedélyezése"
 
 [admin.settings.features.serverCertificate.organizationName]
@@ -1030,7 +1030,7 @@ description = "URL vagy fájlnév a cookie-szabályzathoz"
 label = "Cookie-szabályzat"
 
 [admin.settings.legal.disclaimer]
-message = "Ezen jogi dokumentumok testreszabásával teljes felelősséget vállal a vonatkozó jogszabályoknak és előírásoknak való megfelelés biztosításáért, beleértve, de nem kizárólag a GDPR-t és más EU-s adatvédelmi követelményeket. Csak akkor módosítsa ezeket a beállításokat, ha: (1) személyes/privát példányt üzemeltet, (2) az EU joghatóságán kívül van és tisztában van helyi jogi kötelezettségeivel, vagy (3) megfelelő jogi tanácsot szerzett, és elfogadja az egyedüli felelősséget minden felhasználói adatért és a jogszabályoknak való megfelelésért. A Stirling-PDF és fejlesztői nem vállalnak felelősséget az Ön jogi kötelezettségeiért."
+message = "Ezen jogi dokumentumok testreszabásával teljes felelősséget vállal a vonatkozó jogszabályoknak és előírásoknak való megfelelés biztosításáért, beleértve, de nem kizárólag a GDPR-t és más EU-s adatvédelmi követelményeket. Csak akkor módosítsa ezeket a beállításokat, ha: (1) személyes/privát példányt üzemeltet, (2) az EU joghatóságán kívül van és tisztában van helyi jogi kötelezettségeivel, vagy (3) megfelelő jogi tanácsot szerzett, és elfogadja az egyedüli felelősséget minden felhasználói adatért és a jogszabályoknak való megfelelésért. A Total-PDF és fejlesztői nem vállalnak felelősséget az Ön jogi kötelezettségeiért."
 title = "Jogi felelősségi figyelmeztetés"
 
 [admin.settings.legal.impressum]
@@ -1402,7 +1402,7 @@ description = "Bekapcsolva csak a listában szereplő felhasználóazonosítók 
 label = "Csak megadott felhasználóazonosítók engedélyezése"
 
 [admin.settings.telegram.enabled]
-description = "Lehetővé teszi a felhasználóknak a Stirling PDF használatát a beállított Telegram botján keresztül."
+description = "Lehetővé teszi a felhasználóknak a Total PDF használatát a beállított Telegram botján keresztül."
 label = "Telegram bot engedélyezése"
 
 [admin.settings.telegram.feedback]
@@ -1479,7 +1479,7 @@ settingsOverview = "Ez a <strong>Beállítások panel</strong>. Az adminisztrát
 systemCustomization = "Számos módon testre szabhatja a felületet: a <strong>Rendszerbeállítások</strong> lehetővé teszik az alkalmazás nevének és nyelveinek módosítását, a <strong>Funkciók</strong> a kiszolgáló tanúsítványainak kezelését, a <strong>Végpontok</strong> pedig az egyes eszközök engedélyezését vagy letiltását a felhasználói számára."
 teamsAndUsers = "Itt kezelheti a <strong>csapatokat</strong> és az egyes felhasználókat. Meghívhat új felhasználókat e-mailben, megosztható hivatkozásokkal, vagy saját maga hozhat létre egyéni fiókokat számukra."
 welcome = "Üdvözöljük az <strong>Admin túrában</strong>! Fedezzük fel a rendszeradminisztrátorok számára elérhető, hatékony vállalati funkciókat és beállításokat."
-wrapUp = "Ez volt az admin túra! Megismerte azokat a vállalati funkciókat, amelyek a Stirling PDF-et hatékony, testre szabható megoldássá teszik szervezetek számára. Ezt a túrát bármikor elérheti a <strong>Súgó</strong> menüből."
+wrapUp = "Ez volt az admin túra! Megismerte azokat a vállalati funkciókat, amelyek a Total PDF-et hatékony, testre szabható megoldássá teszik szervezetek számára. Ezt a túrát bármikor elérheti a <strong>Súgó</strong> menüből."
 
 [adminUserSettings]
 actions = "Műveletek"
@@ -1516,11 +1516,11 @@ webOnlyUser = "Csak webes felhasználó"
 disable = "Analitika letiltása"
 enable = "Analitika engedélyezése"
 learnMore = "További információ"
-paragraph1 = "A Stirling PDF opcionális analitikai adatgyűjtést kínál a termék fejlesztésének támogatásához. Nem gyűjtünk személyes információkat vagy fájltartalmakat."
-paragraph2 = "Kérjük, fontolja meg az analitika engedélyezését, hogy segítse a Stirling-PDF növekedését és jobban megérthessük felhasználóink igényeit."
+paragraph1 = "A Total PDF opcionális analitikai adatgyűjtést kínál a termék fejlesztésének támogatásához. Nem gyűjtünk személyes információkat vagy fájltartalmakat."
+paragraph2 = "Kérjük, fontolja meg az analitika engedélyezését, hogy segítse a Total-PDF növekedését és jobban megérthessük felhasználóink igényeit."
 privacyAssurance = "Nem követünk semmilyen személyes adatot, és nem figyeljük a fájlok tartalmát."
 settings = "Az analitikai beállításokat a config/settings.yml fájlban módosíthatja"
-title = "Szeretne hozzájárulni a Stirling PDF fejlesztéséhez?"
+title = "Szeretne hozzájárulni a Total PDF fejlesztéséhez?"
 
 [annotation]
 annotationStyle = "Jelölés stílusa"
@@ -1923,7 +1923,7 @@ tags = "pdf,felosztás,dokumentum,rendszerezés"
 description = "Nyomtasson, illesszen be, szkenneljen, töltsön fel, és hagyja, hogy a dokumentumok automatikusan szétváljanak. Nincs szükség kézi rendezésre."
 dividerDownload2 = "'Automatikus elválasztó (utasításokkal).pdf' letöltése"
 duplexMode = "Duplex mód (Elő- és hátoldali szkennelés)"
-formPrompt = "Töltse fel a Stirling-PDF oldalelválasztókat tartalmazó PDF-et:"
+formPrompt = "Töltse fel a Total-PDF oldalelválasztókat tartalmazó PDF-et:"
 header = "Automatikus PDF felosztás"
 submit = "Küldés"
 tags = "QR-alapú,szétválasztás,szkennelt szekció,rendszerezés"
@@ -1932,7 +1932,7 @@ title = "Automatikus PDF felosztás"
 [autoSplitPDF.selectText]
 1 = "Nyomtasson elválasztólapokat alább (fekete-fehér is megfelel)."
 2 = "Szkennelje be az összes dokumentumot egyszerre, az elválasztólapokat közéjük helyezve."
-3 = "Töltse fel az egyetlen nagy szkennelt PDF fájlt, és hagyja, hogy a Stirling PDF elvégezze a többit."
+3 = "Töltse fel az egyetlen nagy szkennelt PDF fájlt, és hagyja, hogy a Total PDF elvégezze a többit."
 4 = "Az elválasztólapokat automatikusan felismeri és eltávolítja, garantálva a rendezett végeredményt."
 
 [backendHealth]
@@ -2491,7 +2491,7 @@ bullet1 = "Támogatott formátumok: PEM, PKCS12, JKS és kiszolgálói tanúsít
 bullet2 = "Az aláírás megjelenítése vagy elrejtése a PDF-en"
 bullet3 = "Ok, hely és aláíró neve hozzáadása"
 bullet4 = "Kiválaszthatja, melyik oldalra kerüljön a látható aláírás"
-bullet5 = "Kiszolgálói tanúsítvány használata az egyszerű 'Aláírás Stirling PDF-fel' opcióhoz"
+bullet5 = "Kiszolgálói tanúsítvány használata az egyszerű 'Aláírás Total PDF-fel' opcióhoz"
 text = "PDF aláírásához digitális tanúsítványra van szükség (például PEM, PKCS12 vagy JKS). Az aláírást megjelenítheti a dokumentumon, vagy tarthatja láthatatlanul, csak biztonsági céllal."
 title = "Aláírás hozzáadása"
 
@@ -3014,15 +3014,15 @@ upgradeButton = "Fiók frissítése"
 chartAriaLabel = "Kredithasználat: tartalmazott {{includedUsed}} / {{includedTotal}}, vásárolt {{purchasedUsed}} / {{purchasedTotal}}"
 copyKeyAriaLabel = "API-kulcs másolása"
 creditsRemaining = "Fennmaradó kreditek"
-description = "Az API-kulcsa a Stirling PDF eszközkészletének eléréséhez. Másolja a projektjébe, vagy frissítse, hogy újat generáljon."
-docsDescription = "További információ a Stirling PDF integrálásáról:"
+description = "Az API-kulcsa a Total PDF eszközkészletének eléréséhez. Másolja a projektjébe, vagy frissítse, hogy újat generáljon."
+docsDescription = "További információ a Total PDF integrálásáról:"
 docsLink = "API-dokumentáció"
 docsTitle = "API-dokumentáció"
 generateError = "Nem sikerült API-kulcsot létrehozni."
 goToAccount = "Ugrás a fiókhoz"
 guestInfo = "A vendégek nem kapnak API-kulcsot. Hozzon létre egy fiókot, hogy API-kulcsot kapjon az alkalmazásaihoz."
 includedCredits = "Tartalmazott kreditek"
-intro = "API-kulcsát használhatja a Stirling PDF feldolgozási képességeinek programozott eléréséhez."
+intro = "API-kulcsát használhatja a Total PDF feldolgozási képességeinek programozott eléréséhez."
 label = "API-kulcs"
 lastApiUse = "Legutóbbi API-használat"
 nextReset = "Következő visszaállítás"
@@ -3196,7 +3196,7 @@ showPreferencesBtn = "Preferenciák kezelése"
 title = "Hogy használjuk a sütiket"
 
 [cookieBanner.popUp.description]
-1 = "Sütiket és egyéb technológiákat használunk, hogy a Stirling PDF jobban működjön az Ön számára, segítve minket abban, hogy javítsuk eszközeinket és olyan funkciókat fejlesszünk, amelyeket szeretni fog"
+1 = "Sütiket és egyéb technológiákat használunk, hogy a Total PDF jobban működjön az Ön számára, segítve minket abban, hogy javítsuk eszközeinket és olyan funkciókat fejlesszünk, amelyeket szeretni fog"
 2 = "Ha inkább nem szeretné, a 'Nem, köszönöm' gombra kattintva csak azok az alapvető sütik lesznek engedélyezve, amelyek a zavartalan működéshez szükségesek."
 
 [cookieBanner.preferencesModal]
@@ -3209,12 +3209,12 @@ subtitle = "Süti használat"
 title = "Beleegyezési preferenciák központja"
 
 [cookieBanner.preferencesModal.analytics]
-description = "Ezek a sütik segítenek megérteni, hogyan használják eszközeinket, így a közösségünk által leginkább értékelt funkciókra összpontosíthatunk. Nyugodt lehet-a Stirling PDF nem képes és soha nem is fog nyomon követni az Ön által használt dokumentumok tartalmát."
+description = "Ezek a sütik segítenek megérteni, hogyan használják eszközeinket, így a közösségünk által leginkább értékelt funkciókra összpontosíthatunk. Nyugodt lehet-a Total PDF nem képes és soha nem is fog nyomon követni az Ön által használt dokumentumok tartalmát."
 title = "Adatelemzések"
 
 [cookieBanner.preferencesModal.description]
-1 = "A Stirling PDF sütiket és hasonló technológiákat használ az Ön élményének javítása, valamint eszközeink használatának megértése érdekében. Ez segít nekünk abban, hogy javítsuk a teljesítményt, fejlesszük az Ön számára fontos funkciókat, és folyamatos támogatást nyújtsunk felhasználóinknak."
-2 = "A Stirling PDF nem képes-és soha nem is fog-nyomon követni vagy hozzáférni az Ön által használt dokumentumok tartalmához."
+1 = "A Total PDF sütiket és hasonló technológiákat használ az Ön élményének javítása, valamint eszközeink használatának megértése érdekében. Ez segít nekünk abban, hogy javítsuk a teljesítményt, fejlesszük az Ön számára fontos funkciókat, és folyamatos támogatást nyújtsunk felhasználóinknak."
+2 = "A Total PDF nem képes-és soha nem is fog-nyomon követni vagy hozzáférni az Ön által használt dokumentumok tartalmához."
 3 = "Az Ön bizalma és adatainak védelme a tevékenységünk középpontjában áll."
 
 [cookieBanner.preferencesModal.necessary]
@@ -3383,7 +3383,7 @@ unexpectedError = "Hiba történt a fájl feldolgozása során. Kérjük, prób�
 [defaultApp]
 description = "Ezt később módosíthatja a rendszerbeállításokban."
 dismiss = "Bezárás"
-message = "Szeretné a Stirling PDF-et alapértelmezett PDF-szerkesztőnek beállítani?"
+message = "Szeretné a Total PDF-et alapértelmezett PDF-szerkesztőnek beállítani?"
 notNow = "Most nem"
 setDefault = "Beállítás alapértelmezettként"
 title = "Beállítás alapértelmezett PDF-alkalmazásként"
@@ -3393,15 +3393,15 @@ message = "Nem sikerült beállítani az alapértelmezett PDF-kezelőt"
 title = "Hiba"
 
 [defaultApp.prompt]
-message = "Állítsa a Stirling PDF-et a PDF-fájlok megnyitásának alapértelmezett alkalmazásává."
+message = "Állítsa a Total PDF-et a PDF-fájlok megnyitásának alapértelmezett alkalmazásává."
 title = "Beállítás alapértelmezett PDF-szerkesztőként"
 
 [defaultApp.settingsOpened]
-message = "Válassza a rendszerbeállításokban a Stirling PDF-et"
+message = "Válassza a rendszerbeállításokban a Total PDF-et"
 title = "Beállítások megnyitva"
 
 [defaultApp.success]
-message = "A Stirling PDF mostantól az alapértelmezett PDF-szerkesztő"
+message = "A Total PDF mostantól az alapértelmezett PDF-szerkesztő"
 title = "Alapértelmezett alkalmazás beállítva"
 
 [editTableOfContents]
@@ -3543,9 +3543,9 @@ visitsTooltip = "Megtekintések: {0} ({1}% az összes megtekintésből)"
 
 [enterpriseEdition]
 button = "Váltás Pro verzióra"
-ssoAdvert = "Több felhasználókezelési funkcióra van szüksége? Tekintse meg a Stirling PDF Pro verzióját!"
+ssoAdvert = "Több felhasználókezelési funkcióra van szüksége? Tekintse meg a Total PDF Pro verzióját!"
 warning = "Ez a funkció csak Pro felhasználók számára érhető el."
-yamlAdvert = "A Stirling PDF Pro támogatja a YAML konfigurációs fájlokat és egyéb SSO funkciókat."
+yamlAdvert = "A Total PDF Pro támogatja a YAML konfigurációs fájlokat és egyéb SSO funkciókat."
 
 [error]
 _value = "Hiba"
@@ -4021,7 +4021,7 @@ invisible = "Láthatatlan (csak metaadat)"
 location = "Hely:"
 logo = "Logó:"
 logoHidden = "Nincs logó"
-logoShown = "Stirling PDF logó megjelenítve"
+logoShown = "Total PDF logó megjelenítve"
 participantCount = "{{count}} résztvevő ír alá sorrendben"
 participants = "Résztvevők"
 reason = "Indoklás:"
@@ -4073,7 +4073,7 @@ title = "Szekvenciális aláírás"
 dismiss = "Banner elrejtése"
 message = "Hozzon létre ingyenes fiókot, hogy menthesse munkáját, több funkcióhoz férjen hozzá és támogassa a projektet."
 signUp = "Ingyenes regisztráció"
-title = "A Stirling PDF-et vendégként használja!"
+title = "A Total PDF-et vendégként használja!"
 
 [home]
 alphabetical = "ABC sorrend"
@@ -4247,7 +4247,7 @@ tags = "összevon,összekapcsol,egyesít"
 title = "Egyesítés"
 
 [home.mobile]
-brandAlt = "Stirling PDF logó"
+brandAlt = "Total PDF logó"
 openFiles = "Fájlok megnyitása"
 swipeHint = "Húzza balra vagy jobbra a nézetek váltásához"
 tools = "Eszközök"
@@ -4287,7 +4287,7 @@ tags = "rendez,átrendez,újrarendez"
 title = "Rendszerezés"
 
 [home.pdfTextEditor]
-desc = "Nézze át és szerkessze a Stirling PDF JSON exportokat csoportosított szövegszerkesztéssel és PDF-újragenerálással"
+desc = "Nézze át és szerkessze a Total PDF JSON exportokat csoportosított szövegszerkesztéssel és PDF-újragenerálással"
 tags = "edit text,modify text,change text,edit content,update text,rewrite,correct,amend,redline,revise,text editor,content editor"
 title = "PDF szövegszerkesztő"
 
@@ -4493,14 +4493,14 @@ passwordTooShort = "A jelszónak legalább 6 karakterből kell állnia"
 signIn = "Bejelentkezés"
 validating = "Meghívó ellenőrzése..."
 validationError = "Nem sikerült ellenőrizni a meghívó linket"
-welcome = "Üdvözli a Stirling PDF"
+welcome = "Üdvözli a Total PDF"
 welcomeSubtitle = "Fejezze be a fiók beállítását a kezdéshez"
 welcomeTitle = "Meghívták!"
 
 [landing]
 addFiles = "Fájlok hozzáadása"
 heroSubtitle = "Húzza ide vagy adjon hozzá egy meglévő PDF-et a kezdéshez."
-heroTitle = "Stirling PDF"
+heroTitle = "Total PDF"
 mobileUpload = "Feltöltés mobilról"
 openFromComputer = "Megnyitás a gépről"
 uploadFromComputer = "Feltöltés a számítógépről"
@@ -4602,7 +4602,7 @@ signinTitle = "Kérjük, jelentkezzen be"
 signInWith = "Bejelentkezés ezzel:"
 signOut = "Kijelentkezés"
 ssoSignIn = "Bejelentkezés egyszeri bejelentkezéssel"
-subtitle = "Jelentkezzen be újra a Stirling PDF"
+subtitle = "Jelentkezzen be újra a Total PDF"
 title = "Bejelentkezés"
 toManySessions = "Túl sok aktív munkamenet"
 unexpectedError = "Váratlan hiba: {{message}}"
@@ -4621,7 +4621,7 @@ subtitle = "Több mint egy tucat eszközzel a PDF-ek kitakarásához, aláírás
 title = "PDF-ek szerkesztése a kívánt információk megjelenítéséhez/védelméhez"
 
 [login.slides.overview]
-alt = "Stirling PDF áttekintés"
+alt = "Total PDF áttekintés"
 subtitle = "Adatvédelem-központú felhőcsomag PDF-ekhez, amellyel konvertálhat, aláírhat, kitakarhat és kezelhet dokumentumokat, több mint 50 további hatékony eszközzel."
 title = "Az összes PDF-megoldás egy helyen."
 
@@ -4787,7 +4787,7 @@ message = "A hitelesítés nem volt sikeres. Bezárhatja ezt az ablakot, és meg
 title = "Sikertelen hitelesítés"
 
 [oauth.success]
-message = "Bezárhatja ezt az ablakot, és visszatérhet a Stirling PDF-hez."
+message = "Bezárhatja ezt az ablakot, és visszatérhet a Total PDF-hez."
 title = "Sikeres hitelesítés"
 
 [ocr]
@@ -4911,7 +4911,7 @@ runButton = "Miután beállította az eszközt, ezzel a gombbal futtathatja azt 
 selectControls = "A <strong>Jobb oldali sáv</strong> gombokat tartalmaz az összes aktív PDF gyors kijelöléséhez/kijelölésének megszüntetéséhez, valamint a téma vagy a nyelv megváltoztatásához."
 selectCropTool = "Válasszuk ki a <strong>Vágás</strong> eszközt, hogy bemutassuk egy eszköz használatát."
 startTour = "Túra indítása"
-startTourDescription = "Vezetett túra a Stirling PDF fő funkcióiról"
+startTourDescription = "Vezetett túra a Total PDF fő funkcióiról"
 toolInterface = "Ez a <strong>Vágás</strong> eszköz felülete. Ahogy látható, még nincs itt sok minden, mert még nem adtunk hozzá PDF-fájlokat."
 viewer = "A <strong>Megjelenítő</strong> lehetővé teszi a PDF-ek olvasását és jegyzetelését."
 viewSwitcher = "Ezekkel a vezérlőkkel választhatja ki, hogyan szeretné megtekinteni a PDF-jeit."
@@ -4934,7 +4934,7 @@ titleWithOs = "Letöltés: {{osLabel}}"
 [onboarding.freeTrial]
 afterTrialWithoutPayment = "A próbaidőszak után az ingyenes csomaggal folytatja. Adjon meg fizetési módot a Pro hozzáférés megtartásához."
 afterTrialWithPayment = "A próbaidőszak lejártakor a Pro előfizetés automatikusan elindul."
-body = "A próbaidő alatt teljes hozzáférése van a Stirling PDF Pro funkcióihoz. Élvezze a korlátlan konverziókat, a nagyobb fájlméretet és az elsőbbségi feldolgozást."
+body = "A próbaidő alatt teljes hozzáférése van a Total PDF Pro funkcióihoz. Élvezze a korlátlan konverziókat, a nagyobb fájlméretet és az elsőbbségi feldolgozást."
 daysRemaining = "{{days}} nap van hátra"
 daysRemainingSingular = "{{days}} nap van hátra"
 title = "30 napos Pro próbaidőszak"
@@ -4960,7 +4960,7 @@ skip = "Kihagyás most"
 upgrade = "Frissítés most →"
 
 [onboarding.tourOverview]
-body = "A Stirling PDF V2 tucatnyi eszközzel és megújult elrendezéssel érkezik. Tegyen egy gyors túrát, hogy lássa, mi változott és hol találja a szükséges funkciókat."
+body = "A Total PDF V2 tucatnyi eszközzel és megújult elrendezéssel érkezik. Tegyen egy gyors túrát, hogy lássa, mi változott és hol találja a szükséges funkciókat."
 title = "Bemutató áttekintése"
 
 [onboarding.welcomeModal]
@@ -4969,10 +4969,10 @@ dontShowAgain = "Ne jelenjen meg újra"
 helpHint = "Ezt a túrát bármikor elérheti a bal alsó sarokban lévő <strong>Súgó</strong> gombbal."
 maybeLater = "Talán később"
 startTour = "Túra indítása"
-title = "Üdvözli a Stirling PDF!"
+title = "Üdvözli a Total PDF!"
 
 [onboarding.welcomeSlide]
-body = "A Stirling PDF mostantól minden méretű csapat számára készen áll. Ez a frissítés új elrendezést, erőteljes új adminisztrátori képességeket és a leggyakrabban kért funkciónkat – a <strong>Szöveg szerkesztése</strong>-t tartalmazza."
+body = "A Total PDF mostantól minden méretű csapat számára készen áll. Ez a frissítés új elrendezést, erőteljes új adminisztrátori képességeket és a leggyakrabban kért funkciónkat – a <strong>Szöveg szerkesztése</strong>-t tartalmazza."
 title = "Üdvözöljük a Stirlingben"
 
 [onboarding.whatsNew]
@@ -5794,7 +5794,7 @@ included = "Tartalmazza"
 name = "Ingyenes"
 
 [plan.licenseWarning]
-body = "{{total}} felhasználója van, de az ingyenes szint szerverenként csak {{limit}}-et támogat. Frissítsen, hogy a Stirling PDF zavartalanul működjön."
+body = "{{total}} felhasználója van, de az ingyenes szint szerverenként csak {{limit}}-et támogat. Frissítsen, hogy a Total PDF zavartalanul működjön."
 cta = "Csomagok megtekintése"
 overLimit = "több mint {{limit}}"
 title = "Elérte az önhostolt ingyenes korlátot"
@@ -6733,8 +6733,8 @@ hideTools = "Nem elérhető eszközök elrejtése ▴"
 messageNoFallback = "Az eszközök csak akkor lesznek elérhetők, ha a szervere újra online."
 messageWithFallback = "Néhány eszközhöz szerverkapcsolat szükséges."
 showTools = "Nem elérhető eszközök megtekintése ▾"
-title = "A Stirling-PDF szervere nem érhető el"
-toolNotAvailableLocally = "A Stirling-PDF szervere offline, és a(z) \"{{endpoint}}\" nem érhető el a helyi backenden."
+title = "A Total-PDF szervere nem érhető el"
+toolNotAvailableLocally = "A Total-PDF szervere offline, és a(z) \"{{endpoint}}\" nem érhető el a helyi backenden."
 
 [session]
 expired = "A munkamenet lejárt. Kérjük, frissítse az oldalt és próbálja újra."
@@ -6806,7 +6806,7 @@ autoUnzipFileLimitDescription = "ZIP-ből kibontandó fájlok maximális száma"
 autoUnzipFileLimitTooltip = "Csak akkor bontsa ki, ha a ZIP legfeljebb ennyi fájlt tartalmaz. Állítsa magasabbra nagyobb ZIP-ek kibontásához."
 autoUnzipTooltip = "Az API műveletek által visszaadott ZIP fájlok automatikus kibontása. Tiltsa le, ha a ZIP fájlokat érintetlenül akarja hagyni. Ez nem érinti az automatizálási munkafolyamatokat."
 defaultPdfEditor = "Alapértelmezett PDF-szerkesztő"
-defaultPdfEditorActive = "A Stirling PDF az alapértelmezett PDF-szerkesztő"
+defaultPdfEditorActive = "A Total PDF az alapértelmezett PDF-szerkesztő"
 defaultPdfEditorChecking = "Ellenőrzés..."
 defaultPdfEditorInactive = "Más alkalmazás van alapértelmezettként beállítva"
 defaultPdfEditorSet = "Már alapértelmezett"
@@ -7023,13 +7023,13 @@ teams = "Csapatok"
 title = "Munkaterület"
 
 [setup]
-description = "Kezdésként válassza ki, hogyan szeretné használni a Stirling PDF-et"
-welcome = "Üdvözöljük a Stirling PDF-ben"
+description = "Kezdésként válassza ki, hogyan szeretné használni a Total PDF-et"
+welcome = "Üdvözöljük a Total PDF-ben"
 
 [setup.login]
 connectingTo = "Kapcsolódás ehhez:"
 hideInstructions = "Utasítások elrejtése"
-instructions = "A bejelentkezés engedélyezéséhez a Stirling PDF szerverén:"
+instructions = "A bejelentkezés engedélyezéséhez a Total PDF szerverén:"
 instructionsEnvVar = "Állítsa be a környezeti változót:"
 instructionsOrYml = "Vagy a settings.yml-ben:"
 instructionsRestart = "Ezután indítsa újra a szervert, hogy a módosítások életbe lépjenek."
@@ -7067,7 +7067,7 @@ description = "Jelentkezzen be Stirling-fiókjával"
 title = "Stirling Cloud"
 
 [setup.mode.selfhosted]
-description = "Csatlakozás a saját Stirling PDF szerveréhez"
+description = "Csatlakozás a saját Total PDF szerveréhez"
 title = "Önhostolt szerver"
 
 [setup.saas]
@@ -7111,11 +7111,11 @@ step3 = "Indítsa újra a szervert"
 title = "A bejelentkezés nincs engedélyezve"
 
 [setup.server.type]
-saas = "Stirling PDF SaaS"
+saas = "Total PDF SaaS"
 selfhosted = "Önhostolt szerver"
 
 [setup.server.url]
-description = "Adja meg az önhostolt Stirling PDF szerver teljes URL-jét"
+description = "Adja meg az önhostolt Total PDF szerver teljes URL-jét"
 label = "Szerver URL"
 
 [setup.step1]
@@ -7340,7 +7340,7 @@ passwordsDoNotMatch = "A jelszavak nem egyeznek"
 passwordTooShort = "A jelszónak legalább 6 karakter hosszúnak kell lennie"
 pleaseFillAllFields = "Kérjük, töltsön ki minden mezőt"
 signUp = "Regisztráció"
-subtitle = "Csatlakozzon a Stirling PDF-hez a kezdéshez"
+subtitle = "Csatlakozzon a Total PDF-hez a kezdéshez"
 title = "Fiók létrehozása"
 unexpectedError = "Váratlan hiba: {{message}}"
 useEmailInstead = "Használjon inkább e-mailt"
@@ -7627,7 +7627,7 @@ download = "Letöltés"
 downloaded = "Letöltve"
 downloadFailed = "A fájl nem tölthető le."
 downloadsCount = "Letöltések: {{count}}"
-emailWarningBody = "Ez e-mail-címnek tűnik. Ha ez a személy nem Stirling PDF felhasználó, nem fogja tudni elérni a fájlt."
+emailWarningBody = "Ez e-mail-címnek tűnik. Ha ez a személy nem Total PDF felhasználó, nem fogja tudni elérni a fájlt."
 emailWarningConfirm = "Megosztás mindenképp"
 emailWarningTitle = "E-mail-cím"
 errorTitle = "A megosztás sikertelen"
@@ -7657,7 +7657,7 @@ manageTitle = "Megosztás kezelése"
 noActivity = "Még nincs aktivitás."
 noLinks = "Még nincsenek aktív megosztási hivatkozások."
 noSharedUsers = "Még nincs felhasználó, aki hozzáfér."
-openInApp = "Megnyitás a Stirling PDF-ben"
+openInApp = "Megnyitás a Total PDF-ben"
 ownerLabel = "Tulajdonos"
 ownerOnly = "Csak a tulajdonos kezelheti a megosztást."
 ownerUnknown = "Ismeretlen"
@@ -7718,28 +7718,28 @@ trialing = "Próba"
 
 [survey]
 button = "Kérdőív kitöltése"
-changes = "A Stirling PDF változott az utolsó felmérés óta! További információért tekintse meg blogbejegyzésünket:"
+changes = "A Total PDF változott az utolsó felmérés óta! További információért tekintse meg blogbejegyzésünket:"
 changes2 = "Ezekkel a változtatásokkal üzleti támogatást és finanszírozást kapunk"
-description = "A Stirling PDF nem végez követést, ezért szeretnénk hallani felhasználóinktól, hogy javíthassunk a terméken!"
+description = "A Total PDF nem végez követést, ezért szeretnénk hallani felhasználóinktól, hogy javíthassunk a terméken!"
 disabled = "(A kérdőív felugró ablaka a következő frissítésekben letiltásra kerül, de továbbra is elérhető lesz a lap alján)"
 dontShowAgain = "Ne jelenjen meg újra"
 nav = "Kérdőív"
 please = "Kérjük, vegyen részt felmérésünkben!"
-title = "Stirling-PDF kérdőív"
+title = "Total-PDF kérdőív"
 
 [survey.meeting]
-1 = "Ha a Stirling PDF-t munkahelyén használja, szívesen beszélgetnénk Önnel. 15 perces felhasználói felfedező konzultációért cserébe technikai támogatási üléseket kínálunk."
+1 = "Ha a Total PDF-t munkahelyén használja, szívesen beszélgetnénk Önnel. 15 perces felhasználói felfedező konzultációért cserébe technikai támogatási üléseket kínálunk."
 2 = "Ez egy lehetőség arra, hogy:"
 3 = "Segítséget kapjon a telepítéshez, integrációkhoz vagy hibaelhárításhoz"
 4 = "Adjon közvetlen visszajelzést a teljesítményről, határesetekről és hiányzó funkciókról"
-5 = "Segítsen nekünk finomítani a Stirling PDF-et a valós vállalati használatra"
+5 = "Segítsen nekünk finomítani a Total PDF-et a valós vállalati használatra"
 6 = "Amennyiben érdekli, közvetlenül foglalhat időpontot csapatunkkal. (Csak angol nyelven)"
-7 = "Várjuk, hogy megismerhessük az Ön felhasználási eseteit és még jobbá tehessük a Stirling PDF-et!"
+7 = "Várjuk, hogy megismerhessük az Ön felhasználási eseteit és még jobbá tehessük a Total PDF-et!"
 button = "Konzultáció foglalása"
 notInterested = "Nem üzleti felhasználó és/vagy nem érdekli a konzultáció"
 
 [swagger]
-desc = "A Stirling PDF API végpontjainak megtekintése és tesztelése"
+desc = "A Total PDF API végpontjainak megtekintése és tesztelése"
 header = "API-dokumentáció"
 tags = "api,dokumentáció,swagger,végpontok,fejlesztés"
 title = "API-dokumentáció"
@@ -7883,7 +7883,7 @@ favorites = "Kedvencek"
 heading = "Minden eszköz (teljes képernyős nézet)"
 noResults = "Próbálja módosítani a keresést vagy kapcsolja be a leírásokat, hogy megtalálja, amit keres."
 recommended = "Ajánlott"
-selfHostedOffline = "A saját Stirling-PDF szerverére van szükség (jelenleg offline):"
+selfHostedOffline = "A saját Total-PDF szerverére van szükség (jelenleg offline):"
 showDetails = "Részletek megjelenítése"
 unavailable = "Szerveradminisztrátor letiltotta:"
 unavailableDependency = "Nem érhető el – szükséges eszköz hiányzik a szerveren:"
@@ -7892,7 +7892,7 @@ unfavorite = "Eltávolítás a kedvencekből"
 [toolPanel.modePrompt]
 chooseFullscreen = "Teljes képernyős mód használata"
 chooseSidebar = "Oldalsáv mód használata"
-description = "Tekintse meg mindkét elrendezést, és döntse el, hogyan szeretné felfedezni a Stirling PDF eszközeit."
+description = "Tekintse meg mindkét elrendezést, és döntse el, hogyan szeretné felfedezni a Total PDF eszközeit."
 dismiss = "Talán később"
 fullscreenDescription = "Böngéssze az összes eszközt egy katalógusban, amely lefedi a munkaterületet, amíg választ egyet."
 fullscreenTitle = "Teljes képernyős mód - (örökölt)"
@@ -7986,7 +7986,7 @@ attentionBody = "Az adminnak be kell jelentkeznie a részletek megtekintéséhez
 attentionBodyAdmin = "Tekintse át a licenckövetelményeket a megfelelőség fenntartásához."
 attentionTitle = "Ez a szerver adminisztrátori figyelmet igényel"
 dismiss = "Banner bezárása"
-message = "Hozza ki a legtöbbet a Stirling PDF-ből korlátlan felhasználóval és fejlett funkciókkal"
+message = "Hozza ki a legtöbbet a Total PDF-ből korlátlan felhasználóval és fejlett funkciókkal"
 seeInfo = "Infó megtekintése"
 title = "Váltás Server csomagra"
 upgradeButton = "Frissítés most"
@@ -8108,7 +8108,7 @@ continued = "Folytatás"
 downloads = "Letöltések"
 entryLabel = "Aláírási összegzés"
 filesEvaluated = "{{count}} fájl kiértékelve"
-footer = "Ellenőrizve a Stirling PDF segítségével"
+footer = "Ellenőrizve a Total PDF segítségével"
 generatedAt = "Létrehozva"
 noPdf = "A PDF jelentés sikeres ellenőrzés után lesz elérhető."
 page = "Oldal"

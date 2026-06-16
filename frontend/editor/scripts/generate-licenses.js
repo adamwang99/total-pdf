@@ -386,7 +386,7 @@ function checkLicenseCompatibility(licenseSummary, licenseArray) {
       isOnlyOurPackages &&
       (license === "UNLICENSED" || license.startsWith("SEE LICENSE IN"))
     ) {
-      return; // Skip warnings for our own Stirling-PDF packages
+      return; // Skip warnings for our own Total-PDF packages
     }
 
     // Check for compound licenses like "(MIT AND Zlib)" or "(MIT OR CC0-1.0)"

@@ -27,7 +27,7 @@ import stirling.software.common.service.UserServiceInterface;
 class PdfMetadataServiceBasicTest {
 
     private PdfMetadataService pdfMetadataService;
-    private static final String STIRLING_PDF_LABEL = "Stirling PDF";
+    private static final String STIRLING_PDF_LABEL = "Total PDF";
 
     @BeforeEach
     void setUp() {

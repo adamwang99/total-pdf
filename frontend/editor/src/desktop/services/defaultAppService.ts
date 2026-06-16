@@ -6,7 +6,7 @@ import { invoke } from "@tauri-apps/api/core";
  */
 export const defaultAppService = {
   /**
-   * Check if Stirling PDF is the default PDF handler
+   * Check if Total PDF is the default PDF handler
    */
   async isDefaultPdfHandler(): Promise<boolean> {
     try {
@@ -19,7 +19,7 @@ export const defaultAppService = {
   },
 
   /**
-   * Set or prompt to set Stirling PDF as default PDF handler
+   * Set or prompt to set Total PDF as default PDF handler
    * Returns a status string indicating what happened
    */
   async setAsDefaultPdfHandler(): Promise<

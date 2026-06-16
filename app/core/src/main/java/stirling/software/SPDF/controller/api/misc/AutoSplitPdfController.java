@@ -55,7 +55,7 @@ public class AutoSplitPdfController {
     private static final Set<String> VALID_QR_CONTENTS =
             Set.of(
                     "https://github.com/Stirling-Tools/Stirling-PDF",
-                    "https://github.com/Frooodle/Stirling-PDF",
+                    "https://github.com/Frooodle/Total-PDF",
                     "https://stirlingpdf.com");
 
     private static final int MAX_IMAGES_FOR_DIRECT_EXTRACTION = 3;

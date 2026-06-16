@@ -25,7 +25,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
                 System administration and configuration management for enterprise deployments.
 
                 This endpoint group provides administrative control for organizations deploying
-                Stirling PDF in production environments with multi-user scenarios.
+                Total PDF in production environments with multi-user scenarios.
 
                 Common use cases:
                 • Enterprise deployment configuration and multi-tenant environment management

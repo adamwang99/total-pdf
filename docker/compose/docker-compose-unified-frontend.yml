@@ -1,4 +1,4 @@
-# Example Docker Compose for Unified Stirling-PDF Container
+# Example Docker Compose for Unified Total-PDF Container
 # MODE=FRONTEND: Frontend only, connects to separate backend
 
 services:

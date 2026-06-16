@@ -1,6 +1,6 @@
 # Exception Handling Guide
 
-This guide outlines the common error handling patterns used within Stirling-PDF and provides tips for internationalising error messages. The examples cover the main languages found in the project: Java, JavaScript, HTML/CSS, and a small amount of Python.
+This guide outlines the common error handling patterns used within Total-PDF and provides tips for internationalising error messages. The examples cover the main languages found in the project: Java, JavaScript, HTML/CSS, and a small amount of Python.
 
 ## General Principles
 
@@ -10,7 +10,7 @@ This guide outlines the common error handling patterns used within Stirling-PDF 
 
 ## Java
 
-Java forms the core of Stirling-PDF. When adding new features or handling errors:
+Java forms the core of Total-PDF. When adding new features or handling errors:
 
 1. **Create custom exceptions** to represent specific failure cases. This keeps the code self-documenting and easier to handle at higher levels.
 2. **Use `try-with-resources`** when working with streams or other closable resources to ensure clean-up even on failure.
@@ -63,4 +63,4 @@ When creating new messages:
 2. Reference the message key in your Java, JavaScript, or Python code.
 3. Update other localisation files as needed.
 
-Following these patterns helps keep Stirling-PDF stable, easier to debug, and friendly to users in all supported languages.
+Following these patterns helps keep Total-PDF stable, easier to debug, and friendly to users in all supported languages.

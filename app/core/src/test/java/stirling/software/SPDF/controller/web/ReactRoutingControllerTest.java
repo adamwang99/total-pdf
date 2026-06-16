@@ -46,7 +46,7 @@ class ReactRoutingControllerTest {
         assertEquals(MediaType.TEXT_HTML, response.getHeaders().getContentType());
         String body = response.getBody();
         assertNotNull(body);
-        assertTrue(body.contains("Stirling PDF"));
+        assertTrue(body.contains("Total PDF"));
     }
 
     @Test
@@ -79,7 +79,7 @@ class ReactRoutingControllerTest {
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
-        assertTrue(response.getBody().contains("Stirling PDF"));
+        assertTrue(response.getBody().contains("Total PDF"));
     }
 
     @Test
@@ -92,7 +92,7 @@ class ReactRoutingControllerTest {
         assertEquals(MediaType.TEXT_HTML, response.getHeaders().getContentType());
         String body = response.getBody();
         assertNotNull(body);
-        assertTrue(body.contains("Stirling PDF"));
+        assertTrue(body.contains("Total PDF"));
     }
 
     // --- tauri auth callback ---

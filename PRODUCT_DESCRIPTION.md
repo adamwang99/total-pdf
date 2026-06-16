@@ -1,7 +1,7 @@
 # Total PDF — Bản mô tả sản phẩm
 
 > Nền tảng xử lý PDF mã nguồn mở, chạy desktop / trình duyệt / self-host.
-> Fork & rebrand từ Stirling-PDF (MIT core). App name: **Total PDF** — identifier `aiworld.totalpdf.app`.
+> Fork & rebrand từ Total-PDF (MIT core). App name: **Total PDF** — identifier `aiworld.totalpdf.app`.
 
 ---
 
@@ -90,7 +90,7 @@ Phân nhóm theo chức năng (lấy từ `frontend/editor/src/core/tools` + com
 - Rust paths/logging/auth references, Windows WiX
 
 **Còn dở:**
-- ⚠️ `settings.gradle` vẫn `rootProject.name = 'Stirling PDF'` → backend chưa đổi tên
+- ⚠️ `settings.gradle` vẫn `rootProject.name = 'Total PDF'` → backend chưa đổi tên
 - README còn nguyên branding/logo/badge Stirling
 - Còn chuỗi "Stirling" rải rác cần quét tổng
 

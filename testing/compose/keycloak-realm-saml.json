@@ -1,8 +1,8 @@
 {
   "id": "stirling-saml",
   "realm": "stirling-saml",
-  "displayName": "Stirling PDF SAML Test",
-  "displayNameHtml": "<div class=\"kc-logo-text\"><span>Stirling PDF SAML</span></div>",
+  "displayName": "Total PDF SAML Test",
+  "displayNameHtml": "<div class=\"kc-logo-text\"><span>Total PDF SAML</span></div>",
   "enabled": true,
   "sslRequired": "none",
   "registrationAllowed": true,
@@ -75,8 +75,8 @@
   "clients": [
     {
     "clientId": "http://localhost:8080/saml2/service-provider-metadata/keycloak",
-      "name": "Stirling PDF SAML Client",
-      "description": "SAML2 client for Stirling PDF testing",
+      "name": "Total PDF SAML Client",
+      "description": "SAML2 client for Total PDF testing",
       "rootUrl": "http://localhost:8080",
       "adminUrl": "http://localhost:8080",
       "baseUrl": "http://localhost:8080",

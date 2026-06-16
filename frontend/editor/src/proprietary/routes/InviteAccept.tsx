@@ -43,12 +43,12 @@ export default function InviteAccept() {
 
   // Set document meta
   useDocumentMeta({
-    title: `${t("invite.welcome", "Welcome to Stirling PDF")} - Stirling PDF`,
+    title: `${t("invite.welcome", "Welcome to Total PDF")} - Total PDF`,
     description: t(
       "app.description",
       "The Free Adobe Acrobat alternative (10M+ Downloads)",
     ),
-    ogTitle: `${t("invite.welcome", "Welcome to Stirling PDF")} - Stirling PDF`,
+    ogTitle: `${t("invite.welcome", "Welcome to Total PDF")} - Total PDF`,
     ogDescription: t(
       "app.description",
       "The Free Adobe Acrobat alternative (10M+ Downloads)",

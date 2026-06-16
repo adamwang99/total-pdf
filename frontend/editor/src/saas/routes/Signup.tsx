@@ -99,12 +99,12 @@ export default function Signup() {
 
   // Set document meta
   useDocumentMeta({
-    title: `${t("signup.title", "Create an account")} - Stirling PDF`,
+    title: `${t("signup.title", "Create an account")} - Total PDF`,
     description: t(
       "app.description",
       "The Free Adobe Acrobat alternative (10M+ Downloads)",
     ),
-    ogTitle: `${t("signup.title", "Create an account")} - Stirling PDF`,
+    ogTitle: `${t("signup.title", "Create an account")} - Total PDF`,
     ogDescription: t(
       "app.description",
       "The Free Adobe Acrobat alternative (10M+ Downloads)",

@@ -3,7 +3,7 @@ import java.nio.file.*;
 import java.util.*;
 
 /**
- * RestartHelper - Lightweight utility to restart Stirling-PDF
+ * RestartHelper - Lightweight utility to restart Total-PDF
  *
  * This helper waits for the old process to exit, then starts the app again
  * with the same arguments. It's only active during restart and then exits.

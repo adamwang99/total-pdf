@@ -130,7 +130,7 @@ jobs:
                 DISABLE_ADDITIONAL_FEATURES: "true"
                 SECURITY_ENABLELOGIN: "false"
                 SYSTEM_DEFAULTLOCALE: en-GB
-                UI_APPNAME: "Stirling-PDF Test"
+                UI_APPNAME: "Total-PDF Test"
                 UI_HOMEDESCRIPTION: "Test Deployment"
                 UI_APPNAMENAVBAR: "Test"
                 SYSTEM_MAXFILESIZE: "100"

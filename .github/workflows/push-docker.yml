@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       build_main_app:
-        description: "Build & push the main Stirling-PDF image (latest, fat, ultra-lite)."
+        description: "Build & push the main Total-PDF image (latest, fat, ultra-lite)."
         required: false
         type: boolean
         default: true

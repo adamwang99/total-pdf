@@ -878,11 +878,11 @@ description = "Konfigurirajte izbirne funkcije in funkcionalnosti."
 title = "Funkcije"
 
 [admin.settings.features.serverCertificate]
-description = "Konfigurirajte generiranje strežniškega potrdila za funkcionalnost \"Sign with Stirling-PDF\""
+description = "Konfigurirajte generiranje strežniškega potrdila za funkcionalnost \"Sign with Total-PDF\""
 label = "Strežniško potrdilo"
 
 [admin.settings.features.serverCertificate.enabled]
-description = "Omogoči strežniško potrdilo za možnost \"Sign with Stirling-PDF\""
+description = "Omogoči strežniško potrdilo za možnost \"Sign with Total-PDF\""
 label = "Omogoči strežniško potrdilo"
 
 [admin.settings.features.serverCertificate.organizationName]
@@ -1030,7 +1030,7 @@ description = "URL ali ime datoteke do politike piškotkov"
 label = "Politika piškotkov"
 
 [admin.settings.legal.disclaimer]
-message = "Z lastnim prilagajanjem teh pravnih dokumentov prevzemate polno odgovornost za zagotavljanje skladnosti z vsemi veljavnimi zakoni in predpisi, vključno z GDPR in drugimi zahtevami EU glede varstva podatkov. Te nastavitve spreminjajte samo, če: (1) upravljate osebno/zasebno instanco, (2) ste zunaj jurisdikcije EU in razumete svoje lokalne pravne obveznosti ali (3) ste pridobili ustrezno pravno svetovanje in prevzemate izključno odgovornost za vse uporabniške podatke in pravno skladnost. Stirling-PDF in njegovi razvijalci ne prevzemajo odgovornosti za vaše pravne obveznosti."
+message = "Z lastnim prilagajanjem teh pravnih dokumentov prevzemate polno odgovornost za zagotavljanje skladnosti z vsemi veljavnimi zakoni in predpisi, vključno z GDPR in drugimi zahtevami EU glede varstva podatkov. Te nastavitve spreminjajte samo, če: (1) upravljate osebno/zasebno instanco, (2) ste zunaj jurisdikcije EU in razumete svoje lokalne pravne obveznosti ali (3) ste pridobili ustrezno pravno svetovanje in prevzemate izključno odgovornost za vse uporabniške podatke in pravno skladnost. Total-PDF in njegovi razvijalci ne prevzemajo odgovornosti za vaše pravne obveznosti."
 title = "Opozorilo o pravni odgovornosti"
 
 [admin.settings.legal.impressum]
@@ -1402,7 +1402,7 @@ description = "Ko je omogočeno, lahko bot uporabljajo samo navedeni ID-ji upora
 label = "Dovoli določene ID-je uporabnikov"
 
 [admin.settings.telegram.enabled]
-description = "Dovoli uporabnikom interakcijo s Stirling PDF prek konfiguriranega Telegram bota."
+description = "Dovoli uporabnikom interakcijo s Total PDF prek konfiguriranega Telegram bota."
 label = "Omogoči Telegram bota"
 
 [admin.settings.telegram.feedback]
@@ -1479,7 +1479,7 @@ settingsOverview = "To je <strong>plošča z nastavitvami</strong>. Skrbniške n
 systemCustomization = "Načini za prilagoditev vmesnika so obsežni: <strong>System Settings</strong> omogoča spremembo imena aplikacije in jezikov, <strong>Features</strong> omogoča upravljanje strežniških potrdil, <strong>Endpoints</strong> pa omogoča omogočanje ali onemogočanje posameznih orodij za vaše uporabnike."
 teamsAndUsers = "Tu upravljajte <strong>skupine</strong> in posamezne uporabnike. Nove uporabnike lahko povabite po e-pošti, s povezavami za deljenje ali jim sami ustvarite račune."
 welcome = "Dobrodošli v <strong>skrbniškem vodniku</strong>! Raziščimo napredne poslovne funkcije in nastavitve, ki so na voljo sistemskim skrbnikom."
-wrapUp = "To je bil skrbniški vodnik! Spoznali ste poslovne funkcije, zaradi katerih je Stirling PDF zmogljiva in prilagodljiva rešitev za organizacije. Do tega vodnika lahko kadarkoli dostopate iz menija <strong>Pomoč</strong>."
+wrapUp = "To je bil skrbniški vodnik! Spoznali ste poslovne funkcije, zaradi katerih je Total PDF zmogljiva in prilagodljiva rešitev za organizacije. Do tega vodnika lahko kadarkoli dostopate iz menija <strong>Pomoč</strong>."
 
 [adminUserSettings]
 actions = "Dejanja"
@@ -1516,11 +1516,11 @@ webOnlyUser = "Samo spletni uporabnik"
 disable = "Onemogoči analitiko"
 enable = "Omogoči analitiko"
 learnMore = "Izvedite več"
-paragraph1 = "Stirling PDF se je odločil za analitiko, ki nam pomaga izboljšati izdelek. Ne sledimo nobenim osebnim podatkom ali vsebini datotek."
-paragraph2 = "Prosimo, razmislite o omogočanju analitike, ki bo pomagala rasti Stirling-PDF in nam bo omogočila boljše razumevanje naših uporabnikov."
+paragraph1 = "Total PDF se je odločil za analitiko, ki nam pomaga izboljšati izdelek. Ne sledimo nobenim osebnim podatkom ali vsebini datotek."
+paragraph2 = "Prosimo, razmislite o omogočanju analitike, ki bo pomagala rasti Total-PDF in nam bo omogočila boljše razumevanje naših uporabnikov."
 privacyAssurance = "Ne spremljamo osebnih podatkov ali vsebine vaših datotek."
 settings = "Nastavitve za analitiko lahko spremenite v datoteki config/settings.yml"
-title = "Ali želite izboljšati Stirling PDF?"
+title = "Ali želite izboljšati Total PDF?"
 
 [annotation]
 annotationStyle = "Slog pripombe"
@@ -1923,7 +1923,7 @@ tags = "pdf,razdelitev,dokument,organizacija"
 description = "Natisnite, vstavite, skenirajte, naložite in nam dovolite, da samodejno ločimo vaše dokumente. Ročno razvrščanje ni potrebno."
 dividerDownload2 = "Prenesi 'Samodejni razdelilnik (z navodili).pdf'"
 duplexMode = "Dupleksni način (skeniranje spredaj in zadaj)"
-formPrompt = "Pošljite PDF, ki vsebuje razdelilnike strani Stirling-PDF:"
+formPrompt = "Pošljite PDF, ki vsebuje razdelilnike strani Total-PDF:"
 header = "Samodejno razdeli PDF"
 submit = "Pošlji"
 tags = "Na osnovi QR,ločeno,skeniranje-segment,organiziranje"
@@ -1932,7 +1932,7 @@ title = "Samodejno razdeli PDF"
 [autoSplitPDF.selectText]
 1 = "Natisnite nekaj razdelilnih listov od spodaj (črno-belo je v redu)."
 2 = "Skenirajte vse dokumente hkrati tako, da mednje vstavite razdelilni list."
-3 = "Naložite eno veliko optično prebrano datoteko PDF in pustite, da Stirling PDF uredi ostalo."
+3 = "Naložite eno veliko optično prebrano datoteko PDF in pustite, da Total PDF uredi ostalo."
 4 = "Ločilne strani so samodejno zaznane in odstranjene, kar zagotavlja čist končni dokument."
 
 [backendHealth]
@@ -2491,7 +2491,7 @@ bullet1 = "Podpira formate PEM, PKCS12, JKS in strežniško potrdilo"
 bullet2 = "Možnost prikaza ali skritja podpisa na PDF"
 bullet3 = "Dodajte razlog, lokacijo in ime podpisnika"
 bullet4 = "Izberite, na kateri strani postaviti vidne podpise"
-bullet5 = "Uporabite strežniško potrdilo za preprosto možnost »Sign with Stirling-PDF«"
+bullet5 = "Uporabite strežniško potrdilo za preprosto možnost »Sign with Total-PDF«"
 text = "Za podpis PDF potrebujete digitalno potrdilo (kot PEM, PKCS12 ali JKS). Podpis lahko na dokumentu prikažete ali ga ohranite nevidnega zgolj zaradi varnosti."
 title = "Dodajanje podpisov"
 
@@ -3015,14 +3015,14 @@ chartAriaLabel = "Uporaba kreditov: vključenih {{includedUsed}} od {{includedTo
 copyKeyAriaLabel = "Kopiraj API ključ"
 creditsRemaining = "Preostali krediti"
 description = "Vaš API ključ za dostop do Stirlingove zbirke PDF orodij. Kopirajte ga v svoj projekt ali osvežite za ustvarjanje novega."
-docsDescription = "Več o integraciji s Stirling PDF:"
+docsDescription = "Več o integraciji s Total PDF:"
 docsLink = "API dokumentacija"
 docsTitle = "API dokumentacija"
 generateError = "API ključa ni bilo mogoče ustvariti."
 goToAccount = "Pojdi na račun"
 guestInfo = "Gosti uporabniki ne prejmejo API ključev. Ustvarite račun, da dobite API ključ, ki ga lahko uporabljate v svojih aplikacijah."
 includedCredits = "Vključeni krediti"
-intro = "S svojim API ključem programatično dostopajte do zmožnosti obdelave Stirling PDF."
+intro = "S svojim API ključem programatično dostopajte do zmožnosti obdelave Total PDF."
 label = "API ključ"
 lastApiUse = "Zadnja uporaba API"
 nextReset = "Naslednja ponastavitev"
@@ -3196,7 +3196,7 @@ showPreferencesBtn = "Upravljaj nastavitve"
 title = "Kako uporabljamo piškotke"
 
 [cookieBanner.popUp.description]
-1 = "Piškotke in druge tehnologije uporabljamo, da Stirling PDF deluje bolje za vas — to nam pomaga izboljševati naša orodja in graditi funkcije, ki vam bodo všeč."
+1 = "Piškotke in druge tehnologije uporabljamo, da Total PDF deluje bolje za vas — to nam pomaga izboljševati naša orodja in graditi funkcije, ki vam bodo všeč."
 2 = "If you’d rather not, clicking 'No Thanks' will only enable the essential cookies needed to keep things running smoothly."
 
 [cookieBanner.preferencesModal]
@@ -3209,12 +3209,12 @@ subtitle = "Uporaba piškotkov"
 title = "Center za nastavitve soglasja"
 
 [cookieBanner.preferencesModal.analytics]
-description = "Ti piškotki nam pomagajo razumeti, kako se naša orodja uporabljajo, da se lahko osredotočimo na gradnjo funkcij, ki jih naša skupnost najbolj ceni. Bodite brez skrbi — Stirling PDF ne more in nikoli ne bo sledil vsebini dokumentov, s katerimi delate."
+description = "Ti piškotki nam pomagajo razumeti, kako se naša orodja uporabljajo, da se lahko osredotočimo na gradnjo funkcij, ki jih naša skupnost najbolj ceni. Bodite brez skrbi — Total PDF ne more in nikoli ne bo sledil vsebini dokumentov, s katerimi delate."
 title = "Analitika"
 
 [cookieBanner.preferencesModal.description]
-1 = "Stirling PDF uporablja piškotke in podobne tehnologije za izboljšanje vaše izkušnje in razumevanje uporabe naših orodij. To nam pomaga izboljšati zmogljivost, razvijati funkcije, ki so vam pomembne, in nenehno podpirati naše uporabnike."
-2 = "Stirling PDF ne more — in nikoli ne bo — sledil ali dostopal do vsebine dokumentov, ki jih uporabljate."
+1 = "Total PDF uporablja piškotke in podobne tehnologije za izboljšanje vaše izkušnje in razumevanje uporabe naših orodij. To nam pomaga izboljšati zmogljivost, razvijati funkcije, ki so vam pomembne, in nenehno podpirati naše uporabnike."
+2 = "Total PDF ne more — in nikoli ne bo — sledil ali dostopal do vsebine dokumentov, ki jih uporabljate."
 3 = "Vaša zasebnost in zaupanje sta v središču našega dela."
 
 [cookieBanner.preferencesModal.necessary]
@@ -3383,7 +3383,7 @@ unexpectedError = "Pri obdelavi datoteke je prišlo do napake. prosim poskusite 
 [defaultApp]
 description = "To lahko kasneje spremenite v sistemskih nastavitvah."
 dismiss = "Zapri"
-message = "Želite nastaviti Stirling PDF kot privzeti urejevalnik PDF?"
+message = "Želite nastaviti Total PDF kot privzeti urejevalnik PDF?"
 notNow = "Ne zdaj"
 setDefault = "Nastavi kot privzeto"
 title = "Nastavi kot privzeto aplikacijo za PDF"
@@ -3393,15 +3393,15 @@ message = "Privzetega upravljalnika PDF ni bilo mogoče nastaviti"
 title = "Napaka"
 
 [defaultApp.prompt]
-message = "Nastavite Stirling PDF kot privzeto aplikacijo za odpiranje datotek PDF."
+message = "Nastavite Total PDF kot privzeto aplikacijo za odpiranje datotek PDF."
 title = "Nastavi kot privzeti urejevalnik PDF"
 
 [defaultApp.settingsOpened]
-message = "V sistemskih nastavitvah izberite Stirling PDF"
+message = "V sistemskih nastavitvah izberite Total PDF"
 title = "Nastavitve odprte"
 
 [defaultApp.success]
-message = "Stirling PDF je zdaj vaš privzeti urejevalnik PDF"
+message = "Total PDF je zdaj vaš privzeti urejevalnik PDF"
 title = "Privzeta aplikacija nastavljena"
 
 [editTableOfContents]
@@ -3543,9 +3543,9 @@ visitsTooltip = "Obiski: {0} ({1}% vseh)"
 
 [enterpriseEdition]
 button = "Nadgradi na Pro"
-ssoAdvert = "Iščete več funkcij za upravljanje uporabnikov? Oglejte si Stirling PDF Pro"
+ssoAdvert = "Iščete več funkcij za upravljanje uporabnikov? Oglejte si Total PDF Pro"
 warning = "Ta funkcija je na voljo samo uporabnikom Pro."
-yamlAdvert = "Stirling PDF Pro podpira konfiguracijske datoteke YAML in druge funkcije SSO."
+yamlAdvert = "Total PDF Pro podpira konfiguracijske datoteke YAML in druge funkcije SSO."
 
 [error]
 _value = "Napaka"
@@ -4021,7 +4021,7 @@ invisible = "Nevidno (samo metapodatki)"
 location = "Lokacija:"
 logo = "Logotip:"
 logoHidden = "Brez logotipa"
-logoShown = "Prikazan logotip Stirling PDF"
+logoShown = "Prikazan logotip Total PDF"
 participantCount = "{{count}} udeležencev bo podpisovalo po vrsti"
 participants = "Udeleženci"
 reason = "Razlog:"
@@ -4073,7 +4073,7 @@ title = "Zaporedno podpisovanje"
 dismiss = "Skrij pasico"
 message = "Ustvarite brezplačen račun, da shranite svoje delo, dostopate do več funkcij in podprete projekt."
 signUp = "Registrirajte se brezplačno"
-title = "Stirling PDF uporabljate kot gost!"
+title = "Total PDF uporabljate kot gost!"
 
 [home]
 alphabetical = "Abecedno"
@@ -4247,7 +4247,7 @@ tags = "združi,spoji,poenoti"
 title = "Združi"
 
 [home.mobile]
-brandAlt = "Logotip Stirling PDF"
+brandAlt = "Logotip Total PDF"
 openFiles = "Odpri datoteke"
 swipeHint = "Podrsnite levo ali desno za preklapljanje pogledov"
 tools = "Orodja"
@@ -4287,7 +4287,7 @@ tags = "organizira,preuredi,razvrsti"
 title = "Organiziraj"
 
 [home.pdfTextEditor]
-desc = "Pregledujte in urejajte Stirling PDF JSON izvoze z urejanjem združenega besedila in ponovnim ustvarjanjem PDF"
+desc = "Pregledujte in urejajte Total PDF JSON izvoze z urejanjem združenega besedila in ponovnim ustvarjanjem PDF"
 tags = "edit text,modify text,change text,edit content,update text,rewrite,correct,amend,redline,revise,text editor,content editor"
 title = "Urejevalnik besedila PDF"
 
@@ -4493,14 +4493,14 @@ passwordTooShort = "Geslo mora vsebovati vsaj 6 znakov"
 signIn = "Prijava"
 validating = "Preverjanje povabila..."
 validationError = "Validacija povezave za povabilo ni uspela"
-welcome = "Dobrodošli v Stirling PDF"
+welcome = "Dobrodošli v Total PDF"
 welcomeSubtitle = "Dokončajte nastavitev računa za začetek"
 welcomeTitle = "Povabljeni ste!"
 
 [landing]
 addFiles = "Dodaj datoteke"
 heroSubtitle = "Spustite sem ali dodajte obstoječi PDF, da začnete."
-heroTitle = "Stirling PDF"
+heroTitle = "Total PDF"
 mobileUpload = "Naloži iz mobilne naprave"
 openFromComputer = "Odpri iz računalnika"
 uploadFromComputer = "Naloži z računalnika"
@@ -4602,7 +4602,7 @@ signinTitle = "Prosim prijavite se"
 signInWith = "Prijavite se z"
 signOut = "Odjava"
 ssoSignIn = "Prijava prek enotne prijave"
-subtitle = "Znova se prijavite v Stirling PDF"
+subtitle = "Znova se prijavite v Total PDF"
 title = "Prijava"
 toManySessions = "Imate preveč aktivnih sej"
 unexpectedError = "Nepričakovana napaka: {{message}}"
@@ -4621,7 +4621,7 @@ subtitle = "Z več kot ducatom orodij za začrnjevanje, podpisovanje, branje in 
 title = "Uredite PDF-je za prikaz ali zaščito želenih informacij"
 
 [login.slides.overview]
-alt = "Pregled Stirling PDF"
+alt = "Pregled Total PDF"
 subtitle = "Paket v oblaku, ki postavlja zasebnost na prvo mesto: pretvarjajte, podpisujte, začrnjajte in upravljajte dokumente ter uporabite več kot 50 drugih zmogljivih orodij."
 title = "Vse na enem mestu za vse vaše potrebe s PDF"
 
@@ -4787,7 +4787,7 @@ message = "Overjanje ni bilo uspešno. Okno lahko zaprete in poskusite znova."
 title = "Overjanje ni uspelo"
 
 [oauth.success]
-message = "To okno lahko zaprete in se vrnete v Stirling PDF."
+message = "To okno lahko zaprete in se vrnete v Total PDF."
 title = "Overjanje uspešno"
 
 [ocr]
@@ -4911,7 +4911,7 @@ runButton = "Ko je orodje nastavljeno, ta gumb omogoča zagon orodja na vseh izb
 selectControls = "<strong>Desni stolpec</strong> vsebuje gumbe za hitro izbiranje/preklic izbire vseh aktivnih PDF-jev ter gumbe za spremembo teme ali jezika aplikacije."
 selectCropTool = "Izberimo orodje <strong>Obreži</strong>, da pokažemo, kako uporabiti eno izmed orodij."
 startTour = "Začni vodnik"
-startTourDescription = "Opravite voden ogled ključnih funkcij Stirling PDF"
+startTourDescription = "Opravite voden ogled ključnih funkcij Total PDF"
 toolInterface = "To je vmesnik orodja <strong>Obreži</strong>. Kot vidite, ni veliko prikazanega, ker še nismo dodali nobenih PDF datotek za delo."
 viewer = "<strong>Pregledovalnik</strong> vam omogoča branje in označevanje vaših PDF-jev."
 viewSwitcher = "S temi kontrolniki izberete, kako želite prikazati svoje PDF-je."
@@ -4934,7 +4934,7 @@ titleWithOs = "Prenesi za {{osLabel}}"
 [onboarding.freeTrial]
 afterTrialWithoutPayment = "Po koncu preizkusnega obdobja boste nadaljevali z brezplačnim paketom. Dodajte plačilno sredstvo, da ohranite dostop do Pro."
 afterTrialWithPayment = "Vaša naročnina Pro se bo samodejno začela po koncu preizkusa."
-body = "Med preizkusom imate poln dostop do funkcij Stirling PDF Pro. Uživajte v neomejenih pretvorbah, večjih velikostih datotek in prednostni obdelavi."
+body = "Med preizkusom imate poln dostop do funkcij Total PDF Pro. Uživajte v neomejenih pretvorbah, večjih velikostih datotek in prednostni obdelavi."
 daysRemaining = "Preostaja {{days}} dni"
 daysRemainingSingular = "Preostaja {{days}} dan"
 title = "Vaš 30-dnevni preizkus Pro"
@@ -4960,7 +4960,7 @@ skip = "Preskoči za zdaj"
 upgrade = "Nadgradi zdaj →"
 
 [onboarding.tourOverview]
-body = "Stirling PDF V2 prinaša številna orodja in osveženo postavitev. Opravite kratek ogled, da vidite, kaj se je spremenilo in kje najdete potrebne funkcije."
+body = "Total PDF V2 prinaša številna orodja in osveženo postavitev. Opravite kratek ogled, da vidite, kaj se je spremenilo in kje najdete potrebne funkcije."
 title = "Pregled ogleda"
 
 [onboarding.welcomeModal]
@@ -4969,10 +4969,10 @@ dontShowAgain = "Ne prikazuj več"
 helpHint = "Do tega vodnika lahko vedno dostopate prek gumba <strong>Pomoč</strong> spodaj levo."
 maybeLater = "Morda kasneje"
 startTour = "Začni vodnik"
-title = "Dobrodošli v Stirling PDF!"
+title = "Dobrodošli v Total PDF!"
 
 [onboarding.welcomeSlide]
-body = "Stirling PDF je zdaj pripravljen za ekipe vseh velikosti. Ta posodobitev vključuje novo postavitev, zmogljive nove skrbniške zmožnosti in našo najbolj zahtevano funkcijo – <strong>Uredi besedilo</strong>."
+body = "Total PDF je zdaj pripravljen za ekipe vseh velikosti. Ta posodobitev vključuje novo postavitev, zmogljive nove skrbniške zmožnosti in našo najbolj zahtevano funkcijo – <strong>Uredi besedilo</strong>."
 title = "Dobrodošli v Stirling"
 
 [onboarding.whatsNew]
@@ -5794,7 +5794,7 @@ included = "Vključeno"
 name = "Brezplačni"
 
 [plan.licenseWarning]
-body = "Imate {{total}} uporabnikov, vendar brezplačni nivo podpira le {{limit}} na strežnik. Nadgradite, da bo Stirling PDF deloval nemoteno."
+body = "Imate {{total}} uporabnikov, vendar brezplačni nivo podpira le {{limit}} na strežnik. Nadgradite, da bo Total PDF deloval nemoteno."
 cta = "Poglej načrte"
 overLimit = "več kot {{limit}}"
 title = "Dosežena brezplačna omejitev samogostovanja"
@@ -6733,8 +6733,8 @@ hideTools = "Skrij nedosegljiva orodja ▴"
 messageNoFallback = "Orodja niso na voljo, dokler vaš strežnik ne bo spet na spletu."
 messageWithFallback = "Nekatera orodja zahtevajo povezavo s strežnikom."
 showTools = "Prikaži nedosegljiva orodja ▾"
-title = "Vaš strežnik Stirling-PDF ni dosegljiv"
-toolNotAvailableLocally = "Vaš strežnik Stirling-PDF je brez povezave in \"{{endpoint}}\" ni na voljo v lokalnem zaledju."
+title = "Vaš strežnik Total-PDF ni dosegljiv"
+toolNotAvailableLocally = "Vaš strežnik Total-PDF je brez povezave in \"{{endpoint}}\" ni na voljo v lokalnem zaledju."
 
 [session]
 expired = "Vaša seja je potekla. Osvežite stran in poskusite znova."
@@ -6806,7 +6806,7 @@ autoUnzipFileLimitDescription = "Največje število datotek za razpakiranje iz Z
 autoUnzipFileLimitTooltip = "Razpakiraj samo, če ZIP vsebuje toliko ali manj datotek. Nastavite višje za razpakiranje večjih ZIP-ov."
 autoUnzipTooltip = "Samodejno razpakira ZIP datoteke, vrnjene iz operacij API. Onemogočite, da ohranite ZIP datoteke nedotaknjene. To ne vpliva na avtomatizirane poteke."
 defaultPdfEditor = "Privzeti urejevalnik PDF"
-defaultPdfEditorActive = "Stirling PDF je vaš privzeti urejevalnik PDF"
+defaultPdfEditorActive = "Total PDF je vaš privzeti urejevalnik PDF"
 defaultPdfEditorChecking = "Preverjanje..."
 defaultPdfEditorInactive = "Druga aplikacija je nastavljena kot privzeta"
 defaultPdfEditorSet = "Že privzeto"
@@ -7023,13 +7023,13 @@ teams = "Skupine"
 title = "Delovni prostor"
 
 [setup]
-description = "Začnite z izbiro načina uporabe Stirling PDF"
-welcome = "Dobrodošli v Stirling PDF"
+description = "Začnite z izbiro načina uporabe Total PDF"
+welcome = "Dobrodošli v Total PDF"
 
 [setup.login]
 connectingTo = "Povezovanje z:"
 hideInstructions = "Skrij navodila"
-instructions = "Za omogočanje prijave na vašem strežniku Stirling PDF:"
+instructions = "Za omogočanje prijave na vašem strežniku Total PDF:"
 instructionsEnvVar = "Nastavite okoljsko spremenljivko:"
 instructionsOrYml = "Ali v settings.yml:"
 instructionsRestart = "Nato znova zaženite strežnik, da spremembe začnejo veljati."
@@ -7067,7 +7067,7 @@ description = "Prijavite se s svojim računom Stirling"
 title = "Stirling Cloud"
 
 [setup.mode.selfhosted]
-description = "Povežite se s svojim strežnikom Stirling PDF"
+description = "Povežite se s svojim strežnikom Total PDF"
 title = "Samogostovani strežnik"
 
 [setup.saas]
@@ -7111,11 +7111,11 @@ step3 = "Znova zaženite strežnik"
 title = "Prijava ni omogočena"
 
 [setup.server.type]
-saas = "Stirling PDF SaaS"
+saas = "Total PDF SaaS"
 selfhosted = "Samogostovani strežnik"
 
 [setup.server.url]
-description = "Vnesite celoten URL svojega samogostovanega strežnika Stirling PDF"
+description = "Vnesite celoten URL svojega samogostovanega strežnika Total PDF"
 label = "URL strežnika"
 
 [setup.step1]
@@ -7340,7 +7340,7 @@ passwordsDoNotMatch = "Gesli se ne ujemata"
 passwordTooShort = "Geslo mora imeti vsaj 6 znakov"
 pleaseFillAllFields = "Izpolnite vsa polja"
 signUp = "Registracija"
-subtitle = "Pridružite se Stirling PDF in začnite"
+subtitle = "Pridružite se Total PDF in začnite"
 title = "Ustvarite račun"
 unexpectedError = "Nepričakovana napaka: {{message}}"
 useEmailInstead = "Namesto tega uporabi e-pošto"
@@ -7627,7 +7627,7 @@ download = "Prenesi"
 downloaded = "Preneseno"
 downloadFailed = "Te datoteke ni mogoče prenesti."
 downloadsCount = "Prenosi: {{count}}"
-emailWarningBody = "Videti je kot e-poštni naslov. Če ta oseba ni uporabnik Stirling PDF, ne bo mogla dostopati do datoteke."
+emailWarningBody = "Videti je kot e-poštni naslov. Če ta oseba ni uporabnik Total PDF, ne bo mogla dostopati do datoteke."
 emailWarningConfirm = "Vseeno daj v skupno rabo"
 emailWarningTitle = "E-poštni naslov"
 errorTitle = "Skupna raba ni uspela"
@@ -7657,7 +7657,7 @@ manageTitle = "Upravljanje skupne rabe"
 noActivity = "Še ni dejavnosti."
 noLinks = "Ni aktivnih povezav za skupno rabo."
 noSharedUsers = "Noben uporabnik še nima dostopa."
-openInApp = "Odpri v Stirling PDF"
+openInApp = "Odpri v Total PDF"
 ownerLabel = "Lastnik"
 ownerOnly = "Le lastnik lahko upravlja skupno rabo."
 ownerUnknown = "Neznano"
@@ -7718,28 +7718,28 @@ trialing = "Preizkus"
 
 [survey]
 button = "Izpolnite anketo"
-changes = "Stirling-PDF se je spremenil od zadnje ankete! Če želite izvedeti več, si oglejte objavo v spletnem dnevniku tukaj:"
+changes = "Total-PDF se je spremenil od zadnje ankete! Če želite izvedeti več, si oglejte objavo v spletnem dnevniku tukaj:"
 changes2 = "S temi spremembami dobimo plačano poslovno podporo in financiranje"
-description = "Stirling-PDF nima sledenja, zato želimo slišati od naših uporabnikov, da bi izboljšali Stirling-PDF!"
+description = "Total-PDF nima sledenja, zato želimo slišati od naših uporabnikov, da bi izboljšali Total-PDF!"
 disabled = "(Pojavno okno ankete bo v naslednjih posodobitvah onemogočeno, vendar na voljo na dnu strani)"
 dontShowAgain = "Ne prikaži več"
 nav = "Anketa"
-please = "Prosimo, razmislite o sodelovanju v naši anketi, če želite prispevati k prihodnosti Stirling-PDF!"
-title = "Anketa Stirling-PDF"
+please = "Prosimo, razmislite o sodelovanju v naši anketi, če želite prispevati k prihodnosti Total-PDF!"
+title = "Anketa Total-PDF"
 
 [survey.meeting]
-1 = "Če v službi uporabljate Stirling PDF, bi radi govorili z vami. Ponujamo seje tehnične podpore v zameno za 15-minutno sejo odkrivanja uporabnikov."
+1 = "Če v službi uporabljate Total PDF, bi radi govorili z vami. Ponujamo seje tehnične podpore v zameno za 15-minutno sejo odkrivanja uporabnikov."
 2 = "To je priložnost za:"
 3 = "Poiščite pomoč pri uvajanju, integracijah ali odpravljanju težav"
 4 = "Zagotovite neposredne povratne informacije o zmogljivosti, robnih primerih in vrzeli v funkcijah"
-5 = "Pomagajte nam izboljšati Stirling PDF za uporabo v podjetju v resničnem svetu"
+5 = "Pomagajte nam izboljšati Total PDF za uporabo v podjetju v resničnem svetu"
 6 = "Če ste zainteresirani, si lahko rezervirate čas neposredno pri naši ekipi. (samo angleško govoreči)"
-7 = "Veselimo se poglobitve v vaše primere uporabe in izboljšanja Stirling PDF-ja!"
+7 = "Veselimo se poglobitve v vaše primere uporabe in izboljšanja Total PDF-ja!"
 button = "Rezerviraj srečanje"
 notInterested = "Niste podjetje in/ali vas zanima srečanje?"
 
 [swagger]
-desc = "Oglejte si in preizkusite končne točke Stirling PDF API"
+desc = "Oglejte si in preizkusite končne točke Total PDF API"
 header = "Dokumentacija API"
 tags = "api,dokumentacija,swagger,končne-točke,razvoj"
 title = "Dokumentacija API"
@@ -7883,7 +7883,7 @@ favorites = "Priljubljene"
 heading = "Vsa orodja (celozaslonski pogled)"
 noResults = "Poskusite prilagoditi iskanje ali preklopiti opise, da najdete, kar potrebujete."
 recommended = "Priporočeno"
-selfHostedOffline = "Zahteva vaš strežnik Stirling-PDF (trenutno brez povezave):"
+selfHostedOffline = "Zahteva vaš strežnik Total-PDF (trenutno brez povezave):"
 showDetails = "Pokaži podrobnosti"
 unavailable = "Onemogočeno s strani skrbnika strežnika:"
 unavailableDependency = "Ni na voljo – na strežniku manjka zahtevano orodje:"
@@ -7892,7 +7892,7 @@ unfavorite = "Odstrani iz priljubljenih"
 [toolPanel.modePrompt]
 chooseFullscreen = "Uporabi celozaslonski način"
 chooseSidebar = "Uporabi način stranske vrstice"
-description = "Predogled obeh postavitev in odločite se, kako želite raziskovati orodja Stirling PDF."
+description = "Predogled obeh postavitev in odločite se, kako želite raziskovati orodja Total PDF."
 dismiss = "Morda kasneje"
 fullscreenDescription = "Brskajte po vseh orodjih v katalogu, ki pokrije delovni prostor, dokler ne izberete enega."
 fullscreenTitle = "Celozaslonski način - (zastarelo)"
@@ -7986,7 +7986,7 @@ attentionBody = "Vaš skrbnik se mora prijaviti za več informacij. Prosimo, kon
 attentionBodyAdmin = "Preglejte licenčne zahteve, da bo ta strežnik v skladu."
 attentionTitle = "Ta strežnik potrebuje pozornost skrbnika"
 dismiss = "Skrij pasico"
-message = "Izkoristite Stirling PDF z neomejenimi uporabniki in naprednimi funkcijami"
+message = "Izkoristite Total PDF z neomejenimi uporabniki in naprednimi funkcijami"
 seeInfo = "Poglej informacije"
 title = "Nadgradite na načrt Server"
 upgradeButton = "Nadgradi zdaj"
@@ -8108,7 +8108,7 @@ continued = "Nadaljevanje"
 downloads = "Prenosi"
 entryLabel = "Povzetek podpisa"
 filesEvaluated = "{{count}} obravnavanih datotek"
-footer = "Preverjeno prek Stirling PDF"
+footer = "Preverjeno prek Total PDF"
 generatedAt = "Ustvarjeno"
 noPdf = "Poročilo PDF bo na voljo po uspešnem preverjanju."
 page = "Stran"

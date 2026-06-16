@@ -878,11 +878,11 @@ description = "Konfiguratu aukerako eginbideak eta funtzionalitatea."
 title = "Eginbideak"
 
 [admin.settings.features.serverCertificate]
-description = "Konfiguratu zerbitzarian ziurtagiriak sortzea \"Stirling-PDFekin sinatu\" funtzionalitaterako"
+description = "Konfiguratu zerbitzarian ziurtagiriak sortzea \"Total-PDFekin sinatu\" funtzionalitaterako"
 label = "Zerbitzari-ziurtagiria"
 
 [admin.settings.features.serverCertificate.enabled]
-description = "Gaitu zerbitzari-ziurtagiria \"Stirling-PDFekin sinatu\" aukerarako"
+description = "Gaitu zerbitzari-ziurtagiria \"Total-PDFekin sinatu\" aukerarako"
 label = "Zerbitzari-ziurtagiria gaitu"
 
 [admin.settings.features.serverCertificate.organizationName]
@@ -1030,7 +1030,7 @@ description = "Cookieen politikara doan URLa edo fitxategi-izena"
 label = "Cookieen politika"
 
 [admin.settings.legal.disclaimer]
-message = "Dokumentu legal hauek pertsonalizatuta, erantzukizun osoa hartzen duzu indarrean dauden lege eta araudi guztiekin bat etortzea bermatzeko, GDPR eta beste EBko datu-babes eskakizunak barne baina ez soilik. Ezarpen hauek soilik aldatu: (1) instantzia pertsonal/pribatua erabiltzen baduzu, (2) EBko jurisdikziotik kanpo bazaude eta zure betebehar legalak ulertzen badituzu, edo (3) aholku legal egokia eskuratu baduzu eta erabiltzaileen datu eta lege-betetze guztien erantzukizun esklusiboa onartzen baduzu. Stirling-PDF eta bere garatzaileek ez dute zure betebehar legalen erantzukizunik hartzen."
+message = "Dokumentu legal hauek pertsonalizatuta, erantzukizun osoa hartzen duzu indarrean dauden lege eta araudi guztiekin bat etortzea bermatzeko, GDPR eta beste EBko datu-babes eskakizunak barne baina ez soilik. Ezarpen hauek soilik aldatu: (1) instantzia pertsonal/pribatua erabiltzen baduzu, (2) EBko jurisdikziotik kanpo bazaude eta zure betebehar legalak ulertzen badituzu, edo (3) aholku legal egokia eskuratu baduzu eta erabiltzaileen datu eta lege-betetze guztien erantzukizun esklusiboa onartzen baduzu. Total-PDF eta bere garatzaileek ez dute zure betebehar legalen erantzukizunik hartzen."
 title = "Erantzukizun legalaren abisua"
 
 [admin.settings.legal.impressum]
@@ -1402,7 +1402,7 @@ description = "Gaituta dagoenean, zerrendatutako erabiltzaile IDek bakarrik erab
 label = "Baimendu erabiltzaile ID zehatzak"
 
 [admin.settings.telegram.enabled]
-description = "Baimendu erabiltzaileek Stirling PDFekin elkarreragitea konfiguratutako Telegram bot-aren bidez."
+description = "Baimendu erabiltzaileek Total PDFekin elkarreragitea konfiguratutako Telegram bot-aren bidez."
 label = "Gaitu Telegram bot-a"
 
 [admin.settings.telegram.feedback]
@@ -1479,7 +1479,7 @@ settingsOverview = "Hau da <strong>Ezarpenen panela</strong>. Administrazio-ezar
 systemCustomization = "UI pertsonalizatzeko modu ugari ditugu: <strong>Sistemaren ezarpenek</strong> aplikazioaren izena eta hizkuntzak aldatzea uzten dute, <strong>Ezaugarriek</strong> zerbitzariaren ziurtagirien kudeaketa ahalbidetzen dute, eta <strong>Endpoints</strong> atalak erabiltzaileentzako tresna zehatzak gaitu edo desgaitu ditzake."
 teamsAndUsers = "Kudeatu hemen <strong>Taldeak</strong> eta erabiltzaile indibidualak. Erabiltzaile berriak e-postaz, partekatzeko esteken bidez gonbidatu edo zuk zeuk kontu pertsonalizatuak sor ditzakezu."
 welcome = "Ongi etorri <strong>Administrazio-birara</strong>! Azter ditzagun sistema-administratzaileentzako ezaugarri eta ezarpen boteretsuak."
-wrapUp = "Hori da administrazio-bira! Erakundeei egokitutako eta pertsonalizagarriak diren ezaugarriak ezagutu dituzu Stirling PDF irtenbide indartsu bihurtzen dutenak. Sar zaitez bira honetara edozein unetan <strong>Laguntza</strong> menutik."
+wrapUp = "Hori da administrazio-bira! Erakundeei egokitutako eta pertsonalizagarriak diren ezaugarriak ezagutu dituzu Total PDF irtenbide indartsu bihurtzen dutenak. Sar zaitez bira honetara edozein unetan <strong>Laguntza</strong> menutik."
 
 [adminUserSettings]
 actions = "Ekintzak"
@@ -1516,11 +1516,11 @@ webOnlyUser = "Web-erabiltzailea bakarrik"
 disable = "Desgaitu analitika"
 enable = "Gaitu analitika"
 learnMore = "Argibide gehiago"
-paragraph1 = "Stirling PDF-k aukerazko analitikak ditu produktua hobetzen laguntzeko. Ez dugu informazio pertsonalik edo fitxategi-edukirik jarraitzen."
-paragraph2 = "Mesedez, kontuan hartu analitikak gaitzea Stirling-PDF hazten laguntzeko eta gure erabiltzaileak hobeto ulertzeko."
+paragraph1 = "Total PDF-k aukerazko analitikak ditu produktua hobetzen laguntzeko. Ez dugu informazio pertsonalik edo fitxategi-edukirik jarraitzen."
+paragraph2 = "Mesedez, kontuan hartu analitikak gaitzea Total-PDF hazten laguntzeko eta gure erabiltzaileak hobeto ulertzeko."
 privacyAssurance = "Ez dugu jarraitzen datu pertsonalik ezta zure fitxategien edukirik ere."
 settings = "Analitikaren ezarpenak alda ditzakezu config/settings.yml fitxategian"
-title = "Stirling PDF hobetzea nahi duzu?"
+title = "Total PDF hobetzea nahi duzu?"
 
 [annotation]
 annotationStyle = "Anotazioaren estiloa"
@@ -1923,7 +1923,7 @@ tags = "pdf,banatu,dokumentua,antolaketa"
 description = "Inprimatu, txertatu, eskaneatu, igo eta utzi guri automatikoki bereizten zure dokumentuak. Ez da laneko eskuzko hautaketarik behar."
 dividerDownload2 = "Deskargatu 'Auto Splitter Divider (with instructions).pdf'"
 duplexMode = "Duplex Mode (Front and back scanning)Duplex modua (aurreko eta atzeko azterketa)"
-formPrompt = "Bidali Stirling-PDF orri-banatzaileak dituen PDFa:"
+formPrompt = "Bidali Total-PDF orri-banatzaileak dituen PDFa:"
 header = "Auto Zatitu PDFa"
 submit = "Bidali"
 tags = "QR-based,banatu,eskaneaketa-zatia,antolatu"
@@ -1932,7 +1932,7 @@ title = "Auto Zatitu PDFa"
 [autoSplitPDF.selectText]
 1 = "Inprimatu beheko zatitze-orri batzuk (beltza eta zuria ondo dago)."
 2 = "Eskaneatu dokumentu guztiak batera, eta sartu banalerroa haien artean."
-3 = "Igo eskaneatutako PDF artxibo handia, eta utzi Stirling PDFri gainerakoak maneiatzen."
+3 = "Igo eskaneatutako PDF artxibo handia, eta utzi Total PDFri gainerakoak maneiatzen."
 4 = "Orrialde zatitzaileak automatikoki detektatu eta kentzen dira, eta azken dokumentu ordenatua bermatzen da."
 
 [backendHealth]
@@ -2491,7 +2491,7 @@ bullet1 = "Onartzen ditu PEM, PKCS12, JKS eta zerbitzariaren ziurtagiri formatua
 bullet2 = "Aukera sinadura PDFan erakusteko edo ezkutatzeko"
 bullet3 = "Gehitu arrazoia, kokapena eta sinatzailearen izena"
 bullet4 = "Aukeratu zein orritan jarri sinadura ikusgarriak"
-bullet5 = "Erabili zerbitzariaren ziurtagiria 'Sinatu Stirling-PDF-rekin' aukera errazarentzat"
+bullet5 = "Erabili zerbitzariaren ziurtagiria 'Sinatu Total-PDF-rekin' aukera errazarentzat"
 text = "PDF bat sinatzeko, ziurtagiri digital bat behar duzu (PEM, PKCS12 edo JKS modukoa). Sinadura dokumentuan ikusgai egitea edo segurtasunerako ikusezin mantentzea aukera dezakezu."
 title = "Sinadurak gehitzea"
 
@@ -3015,14 +3015,14 @@ chartAriaLabel = "Kredituen erabilera: barne {{includedUsed}}/{{includedTotal}},
 copyKeyAriaLabel = "API gakoa kopiatu"
 creditsRemaining = "Geratzen diren kredituak"
 description = "Stirlingen PDF tresna-multzora sartzeko zure API gakoa. Kopiatu zure proiektuara edo berritu berri bat sortzeko."
-docsDescription = "Ikasi gehiago Stirling PDFrekin integrazioari buruz:"
+docsDescription = "Ikasi gehiago Total PDFrekin integrazioari buruz:"
 docsLink = "API dokumentazioa"
 docsTitle = "API dokumentazioa"
 generateError = "Ezin izan dugu zure API gakoa sortu."
 goToAccount = "Joan kontura"
 guestInfo = "Gonbidatu erabiltzaileek ez dute API gakorik jasotzen. Sortu kontu bat zure aplikazioetan erabil dezakezun API gakoa lortzeko."
 includedCredits = "Barne kredituak"
-intro = "Erabili zure API gakoa Stirling PDFren prozesatzeko gaitasunetara programatikoki sartzeko."
+intro = "Erabili zure API gakoa Total PDFren prozesatzeko gaitasunetara programatikoki sartzeko."
 label = "API gakoa"
 lastApiUse = "Azken API erabilera"
 nextReset = "Hurrengo berrezarpena"
@@ -3196,7 +3196,7 @@ showPreferencesBtn = "Kudeatu hobespenak"
 title = "Cookieak nola erabiltzen ditugu"
 
 [cookieBanner.popUp.description]
-1 = "Cookieak eta beste teknologiak erabiltzen ditugu Stirling PDF zuretzat hobeto funtziona dadin—gure tresnak hobetzen eta gustuko izango dituzun ezaugarriak eraikitzen jarraitzen laguntzen digute."
+1 = "Cookieak eta beste teknologiak erabiltzen ditugu Total PDF zuretzat hobeto funtziona dadin—gure tresnak hobetzen eta gustuko izango dituzun ezaugarriak eraikitzen jarraitzen laguntzen digute."
 2 = "If you’d rather not, clicking 'No Thanks' will only enable the essential cookies needed to keep things running smoothly."
 
 [cookieBanner.preferencesModal]
@@ -3209,12 +3209,12 @@ subtitle = "Cookieen erabilera"
 title = "Baimen-hobespenen zentroa"
 
 [cookieBanner.preferencesModal.analytics]
-description = "Cookie hauek gure tresnak nola erabiltzen diren ulertzen laguntzen digute, gure komunitateak baloratzen dituen ezaugarriak eraikitzera bideratu ahal izateko. Ziur egon—Stirling PDFk ezin du eta ez du inoiz jarraituko lantzen dituzun dokumentuen edukia."
+description = "Cookie hauek gure tresnak nola erabiltzen diren ulertzen laguntzen digute, gure komunitateak baloratzen dituen ezaugarriak eraikitzera bideratu ahal izateko. Ziur egon—Total PDFk ezin du eta ez du inoiz jarraituko lantzen dituzun dokumentuen edukia."
 title = "Analitika"
 
 [cookieBanner.preferencesModal.description]
-1 = "Stirling PDFk cookieak eta antzeko teknologiak erabiltzen ditu zure esperientzia hobetzeko eta gure tresnak nola erabiltzen diren ulertzeko. Honek errendimendua hobetzen eta axola zaizkizun ezaugarriak garatzen laguntzen digu, eta erabiltzaileei etengabeko laguntza ematen die."
-2 = "Stirling PDF ezin da—eta ez du inoiz egingo—zuri erabiltzen dituzun dokumentuen edukia jarraitu edo atzitu."
+1 = "Total PDFk cookieak eta antzeko teknologiak erabiltzen ditu zure esperientzia hobetzeko eta gure tresnak nola erabiltzen diren ulertzeko. Honek errendimendua hobetzen eta axola zaizkizun ezaugarriak garatzen laguntzen digu, eta erabiltzaileei etengabeko laguntza ematen die."
+2 = "Total PDF ezin da—eta ez du inoiz egingo—zuri erabiltzen dituzun dokumentuen edukia jarraitu edo atzitu."
 3 = "Zure pribatutasuna eta konfiantza gure lanaren muinean daude."
 
 [cookieBanner.preferencesModal.necessary]
@@ -3383,7 +3383,7 @@ unexpectedError = "Errore bat gertatu da fitxategia prozesatzean. Saiatu berriro
 [defaultApp]
 description = "Geroago alda dezakezu sistemaren ezarpenetan."
 dismiss = "Baztertu"
-message = "Nahi duzu Stirling PDF zure PDF editore lehenetsi gisa ezartzea?"
+message = "Nahi duzu Total PDF zure PDF editore lehenetsi gisa ezartzea?"
 notNow = "Orain ez"
 setDefault = "Ezarri lehenetsia"
 title = "Ezarri PDF aplikazio lehenetsi gisa"
@@ -3393,15 +3393,15 @@ message = "Ezin izan da PDF kudeatzaile lehenetsia ezarri"
 title = "Errorea"
 
 [defaultApp.prompt]
-message = "Egin Stirling PDF PDF fitxategiak irekitzeko zure aplikazio lehenetsia."
+message = "Egin Total PDF PDF fitxategiak irekitzeko zure aplikazio lehenetsia."
 title = "Ezarri PDF editore lehenetsi gisa"
 
 [defaultApp.settingsOpened]
-message = "Hautatu Stirling PDF sistemaren ezarpenetan, mesedez"
+message = "Hautatu Total PDF sistemaren ezarpenetan, mesedez"
 title = "Ezarpenak ireki dira"
 
 [defaultApp.success]
-message = "Stirling PDF orain zure PDF editore lehenetsia da"
+message = "Total PDF orain zure PDF editore lehenetsia da"
 title = "Aplikazio lehenetsia ezarrita"
 
 [editTableOfContents]
@@ -3543,9 +3543,9 @@ visitsTooltip = "Bisitak: {0} (guztizkoaren {1}%)"
 
 [enterpriseEdition]
 button = "Eguneratu Pro bertsiora"
-ssoAdvert = "Erabiltzaile-kudeaketa ezaugarri gehiago nahi dituzu? Begiratu Stirling PDF Pro"
+ssoAdvert = "Erabiltzaile-kudeaketa ezaugarri gehiago nahi dituzu? Begiratu Total PDF Pro"
 warning = "Funtzio hau Pro erabiltzaileentzat soilik dago eskuragarri."
-yamlAdvert = "Stirling PDF Pro-k YAML konfigurazio fitxategiak eta beste SSO ezaugarri batzuk onartzen ditu."
+yamlAdvert = "Total PDF Pro-k YAML konfigurazio fitxategiak eta beste SSO ezaugarri batzuk onartzen ditu."
 
 [error]
 _value = "Errorea"
@@ -4021,7 +4021,7 @@ invisible = "Ikusezina (metadatuak soilik)"
 location = "Kokapena:"
 logo = "Logotipoa:"
 logoHidden = "Logotiporik ez"
-logoShown = "Stirling PDF logotipoa erakusten da"
+logoShown = "Total PDF logotipoa erakusten da"
 participantCount = "{{count}} parte-hartzailek sinatuko dute ordenean"
 participants = "Parte-hartzaileak"
 reason = "Arrazoia:"
@@ -4073,7 +4073,7 @@ title = "Sinadura sekuentziala"
 dismiss = "Baztertu pankarta"
 message = "Sortu doako kontu bat zure lana gordetzeko, ezaugarri gehiago eskuratzeko eta proiektua babesteko."
 signUp = "Izena eman doan"
-title = "Stirling PDF gonbidatu gisa erabiltzen ari zara!"
+title = "Total PDF gonbidatu gisa erabiltzen ari zara!"
 
 [home]
 alphabetical = "Alfabetikoki"
@@ -4247,7 +4247,7 @@ tags = "batu,elkartu,bat egin"
 title = "Elkartu"
 
 [home.mobile]
-brandAlt = "Stirling PDF logotipoa"
+brandAlt = "Total PDF logotipoa"
 openFiles = "Ireki fitxategiak"
 swipeHint = "Egin hatz-keinua ezkerrera edo eskuinera ikuspegiak aldatzeko"
 tools = "Tresnak"
@@ -4287,7 +4287,7 @@ tags = "antolatu,berrordenatu,ordena aldatu"
 title = "Antolatzailea"
 
 [home.pdfTextEditor]
-desc = "Berrikusi eta editatu Stirling PDF JSON esportazioak taldekatutako testu-edizioarekin eta PDF birsorkuntzarekin"
+desc = "Berrikusi eta editatu Total PDF JSON esportazioak taldekatutako testu-edizioarekin eta PDF birsorkuntzarekin"
 tags = "edit text,modify text,change text,edit content,update text,rewrite,correct,amend,redline,revise,text editor,content editor"
 title = "PDF testu-editorea"
 
@@ -4493,14 +4493,14 @@ passwordTooShort = "Pasahitzak gutxienez 6 karaktere izan behar ditu"
 signIn = "Hasi saioa"
 validating = "Gonbidapena baliozkotzen..."
 validationError = "Ezin izan da gonbidapen-esteka baliozkotu"
-welcome = "Ongi etorri Stirling PDFra"
+welcome = "Ongi etorri Total PDFra"
 welcomeSubtitle = "Amaitu zure kontuaren konfigurazioa hasteko"
 welcomeTitle = "Gonbidapena jaso duzu!"
 
 [landing]
 addFiles = "Gehitu fitxategiak"
 heroSubtitle = "Jaregin edo gehitu dagoen PDF bat hasteko."
-heroTitle = "Stirling PDF"
+heroTitle = "Total PDF"
 mobileUpload = "Kargatu mugikorretik"
 openFromComputer = "Ireki ordenagailutik"
 uploadFromComputer = "Igo ordenagailutik"
@@ -4602,7 +4602,7 @@ signinTitle = "Mesedez, hasi saioa"
 signInWith = "Hasi saioa honekin"
 signOut = "Irten"
 ssoSignIn = "Hasi saioa Saioa hasteko modu bakarraren bidez"
-subtitle = "Hasi saioa berriro Stirling PDF-n"
+subtitle = "Hasi saioa berriro Total PDF-n"
 title = "Saioa hasi"
 toManySessions = "Saio aktibo gehiegi dituzu"
 unexpectedError = "Ustekabeko errorea: {{message}}"
@@ -4621,7 +4621,7 @@ subtitle = "Dozenaka tresnarekin PDFak zentsuratu, sinatu, irakurri eta manipula
 title = "Editatu PDFak nahi duzun informazioa bistaratu edo babesteko"
 
 [login.slides.overview]
-alt = "Stirling PDF ikuspegi orokorra"
+alt = "Total PDF ikuspegi orokorra"
 subtitle = "Pribatutasuna lehenesten duen hodeiko suitea, PDFak bihurtu, sinatu, zentsuratu eta kudeatzeko, eta 50+ tresna indartsu gehiagorekin."
 title = "Zure PDF behar guztietarako gune bakarra."
 
@@ -4787,7 +4787,7 @@ message = "Autentifikazioa ez da ongi burutu. Leiho hau itxi eta saiatu berriro.
 title = "Autentifikazioak huts egin du"
 
 [oauth.success]
-message = "Leiho hau itxi eta Stirling PDF-era itzul zaitezke."
+message = "Leiho hau itxi eta Total PDF-era itzul zaitezke."
 title = "Autentifikazioa ongi burutu da"
 
 [ocr]
@@ -4911,7 +4911,7 @@ runButton = "Tresna konfiguratu ondoren, botoi honek hautatutako PDF guztietan t
 selectControls = "<strong>Eskuineko errailak</strong> zure PDF aktibo guztiak azkar hautatu/desautatzeko botoiak dauzka, baita aplikazioaren gaia edo hizkuntza aldatzeko botoiak ere."
 selectCropTool = "Hauta dezagun <strong>Moztu</strong> tresna tresnetako bat nola erabili erakusteko."
 startTour = "Hasi bira"
-startTourDescription = "Stirling PDFren ezaugarri nagusien gida-bira"
+startTourDescription = "Total PDFren ezaugarri nagusien gida-bira"
 toolInterface = "Hau da <strong>Moztu</strong> tresnaren interfazea. Ikusten duzunez, ez dago asko oraindik, lantzeko PDF fitxategirik ez dugulako gehitu."
 viewer = "<strong>Ikustaileak</strong> zure PDFak irakurri eta oharrak egiteko aukera ematen du."
 viewSwitcher = "Erabili kontrol hauek zure PDFak nola ikusi nahi dituzun hautatzeko."
@@ -4934,7 +4934,7 @@ titleWithOs = "Deskargatu {{osLabel}}-rako"
 [onboarding.freeTrial]
 afterTrialWithoutPayment = "Proba amaitzean, gure maila doakoarekin jarraituko duzu. Gehitu ordainketa-metodo bat Pro sarbidea mantentzeko."
 afterTrialWithPayment = "Zure Pro harpidetza automatikoki hasiko da proba amaitzean."
-body = "Probaldian Stirling PDF Pro-ren funtzio guztietarako sarbidea duzu. Gozatu bihurketa mugagabeak, fitxategi handiagoak eta lehentasunezko prozesatzea."
+body = "Probaldian Total PDF Pro-ren funtzio guztietarako sarbidea duzu. Gozatu bihurketa mugagabeak, fitxategi handiagoak eta lehentasunezko prozesatzea."
 daysRemaining = "{{days}} egun falta"
 daysRemainingSingular = "{{days}} egun falta"
 title = "Zure 30 eguneko Pro proba"
@@ -4960,7 +4960,7 @@ skip = "Utzi oraingoz"
 upgrade = "Eguneratu orain →"
 
 [onboarding.tourOverview]
-body = "Stirling PDF V2k dozenaka tresna eta diseinu berritua dakartza. Egin ibilbide azkar bat aldaketak eta behar dituzun funtzioak non dauden ikusteko."
+body = "Total PDF V2k dozenaka tresna eta diseinu berritua dakartza. Egin ibilbide azkar bat aldaketak eta behar dituzun funtzioak non dauden ikusteko."
 title = "Ibilbidearen ikuspegi orokorra"
 
 [onboarding.welcomeModal]
@@ -4969,10 +4969,10 @@ dontShowAgain = "Ez berriz erakutsi"
 helpHint = "Bira hau nahi duzunean ikus dezakezu berriro beheko ezkerrean dagoen <strong>Laguntza</strong> botoitik."
 maybeLater = "Agian geroago"
 startTour = "Hasi bira"
-title = "Ongi etorri Stirling PDFra!"
+title = "Ongi etorri Total PDFra!"
 
 [onboarding.welcomeSlide]
-body = "Stirling PDF orain tamaina guztietako taldeentzat prest dago. Eguneratze honek diseinu berria, admin gaitasun indartsu berriak, eta eskatuen izan den eginbidea dakar - <strong>Testua editatu</strong>."
+body = "Total PDF orain tamaina guztietako taldeentzat prest dago. Eguneratze honek diseinu berria, admin gaitasun indartsu berriak, eta eskatuen izan den eginbidea dakar - <strong>Testua editatu</strong>."
 title = "Ongi etorri Stirlingera"
 
 [onboarding.whatsNew]
@@ -5794,7 +5794,7 @@ included = "Sartuta"
 name = "Doakoa"
 
 [plan.licenseWarning]
-body = "{{total}} erabiltzaile dituzu baina maila doakoak {{limit}} soilik onartzen ditu zerbitzari bakoitzeko. Eguneratu Stirling PDF ondo ibil dadin."
+body = "{{total}} erabiltzaile dituzu baina maila doakoak {{limit}} soilik onartzen ditu zerbitzari bakoitzeko. Eguneratu Total PDF ondo ibil dadin."
 cta = "Ikusi planak"
 overLimit = "{{limit}} baino gehiago"
 title = "Doako auto-ostatu muga gaindituta"
@@ -6733,8 +6733,8 @@ hideTools = "Ezkutatu erabilgarri ez dauden tresnak ▴"
 messageNoFallback = "Tresnak ez daude erabilgarri zure zerbitzaria linean egon arte."
 messageWithFallback = "Zenbait tresnek zerbitzariarekiko konexioa behar dute."
 showTools = "Ikusi erabilgarri ez dauden tresnak ▾"
-title = "Ezin da atzitu zure Stirling-PDF zerbitzaria"
-toolNotAvailableLocally = "Zure Stirling-PDF zerbitzaria lineaz kanpo dago eta \"{{endpoint}}\" ez dago erabilgarri tokiko backend-ean."
+title = "Ezin da atzitu zure Total-PDF zerbitzaria"
+toolNotAvailableLocally = "Zure Total-PDF zerbitzaria lineaz kanpo dago eta \"{{endpoint}}\" ez dago erabilgarri tokiko backend-ean."
 
 [session]
 expired = "Zure saioa iraungi da. Freskatu orria eta saiatu berriro."
@@ -6806,7 +6806,7 @@ autoUnzipFileLimitDescription = "Gehienez zenbat fitxategi atera ZIPetik"
 autoUnzipFileLimitTooltip = "Deskonprimitu soilik ZIPak hainbeste fitxategi edo gutxiago baditu. Ezarri handiagoa ZIP handiagoak erauzteko."
 autoUnzipTooltip = "Automatikoki deskonprimitu API eragiketek itzultzen dituzten ZIP fitxategiak. Desgaitu ZIP fitxategiak bere horretan mantentzeko. Honek ez du eraginik automatizazio-fluxuetan."
 defaultPdfEditor = "PDF editore lehenetsia"
-defaultPdfEditorActive = "Stirling PDF zure PDF editore lehenetsia da"
+defaultPdfEditorActive = "Total PDF zure PDF editore lehenetsia da"
 defaultPdfEditorChecking = "Egiaztatzen..."
 defaultPdfEditorInactive = "Beste aplikazio bat dago lehenetsi gisa"
 defaultPdfEditorSet = "Dagoeneko lehenetsia"
@@ -7023,13 +7023,13 @@ teams = "Taldeak"
 title = "Lan-espazioa"
 
 [setup]
-description = "Hasi Stirling PDF nola erabili nahi duzun aukeratuz"
-welcome = "Ongi etorri Stirling PDF-era"
+description = "Hasi Total PDF nola erabili nahi duzun aukeratuz"
+welcome = "Ongi etorri Total PDF-era"
 
 [setup.login]
 connectingTo = "Hona konektatzen:"
 hideInstructions = "Ezkutatu argibideak"
-instructions = "Saioa hastea gaitzeko zure Stirling PDF zerbitzarian:"
+instructions = "Saioa hastea gaitzeko zure Total PDF zerbitzarian:"
 instructionsEnvVar = "Ezarri ingurune-aldagaia:"
 instructionsOrYml = "Edo settings.yml fitxategian:"
 instructionsRestart = "Ondoren, berrabiarazi zerbitzaria aldaketak indarrean sartzeko."
@@ -7067,7 +7067,7 @@ description = "Hasi saioa zure Stirling kontuarekin"
 title = "Stirling Cloud"
 
 [setup.mode.selfhosted]
-description = "Konektatu zure Stirling PDF zerbitzarira"
+description = "Konektatu zure Total PDF zerbitzarira"
 title = "Auto-ostatuko zerbitzaria"
 
 [setup.saas]
@@ -7111,11 +7111,11 @@ step3 = "Berrabiarazi zerbitzaria"
 title = "Saio-hasiera ez dago gaituta"
 
 [setup.server.type]
-saas = "Stirling PDF SaaS"
+saas = "Total PDF SaaS"
 selfhosted = "Auto-ostatuko zerbitzaria"
 
 [setup.server.url]
-description = "Sartu zure auto-ostatuko Stirling PDF zerbitzariaren URLa osoa"
+description = "Sartu zure auto-ostatuko Total PDF zerbitzariaren URLa osoa"
 label = "Zerbitzariaren URLa"
 
 [setup.step1]
@@ -7340,7 +7340,7 @@ passwordsDoNotMatch = "Pasahitzak ez datoz bat"
 passwordTooShort = "Pasahitzak gutxienez 6 karaktere izan behar ditu"
 pleaseFillAllFields = "Bete eremu guztiak, mesedez"
 signUp = "Eman izena"
-subtitle = "Batu Stirling PDFra hasteko"
+subtitle = "Batu Total PDFra hasteko"
 title = "Sortu kontu bat"
 unexpectedError = "Ustekabeko errorea: {{message}}"
 useEmailInstead = "Erabili e-posta ordez"
@@ -7627,7 +7627,7 @@ download = "Deskargatu"
 downloaded = "Deskargatuta"
 downloadFailed = "Ezin da fitxategi hau deskargatu."
 downloadsCount = "Deskargak: {{count}}"
-emailWarningBody = "Honek helbide elektroniko baten itxura du. Pertsona hau Stirling PDF erabiltzailea ez bada, ezin izango du fitxategia atzitu."
+emailWarningBody = "Honek helbide elektroniko baten itxura du. Pertsona hau Total PDF erabiltzailea ez bada, ezin izango du fitxategia atzitu."
 emailWarningConfirm = "Partekatu hala ere"
 emailWarningTitle = "Helbide elektronikoa"
 errorTitle = "Partekatzea huts egin du"
@@ -7657,7 +7657,7 @@ manageTitle = "Partekatzea kudeatu"
 noActivity = "Oraindik ez dago jarduerarik."
 noLinks = "Ez dago partekatzeko esteka aktiborik oraindik."
 noSharedUsers = "Oraindik ez du inork atzipenik."
-openInApp = "Ireki Stirling PDF"
+openInApp = "Ireki Total PDF"
 ownerLabel = "Jabea"
 ownerOnly = "Jabeak bakarrik kudea dezake partekatzea."
 ownerUnknown = "Ezezaguna"
@@ -7718,28 +7718,28 @@ trialing = "Proba"
 
 [survey]
 button = "Egin inkesta"
-changes = "Stirling-PDF aldatu da azken inkestatik! Argibide gehiago nahi baduzu, begiratu gure blogeko argitalpena hemen:"
+changes = "Total-PDF aldatu da azken inkestatik! Argibide gehiago nahi baduzu, begiratu gure blogeko argitalpena hemen:"
 changes2 = "Aldaketa hauekin, ordaindutako enpresa-laguntza eta finantzaketa jasotzen ari gara"
-description = "Stirling-PDFk ez du jarraipenik, beraz, gure erabiltzaileen iritzia jakin nahi dugu Stirling-PDF hobetzeko!"
+description = "Total-PDFk ez du jarraipenik, beraz, gure erabiltzaileen iritzia jakin nahi dugu Total-PDF hobetzeko!"
 disabled = "(Inkesta-leihoa desgaitu egingo da hurrengo eguneratzeetan baina eskuragarri egongo da orriaren behealdean)"
 dontShowAgain = "Ez erakutsi berriro"
 nav = "Inkesta"
 please = "Please consider taking our survey!"
-title = "Stirling-PDF Inkesta"
+title = "Total-PDF Inkesta"
 
 [survey.meeting]
-1 = "Stirling PDF lanean erabiltzen baduzu, pozik hitz egingo genuke zurekin. 15 minutuko erabiltzaile-aurkikuntza saio baten truke laguntza teknikoa eskaintzen ari gara."
+1 = "Total PDF lanean erabiltzen baduzu, pozik hitz egingo genuke zurekin. 15 minutuko erabiltzaile-aurkikuntza saio baten truke laguntza teknikoa eskaintzen ari gara."
 2 = "Hau aukera bat da:"
 3 = "Hedapena, integrazioak edo arazo-konponketa laguntza lortzeko"
 4 = "Errendimendua, ertzeko kasuak eta ezaugarri-hutsuneak zuzenean helarazteko"
-5 = "Stirling PDF benetako enpresa-erabileretarako fintzen laguntzeko"
+5 = "Total PDF benetako enpresa-erabileretarako fintzen laguntzeko"
 6 = "Interesa baduzu, gure taldearekin zuzenean ordua hartu dezakezu. (Ingeles hiztunak soilik)"
-7 = "Zure erabilera-kasuetan sakontzeko eta Stirling PDF are hobea egiteko irrikitan gaude!"
+7 = "Zure erabilera-kasuetan sakontzeko eta Total PDF are hobea egiteko irrikitan gaude!"
 button = "Erreserbatu bilera"
 notInterested = "Ez zara enpresa bat eta/edo ez zaude interesatuta bileretan?"
 
 [swagger]
-desc = "Ikusi eta probatu Stirling PDF APIko amaiera-puntuak"
+desc = "Ikusi eta probatu Total PDF APIko amaiera-puntuak"
 header = "API Dokumentazioa"
 tags = "api,dokumentazioa,swagger,endpointak,garapena"
 title = "API Dokumentazioa"
@@ -7883,7 +7883,7 @@ favorites = "Gogokoak"
 heading = "Tresna guztiak (pantaila osoko ikuspegia)"
 noResults = "Saiatu bilaketa moldatzen edo deskribapenak txandakatzen behar duzuna aurkitzeko."
 recommended = "Gomendatua"
-selfHostedOffline = "Zure Stirling-PDF zerbitzaria behar da (unean lineaz kanpo):"
+selfHostedOffline = "Zure Total-PDF zerbitzaria behar da (unean lineaz kanpo):"
 showDetails = "Erakutsi xehetasunak"
 unavailable = "Zerbitzariaren administratzaileak desgaituta:"
 unavailableDependency = "Ez dago eskuragarri - beharrezko tresna falta da zerbitzarian:"
@@ -7892,7 +7892,7 @@ unfavorite = "Kendu gogokoetatik"
 [toolPanel.modePrompt]
 chooseFullscreen = "Erabili pantaila osoko modua"
 chooseSidebar = "Erabili alboko barra modua"
-description = "Aurrebista bi diseinuak eta erabaki nola arakatu nahi dituzun Stirling PDF tresnak."
+description = "Aurrebista bi diseinuak eta erabaki nola arakatu nahi dituzun Total PDF tresnak."
 dismiss = "Agian geroago"
 fullscreenDescription = "Arakatu tresna guztiak katalogo batean, tresna bat aukeratu arte lan-eremua estaltzen duena."
 fullscreenTitle = "Pantaila osoko modua - (ondarea)"
@@ -7986,7 +7986,7 @@ attentionBody = "Zure administratzaileak saioa hasi behar du informazio gehiago 
 attentionBodyAdmin = "Berrikusi lizentzia-eskakizunak zerbitzari hau betean mantentzeko."
 attentionTitle = "Zerbitzari honek admin arreta behar du"
 dismiss = "Baztertu bannerra"
-message = "Atera etekinik handiena Stirling PDF-i erabiltzaile mugagabeekin eta funtzio aurreratuekin"
+message = "Atera etekinik handiena Total PDF-i erabiltzaile mugagabeekin eta funtzio aurreratuekin"
 seeInfo = "Ikusi informazioa"
 title = "Eguneratu Zerbitzari Planera"
 upgradeButton = "Eguneratu orain"
@@ -8108,7 +8108,7 @@ continued = "Jarraipena"
 downloads = "Deskargak"
 entryLabel = "Sinaduraren laburpena"
 filesEvaluated = "{{count}} fitxategi ebaluatu"
-footer = "Balidatua Stirling PDF bidez"
+footer = "Balidatua Total PDF bidez"
 generatedAt = "Sortuta"
 noPdf = "PDF txostena erabilgarri egongo da balidazio arrakastatsu baten ostean."
 page = "Orria"

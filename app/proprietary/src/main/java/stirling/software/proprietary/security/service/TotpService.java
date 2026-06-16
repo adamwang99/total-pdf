@@ -32,7 +32,7 @@ public class TotpService {
     private static final int CODE_DIGITS = 6;
     private static final int PERIOD_SECONDS = 30;
     private static final String HMAC_ALGORITHM = "HmacSHA1";
-    private static final String DEFAULT_ISSUER = "Stirling PDF";
+    private static final String DEFAULT_ISSUER = "Total PDF";
     private static final SecureRandom SECURE_RANDOM = new SecureRandom();
     private static final Pattern TOTP_CODE_PATTERN = Pattern.compile("\\d{6}");
 

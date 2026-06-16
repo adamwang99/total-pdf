@@ -5,7 +5,7 @@ import { selfHostedServerMonitor } from "@app/services/selfHostedServerMonitor";
 import type { GroupEnabledResult } from "@app/types/groupEnabled";
 
 const OFFLINE_REASON_FALLBACK =
-  "Requires your Stirling-PDF server (currently offline)";
+  "Requires your Total-PDF server (currently offline)";
 
 /**
  * Desktop override: skips the network request entirely when the self-hosted

@@ -48,7 +48,7 @@ const SPLIT_ENDPOINT_I18N: Record<string, [string, string]> = {
 
 /**
  * Desktop-only banner shown when the user is in self-hosted mode and the
- * configured Stirling-PDF server is unreachable.
+ * configured Total-PDF server is unreachable.
  *
  * - Warns the user their server is offline
  * - Explains whether local fallback is active

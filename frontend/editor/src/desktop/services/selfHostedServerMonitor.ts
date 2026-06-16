@@ -13,7 +13,7 @@ const REQUEST_TIMEOUT_MS = 8_000;
 
 /**
  * Singleton service that independently monitors the health of the self-hosted
- * Stirling-PDF server. Used in self-hosted connection mode to detect when the
+ * Total-PDF server. Used in self-hosted connection mode to detect when the
  * remote server goes offline so that the operation router can fall back to the
  * local bundled backend for supported tools.
  *

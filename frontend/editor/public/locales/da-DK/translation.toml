@@ -878,11 +878,11 @@ description = "Konfigurer valgfrie funktioner og funktionalitet."
 title = "Funktioner"
 
 [admin.settings.features.serverCertificate]
-description = "Konfigurer generering af serverside-certifikat til \"Sign with Stirling-PDF\"-funktionalitet"
+description = "Konfigurer generering af serverside-certifikat til \"Sign with Total-PDF\"-funktionalitet"
 label = "Serversertifikat"
 
 [admin.settings.features.serverCertificate.enabled]
-description = "Aktivér serverside-certifikat til \"Sign with Stirling-PDF\"-indstillingen"
+description = "Aktivér serverside-certifikat til \"Sign with Total-PDF\"-indstillingen"
 label = "Aktivér serversertifikat"
 
 [admin.settings.features.serverCertificate.organizationName]
@@ -1030,7 +1030,7 @@ description = "URL eller filnavn til cookiepolitik"
 label = "Cookiepolitik"
 
 [admin.settings.legal.disclaimer]
-message = "Ved at tilpasse disse juridiske dokumenter påtager du dig det fulde ansvar for at sikre overholdelse af alle gældende love og regler, herunder men ikke begrænset til GDPR og andre EU-krav til databeskyttelse. Ændr kun disse indstillinger hvis: (1) du driver en personlig/privat instance, (2) du er uden for EU's jurisdiktion og forstår dine lokale juridiske forpligtelser, eller (3) du har indhentet korrekt juridisk rådgivning og accepterer det fulde ansvar for alle brugerdata og juridisk compliance. Stirling-PDF og dets udviklere påtager sig intet ansvar for dine juridiske forpligtelser."
+message = "Ved at tilpasse disse juridiske dokumenter påtager du dig det fulde ansvar for at sikre overholdelse af alle gældende love og regler, herunder men ikke begrænset til GDPR og andre EU-krav til databeskyttelse. Ændr kun disse indstillinger hvis: (1) du driver en personlig/privat instance, (2) du er uden for EU's jurisdiktion og forstår dine lokale juridiske forpligtelser, eller (3) du har indhentet korrekt juridisk rådgivning og accepterer det fulde ansvar for alle brugerdata og juridisk compliance. Total-PDF og dets udviklere påtager sig intet ansvar for dine juridiske forpligtelser."
 title = "Advarsel om juridisk ansvar"
 
 [admin.settings.legal.impressum]
@@ -1402,7 +1402,7 @@ description = "Når aktiveret, kan kun de angivne bruger-ID'er bruge botten."
 label = "Tillad specifikke bruger-ID'er"
 
 [admin.settings.telegram.enabled]
-description = "Tillad brugere at interagere med Stirling PDF via din konfigurerede Telegram-bot."
+description = "Tillad brugere at interagere med Total PDF via din konfigurerede Telegram-bot."
 label = "Aktivér Telegram-bot"
 
 [admin.settings.telegram.feedback]
@@ -1479,7 +1479,7 @@ settingsOverview = "Dette er <strong>Indstillingspanelet</strong>. Admin-indstil
 systemCustomization = "Vi har omfattende måder at tilpasse UI'et: <strong>Systemindstillinger</strong> lader dig ændre appnavn og sprog, <strong>Funktioner</strong> tillader håndtering af servercertifikater, og <strong>Endpoints</strong> lader dig aktivere eller deaktivere specifikke værktøjer for dine brugere."
 teamsAndUsers = "Administrér <strong>Teams</strong> og individuelle brugere her. Du kan invitere nye brugere via e-mail, delbare links eller oprette brugerdefinerede konti til dem selv."
 welcome = "Velkommen til <strong>Administratorrundturen</strong>! Lad os udforske de avancerede enterprise-funktioner og indstillinger, der er tilgængelige for systemadministratorer."
-wrapUp = "Det var administratorrundturen! Du har set de enterprise-funktioner, der gør Stirling PDF til en kraftfuld, tilpasningsbar løsning for organisationer. Få adgang til denne rundtur når som helst fra <strong>Hjælp</strong>-menuen."
+wrapUp = "Det var administratorrundturen! Du har set de enterprise-funktioner, der gør Total PDF til en kraftfuld, tilpasningsbar løsning for organisationer. Få adgang til denne rundtur når som helst fra <strong>Hjælp</strong>-menuen."
 
 [adminUserSettings]
 actions = "Handlinger"
@@ -1516,11 +1516,11 @@ webOnlyUser = "Kun Web-bruger"
 disable = "Deaktiver analytics"
 enable = "Aktivér analytics"
 learnMore = "Lær mere"
-paragraph1 = "Stirling PDF har indsat analytics for at hjælpe os med at forbedre produktet. Vi følger ikke nogen personoplysninger eller filinhold."
-paragraph2 = "Bevægelsesmæssigt aktiver du analytics for at hjælpe Stirling-PDF med at vokse og til atstå os bedre at forstå vores brugere."
+paragraph1 = "Total PDF har indsat analytics for at hjælpe os med at forbedre produktet. Vi følger ikke nogen personoplysninger eller filinhold."
+paragraph2 = "Bevægelsesmæssigt aktiver du analytics for at hjælpe Total-PDF med at vokse og til atstå os bedre at forstå vores brugere."
 privacyAssurance = "Vi sporer ikke personlige oplysninger eller indholdet af dine filer."
 settings = "Du kan ændre analytics-indstillingerne i config/settings.yml-filen"
-title = "Vil du gøre Stirling PDF bedre?"
+title = "Vil du gøre Total PDF bedre?"
 
 [annotation]
 annotationStyle = "Annoteringsstil"
@@ -1923,7 +1923,7 @@ tags = "pdf,opdel,dokument,organisation"
 description = "Udskriv, Indsæt, Scan, upload, og lad os auto-adskille dine dokumenter. Intet manuelt arbejde med sortering nødvendigt."
 dividerDownload2 = "Download 'Auto Splitter Divider (med instruktioner).pdf'"
 duplexMode = "Duplex-tilstand (For- og bagside scanning)"
-formPrompt = "Indsend PDF indeholdende Stirling-PDF Sideopdelere:"
+formPrompt = "Indsend PDF indeholdende Total-PDF Sideopdelere:"
 header = "Auto Opdel PDF"
 submit = "Indsend"
 tags = "QR-baseret,adskil,scan-segment,organisér"
@@ -1932,7 +1932,7 @@ title = "Auto Opdel PDF"
 [autoSplitPDF.selectText]
 1 = "Udskriv nogle skilleark fra nedenfor (Sort og hvid er fint)."
 2 = "Scan alle dine dokumenter på én gang ved at indsætte skillearket mellem dem."
-3 = "Upload den enkelte store scannede PDF-fil og lad Stirling PDF håndtere resten."
+3 = "Upload den enkelte store scannede PDF-fil og lad Total PDF håndtere resten."
 4 = "Skillesider detekteres automatisk og fjernes, hvilket garanterer et pænt endeligt dokument."
 
 [backendHealth]
@@ -2491,7 +2491,7 @@ bullet1 = "Understøtter PEM, PKCS12, JKS og servercertifikatformater"
 bullet2 = "Mulighed for at vise eller skjule signatur på PDF'en"
 bullet3 = "Tilføj årsag, sted og underskrivers navn"
 bullet4 = "Vælg hvilken side synlige signaturer skal placeres på"
-bullet5 = "Brug servercertifikat for en enkel 'Sign with Stirling-PDF'-mulighed"
+bullet5 = "Brug servercertifikat for en enkel 'Sign with Total-PDF'-mulighed"
 text = "For at signere en PDF skal du bruge et digitalt certifikat (som PEM, PKCS12 eller JKS). Du kan vælge at gøre signaturen synlig i dokumentet eller holde den usynlig kun af sikkerhedshensyn."
 title = "Tilføjelse af signaturer"
 
@@ -3015,14 +3015,14 @@ chartAriaLabel = "Forbrug af kreditter: inkluderet {{includedUsed}} af {{include
 copyKeyAriaLabel = "Kopiér API-nøgle"
 creditsRemaining = "Tilbageværende kreditter"
 description = "Din API-nøgle til adgang til Stirlings pakke af PDF-værktøjer. Kopiér den til dit projekt, eller opdatér for at generere en ny."
-docsDescription = "Lær mere om integration med Stirling PDF:"
+docsDescription = "Lær mere om integration med Total PDF:"
 docsLink = "API-dokumentation"
 docsTitle = "API-dokumentation"
 generateError = "Vi kunne ikke generere din API-nøgle."
 goToAccount = "Gå til konto"
 guestInfo = "Gæstebrugere modtager ikke API-nøgler. Opret en konto for at få en API-nøgle, du kan bruge i dine applikationer."
 includedCredits = "Inkluderede kreditter"
-intro = "Brug din API-nøgle til programmatisk at få adgang til Stirling PDFs behandlingsfunktioner."
+intro = "Brug din API-nøgle til programmatisk at få adgang til Total PDFs behandlingsfunktioner."
 label = "API-nøgle"
 lastApiUse = "Seneste API-brug"
 nextReset = "Næste nulstilling"
@@ -3196,7 +3196,7 @@ showPreferencesBtn = "Administrer præferencer"
 title = "Sådan bruger vi cookies"
 
 [cookieBanner.popUp.description]
-1 = "Vi bruger cookies og andre teknologier for at få Stirling PDF til at fungere bedre for dig—det hjælper os med at forbedre vores værktøjer og fortsat bygge funktioner, du vil elske."
+1 = "Vi bruger cookies og andre teknologier for at få Total PDF til at fungere bedre for dig—det hjælper os med at forbedre vores værktøjer og fortsat bygge funktioner, du vil elske."
 2 = "If you’d rather not, clicking 'No Thanks' will only enable the essential cookies needed to keep things running smoothly."
 
 [cookieBanner.preferencesModal]
@@ -3209,12 +3209,12 @@ subtitle = "Brug af cookies"
 title = "Center for samtykkepræferencer"
 
 [cookieBanner.preferencesModal.analytics]
-description = "Disse cookies hjælper os med at forstå, hvordan vores værktøjer bruges, så vi kan fokusere på at bygge de funktioner, vores community værdsætter mest. Vær tryg—Stirling PDF kan ikke og vil aldrig spore indholdet af de dokumenter, du arbejder med."
+description = "Disse cookies hjælper os med at forstå, hvordan vores værktøjer bruges, så vi kan fokusere på at bygge de funktioner, vores community værdsætter mest. Vær tryg—Total PDF kan ikke og vil aldrig spore indholdet af de dokumenter, du arbejder med."
 title = "Analyser"
 
 [cookieBanner.preferencesModal.description]
-1 = "Stirling PDF bruger cookies og lignende teknologier til at forbedre din oplevelse og forstå, hvordan vores værktøjer bruges. Det hjælper os med at forbedre ydeevnen, udvikle de funktioner, du går op i, og yde løbende support til vores brugere."
-2 = "Stirling PDF kan ikke—og vil aldrig—spore eller få adgang til indholdet af de dokumenter, du bruger."
+1 = "Total PDF bruger cookies og lignende teknologier til at forbedre din oplevelse og forstå, hvordan vores værktøjer bruges. Det hjælper os med at forbedre ydeevnen, udvikle de funktioner, du går op i, og yde løbende support til vores brugere."
+2 = "Total PDF kan ikke—og vil aldrig—spore eller få adgang til indholdet af de dokumenter, du bruger."
 3 = "Din privatlivsbeskyttelse og tillid er kernen i alt, hvad vi gør."
 
 [cookieBanner.preferencesModal.necessary]
@@ -3383,7 +3383,7 @@ unexpectedError = "Der opstod en fejl under behandling af filen. Prøv igen."
 [defaultApp]
 description = "Du kan ændre dette senere i dine systemindstillinger."
 dismiss = "Afvis"
-message = "Vil du sætte Stirling PDF som din standard PDF-editor?"
+message = "Vil du sætte Total PDF som din standard PDF-editor?"
 notNow = "Ikke nu"
 setDefault = "Sæt som standard"
 title = "Sæt som standard PDF-app"
@@ -3393,15 +3393,15 @@ message = "Kunne ikke angive standard PDF-håndterer"
 title = "Fejl"
 
 [defaultApp.prompt]
-message = "Gør Stirling PDF til din standardapp til at åbne PDF-filer."
+message = "Gør Total PDF til din standardapp til at åbne PDF-filer."
 title = "Sæt som standard PDF-editor"
 
 [defaultApp.settingsOpened]
-message = "Vælg Stirling PDF i dine systemindstillinger"
+message = "Vælg Total PDF i dine systemindstillinger"
 title = "Indstillinger åbnet"
 
 [defaultApp.success]
-message = "Stirling PDF er nu din standard PDF-editor"
+message = "Total PDF er nu din standard PDF-editor"
 title = "Standardapp valgt"
 
 [editTableOfContents]
@@ -3543,9 +3543,9 @@ visitsTooltip = "Besøg: {0} ({1}% af totalen)"
 
 [enterpriseEdition]
 button = "Opgrader til Pro"
-ssoAdvert = "søger du flere funktioner til brugerstyring? Prøv Stirling PDF Pro"
+ssoAdvert = "søger du flere funktioner til brugerstyring? Prøv Total PDF Pro"
 warning = "Denne funktion er kun tilgængelig for Pro-brugere."
-yamlAdvert = "Stirling PDF Pro understøtter YAML-konfigurationsfiler og andre SSO-funktioner."
+yamlAdvert = "Total PDF Pro understøtter YAML-konfigurationsfiler og andre SSO-funktioner."
 
 [error]
 _value = "Fejl"
@@ -4021,7 +4021,7 @@ invisible = "Usynlig (kun metadata)"
 location = "Placering:"
 logo = "Logo:"
 logoHidden = "Intet logo"
-logoShown = "Stirling PDF-logo vist"
+logoShown = "Total PDF-logo vist"
 participantCount = "{{count}} deltager(e) vil underskrive i rækkefølge"
 participants = "Deltagere"
 reason = "Årsag:"
@@ -4073,7 +4073,7 @@ title = "Sekventiel underskrift"
 dismiss = "Skjul banner"
 message = "Opret en gratis konto for at gemme dit arbejde, få adgang til flere funktioner og støtte projektet."
 signUp = "Tilmeld dig gratis"
-title = "Du bruger Stirling PDF som gæst!"
+title = "Du bruger Total PDF som gæst!"
 
 [home]
 alphabetical = "Alfabetisk"
@@ -4247,7 +4247,7 @@ tags = "kombinér,sammenføj,forén"
 title = "Flet"
 
 [home.mobile]
-brandAlt = "Stirling PDF-logo"
+brandAlt = "Total PDF-logo"
 openFiles = "Åbn filer"
 swipeHint = "Stryg til venstre eller højre for at skifte visning"
 tools = "Værktøjer"
@@ -4287,7 +4287,7 @@ tags = "organiser,omarranger,omordne"
 title = "Organisér"
 
 [home.pdfTextEditor]
-desc = "Gennemse og rediger Stirling PDF JSON-eksporter med grupperet tekstredigering og regenerering af PDF"
+desc = "Gennemse og rediger Total PDF JSON-eksporter med grupperet tekstredigering og regenerering af PDF"
 tags = "edit text,modify text,change text,edit content,update text,rewrite,correct,amend,redline,revise,text editor,content editor"
 title = "PDF-teksteditor"
 
@@ -4493,14 +4493,14 @@ passwordTooShort = "Adgangskoden skal være mindst 6 tegn"
 signIn = "Log ind"
 validating = "Validerer invitation..."
 validationError = "Kunne ikke validere invitationslink"
-welcome = "Velkommen til Stirling PDF"
+welcome = "Velkommen til Total PDF"
 welcomeSubtitle = "Fuldfør opsætningen af din konto for at komme i gang"
 welcomeTitle = "Du er blevet inviteret!"
 
 [landing]
 addFiles = "Tilføj filer"
 heroSubtitle = "Træk en PDF ind eller tilføj en eksisterende PDF for at komme i gang."
-heroTitle = "Stirling PDF"
+heroTitle = "Total PDF"
 mobileUpload = "Upload fra mobil"
 openFromComputer = "Åbn fra computer"
 uploadFromComputer = "Upload fra computer"
@@ -4602,7 +4602,7 @@ signinTitle = "Log venligst ind"
 signInWith = "Log ind med"
 signOut = "Log ud"
 ssoSignIn = "Log ind via Single Sign-on"
-subtitle = "Log ind igen på Stirling PDF"
+subtitle = "Log ind igen på Total PDF"
 title = "Log ind"
 toManySessions = "Du har for mange aktive sessoner"
 unexpectedError = "Uventet fejl: {{message}}"
@@ -4621,7 +4621,7 @@ subtitle = "Med over et dusin værktøjer til at redigere, signere, læse og man
 title = "Rediger PDF'er for at vise/beskytte de oplysninger, du ønsker"
 
 [login.slides.overview]
-alt = "Stirling PDF oversigt"
+alt = "Total PDF oversigt"
 subtitle = "En privacy-first cloud suite til PDF'er, der lader dig konvertere, signere, redigere og administrere dokumenter samt 50+ andre kraftfulde værktøjer."
 title = "Din alt-i-en-løsning til alle dine PDF-behov."
 
@@ -4787,7 +4787,7 @@ message = "Godkendelsen var ikke vellykket. Du kan lukke dette vindue og prøve 
 title = "Godkendelse mislykkedes"
 
 [oauth.success]
-message = "Du kan lukke dette vindue og vende tilbage til Stirling PDF."
+message = "Du kan lukke dette vindue og vende tilbage til Total PDF."
 title = "Godkendelse lykkedes"
 
 [ocr]
@@ -4911,7 +4911,7 @@ runButton = "Når værktøjet er konfigureret, kan du køre det på alle de valg
 selectControls = "<strong>Højre panel</strong> indeholder knapper til hurtigt at vælge/fravælge alle dine aktive PDF'er samt knapper til at ændre appens tema eller sprog."
 selectCropTool = "Lad os vælge <strong>Beskær</strong>-værktøjet for at demonstrere, hvordan man bruger et af værktøjerne."
 startTour = "Start rundtur"
-startTourDescription = "Tag en guidet tur gennem Stirling PDFs nøglefunktioner"
+startTourDescription = "Tag en guidet tur gennem Total PDFs nøglefunktioner"
 toolInterface = "Dette er <strong>Beskær</strong>-værktøjets grænseflade. Som du kan se, er der ikke meget at se, fordi vi endnu ikke har tilføjet nogen PDF-filer at arbejde med."
 viewer = "<strong>Fremviseren</strong> lader dig læse og annotere dine PDF'er."
 viewSwitcher = "Brug disse kontroller til at vælge, hvordan du vil se dine PDF'er."
@@ -4934,7 +4934,7 @@ titleWithOs = "Download til {{osLabel}}"
 [onboarding.freeTrial]
 afterTrialWithoutPayment = "Når din prøveperiode slutter, fortsætter du på vores gratis niveau. Tilføj en betalingsmetode for at beholde Pro-adgang."
 afterTrialWithPayment = "Dit Pro-abonnement starter automatisk, når prøveperioden slutter."
-body = "Du har fuld adgang til Stirling PDF Pro-funktioner under din prøveperiode. Nyd ubegrænsede konverteringer, større filstørrelser og prioriteret behandling."
+body = "Du har fuld adgang til Total PDF Pro-funktioner under din prøveperiode. Nyd ubegrænsede konverteringer, større filstørrelser og prioriteret behandling."
 daysRemaining = "{{days}} dage tilbage"
 daysRemainingSingular = "{{days}} dag tilbage"
 title = "Din 30-dages Pro-prøveperiode"
@@ -4960,7 +4960,7 @@ skip = "Spring over for nu"
 upgrade = "Opgrader nu →"
 
 [onboarding.tourOverview]
-body = "Stirling PDF V2 kommer med dusinvis af værktøjer og et fornyet layout. Tag en hurtig rundvisning for at se, hvad der er ændret, og hvor du finder de funktioner, du har brug for."
+body = "Total PDF V2 kommer med dusinvis af værktøjer og et fornyet layout. Tag en hurtig rundvisning for at se, hvad der er ændret, og hvor du finder de funktioner, du har brug for."
 title = "Oversigt over rundvisning"
 
 [onboarding.welcomeModal]
@@ -4969,10 +4969,10 @@ dontShowAgain = "Vis ikke igen"
 helpHint = "Du kan altid få adgang til denne rundtur senere via knappen <strong>Hjælp</strong> nederst til venstre."
 maybeLater = "Måske senere"
 startTour = "Start rundtur"
-title = "Velkommen til Stirling PDF!"
+title = "Velkommen til Total PDF!"
 
 [onboarding.welcomeSlide]
-body = "Stirling PDF er nu klar til teams i alle størrelser. Denne opdatering indeholder et nyt layout, stærke nye admin-funktioner og vores mest efterspurgte funktion – <strong>Rediger tekst</strong>."
+body = "Total PDF er nu klar til teams i alle størrelser. Denne opdatering indeholder et nyt layout, stærke nye admin-funktioner og vores mest efterspurgte funktion – <strong>Rediger tekst</strong>."
 title = "Velkommen til Stirling"
 
 [onboarding.whatsNew]
@@ -5794,7 +5794,7 @@ included = "Inkluderet"
 name = "Gratis"
 
 [plan.licenseWarning]
-body = "Du har {{total}} brugere, men den gratis plan understøtter kun {{limit}} pr. server. Opgrader for at holde Stirling PDF kørende uden problemer."
+body = "Du har {{total}} brugere, men den gratis plan understøtter kun {{limit}} pr. server. Opgrader for at holde Total PDF kørende uden problemer."
 cta = "Se planer"
 overLimit = "mere end {{limit}}"
 title = "Gratis selvhostet grænse nået"
@@ -6733,8 +6733,8 @@ hideTools = "Skjul utilgængelige værktøjer ▴"
 messageNoFallback = "Værktøjer er utilgængelige, indtil din server kommer online igen."
 messageWithFallback = "Nogle værktøjer kræver en serverforbindelse."
 showTools = "Vis utilgængelige værktøjer ▾"
-title = "Din Stirling-PDF-server kan ikke nås"
-toolNotAvailableLocally = "Din Stirling-PDF-server er offline, og \"{{endpoint}}\" er ikke tilgængelig på den lokale backend."
+title = "Din Total-PDF-server kan ikke nås"
+toolNotAvailableLocally = "Din Total-PDF-server er offline, og \"{{endpoint}}\" er ikke tilgængelig på den lokale backend."
 
 [session]
 expired = "Din sesions tid har udløbet. Genlad siden og prøv igen."
@@ -6806,7 +6806,7 @@ autoUnzipFileLimitDescription = "Maksimalt antal filer der udtrækkes fra ZIP"
 autoUnzipFileLimitTooltip = "Pak kun ud, hvis ZIP'en indeholder dette antal filer eller færre. Sæt højere for at udpakke større ZIP'er."
 autoUnzipTooltip = "Udpak automatisk ZIP-filer returneret fra API-operationer. Deaktivér for at beholde ZIP-filer intakte. Dette påvirker ikke automatiseringsarbejdsgange."
 defaultPdfEditor = "Standard PDF-editor"
-defaultPdfEditorActive = "Stirling PDF er din standard PDF-editor"
+defaultPdfEditorActive = "Total PDF er din standard PDF-editor"
 defaultPdfEditorChecking = "Tjekker..."
 defaultPdfEditorInactive = "En anden app er sat som standard"
 defaultPdfEditorSet = "Allerede standard"
@@ -7023,13 +7023,13 @@ teams = "Teams"
 title = "Arbejdsområde"
 
 [setup]
-description = "Kom i gang ved at vælge, hvordan du vil bruge Stirling PDF"
-welcome = "Velkommen til Stirling PDF"
+description = "Kom i gang ved at vælge, hvordan du vil bruge Total PDF"
+welcome = "Velkommen til Total PDF"
 
 [setup.login]
 connectingTo = "Forbinder til:"
 hideInstructions = "Skjul instruktioner"
-instructions = "Sådan aktiverer du login på din Stirling PDF-server:"
+instructions = "Sådan aktiverer du login på din Total PDF-server:"
 instructionsEnvVar = "Sæt miljøvariablen:"
 instructionsOrYml = "Eller i settings.yml:"
 instructionsRestart = "Genstart derefter serveren, så ændringerne træder i kraft."
@@ -7067,7 +7067,7 @@ description = "Log ind med din Stirling-konto"
 title = "Stirling Cloud"
 
 [setup.mode.selfhosted]
-description = "Forbind til din egen Stirling PDF-server"
+description = "Forbind til din egen Total PDF-server"
 title = "Selvhostet server"
 
 [setup.saas]
@@ -7111,11 +7111,11 @@ step3 = "Genstart serveren"
 title = "Login ikke aktiveret"
 
 [setup.server.type]
-saas = "Stirling PDF SaaS"
+saas = "Total PDF SaaS"
 selfhosted = "Selvhostet server"
 
 [setup.server.url]
-description = "Indtast den fulde URL til din selvhostede Stirling PDF-server"
+description = "Indtast den fulde URL til din selvhostede Total PDF-server"
 label = "Server-URL"
 
 [setup.step1]
@@ -7340,7 +7340,7 @@ passwordsDoNotMatch = "Adgangskoderne matcher ikke"
 passwordTooShort = "Adgangskoden skal være mindst 6 tegn lang"
 pleaseFillAllFields = "Udfyld alle felter"
 signUp = "Tilmeld dig"
-subtitle = "Tilmeld dig Stirling PDF for at komme i gang"
+subtitle = "Tilmeld dig Total PDF for at komme i gang"
 title = "Opret en konto"
 unexpectedError = "Uventet fejl: {{message}}"
 useEmailInstead = "Brug e-mail i stedet"
@@ -7627,7 +7627,7 @@ download = "Download"
 downloaded = "Hentet"
 downloadFailed = "Kan ikke downloade denne fil."
 downloadsCount = "Downloads: {{count}}"
-emailWarningBody = "Dette ligner en e-mailadresse. Hvis denne person ikke allerede er Stirling PDF-bruger, vil vedkommende ikke kunne få adgang til filen."
+emailWarningBody = "Dette ligner en e-mailadresse. Hvis denne person ikke allerede er Total PDF-bruger, vil vedkommende ikke kunne få adgang til filen."
 emailWarningConfirm = "Del alligevel"
 emailWarningTitle = "E-mailadresse"
 errorTitle = "Deling mislykkedes"
@@ -7657,7 +7657,7 @@ manageTitle = "Administrer deling"
 noActivity = "Ingen aktivitet endnu."
 noLinks = "Ingen aktive delingslinks endnu."
 noSharedUsers = "Ingen brugere har adgang endnu."
-openInApp = "Åbn i Stirling PDF"
+openInApp = "Åbn i Total PDF"
 ownerLabel = "Ejer"
 ownerOnly = "Kun ejeren kan administrere deling."
 ownerUnknown = "Ukendt"
@@ -7718,28 +7718,28 @@ trialing = "Prøveperiode"
 
 [survey]
 button = "Tag Undersøgelsen"
-changes = "Stirling-PDF Har Endtes Sidst Ganger du Foresatte En Kig! For At Lære Mere, Se Vores Blog Indlæg Her:"
+changes = "Total-PDF Har Endtes Sidst Ganger du Foresatte En Kig! For At Lære Mere, Se Vores Blog Indlæg Her:"
 changes2 = "Med Disse Endringer Er Vi Kommet I Betalende Forretningsstøtte og Finansiering"
-description = "Stirling-PDF har ingen sporing, så vi vil gerne høre fra vores brugere for at forbedre Stirling-PDF!"
+description = "Total-PDF har ingen sporing, så vi vil gerne høre fra vores brugere for at forbedre Total-PDF!"
 disabled = "(Undersøgelsespop-up vil blive deaktiveret i følgende opdateringer, men vil være tilgængelig i bunden af siden)"
 dontShowAgain = "Vis ikke igen"
 nav = "Undersøgelse"
 please = "Overvej venligst at deltage i vores undersøgelse!"
-title = "Stirling-PDF Undersøgelse"
+title = "Total-PDF Undersøgelse"
 
 [survey.meeting]
-1 = "Hvis du bruger Stirling PDF på arbejdet, vil vi meget gerne tale med dig. Vi tilbyder tekniske supportsessioner til gengæld for en 15-minutters brugersamtale."
+1 = "Hvis du bruger Total PDF på arbejdet, vil vi meget gerne tale med dig. Vi tilbyder tekniske supportsessioner til gengæld for en 15-minutters brugersamtale."
 2 = "Dette er en chance for at:"
 3 = "Få hjælp til udrulning, integrationer eller fejlfinding"
 4 = "Give direkte feedback om ydeevne, edge cases og manglende funktioner"
-5 = "Hjælpe os med at finpudse Stirling PDF til brug i virkelige virksomhedsmiljøer"
+5 = "Hjælpe os med at finpudse Total PDF til brug i virkelige virksomhedsmiljøer"
 6 = "Hvis du er interesseret, kan du booke tid direkte med vores team. (Kun engelsktalende)"
-7 = "Vi ser frem til at dykke ned i dine use cases og gøre Stirling PDF endnu bedre!"
+7 = "Vi ser frem til at dykke ned i dine use cases og gøre Total PDF endnu bedre!"
 button = "Book møde"
 notInterested = "Ikke en virksomhed og/eller interesseret i et møde?"
 
 [swagger]
-desc = "Se og test Stirling PDF API-endpoints"
+desc = "Se og test Total PDF API-endpoints"
 header = "API-dokumentation"
 tags = "api,documentation,swagger,endpoints,development"
 title = "API-dokumentation"
@@ -7883,7 +7883,7 @@ favorites = "Favoritter"
 heading = "Alle værktøjer (fuldskærmsvisning)"
 noResults = "Prøv at justere din søgning eller slå beskrivelser til for at finde det, du har brug for."
 recommended = "Anbefalet"
-selfHostedOffline = "Kræver din Stirling-PDF-server (i øjeblikket offline):"
+selfHostedOffline = "Kræver din Total-PDF-server (i øjeblikket offline):"
 showDetails = "Vis detaljer"
 unavailable = "Deaktiveret af serveradministrator:"
 unavailableDependency = "Ikke tilgængelig – påkrævet værktøj mangler på serveren:"
@@ -7892,7 +7892,7 @@ unfavorite = "Fjern fra favoritter"
 [toolPanel.modePrompt]
 chooseFullscreen = "Brug fuldskærmstilstand"
 chooseSidebar = "Brug sidepanel-tilstand"
-description = "Forhåndsvis begge layouts og beslæt, hvordan du vil udforske Stirling PDF-værktøjer."
+description = "Forhåndsvis begge layouts og beslæt, hvordan du vil udforske Total PDF-værktøjer."
 dismiss = "Måske senere"
 fullscreenDescription = "Gennemse alle værktøjer i et katalog, der dækker arbejdsområdet, indtil du vælger et."
 fullscreenTitle = "Fuldskærmstilstand - (forældet)"
@@ -7986,7 +7986,7 @@ attentionBody = "Din admin skal logge ind for at se flere oplysninger. Kontakt d
 attentionBodyAdmin = "Gennemgå licenskravene for at holde denne server i overensstemmelse."
 attentionTitle = "Denne server kræver admin-opmærksomhed"
 dismiss = "Afvis banner"
-message = "Få mest ud af Stirling PDF med ubegrænsede brugere og avancerede funktioner"
+message = "Få mest ud af Total PDF med ubegrænsede brugere og avancerede funktioner"
 seeInfo = "Se info"
 title = "Opgrader til Server-plan"
 upgradeButton = "Opgrader nu"
@@ -8108,7 +8108,7 @@ continued = "Fortsættes"
 downloads = "Downloads"
 entryLabel = "Signaturoversigt"
 filesEvaluated = "{{count}} filer evalueret"
-footer = "Valideret via Stirling PDF"
+footer = "Valideret via Total PDF"
 generatedAt = "Genereret"
 noPdf = "PDF-rapport vil være tilgængelig efter en vellykket validering."
 page = "Side"

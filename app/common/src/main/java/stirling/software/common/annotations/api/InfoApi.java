@@ -25,7 +25,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
                 System information and operational insights for monitoring and performance management.
 
                 This endpoint group provides system information and operational metrics for organizations
-                operating Stirling PDF in production environments.
+                operating Total PDF in production environments.
 
                 Common use cases:
                 • System health monitoring, performance optimization, and capacity planning

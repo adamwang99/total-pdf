@@ -25,7 +25,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
                 User management and authentication services for multi-user and enterprise environments.
 
                 This endpoint group provides user lifecycle management capabilities for organizations
-                deploying Stirling PDF in multi-user scenarios.
+                deploying Total PDF in multi-user scenarios.
 
                 Common use cases:
                 • Employee onboarding/offboarding and corporate access control

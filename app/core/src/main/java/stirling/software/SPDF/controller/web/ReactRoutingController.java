@@ -189,7 +189,7 @@ public class ReactRoutingController {
                   <head>
                     <meta charset="utf-8" />
                     <base href="%s" />
-                    <title>Stirling PDF</title>
+                    <title>Total PDF</title>
                     <script>
                       // Minimal handler for SSO callback when index.html is missing (desktop fallback)
                       (function() {
@@ -225,7 +225,7 @@ public class ReactRoutingController {
                     </script>
                   </head>
                   <body>
-                    <p>Stirling PDF is running.</p>
+                    <p>Total PDF is running.</p>
                   </body>
                 </html>
                 """
@@ -469,7 +469,7 @@ public class ReactRoutingController {
                     <div class="container">
                       <div class="icon" id="auth-icon">&#10003;</div>
                       <h1 id="auth-title">Authentication complete</h1>
-                      <p id="auth-message">You can close this window and return to Stirling PDF.</p>
+                      <p id="auth-message">You can close this window and return to Total PDF.</p>
                       <div class="error-details" id="auth-error-details"></div>
                     </div>
                   </body>

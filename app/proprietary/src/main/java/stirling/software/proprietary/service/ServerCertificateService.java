@@ -44,7 +44,7 @@ public class ServerCertificateService implements ServerCertificateServiceInterfa
     @Value("${system.serverCertificate.enabled:false}")
     private boolean enabled;
 
-    @Value("${system.serverCertificate.organizationName:Stirling-PDF}")
+    @Value("${system.serverCertificate.organizationName:Total-PDF}")
     private String organizationName;
 
     @Value("${system.serverCertificate.validity:365}")

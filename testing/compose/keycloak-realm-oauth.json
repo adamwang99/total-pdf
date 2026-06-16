@@ -1,8 +1,8 @@
 {
   "id": "stirling-oauth",
   "realm": "stirling-oauth",
-  "displayName": "Stirling PDF OAuth Test",
-  "displayNameHtml": "<div class=\"kc-logo-text\"><span>Stirling PDF OAuth</span></div>",
+  "displayName": "Total PDF OAuth Test",
+  "displayNameHtml": "<div class=\"kc-logo-text\"><span>Total PDF OAuth</span></div>",
   "enabled": true,
   "sslRequired": "none",
   "registrationAllowed": true,
@@ -80,8 +80,8 @@
   "clients": [
     {
       "clientId": "stirling-pdf-client",
-      "name": "Stirling PDF OAuth2 Client",
-      "description": "OAuth2/OIDC client for Stirling PDF testing",
+      "name": "Total PDF OAuth2 Client",
+      "description": "OAuth2/OIDC client for Total PDF testing",
       "rootUrl": "http://localhost:8080",
       "adminUrl": "http://localhost:8080",
       "baseUrl": "http://localhost:8080",

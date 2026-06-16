@@ -346,7 +346,7 @@ const UpgradeBanner: React.FC = () => {
           title={t("upgradeBanner.title", "Upgrade to Server Plan")}
           message={t(
             "upgradeBanner.message",
-            "Get the most out of Stirling PDF with unlimited users and advanced features.",
+            "Get the most out of Total PDF with unlimited users and advanced features.",
           )}
           buttonText={t("upgradeBanner.upgradeButton", "Upgrade Now")}
           buttonIcon="upgrade-rounded"

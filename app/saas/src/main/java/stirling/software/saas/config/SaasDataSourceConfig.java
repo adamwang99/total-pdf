@@ -45,7 +45,7 @@ public class SaasDataSourceConfig {
     @Value("${spring.datasource.hikari.keepalive-time:300000}")
     private long keepaliveTime;
 
-    @Value("${spring.datasource.hikari.data-source-properties.ApplicationName:StirlingPDF-SaaS}")
+    @Value("${spring.datasource.hikari.data-source-properties.ApplicationName:TotalPDF-SaaS}")
     private String applicationName;
 
     // search_path so native SQL hits stirling_pdf, not the postgres-default public.

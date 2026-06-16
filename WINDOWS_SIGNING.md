@@ -1,6 +1,6 @@
 # Windows Code Signing Setup Guide
 
-This guide explains how to set up Windows code signing for Stirling-PDF desktop application builds.
+This guide explains how to set up Windows code signing for Total-PDF desktop application builds.
 
 ## Overview
 
@@ -132,7 +132,7 @@ cd frontend
 npm run tauri build
 
 # Verify the signature
-Get-AuthenticodeSignature "./src-tauri/target/release/bundle/msi/Stirling-PDF_*.msi"
+Get-AuthenticodeSignature "./src-tauri/target/release/bundle/msi/Total-PDF_*.msi"
 ```
 
 ### 2. GitHub Actions Testing
@@ -153,8 +153,8 @@ After downloading the built artifacts:
 
 **Windows (PowerShell):**
 ```powershell
-Get-AuthenticodeSignature "Stirling-PDF-windows-x86_64.exe"
-Get-AuthenticodeSignature "Stirling-PDF-windows-x86_64.msi"
+Get-AuthenticodeSignature "Total-PDF-windows-x86_64.exe"
+Get-AuthenticodeSignature "Total-PDF-windows-x86_64.msi"
 ```
 
 Look for:

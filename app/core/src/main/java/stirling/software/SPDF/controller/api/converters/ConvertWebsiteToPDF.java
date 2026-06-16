@@ -181,7 +181,7 @@ public class ConvertWebsiteToPDF {
                 HttpRequest.newBuilder(URI.create(url))
                         .timeout(Duration.ofSeconds(20))
                         .GET()
-                        .header("User-Agent", "Stirling-PDF/URL-to-PDF")
+                        .header("User-Agent", "Total-PDF/URL-to-PDF")
                         .build();
 
         HttpResponse<String> response =

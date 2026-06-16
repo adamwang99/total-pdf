@@ -63,7 +63,7 @@ export function TrialStatusBanner() {
     const logoIcon = (
       <img
         src={`${BASE_PATH}/modern-logo/logo512.png`}
-        alt="Stirling PDF"
+        alt="Total PDF"
         style={{
           width: "1.5rem",
           height: "1.5rem",

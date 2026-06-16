@@ -389,8 +389,8 @@ jobs:
                 DISABLE_ADDITIONAL_FEATURES: "${DISABLE_ADDITIONAL_FEATURES}"
                 SECURITY_ENABLELOGIN: "${LOGIN_SECURITY}"
                 SYSTEM_DEFAULTLOCALE: en-GB
-                UI_APPNAME: "Stirling-PDF PR#${PR_NUMBER}"
-                UI_HOMEDESCRIPTION: "PR#${PR_NUMBER} for Stirling-PDF Latest"
+                UI_APPNAME: "Total-PDF PR#${PR_NUMBER}"
+                UI_HOMEDESCRIPTION: "PR#${PR_NUMBER} for Total-PDF Latest"
                 UI_APPNAMENAVBAR: "PR#${PR_NUMBER}"
                 SYSTEM_MAXFILESIZE: "100"
                 METRICS_ENABLED: "true"

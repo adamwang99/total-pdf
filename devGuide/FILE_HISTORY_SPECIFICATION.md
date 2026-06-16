@@ -1,8 +1,8 @@
-# Stirling PDF File History Specification
+# Total PDF File History Specification
 
 ## Overview
 
-Stirling PDF implements a client-side file history system using IndexedDB storage. File metadata, including version history and tool chains, are stored as `StirlingFileStub` objects that travel alongside the actual file data. This enables comprehensive version tracking, tool history, and file lineage management without modifying PDF content.
+Total PDF implements a client-side file history system using IndexedDB storage. File metadata, including version history and tool chains, are stored as `StirlingFileStub` objects that travel alongside the actual file data. This enables comprehensive version tracking, tool history, and file lineage management without modifying PDF content.
 
 ## Storage Architecture
 
@@ -315,5 +315,5 @@ const stub = await fileStorage.getStirlingFileStub(fileId);
 ---
 
 **Last Updated**: January 2025  
-**Implementation**: Stirling PDF Frontend v2  
+**Implementation**: Total PDF Frontend v2  
 **Storage Version**: IndexedDB with fileStorage service

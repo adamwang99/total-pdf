@@ -1,4 +1,4 @@
-/* Stirling PDF Sample Document Styles */
+/* Total PDF Sample Document Styles */
 
 :root {
   /* Brand Colors */
@@ -195,7 +195,7 @@ body {
   backdrop-filter: blur(10px);
 }
 
-/* Page 2: What is Stirling PDF */
+/* Page 2: What is Total PDF */
 .page-2 {
   padding: 60px;
 }
