@@ -1,7 +1,7 @@
 
 services:
   stirling-pdf:
-    container_name: Stirling-PDF-Fat-Disable-Endpoints
+    container_name: Total-PDF-Fat-Disable-Endpoints
     image: docker.stirlingpdf.com/stirlingtools/stirling-pdf:fat
     build:
       context: ../../../
@@ -31,8 +31,8 @@ services:
       PGID: 1002
       UMASK: "022"
       SYSTEM_DEFAULTLOCALE: en-US
-      UI_APPNAME: Stirling-PDF
-      UI_HOMEDESCRIPTION: Demo site for Stirling-PDF Latest-fat with  all Endpoints Disabled
+      UI_APPNAME: Total PDF
+      UI_HOMEDESCRIPTION: Total PDF — Your complete PDF toolkit
       UI_APPNAMENAVBAR: Stirling-PDF Latest-fat
       SYSTEM_MAXFILESIZE: "100"
       METRICS_ENABLED: "true"

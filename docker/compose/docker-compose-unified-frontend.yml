@@ -3,7 +3,7 @@
 
 services:
   stirling-pdf-backend:
-    container_name: Stirling-PDF-Backend
+    container_name: Total-PDF-Backend
     build:
       context: ../..
       dockerfile: docker/Dockerfile.unified
@@ -34,7 +34,7 @@ services:
           memory: 4G
 
   stirling-pdf-frontend:
-    container_name: Stirling-PDF-Frontend
+    container_name: Total-PDF-Frontend
     build:
       context: ../..
       dockerfile: docker/Dockerfile.unified

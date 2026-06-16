@@ -25,9 +25,9 @@ services:
       SECURITY_ENABLELOGIN: "false"
       FAT_DOCKER: "true"
       SYSTEM_DEFAULTLOCALE: en-US
-      UI_APPNAME: Stirling-PDF
-      UI_HOMEDESCRIPTION: Full-featured Stirling-PDF with all capabilities
-      UI_APPNAMENAVBAR: Stirling-PDF Fat
+      UI_APPNAME: Total PDF
+      UI_HOMEDESCRIPTION: Total PDF — Your complete PDF toolkit
+      UI_APPNAMENAVBAR: Total PDF Fat
       SYSTEM_MAXFILESIZE: "200"
       METRICS_ENABLED: "true"
       SYSTEM_GOOGLEVISIBILITY: "true"

@@ -25,9 +25,9 @@ services:
       ENDPOINTS_GROUPS_TO_REMOVE: "CLI"
       LANGS: "en_GB,en_US"
       SYSTEM_DEFAULTLOCALE: en-US
-      UI_APPNAME: Stirling-PDF
-      UI_HOMEDESCRIPTION: Ultra-lite version of Stirling-PDF
-      UI_APPNAMENAVBAR: Stirling-PDF Ultra-lite
+      UI_APPNAME: Total PDF
+      UI_HOMEDESCRIPTION: Total PDF — Your complete PDF toolkit
+      UI_APPNAMENAVBAR: Total PDF Ultra-lite
       SYSTEM_MAXFILESIZE: "50"
     networks:
       - stirling-network

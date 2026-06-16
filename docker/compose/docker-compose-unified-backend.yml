@@ -3,7 +3,7 @@
 
 services:
   stirling-pdf-backend-only:
-    container_name: Stirling-PDF-Backend-Only
+    container_name: Total-PDF-Backend-Only
     build:
       context: ../..
       dockerfile: docker/Dockerfile.unified
@@ -28,7 +28,7 @@ services:
 
       # Application settings
       SYSTEM_DEFAULTLOCALE: en-US
-      UI_APPNAME: Stirling-PDF
+      UI_APPNAME: Total PDF
       SYSTEM_MAXFILESIZE: "100"
       METRICS_ENABLED: "true"
 
