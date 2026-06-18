@@ -4960,8 +4960,13 @@ startTour = "Start Tour"
 title = "Welcome to Total PDF!"
 
 [onboarding.welcomeSlide]
-body = "Total PDF is now ready for teams of all sizes. This update includes a new layout, powerful new admin capabilities, and our most requested feature - <strong>Edit Text</strong>."
+body = "Total PDF is a full-featured PDF platform that runs completely locally — no documents ever leave your machine. Edit, sign, redact, OCR, convert, merge, split, compress, and automate PDFs without sending data to third-party services."
 title = "Welcome to Total PDF"
+
+[onboarding.welcomeSlide.badge]
+local = "100% Local"
+tools = "54 Tools"
+privacy = "Zero Egress"
 
 [onboarding.whatsNew]
 activeFilesView = "Use Active Files to see everything you have open and pick what to work on."
@@ -7038,9 +7043,57 @@ title = "Team"
 enableLoginFirst = "Enable login mode first"
 requiresEnterprise = "Requires Enterprise license"
 
+[settings.about]
+label = "About Total PDF"
+
+[settings.about]
+label = "About Total PDF"
+
 [settings.help]
-label = "Tours"
+label = "Tours & Help"
 title = "Help"
+
+[settings.help.quickStart]
+title = "Quick Start Guide"
+[settings.help.quickStart.step1]
+title = "Upload a PDF"
+desc = "Drag & drop a file onto the upload area, or click to select from your computer. You can also paste a URL to fetch a PDF from the web."
+[settings.help.quickStart.step2]
+title = "Pick a Tool"
+desc = "Choose from 54 tools: edit, merge, split, sign, redact, OCR, compress, compare, and more. Each tool has its own panel with controls for fine-tuning."
+[settings.help.quickStart.step3]
+title = "Configure & Run"
+desc = "Adjust parameters (pages to process, output format, quality, encryption, etc.), then click the action button. Processing happens locally."
+[settings.help.quickStart.step4]
+title = "Download or Chain"
+desc = "Download the result, or use the Automate tool to chain multiple operations into a no-code pipeline. Reusable workflows can be saved and triggered via API."
+
+[settings.help.commonTasks]
+title = "Common Tasks"
+[settings.help.commonTasks.merge]
+title = "Merge Multiple PDFs"
+desc = "Upload 2+ files \u2192 Merge tool \u2192 reorder by drag & drop \u2192 run. The output preserves bookmarks and metadata from the first file."
+[settings.help.commonTasks.password]
+title = "Password-Protect a PDF"
+desc = "Add Password tool \u2192 set owner password (full access) and/or user password (view only) \u2192 choose AES-128 or AES-256 \u2192 run."
+[settings.help.commonTasks.ocr]
+title = "OCR a Scanned Document"
+desc = "OCR tool \u2192 select languages (English, Vietnamese, Chinese, etc.) \u2192 run. The output is a searchable PDF with selectable text."
+[settings.help.commonTasks.sign]
+title = "Sign a Document"
+desc = "Sign tool \u2192 draw, type, or upload your signature \u2192 place it on the desired page \u2192 download as a new PDF with your signature embedded."
+[settings.help.commonTasks.compress]
+title = "Reduce PDF File Size"
+desc = "Compress tool \u2192 choose quality level \u2014 the tool downsamples images and removes redundant data. The result is typically 60-80% smaller."
+
+[settings.help.automation]
+title = "Automation & Pipelines"
+desc = "The Automate tool lets you chain PDF operations into reusable workflows without writing code. Each step picks a tool and its parameters. Pipelines can be saved, shared, and triggered via REST API for batch processing."
+example = "Input PDF \u2192 OCR \u2192 Compress \u2192 AddPageNumbers \u2192 AddWatermark \u2192 Sign \u2192 Output PDF"
+
+[settings.help.api]
+title = "API Reference"
+desc = "Total PDF exposes REST API endpoints for nearly all tools. Full Swagger/OpenAPI documentation is available at /swagger-ui/index.html when the server is running."
 
 [settings.help.adminTour]
 description = "Explore team management, system settings, and enterprise features."
@@ -7056,6 +7109,53 @@ title = "Tools Tour"
 people = "People"
 teams = "Teams"
 title = "Workspace"
+
+[onboarding.about]
+[onboarding.about.whatIs]
+title = "What is Total PDF?"
+body = "Total PDF is a full-featured PDF platform that runs completely locally — no documents ever leave your machine. Use it as a desktop app, a browser UI, or a self-hosted server with a private REST API. Edit, sign, redact, OCR, convert, merge, split, compress, and automate PDF workflows without sending data to third-party services. Built with Spring Boot, React, and Tauri, running on Java 25."
+
+[onboarding.about.badge]
+local = "100% Local"
+tools = "Tools"
+languages = "Languages"
+endpoints = "Endpoints"
+
+[onboarding.about.privacy]
+title = "Privacy-First Design"
+zeroEgress = "Zero Egress"
+zeroEgressDesc = "All processing runs on your machine. Total PDF never uploads documents to any external service."
+noTelemetry = "No Telemetry"
+noTelemetryDesc = "The app does not phone home. No analytics, no crash reporters, no usage tracking by default."
+airGap = "Air-Gap Ready"
+airGapDesc = "Self-host mode runs on networks with no internet access. Nothing leaves the deployment boundary."
+encryption = "Encryption at Rest"
+encryptionDesc = "Password-protected PDFs use AES-128/256, matching PDF 2.0 spec."
+
+[onboarding.about.tools]
+title = "54 Tools — One Platform"
+
+[onboarding.about.groups]
+edit = "Content Editing"
+organize = "Page Organization"
+security = "Security & Signatures"
+convert = "Conversion & Recognition"
+utility = "Utilities & Metadata"
+
+[onboarding.about.deploy]
+title = "Three Ways to Run"
+desktop = "Desktop App"
+desktopDesc = "Native macOS .dmg, Windows .msi, Linux .AppImage. Bundled JRE — no server setup needed."
+browser = "Browser UI"
+browserDesc = "Full SPA at http://localhost:8080. All 54 tools, pipeline builder, REST API explorer."
+server = "Self-Host Server"
+serverDesc = "Docker, Kubernetes, or raw JAR. Private REST API. On-prem, air-gapped, or cloud VPC."
+
+[onboarding.about.resources]
+title = "Resources"
+github = "GitHub Repository"
+readme = "README — Full Feature Documentation"
+issues = "Report Issues"
 
 [setup]
 description = "Get started by choosing how you want to use Total PDF"

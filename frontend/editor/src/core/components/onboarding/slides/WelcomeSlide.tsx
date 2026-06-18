@@ -1,8 +1,9 @@
 import React from "react";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { SlideConfig } from "@app/types/types";
 import styles from "@app/components/onboarding/InitialOnboardingModal/InitialOnboardingModal.module.css";
 import { UNIFIED_CIRCLE_CONFIG } from "@app/components/onboarding/slides/unifiedBackgroundConfig";
+import { Group, Badge, Text } from "@mantine/core";
 
 function WelcomeSlideTitle() {
   const { t } = useTranslation();
@@ -15,15 +16,30 @@ function WelcomeSlideTitle() {
   );
 }
 
-const WelcomeSlideBody = () => (
-  <span>
-    <Trans
-      i18nKey="onboarding.welcomeSlide.body"
-      components={{ strong: <strong /> }}
-      defaults="Total PDF is now ready for teams of all sizes. This update includes a new layout, powerful new admin capabilities, and our most requested feature - <strong>Edit Text</strong>."
-    />
-  </span>
-);
+const WelcomeSlideBody = () => {
+  const { t } = useTranslation();
+  return (
+    <>
+      <Text size="sm" mb="sm">
+        {t(
+          "onboarding.welcomeSlide.body",
+          "Total PDF is a full-featured PDF platform that runs completely locally — no documents ever leave your machine. Edit, sign, redact, OCR, convert, merge, split, compress, and automate PDFs without sending data to third-party services.",
+        )}
+      </Text>
+      <Group gap="xs" justify="center" mt="md">
+        <Badge variant="light" color="blue" size="sm">
+          {t("onboarding.welcomeSlide.badge.local", "100% Local")}
+        </Badge>
+        <Badge variant="light" color="green" size="sm">
+          {t("onboarding.welcomeSlide.badge.tools", "54 Tools")}
+        </Badge>
+        <Badge variant="light" color="violet" size="sm">
+          {t("onboarding.welcomeSlide.badge.privacy", "Zero Egress")}
+        </Badge>
+      </Group>
+    </>
+  );
+};
 
 export default function WelcomeSlide(): SlideConfig {
   return {

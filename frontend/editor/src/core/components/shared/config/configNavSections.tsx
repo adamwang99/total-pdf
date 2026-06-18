@@ -4,6 +4,7 @@ import { NavKey } from "@app/components/shared/config/types";
 import HotkeysSection from "@app/components/shared/config/configSections/HotkeysSection";
 import GeneralSection from "@app/components/shared/config/configSections/GeneralSection";
 import HelpSection from "@app/components/shared/config/configSections/HelpSection";
+import AboutSection from "@app/components/shared/config/configSections/AboutSection";
 
 export interface ConfigNavItem {
   key: NavKey;
@@ -60,6 +61,12 @@ export const useConfigNavSections = (
     {
       title: t("settings.help.title", "Help"),
       items: [
+        {
+          key: "about",
+          label: t("settings.about.label", "About Total PDF"),
+          icon: "info-rounded",
+          component: <AboutSection />,
+        },
         {
           key: "help",
           label: t("settings.help.label", "Tours"),
