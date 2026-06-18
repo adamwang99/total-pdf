@@ -41,7 +41,7 @@ export interface MachineInfo {
 
 export class UpdateService {
   private readonly baseUrl =
-    "https://supabase.stirling.com/functions/v1/updates";
+    "https://supabase.totalpdf.info/functions/v1/updates";
 
   /**
    * Compare two version strings
@@ -82,8 +82,8 @@ export class UpdateService {
       return (
         DOWNLOAD_BASE_URL +
         (machineInfo.activeSecurity
-          ? "stirling-pdf-with-login.jar"
-          : "stirling-pdf.jar")
+          ? "total-pdf-with-login.jar"
+          : "total-pdf.jar")
       );
     }
 

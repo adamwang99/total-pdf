@@ -598,7 +598,7 @@ description = "Configure temporary file storage and cleanup behavior"
 label = "Temp File Management"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Base directory for temporary files (leave empty for default: java.io.tmpdir/stirling-pdf)"
+description = "Base directory for temporary files (leave empty for default: java.io.tmpdir/total-pdf)"
 label = "Base Temp Directory"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

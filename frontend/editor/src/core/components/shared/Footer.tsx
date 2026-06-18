@@ -42,9 +42,9 @@ export default function Footer({
   });
 
   // Default URLs
-  const defaultTermsUrl = "https://www.stirling.com/terms";
-  const defaultPrivacyUrl = "https://www.stirling.com/privacy";
-  const defaultAccessibilityUrl = "https://www.stirling.com/accessibility";
+  const defaultTermsUrl = "https://totalpdf.info/terms";
+  const defaultPrivacyUrl = "https://totalpdf.info/privacy";
+  const defaultAccessibilityUrl = "https://totalpdf.info/accessibility";
 
   // Use provided URLs or fall back to defaults
   const finalTermsUrl = finalTermsAndConditions || defaultTermsUrl;
@@ -109,7 +109,7 @@ export default function Footer({
           className="footer-link px-3"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://discord.gg/Cn8pWhQRxZ"
+          href="https://discord.gg/3kQQxCQABm"
         >
           {t("footer.discord", "Discord")}
         </a>

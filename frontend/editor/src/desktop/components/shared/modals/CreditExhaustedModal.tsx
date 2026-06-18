@@ -528,7 +528,7 @@ export function CreditExhaustedModal({
 
               <Button
                 component="a"
-                href="mailto:contact@stirlingpdf.com?subject=Enterprise Plan Inquiry"
+                href="mailto:contact@totalpdf.info?subject=Enterprise Plan Inquiry"
                 variant="outline"
                 fullWidth
                 size="md"
@@ -549,7 +549,7 @@ export function CreditExhaustedModal({
           {t("credits.modal.selfHostPrompt", "Want to self host?")}{" "}
           <Text
             component="a"
-            href="https://www.stirling.com/pricing"
+            href="https://totalpdf.info/pricing"
             target="_blank"
             rel="noopener noreferrer"
             size="sm"

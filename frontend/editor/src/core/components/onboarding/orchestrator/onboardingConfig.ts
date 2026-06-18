@@ -85,8 +85,8 @@ export const ONBOARDING_STEPS: OnboardingStep[] = [
     id: "welcome",
     type: "modal-slide",
     slideId: "welcome",
-    // Desktop has its own onboarding modal (DesktopOnboardingModal)
-    condition: (ctx) => !ctx.isDesktopApp,
+    // Always show welcome slide — Total PDF is primarily desktop now
+    condition: () => true,
   },
   {
     id: "admin-overview",

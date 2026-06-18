@@ -96,7 +96,7 @@ export default function ApiKeys() {
             <Stack gap={4}>
               <Text size="sm">
                 <Anchor
-                  href="https://docs.stirlingpdf.com/API"
+                  href="https://docs.totalpdf.info/API"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -115,7 +115,7 @@ export default function ApiKeys() {
               </Text>
               <Text size="sm">
                 <Anchor
-                  href="https://registry.scalar.com/@stirlingpdf/apis/stirling-pdf-processing-api/"
+                  href="https://registry.scalar.com/@aiworld/apis/total-pdf-processing-api/"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{

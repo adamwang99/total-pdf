@@ -114,7 +114,7 @@ export default function AdminAdvancedSection() {
           baseTmpDir: "",
           libreofficeDir: "",
           systemTempDir: "",
-          prefix: "stirling-pdf-",
+          prefix: "total-pdf-",
           maxAgeHours: 24,
           cleanupIntervalMinutes: 30,
           startupCleanup: true,
@@ -797,7 +797,7 @@ export default function AdminAdvancedSection() {
                 )}
                 description={t(
                   "admin.settings.advanced.tempFileManagement.baseTmpDir.description",
-                  "Base directory for temporary files (leave empty for default: java.io.tmpdir/stirling-pdf)",
+                  "Base directory for temporary files (leave empty for default: java.io.tmpdir/total-pdf)",
                 )}
                 value={settings.tempFileManagement?.baseTmpDir || ""}
                 onChange={(e) =>
@@ -809,7 +809,7 @@ export default function AdminAdvancedSection() {
                     },
                   })
                 }
-                placeholder="Default: java.io.tmpdir/stirling-pdf"
+                placeholder="Default: java.io.tmpdir/total-pdf"
                 disabled={!loginEnabled}
               />
             </div>
@@ -884,7 +884,7 @@ export default function AdminAdvancedSection() {
                     },
                   })
                 }
-                placeholder="stirling-pdf-"
+                placeholder="total-pdf-"
                 disabled={!loginEnabled}
               />
             </div>

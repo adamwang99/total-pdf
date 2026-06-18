@@ -137,7 +137,7 @@ export default function SignupForm({
               <span className="auth-terms-label">
                 {t("legal.iAgreeToThe", "I agree to all of the")}{" "}
                 <a
-                  href="https://www.stirlingpdf.com/terms"
+                  href="https://totalpdf.info/terms"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

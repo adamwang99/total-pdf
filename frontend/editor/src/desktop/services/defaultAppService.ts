@@ -40,7 +40,7 @@ export const defaultAppService = {
   hasUserDismissedPrompt(): boolean {
     try {
       const dismissed = localStorage.getItem(
-        "stirlingpdf_default_app_prompt_dismissed",
+        "totalpdf_default_app_prompt_dismissed",
       );
       return dismissed === "true";
     } catch {
@@ -54,7 +54,7 @@ export const defaultAppService = {
   setPromptDismissed(dismissed: boolean): void {
     try {
       localStorage.setItem(
-        "stirlingpdf_default_app_prompt_dismissed",
+        "totalpdf_default_app_prompt_dismissed",
         dismissed ? "true" : "false",
       );
     } catch (error) {

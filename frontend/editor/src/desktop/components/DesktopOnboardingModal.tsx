@@ -11,7 +11,7 @@ import { Z_INDEX_OVER_FULLSCREEN_SURFACE } from "@app/styles/zIndex";
 import styles from "@app/components/onboarding/InitialOnboardingModal/InitialOnboardingModal.module.css";
 import { connectionModeService } from "@app/services/connectionModeService";
 
-const ONBOARDING_KEY = "stirling-desktop-onboarding-seen";
+const ONBOARDING_KEY = "totalpdf-desktop-onboarding-v2";
 
 const SIGN_IN_GRADIENT: [string, string] = ["#3B82F6", "#7C3AED"];
 
