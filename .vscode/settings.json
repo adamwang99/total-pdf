@@ -1,0 +1,146 @@
+{
+  "editor.wordSegmenterLocales": "",
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.defaultFormatter": "EditorConfig.EditorConfig",
+  "cSpell.enabled": false,
+  "[feature]": {
+    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "josevseb.google-java-format-for-vs-code"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[gradle-kotlin-dsl]": {
+    "editor.defaultFormatter": "vscjava.vscode-gradle"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[gradle-build]": {
+    "editor.defaultFormatter": "vscjava.vscode-gradle"
+  },
+  "[gradle]": {
+    "editor.defaultFormatter": "vscjava.vscode-gradle"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "java.format.enabled": true,
+  "java.format.settings.profile": "GoogleStyle",
+  "java.format.settings.google.version": "1.28.0",
+  "java.format.settings.google.extra": "--aosp --skip-sorting-imports --skip-javadoc-formatting",
+  // (DE) Aktiviert Kommentare im Java-Format.
+  // (EN) Enables comments in Java formatting.
+  // "java.format.comments.enabled": true,
+  // (DE) Generiert automatisch Kommentare im Code.
+  // (EN) Automatically generates comments in code.
+  // "java.codeGeneration.generateComments": true,
+  // https://github.com/redhat-developer/vscode-java/blob/master/document/_java.learnMoreAboutCleanUps.md#java-clean-ups
+  "java.saveActions.cleanup": true,
+  "java.cleanup.actions": [
+    "invertEquals", // Inverts calls to Object.equals(Object) and String.equalsIgnoreCase(String) to avoid useless null pointer exception.
+    "instanceofPatternMatch" // Replaces instanceof checks with pattern matching.
+  ],
+  // (DE) Aktiviert die Code-Vervollständigung für Java.
+  // (EN) Enables code completion for Java.
+  "java.completion.engine": "dom",
+  "java.completion.enabled": true,
+  "java.completion.importOrder": [
+    "java",
+    "javax",
+    "org",
+    "com",
+    "net",
+    "io",
+    "jakarta",
+    "lombok",
+    "me",
+    "stirling",
+  ],
+  "java.project.resourceFilters": [
+    ".devcontainer/",
+    ".git/",
+    ".github/",
+    ".gradle/",
+    ".venv/",
+    ".venv*/",
+    ".vscode/",
+    "bin/",
+    "app/core/bin/",
+    "app/common/bin/",
+    "app/proprietary/bin/",
+    "build/",
+    "app/core/build/",
+    "app/common/build/",
+    "app/proprietary/build/",
+    "configs/",
+    "app/core/configs/",
+    "customFiles/",
+    "app/core/customFiles/",
+    "docs/",
+    "exampleYmlFiles",
+    "gradle/",
+    "images/",
+    "logs/",
+    "pipeline/",
+    "scripts/",
+    "testings/",
+    ".git-blame-ignore-revs",
+    ".gitattributes",
+    ".gitignore",
+    "app/core/.gitignore",
+    "app/common/.gitignore",
+    "app/proprietary/.gitignore",
+    ".pre-commit-config.yaml",
+  ],
+  // Enables signature help in Java.
+  "java.signatureHelp.enabled": true,
+  // Enables detailed signature help descriptions.
+  "java.signatureHelp.description.enabled": true,
+  // Downloads sources for Maven dependencies.
+  "java.maven.downloadSources": true,
+  // Enables Gradle project import.
+  "java.import.gradle.enabled": true,
+  // Downloads sources for Eclipse projects.
+  "java.eclipse.downloadSources": true,
+  // Enables import of the Gradle wrapper.
+  "java.import.gradle.wrapper.enabled": true,
+  "spring.initializr.defaultLanguage": "Java",
+  "spring.initializr.defaultGroupId": "stirling.software.SPDF",
+  "spring.initializr.defaultArtifactId": "SPDF",
+  "java.jdt.ls.lombokSupport.enabled": true,
+  "html.format.wrapLineLength": 127,
+  "html.format.enable": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.unformatted": "script,style,textarea",
+  "html.format.contentUnformatted": "pre,code",
+  "html.format.extraLiners": "head,body,/html",
+  "html.format.wrapAttributes": "force",
+  "html.format.wrapAttributesIndentSize": 2,
+  "html.format.indentHandlebars": true,
+  "html.format.preserveNewLines": true,
+  "html.format.maxPreserveNewLines": 2,
+  "stylelint.configFile": "devTools/.stylelintrc.json",
+  "java.project.sourcePaths": [
+    "app/core/src/main/java",
+    "app/common/src/main/java",
+    "app/proprietary/src/main/java"
+  ],
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
+}

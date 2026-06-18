@@ -1,0 +1,1 @@
+import{b as r,a as e,S as n,E as l}from"./index-DOOoD_PL.js";const x=({parameters:a,onParameterChange:t,disabled:c=!1})=>{const{t:i}=r();return e.jsx(n,{gap:"sm",children:e.jsx(n,{gap:"xs",children:Object.keys(a).map(s=>e.jsx(l,{label:i(`changePermissions.permissions.${s}.label`,s),checked:a[s],onChange:o=>t(s,o.target.checked),disabled:c},s))})})};export{x as default};

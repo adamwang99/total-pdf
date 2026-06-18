@@ -1,0 +1,38 @@
+name: "Auto Pull Request Labeler V2"
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+    branches:
+      - main
+      - V3
+
+permissions:
+  contents: read
+
+jobs:
+  labeler:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@ab7a9404c0f3da075243ca237b5fac12c98deaa5 # v2.19.3
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Setup GitHub App Bot
+        id: setup-bot
+        uses: ./.github/actions/setup-bot
+        with:
+          app-id: ${{ secrets.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+
+      - uses: srvaroa/labeler@bf262763a8a8e191f5847873aecc0f29df84f957 # v1.14.0
+        with:
+          config_path: .github/labeler-config-srvaroa.yml
+          use_local_config: false
+          fail_on_error: true
+        env:
+          GITHUB_TOKEN: "${{ steps.setup-bot.outputs.token }}"

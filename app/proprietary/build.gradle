@@ -1,0 +1,84 @@
+repositories {
+    maven { url = "https://build.shibboleth.net/maven/releases" }
+    maven { url = "https://repository.jboss.org/" }
+}
+
+ext {
+    jwtVersion = '0.13.0'
+}
+
+bootRun {
+    enabled = false
+}
+
+spotless {
+        java {
+        target 'src/**/java/**/*.java'
+        targetExclude 'src/main/java/org/apache/**'
+        googleJavaFormat(googleJavaFormatVersion).aosp().reorderImports(false)
+        // google-java-format 1.28.0 bundles Guava 32.x which crashes Spotless lint on JDK 24/25
+        suppressLintsFor { setStep('google-java-format') }
+
+        importOrder("java", "javax", "org", "com", "net", "io", "jakarta", "lombok", "me", "stirling")
+        trimTrailingWhitespace()
+        leadingTabsToSpaces()
+        endWithNewline()
+    }
+    yaml {
+        target '**/*.yml', '**/*.yaml'
+        trimTrailingWhitespace()
+        leadingTabsToSpaces()
+        endWithNewline()
+    }
+    format 'gradle', {
+        target '**/gradle/*.gradle', '**/*.gradle'
+        trimTrailingWhitespace()
+        leadingTabsToSpaces()
+        endWithNewline()
+    }
+}
+dependencies {
+    implementation project(':common')
+    api 'com.google.guava:guava:33.6.0-jre'
+
+    api 'org.springframework:spring-jdbc'
+    api 'org.springframework:spring-webmvc'
+    api 'org.springframework.session:spring-session-core'
+    api "org.springframework.security:spring-security-core:$springSecuritySamlVersion"
+    api "org.springframework.security:spring-security-saml2-service-provider:$springSecuritySamlVersion"
+    api 'org.springframework.boot:spring-boot-starter-jetty'
+    api 'org.springframework.boot:spring-boot-starter-security'
+    api 'org.springframework.boot:spring-boot-starter-data-jpa'
+    api 'org.springframework.boot:spring-boot-starter-security-oauth2-client'
+    api 'org.springframework.boot:spring-boot-starter-mail'
+    api 'org.springframework.boot:spring-boot-starter-cache'
+    api 'com.github.ben-manes.caffeine:caffeine'
+    api 'io.swagger.core.v3:swagger-core-jakarta:2.2.46'
+    implementation 'com.bucket4j:bucket4j_jdk17-core:8.18.0'
+
+    // https://mvnrepository.com/artifact/com.bucket4j/bucket4j_jdk17
+    implementation "org.bouncycastle:bcprov-jdk18on:$bouncycastleVersion"
+
+    implementation 'com.google.code.gson:gson:2.13.2'
+
+    api 'io.micrometer:micrometer-registry-prometheus'
+
+    api "io.jsonwebtoken:jjwt-api:$jwtVersion"
+    runtimeOnly "io.jsonwebtoken:jjwt-impl:$jwtVersion"
+    runtimeOnly "io.jsonwebtoken:jjwt-jackson:$jwtVersion"
+    runtimeOnly 'com.h2database:h2:2.3.232' // Don't upgrade h2database - file format incompatible with 2.4.x, would break existing user databases
+    runtimeOnly 'org.postgresql:postgresql:42.7.11'
+    implementation('com.coveo:saml-client:5.0.0') {
+        exclude group: 'org.opensaml', module: 'opensaml-core'
+    }
+}
+
+tasks.register('prepareKotlinBuildScriptModel') {}
+
+tasks.register('type3SignatureTool', JavaExec) {
+    group = 'type3'
+    description = 'Dump Type3 font signatures and glyph coverage for the Type3 library'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'stirling.software.SPDF.service.pdfjson.type3.tool.Type3SignatureTool'
+    standardInput = System.in
+}

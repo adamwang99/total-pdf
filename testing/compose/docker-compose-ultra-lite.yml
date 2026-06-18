@@ -1,0 +1,44 @@
+services:
+  stirling-pdf:
+    build:
+      context: ../..
+      dockerfile: docker/embedded/Dockerfile.ultra-lite
+    container_name: Total-PDF-Ultra-Lite
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080$${SYSTEM_ROOTURIPATH:-''}/api/v1/info/status | grep -q 'UP'"]
+      interval: 5s
+      timeout: 10s
+      retries: 16
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../../stirling/latest/config:/configs:rw
+      - ../../stirling/latest/logs:/logs:rw
+    environment:
+      DISABLE_ADDITIONAL_FEATURES: "true"
+      SECURITY_ENABLELOGIN: "false"
+      ENDPOINTS_GROUPS_TO_REMOVE: "CLI"
+      SYSTEM_DEFAULTLOCALE: en-US
+      UI_APPNAME: Total-PDF-Ultra-lite
+      UI_HOMEDESCRIPTION: Demo site for Total-PDF-Ultra-lite Latest
+      UI_APPNAMENAVBAR: Total-PDF-Ultra-lite Latest
+      SYSTEM_MAXFILESIZE: "100"
+      METRICS_ENABLED: "true"
+      SYSTEM_GOOGLEVISIBILITY: "true"
+      SHOW_SURVEY: "true"
+    networks:
+      - stirling-network
+
+networks:
+  stirling-network:
+    driver: bridge
+
+volumes:
+  stirling-data:
+  stirling-config:
+  stirling-logs:

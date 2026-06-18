@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',Roboto,Arial,sans-serif; }
+  body { width:1400px; background:#0f1419; color:#e6edf3; padding:48px 56px; }
+  .head { display:flex; align-items:center; gap:22px; border-bottom:2px solid #1f6feb; padding-bottom:24px; margin-bottom:30px; }
+  .logo { width:74px; height:74px; border-radius:16px; background:linear-gradient(135deg,#1f6feb,#388bfd); display:flex; align-items:center; justify-content:center; font-size:38px; font-weight:800; color:#fff; box-shadow:0 6px 20px rgba(31,111,235,.4); }
+  .title h1 { font-size:42px; font-weight:800; letter-spacing:-.5px; }
+  .title .sub { color:#7d8590; font-size:17px; margin-top:4px; }
+  .badge { margin-left:auto; text-align:right; font-size:13px; color:#7d8590; line-height:1.7; }
+  .badge b { color:#3fb950; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-bottom:22px; }
+  .card { background:#161b22; border:1px solid #21262d; border-radius:14px; padding:20px 22px; }
+  .card h2 { font-size:15px; text-transform:uppercase; letter-spacing:1px; color:#388bfd; margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+  .card .ico { font-size:18px; }
+  .tool { display:inline-block; background:#21262d; color:#c9d1d9; font-size:12.5px; padding:5px 10px; border-radius:7px; margin:0 5px 7px 0; border:1px solid #2d333b; }
+  .tool.sec { border-color:#3d2828; background:#2a1d1d; color:#ffa198; }
+  .tool.sign { border-color:#1f3a2a; background:#16251c; color:#7ee2a8; }
+  .arch { display:flex; gap:14px; margin-bottom:22px; }
+  .layer { flex:1; background:#161b22; border:1px solid #21262d; border-radius:14px; padding:18px 20px; text-align:center; }
+  .layer .big { font-size:30px; margin-bottom:8px; }
+  .layer h3 { font-size:16px; margin-bottom:6px; }
+  .layer p { font-size:12.5px; color:#7d8590; line-height:1.5; }
+  .foot { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:6px; }
+  .stat { background:#161b22; border:1px solid #21262d; border-radius:12px; padding:16px; text-align:center; }
+  .stat .n { font-size:30px; font-weight:800; color:#388bfd; }
+  .stat .l { font-size:12px; color:#7d8590; margin-top:4px; text-transform:uppercase; letter-spacing:.5px; }
+  .note { margin-top:22px; font-size:12px; color:#6e7681; border-top:1px solid #21262d; padding-top:14px; line-height:1.6; }
+  .warn { color:#d29922; }
+</style>
+</head>
+<body>
+  <div class="head">
+    <div class="logo">T</div>
+    <div class="title">
+      <h1>Total PDF</h1>
+      <div class="sub">Nền tảng PDF mã nguồn mở — Desktop · Browser · Self-hosted Server</div>
+    </div>
+    <div class="badge">
+      License core: <b>MIT</b><br>
+      Fork: Total-PDF<br>
+      Repo: <b>private</b>
+    </div>
+  </div>
+
+  <div class="arch">
+    <div class="layer">
+      <div class="big">🖥️</div>
+      <h3>Desktop App</h3>
+      <p>Tauri (Rust + React)<br>macOS .dmg · Windows .msi · Linux .AppImage</p>
+    </div>
+    <div class="layer">
+      <div class="big">🌐</div>
+      <h3>Browser UI</h3>
+      <p>React + Mantine<br>40+ ngôn ngữ · xử lý local, không gửi file ra ngoài</p>
+    </div>
+    <div class="layer">
+      <div class="big">⚙️</div>
+      <h3>Backend Server</h3>
+      <p>Spring Boot (Java 25)<br>171 controller · REST API đầy đủ</p>
+    </div>
+    <div class="layer">
+      <div class="big">🐳</div>
+      <h3>Deploy</h3>
+      <p>Docker one-command<br>SSO · audit · on-prem</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2><span class="ico">✏️</span> Edit &amp; Content</h2>
+      <span class="tool">Add Text</span><span class="tool">Add Image</span><span class="tool">Add Stamp</span><span class="tool">Add Watermark</span><span class="tool">Add Page Numbers</span><span class="tool">Add Attachments</span><span class="tool">PDF Text Editor</span><span class="tool">Edit TOC</span><span class="tool">Annotate</span><span class="tool">Replace Color</span><span class="tool">Adjust Contrast</span><span class="tool">Form Fill</span>
+    </div>
+    <div class="card">
+      <h2><span class="ico">📄</span> Page Operations</h2>
+      <span class="tool">Merge</span><span class="tool">Split</span><span class="tool">Extract Pages</span><span class="tool">Remove Pages</span><span class="tool">Reorganize</span><span class="tool">Rotate</span><span class="tool">Crop</span><span class="tool">Page Layout</span><span class="tool">Booklet</span><span class="tool">Overlay PDFs</span><span class="tool">Scale</span><span class="tool">Remove Blanks</span><span class="tool">Single Large Page</span><span class="tool">Scanner Split</span>
+    </div>
+    <div class="card">
+      <h2><span class="ico">🔒</span> Security &amp; Sign</h2>
+      <span class="tool sec">Add Password</span><span class="tool sec">Remove Password</span><span class="tool sec">Permissions</span><span class="tool sec">Redact</span><span class="tool sec">Sanitize</span><span class="tool sec">Flatten</span><span class="tool sign">Cert Sign</span><span class="tool sign">Sign</span><span class="tool sign">Validate Signature</span><span class="tool sign">Timestamp</span><span class="tool sign">Remove Cert Sign</span><span class="tool sec">Unlock Forms</span>
+    </div>
+    <div class="card">
+      <h2><span class="ico">🔄</span> Convert &amp; OCR</h2>
+      <span class="tool">Convert (to/from)</span><span class="tool">OCR</span><span class="tool">Compress</span><span class="tool">Extract Images</span><span class="tool">Remove Image</span><span class="tool">Repair</span>
+    </div>
+    <div class="card">
+      <h2><span class="ico">🔍</span> Inspect &amp; Meta</h2>
+      <span class="tool">Get PDF Info</span><span class="tool">Compare</span><span class="tool">Change Metadata</span><span class="tool">Show JS</span><span class="tool">Remove Annotations</span><span class="tool">Swagger UI</span>
+    </div>
+    <div class="card">
+      <h2><span class="ico">🤖</span> Automation</h2>
+      <span class="tool">Automate (no-code pipeline)</span><span class="tool">Auto Rename</span><span class="tool">REST API</span><span class="tool">Batch xử lý hàng triệu PDF</span>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="stat"><div class="n">54</div><div class="l">PDF Tools</div></div>
+    <div class="stat"><div class="n">171</div><div class="l">API Controllers</div></div>
+    <div class="stat"><div class="n">40+</div><div class="l">Languages</div></div>
+    <div class="stat"><div class="n">3</div><div class="l">Platforms</div></div>
+  </div>
+
+  <div class="note">
+    Kiến trúc &amp; số liệu trích từ source thật (frontend tools + backend controllers). 
+    <span class="warn">⚠️ Lưu ý license:</span> các thư mục <code>app/proprietary</code>, <code>app/saas</code>, <code>engine</code> KHÔNG thuộc MIT — phải loại trước khi public/redistribute. Rebrand desktop ✅ hoàn tất; còn sót <code>settings.gradle → rootProject.name</code> chưa đổi.
+  </div>
+</body>
+</html>

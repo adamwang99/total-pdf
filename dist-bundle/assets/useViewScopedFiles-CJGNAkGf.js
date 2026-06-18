@@ -1,0 +1,1 @@
+import{O as a,ee as l,aq as n,r as o}from"./index-DOOoD_PL.js";function c(s=!1){const{activeFileIndex:t}=a(),{files:e}=l(),{workbench:i}=n();return o.useMemo(()=>{if(i==="viewer"&&!s){const r=e[t];return r?[r]:e}return e},[i,e,t,s])}export{c as u};

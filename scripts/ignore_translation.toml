@@ -1,0 +1,611 @@
+[ar_AR]
+ignore = [
+    'language.direction',
+]
+
+[az_AZ]
+ignore = [
+    'language.direction',
+]
+
+[bg_BG]
+ignore = [
+    'language.direction',
+]
+
+[bo_CN]
+ignore = [
+    'admin.settings.advanced.processExecutor.libreOffice',
+    'admin.settings.advanced.processExecutor.ocrMyPdf',
+    'admin.settings.advanced.processExecutor.qpdf',
+    'admin.settings.advanced.processExecutor.tesseract',
+    'admin.settings.connections.oauth2.label',
+    'admin.settings.connections.saml2.label',
+    'convert.dpi',
+    'endpointStatistics.dataTypeApi',
+    'getPdfInfo.other.javaScript',
+    'getPdfInfo.other.xmp',
+    'getPdfInfo.summary.tech.javaScript',
+    'home.devApi.title',
+    'language.direction',
+    'removeBlanks.whitePercent.unit',
+    'showJS.tags',
+    'usage.controls.dataType.api',
+    'validateSignature.downloadType.csv',
+    'validateSignature.downloadType.json',
+    'validateSignature.downloadType.pdf',
+]
+
+[ca_CA]
+ignore = [
+    'language.direction',
+    'watermark.type.1',
+]
+
+[cs_CZ]
+ignore = [
+    'language.direction',
+    'text',
+]
+
+[da_DK]
+ignore = [
+    'language.direction',
+]
+
+[de_DE]
+ignore = [
+    'AddStampRequest.alphabet',
+    'AddStampRequest.position',
+    'adjustPageScale.pageSize.legal',
+    'adjustPageScale.pageSize.letter',
+    'admin.settings.advanced.processExecutor.calibre',
+    'admin.settings.advanced.processExecutor.ghostscript',
+    'admin.settings.advanced.processExecutor.libreOffice',
+    'admin.settings.advanced.processExecutor.ocrMyPdf',
+    'admin.settings.advanced.processExecutor.pythonOpenCv',
+    'admin.settings.advanced.processExecutor.qpdf',
+    'admin.settings.advanced.processExecutor.tesseract',
+    'admin.settings.advanced.processExecutor.weasyPrint',
+    'admin.settings.connections.oauth2.label',
+    'admin.settings.connections.saml2.label',
+    'admin.settings.database.port.label',
+    'admin.settings.general.logoStyle.modern',
+    'admin.settings.general.system',
+    'admin.settings.legal.impressum.label',
+    'admin.settings.premium.title',
+    'alphabet',
+    'annotation.contents',
+    'annotation.ellipse',
+    'annotation.polygon',
+    'audit.events.details',
+    'audit.tabs.dashboard',
+    'audit.tabs.export',
+    'certSign.logoTitle',
+    'certSign.name',
+    'common.save',
+    'convert.dpi',
+    'convert.markdown',
+    'convert.pptExt',
+    'convert.rtfExt',
+    'convert.textRtf',
+    'cookieBanner.services.posthog',
+    'cookieBanner.services.scarf',
+    'crop.autoCrop',
+    'details',
+    'endpointStatistics.dataTypeApi',
+    'endpointStatistics.dataTypeUi',
+    'endpointStatistics.top10',
+    'endpointStatistics.top20',
+    'fileChooser.dragAndDrop',
+    'fileManager.fileFormat',
+    'fileManager.fileName',
+    'fileManager.fileVersion',
+    'fileManager.googleDrive',
+    'fileManager.googleDriveShort',
+    'footer.discord',
+    'footer.issues',
+    'getPdfInfo.downloads',
+    'getPdfInfo.indexTitle',
+    'getPdfInfo.other.javaScript',
+    'getPdfInfo.other.xmp',
+    'getPdfInfo.perPage.links',
+    'getPdfInfo.perPage.multimedia',
+    'getPdfInfo.sections.compliance',
+    'getPdfInfo.summary.tech.javaScript',
+    'getPdfInfo.summary.tech.multimedia',
+    'home.devApi.title',
+    'language.direction',
+    'legal.impressum',
+    'licenses.version',
+    'login.debug',
+    'pdfTextEditor.options.advanced.title',
+    'pipeline.title',
+    'pipelineOptions.pipelineHeader',
+    'plan.enterprise.name',
+    'plan.pro.name',
+    'plan.upgrade',
+    'pro',
+    'quickAccess.reader',
+    'redact.manual.zoom',
+    'removeBlanks.whitePercent.unit',
+    'rightRail.annotations',
+    'settings.connection.mode.saas',
+    'settings.connection.server',
+    'settings.licensingAnalytics.audit',
+    'settings.licensingAnalytics.plan',
+    'settings.workspace.teams',
+    'setup.mode.saas.title',
+    'setup.server.type.saas',
+    'sign.saved.type.text',
+    'sign.type.text',
+    'signup.name',
+    'sponsor',
+    'text',
+    'toolPanel.alpha',
+    'update.priority.normal',
+    'update.version',
+    'usage.controls.dataType.api',
+    'usage.controls.dataType.ui',
+    'usage.controls.top10',
+    'usage.controls.top20',
+    'usage.showing.top10',
+    'usage.showing.top20',
+    'validateSignature.cert.version',
+    'validateSignature.downloadType.csv',
+    'validateSignature.downloadType.json',
+    'validateSignature.downloadType.pdf',
+    'validateSignature.report.downloads',
+    'validateSignature.status._value',
+    'watermark.type.1',
+    'watermark.watermarkType.text',
+    'workspace.people.actions.upgrade',
+    'workspace.people.addMember.usernamePlaceholder',
+    'workspace.people.admin',
+    'workspace.people.emailInvite.emailsPlaceholder',
+    'workspace.people.inviteLink.emailPlaceholder',
+    'workspace.people.inviteMode.link',
+    'workspace.people.status',
+    'workspace.people.team',
+    'workspace.teams.system',
+    'workspace.teams.title',
+]
+
+[el_GR]
+ignore = [
+    'language.direction',
+]
+
+[es_ES]
+ignore = [
+    'adjustPageScale.pageSize.legal',
+    'admin.error',
+    'admin.settings.advanced.processExecutor.calibre',
+    'admin.settings.advanced.processExecutor.ghostscript',
+    'admin.settings.advanced.processExecutor.libreOffice',
+    'admin.settings.advanced.processExecutor.ocrMyPdf',
+    'admin.settings.advanced.processExecutor.pythonOpenCv',
+    'admin.settings.advanced.processExecutor.qpdf',
+    'admin.settings.advanced.processExecutor.tesseract',
+    'admin.settings.advanced.processExecutor.weasyPrint',
+    'admin.settings.connections.mobileScanner.pageFormatA4',
+    'admin.settings.connections.oauth2.label',
+    'admin.settings.connections.pageFormatA4',
+    'admin.settings.connections.saml2.label',
+    'admin.settings.security.xFrameOptions.label',
+    'adminUserSettings.roles',
+    'audit.clearData.irreversible',
+    'certSign.appearance.invisible',
+    'certSign.appearance.visible',
+    'certSign.collab.participant.certInvalid',
+    'certSign.collab.signRequest.steps.invisible',
+    'certSign.collab.signRequest.steps.visible',
+    'certSign.collab.signRequest.text.colorLabel',
+    'certSign.collab.signRequest.text.fontSizePlaceholder',
+    'common.error',
+    'compare.pixel.base',
+    'config.account.profilePicture.cropper.zoom',
+    'config.overview.error',
+    'config.plan',
+    'convert.cbrToPdf',
+    'convert.cbzToPdf',
+    'convert.dpi',
+    'convert.ebookToPdf',
+    'convert.markdown',
+    'convert.pdfToCbr',
+    'convert.pdfToCbz',
+    'convert.pdfToEpub',
+    'convert.pptExt',
+    'convert.svgToPdf',
+    'cookieBanner.services.posthog',
+    'cookieBanner.services.scarf',
+    'credits.modal.enterpriseSubscription',
+    'credits.modal.popular',
+    'credits.modal.teamSubscription',
+    'defaultApp.error.title',
+    'endpointStatistics.dataTypeApi',
+    'endpointStatistics.dataTypeUi',
+    'endpointStatistics.top10',
+    'endpointStatistics.top20',
+    'error._value',
+    'fileManager.filterLocal',
+    'fileManager.googleDrive',
+    'fileManager.googleDriveShort',
+    'firstLogin.error',
+    'footer.discord',
+    'footer.issues',
+    'getPdfInfo.other.javaScript',
+    'getPdfInfo.perPage.multimedia',
+    'getPdfInfo.summary.tech.javaScript',
+    'getPdfInfo.summary.tech.multimedia',
+    'home.devApi.title',
+    'landing.heroTitle',
+    'language.direction',
+    'mobileScanner.flash',
+    'no',
+    'pdfTextEditor.groupingMode.auto',
+    'plan.enterprise.name',
+    'plan.popular',
+    'plan.pro.name',
+    'plan.team.name',
+    'plan.trial.message',
+    'pro',
+    'provider.googledrive.name',
+    'provider.oauth2.generic.scope',
+    'provider.oauth2.keycloak.scope',
+    'provider.saml2.name',
+    'provider.saml2.scope',
+    'quickAccess.accessRoleEditor',
+    'redact.manual.zoom',
+    'redact.modeSelector.manual',
+    'removeBlanks.whitePercent.unit',
+    'settings.configuration.endpoints',
+    'settings.connection.mode.saas',
+    'settings.general.title',
+    'settings.licensingAnalytics.plan',
+    'settings.planBilling.tier.enterprise',
+    'settings.planBilling.tier.team',
+    'settings.planBilling.tier.teamBadge',
+    'settings.policiesPrivacy.legal',
+    'settings.securityAuth.telegram',
+    'setup.mode.saas.title',
+    'setup.server.type.saas',
+    'showJS.tags',
+    'storageShare.roleEditor',
+    'team.personal',
+    'toolPicker.subcategories.general',
+    'update.priority.normal',
+    'usage.controls.dataType.api',
+    'usage.controls.dataType.ui',
+    'usage.controls.top10',
+    'usage.controls.top20',
+    'usage.showing.top10',
+    'usage.showing.top20',
+    'validateSignature.cert.bits',
+    'validateSignature.downloadType.csv',
+    'validateSignature.downloadType.json',
+    'validateSignature.downloadType.pdf',
+    'workspace.people.authType.oauth',
+    'workspace.people.authType.saml',
+]
+
+[eu_ES]
+ignore = [
+    'language.direction',
+]
+
+[fa_IR]
+ignore = [
+    'language.direction',
+]
+
+[fr_FR]
+ignore = [
+    'AddStampRequest.alphabet',
+    'AddStampRequest.position',
+    'AddStampRequest.rotation',
+    'adminUserSettings.actions',
+    'alphabet',
+    'cookieBanner.preferencesModal.serviceCounterLabel',
+    'endpointStatistics.top',
+    'endpointStatistics.top10',
+    'endpointStatistics.top20',
+    'language.direction',
+    'licenses.license',
+    'licenses.module',
+    'licenses.nav',
+    'licenses.version',
+    'multiTool.page',
+    'page',
+    'pages',
+    'pipeline.title',
+    'pro',
+    'showJS.tags',
+    'update.version',
+    'validateSignature.cert.bits',
+    'validateSignature.cert.version',
+    'validateSignature.date',
+    'watermark.type.2',
+]
+
+[ga_IE]
+ignore = [
+    'admin.settings.advanced.processExecutor.calibre',
+    'admin.settings.advanced.processExecutor.ghostscript',
+    'admin.settings.advanced.processExecutor.libreOffice',
+    'admin.settings.advanced.processExecutor.ocrMyPdf',
+    'admin.settings.advanced.processExecutor.pythonOpenCv',
+    'admin.settings.advanced.processExecutor.qpdf',
+    'admin.settings.advanced.processExecutor.weasyPrint',
+    'admin.settings.connections.oauth2.label',
+    'admin.settings.connections.saml2.label',
+    'admin.settings.database.port.label',
+    'admin.settings.legal.impressum.label',
+    'convert.dpi',
+    'convert.markdown',
+    'convert.pptExt',
+    'endpointStatistics.dataTypeApi',
+    'endpointStatistics.dataTypeUi',
+    'fileManager.googleDrive',
+    'footer.discord',
+    'footer.issues',
+    'getPdfInfo.other.javaScript',
+    'getPdfInfo.other.xmp',
+    'getPdfInfo.summary.tech.javaScript',
+    'home.devApi.title',
+    'language.direction',
+    'legal.impressum',
+    'plan.pro.name',
+    'pro',
+    'removeBlanks.whitePercent.unit',
+    'settings.connection.mode.saas',
+    'setup.mode.saas.title',
+    'setup.server.type.saas',
+    'showJS.tags',
+    'usage.controls.dataType.api',
+    'usage.controls.dataType.ui',
+    'validateSignature.downloadType.csv',
+    'validateSignature.downloadType.json',
+    'validateSignature.downloadType.pdf',
+]
+
+[hi_IN]
+ignore = [
+    'language.direction',
+]
+
+[hr_HR]
+ignore = [
+    'language.direction',
+    'showJS.tags',
+]
+
+[hu_HU]
+ignore = [
+    'endpointStatistics.top10',
+    'endpointStatistics.top20',
+    'language.direction',
+    'pro',
+    'showJS.tags',
+]
+
+[id_ID]
+ignore = [
+    'language.direction',
+]
+
+[it_IT]
+ignore = [
+    'language.direction',
+    'no',
+    'password',
+    'pipeline.title',
+    'pipelineOptions.pipelineHeader',
+    'showJS.tags',
+    'sponsor',
+]
+
+[ja_JP]
+ignore = [
+    'language.direction',
+]
+
+[ko_KR]
+ignore = [
+    'language.direction',
+]
+
+[ml_IN]
+ignore = [
+    'lang.iku',
+    'language.direction',
+]
+
+[ml_ML]
+ignore = [
+    'language.direction',
+]
+
+[nl_NL]
+ignore = [
+    'language.direction',
+    'sponsor',
+]
+
+[no_NB]
+ignore = [
+    'adminUserSettings.admin',
+    'info',
+    'language.direction',
+    'sponsor',
+]
+
+[pk_sk]
+ignore = [
+    'language.direction',
+]
+
+[pl_PL]
+ignore = [
+    'language.direction',
+]
+
+[pt_BR]
+ignore = [
+    'language.direction',
+    'pipelineOptions.pipelineHeader',
+]
+
+[pt_PT]
+ignore = [
+    'endpointStatistics.endpoint',
+    'endpointStatistics.top',
+    'endpointStatistics.top10',
+    'endpointStatistics.top20',
+    'language.direction',
+    'pro',
+    'update.priority.normal',
+]
+
+[ro_RO]
+ignore = [
+    'language.direction',
+]
+
+[ru_RU]
+ignore = [
+    'language.direction',
+]
+
+[sk_SK]
+ignore = [
+    'language.direction',
+    'text',
+    'watermark.type.1',
+]
+
+[sl_SI]
+ignore = [
+    'language.direction',
+]
+
+[sr_LATN_RS]
+ignore = [
+    'endpointStatistics.top',
+    'endpointStatistics.top10',
+    'endpointStatistics.top20',
+    'font',
+    'language.direction',
+    'pro',
+    'showJS.tags',
+]
+
+[sv_SE]
+ignore = [
+    'language.direction',
+]
+
+[th_TH]
+ignore = [
+    'language.direction',
+    'showJS.tags',
+]
+
+[tr_TR]
+ignore = [
+    'language.direction',
+]
+
+[uk_UA]
+ignore = [
+    'language.direction',
+]
+
+[vi_VN]
+ignore = [
+    'language.direction',
+    'showJS.tags',
+]
+
+[zh_BO]
+ignore = [
+    'language.direction',
+]
+
+[zh_CN]
+ignore = [
+    'language.direction',
+]
+
+[zh_TW]
+ignore = [
+    'admin.settings.advanced.processExecutor.calibre',
+    'admin.settings.advanced.processExecutor.ghostscript',
+    'admin.settings.advanced.processExecutor.libreOffice',
+    'admin.settings.advanced.processExecutor.ocrMyPdf',
+    'admin.settings.advanced.processExecutor.pythonOpenCv',
+    'admin.settings.advanced.processExecutor.qpdf',
+    'admin.settings.advanced.processExecutor.tesseract',
+    'admin.settings.advanced.processExecutor.weasyPrint',
+    'admin.settings.connections.mobileScanner.pageFormatA4',
+    'admin.settings.connections.oauth2.label',
+    'admin.settings.connections.pageFormatA4',
+    'admin.settings.connections.saml2.label',
+    'admin.settings.security.xFrameOptions.label',
+    'certSign.collab.participant.certInvalid',
+    'certSign.collab.signRequest.text.fontSizePlaceholder',
+    'convert.cbrToPdf',
+    'convert.cbzToPdf',
+    'convert.defaultFilename',
+    'convert.dpi',
+    'convert.ebookToPdf',
+    'convert.emlToPdf',
+    'convert.markdown',
+    'convert.pdfToCbr',
+    'convert.pdfToCbz',
+    'convert.pdfToEpub',
+    'convert.pptExt',
+    'convert.svgToPdf',
+    'endpointStatistics.dataTypeApi',
+    'endpointStatistics.dataTypeUi',
+    'fileManager.googleDrive',
+    'footer.discord',
+    'footer.issues',
+    'getPdfInfo.other.javaScript',
+    'getPdfInfo.other.xmp',
+    'getPdfInfo.summary.tech.javaScript',
+    'groupSigning.steps.review.logo',
+    'home.devApi.title',
+    'language.direction',
+    'payment.emailStage.emailPlaceholder',
+    'pdfToSinglePage.filenamePrefix',
+    'plan.trial.message',
+    'provider.googledrive.name',
+    'provider.oauth2.generic.scope',
+    'provider.oauth2.generic.scopes.label',
+    'provider.oauth2.github.scopes.label',
+    'provider.oauth2.google.scopes.label',
+    'provider.oauth2.keycloak.scope',
+    'provider.oauth2.keycloak.scopes.label',
+    'provider.saml2.name',
+    'provider.saml2.scope',
+    'quickAccess.accessEmailPlaceholder',
+    'removeBlanks.whitePercent.unit',
+    'settings.connection.mode.saas',
+    'settings.securityAuth.telegram',
+    'setup.login.email.label',
+    'setup.mode.saas.title',
+    'setup.server.type.saas',
+    'showJS.tags',
+    'toolPanel.alpha',
+    'usage.controls.dataType.api',
+    'usage.controls.dataType.ui',
+    'validateSignature.downloadType.csv',
+    'validateSignature.downloadType.json',
+    'validateSignature.downloadType.pdf',
+    'watermark.filenamePrefix',
+    'workspace.people.addMember.usernamePlaceholder',
+    'workspace.people.authType.oauth',
+    'workspace.people.authType.saml',
+    'workspace.people.emailInvite.emailsPlaceholder',
+]

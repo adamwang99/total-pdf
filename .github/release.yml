@@ -1,0 +1,47 @@
+changelog:
+  exclude:
+    labels:
+      - ignore-for-release
+      # engine: Python AI engine - not currently live / not yet shipped to users.
+      # Remove this entry once the engine is released.
+      - engine
+
+  categories:
+    - title: Breaking Changes
+      labels:
+        - break-change
+
+    - title: Bug Fixes
+      labels:
+        - Bugfix
+        - Bug
+
+    - title: Enhancements
+      labels:
+        - enhancement
+        - Java
+        - Front End
+        - Back End
+        - Tauri
+
+    - title: Minor Enhancements
+      labels:
+        - chore
+        - style
+        - refactor
+
+    - title: Docker Updates
+      labels:
+        - Docker
+
+    - title: Translation Changes
+      labels:
+        - Translation
+
+    - title: Development Tools
+      labels:
+        - Devtools
+
+    - title: Other Changes
+      labels:
+        - "*"

@@ -1,0 +1,45 @@
+services:
+  stirling-pdf:
+    build:
+      context: ../..
+      dockerfile: docker/embedded/Dockerfile.fat
+    container_name: stirling-pdf-fat
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 6G
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080$${SYSTEM_ROOTURIPATH:-''}/api/v1/info/status | grep -q 'UP'"]
+      interval: 5s
+      timeout: 10s
+      retries: 16
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../../stirling/latest/data:/usr/share/tessdata:rw
+      - ../../stirling/latest/config:/configs:rw
+      - ../../stirling/latest/logs:/logs:rw
+    environment:
+      DISABLE_ADDITIONAL_FEATURES: "false"
+      SECURITY_ENABLELOGIN: "false"
+      FAT_DOCKER: "true"
+      SYSTEM_DEFAULTLOCALE: en-US
+      UI_APPNAME: Total PDF
+      UI_HOMEDESCRIPTION: Total PDF — Your complete PDF toolkit
+      UI_APPNAMENAVBAR: Total PDF Fat
+      SYSTEM_MAXFILESIZE: "200"
+      METRICS_ENABLED: "true"
+      SYSTEM_GOOGLEVISIBILITY: "true"
+      SHOW_SURVEY: "true"
+    networks:
+      - stirling-network
+
+networks:
+  stirling-network:
+    driver: bridge
+
+volumes:
+  stirling-data:
+  stirling-config:
+  stirling-logs:

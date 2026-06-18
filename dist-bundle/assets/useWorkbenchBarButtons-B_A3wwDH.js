@@ -1,0 +1,1 @@
+import{eY as f,r as c}from"./index-DOOoD_PL.js";function u(e){const{registerButtons:o,unregisterButtons:i,setAction:n}=f(),a=c.useMemo(()=>e.map(({onClick:r,...s})=>s),[e]),t=c.useMemo(()=>e.map(r=>r.id),[e]);c.useEffect(()=>{if(!(!e||e.length===0))return o(a),e.forEach(({id:r,onClick:s})=>n(r,s)),()=>i(t)},[o,i,n,a,t,e])}export{u};
