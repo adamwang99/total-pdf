@@ -30,7 +30,7 @@ import stirling.software.common.util.TempFile;
 import stirling.software.common.util.TempFileManager;
 
 /**
- * Dispatches HTTP POST requests to internal Stirling API endpoints via loopback. Used by
+ * Dispatches HTTP POST requests to internal Total PDF API endpoints via loopback. Used by
  * PipelineProcessor and AiWorkflowService to execute tool operations programmatically without
  * leaving the JVM network stack.
  */

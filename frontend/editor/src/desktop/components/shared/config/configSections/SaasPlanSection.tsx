@@ -106,7 +106,7 @@ export function SaasPlanSection() {
           <Text size="sm">
             {t(
               "settings.planBilling.notAvailable",
-              "Plan & Billing is only available when connected to Stirling Cloud (SaaS mode).",
+              "Plan & Billing is only available when connected to Total PDF Cloud (SaaS mode).",
             )}
           </Text>
         </Alert>

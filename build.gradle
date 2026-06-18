@@ -73,11 +73,11 @@ bootJar {
 
 // Configure main class for the root project
 springBoot {
-    mainClass = 'stirling.software.SPDF.SPDFApplication'
+    mainClass = 'aiworld.totalpdf.SPDFApplication'
 }
 
 allprojects {
-    group = 'stirling.software'
+    group = 'aiworld.totalpdf'
     version = '2.11.0'
 
     configurations.configureEach {
@@ -89,8 +89,8 @@ def appVersionStr = project.version.toString()
 def tauriConfigPath = layout.projectDirectory.file('frontend/editor/src-tauri/tauri.conf.json').asFile.path
 def sim1Path = layout.projectDirectory.file('frontend/editor/src/core/testing/serverExperienceSimulations.ts').asFile.path
 def sim2Path = layout.projectDirectory.file('frontend/editor/src/proprietary/testing/serverExperienceSimulations.ts').asFile.path
-def aurDesktopPkgbuildPath = layout.projectDirectory.file('.github/aur/stirling-pdf-desktop/PKGBUILD').asFile.path
-def aurServerPkgbuildPath = layout.projectDirectory.file('.github/aur/stirling-pdf-server-bin/PKGBUILD').asFile.path
+def aurDesktopPkgbuildPath = layout.projectDirectory.file('.github/aur/total-pdf-desktop/PKGBUILD').asFile.path
+def aurServerPkgbuildPath = layout.projectDirectory.file('.github/aur/total-pdf-server-bin/PKGBUILD').asFile.path
 
 tasks.register('syncAppVersion') {
     group = 'versioning'
@@ -165,7 +165,7 @@ subprojects {
         }
     }
 
-    if (project.name != "stirling-pdf") {
+    if (project.name != "total-pdf") {
         bootJar {
             enabled = false
         }
@@ -400,7 +400,7 @@ subprojects {
         dependsOn(rootProject.tasks.writeVersion)
     }
 
-    if (name == 'stirling-pdf') {
+    if (name == 'total-pdf') {
         apply plugin: 'org.springdoc.openapi-gradle-plugin'
 
         openApi {
@@ -478,11 +478,11 @@ licenseReport {
     configurations = [ "productionRuntimeClasspath", "runtimeClasspath" ]
 }
 
-// Configure the forked spring boot run task to properly delegate to the stirling-pdf module
+// Configure the forked spring boot run task to properly delegate to the total-pdf module
 tasks.named('forkedSpringBootRun') {
-    dependsOn ':stirling-pdf:bootRun'
+    dependsOn ':total-pdf:bootRun'
     doFirst {
-        println "Delegating forkedSpringBootRun to :stirling-pdf:bootRun"
+        println "Delegating forkedSpringBootRun to :total-pdf:bootRun"
     }
 }
 
@@ -504,7 +504,7 @@ spotless {
 sonar {
     properties {
         property "sonar.projectKey", "adamwang99_total-pdf"
-        property "sonar.organization", "stirling-tools"
+        property "sonar.organization", "aiworld-totalpdf"
 
         property "sonar.exclusions", "**/build-wrapper-dump.json, **/src/main/java/org/apache/**, **/src/main/resources/static/pdfjs/**, **/src/main/resources/static/pdfjs-legacy/**, **/src/main/resources/static/js/thirdParty/**"
         property "sonar.coverage.exclusions", "**/src/main/java/org/apache/**, **/src/main/resources/static/pdfjs/**, **/src/main/resources/static/pdfjs-legacy/**, **/src/main/resources/static/js/thirdParty/**"
@@ -541,7 +541,7 @@ repositories {
 }
 
 dependencies {
-    implementation project(':stirling-pdf')
+    implementation project(':total-pdf')
     implementation project(':common')
     if (rootProject.ext.isSecurityDisabled()) {
         implementation project(':proprietary')
@@ -569,21 +569,21 @@ tasks.register('printVersion') {
 
 tasks.named('bootRun') {
     group = 'application'
-    description = 'Delegates to :stirling-pdf:bootRun'
-    dependsOn ':stirling-pdf:bootRun'
+    description = 'Delegates to :total-pdf:bootRun'
+    dependsOn ':total-pdf:bootRun'
 
     doFirst {
-        println "Delegating to :stirling-pdf:bootRun"
+        println "Delegating to :total-pdf:bootRun"
     }
 }
 
 tasks.named('build') {
     group = 'build'
-    description = 'Delegates to :stirling-pdf:bootJar'
-    dependsOn ':stirling-pdf:bootJar', 'buildRestartHelper', 'syncAppVersion'
+    description = 'Delegates to :total-pdf:bootJar'
+    dependsOn ':total-pdf:bootJar', 'buildRestartHelper', 'syncAppVersion'
 
     doFirst {
-        println "Delegating to :stirling-pdf:bootJar"
+        println "Delegating to :total-pdf:bootJar"
     }
 }
 

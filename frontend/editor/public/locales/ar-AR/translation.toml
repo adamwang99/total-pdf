@@ -3014,7 +3014,7 @@ upgradeButton = "ترقية الحساب"
 chartAriaLabel = "استخدام الأرصدة: شُمِل {{includedUsed}} من {{includedTotal}}، المُشتَرى {{purchasedUsed}} من {{purchasedTotal}}"
 copyKeyAriaLabel = "نسخ مفتاح API"
 creditsRemaining = "الأرصدة المتبقية"
-description = "مفتاح API للوصول إلى مجموعة أدوات Stirling الخاصة بـ PDF. انسخه إلى مشروعك أو حدّثه لإنشاء مفتاح جديد."
+description = "مفتاح API للوصول إلى مجموعة أدوات Total PDF الخاصة بـ PDF. انسخه إلى مشروعك أو حدّثه لإنشاء مفتاح جديد."
 docsDescription = "معرفة المزيد حول التكامل مع Total PDF:"
 docsLink = "توثيق API"
 docsTitle = "توثيق API"
@@ -3066,7 +3066,7 @@ system = "تهيئة النظام"
 [connectionMode.status]
 localOffline = "وضع عدم الاتصال قيد التشغيل"
 localOnline = "وضع عدم الاتصال قيد التشغيل"
-saas = "متصل بـ Stirling Cloud"
+saas = "متصل بـ Total PDF Cloud"
 selfhostedChecking = "متصل بخادم مُستضاف ذاتيًا (جارٍ التحقق...)"
 selfhostedOffline = "تعذّر الوصول إلى الخادم المُستضاف ذاتيًا"
 selfhostedOnline = "متصل بخادم مُستضاف ذاتيًا"
@@ -4526,7 +4526,7 @@ title = "تراخيص الطرف الثالث"
 version = "الإصدار"
 
 [localMode]
-toolUnavailable = "هذه الأداة تتطلب حسابًا. سجّل الدخول إلى Stirling Cloud أو اتصل بخادم مُستضاف ذاتيًا لاستخدامها."
+toolUnavailable = "هذه الأداة تتطلب حسابًا. سجّل الدخول إلى Total PDF Cloud أو اتصل بخادم مُستضاف ذاتيًا لاستخدامها."
 
 [localMode.banner]
 message = "سجّل الدخول لإلغاء قفل جميع الأدوات."
@@ -4927,7 +4927,7 @@ skipForNow = "تخطي الآن"
 skipTheTour = "تخطي الجولة"
 
 [onboarding.desktopInstall]
-body = "يعمل Stirling بشكل أفضل كتطبيق سطح مكتب. يمكنك استخدامه دون اتصال، والوصول إلى المستندات بسرعة أكبر، وإجراء التعديلات محلياً على جهازك."
+body = "يعمل Total PDF بشكل أفضل كتطبيق سطح مكتب. يمكنك استخدامه دون اتصال، والوصول إلى المستندات بسرعة أكبر، وإجراء التعديلات محلياً على جهازك."
 title = "تنزيل"
 titleWithOs = "تنزيل لـ {{osLabel}}"
 
@@ -4941,8 +4941,8 @@ title = "تجربة Pro لمدة 30 يومًا"
 trialEnds = "تنتهي التجربة في {{date}}"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "بمجرد تمكين وضع تسجيل الدخول، يمكنك إدارة المستخدمين، وضبط الإعدادات، ومراقبة حالة الخادم. أول <strong>{{freeTierLimit}}</strong> شخصاً على خادمك يستخدمون Stirling مجاناً."
-adminBodyLoginEnabled = "بصفتك مشرفاً، يمكنك إدارة المستخدمين، وضبط الإعدادات، ومراقبة حالة الخادم. أول <strong>{{freeTierLimit}}</strong> شخصاً على خادمك يستخدمون Stirling مجاناً."
+adminBodyLoginDisabled = "بمجرد تمكين وضع تسجيل الدخول، يمكنك إدارة المستخدمين، وضبط الإعدادات، ومراقبة حالة الخادم. أول <strong>{{freeTierLimit}}</strong> شخصاً على خادمك يستخدمون Total PDF مجاناً."
+adminBodyLoginEnabled = "بصفتك مشرفاً، يمكنك إدارة المستخدمين، وضبط الإعدادات، ومراقبة حالة الخادم. أول <strong>{{freeTierLimit}}</strong> شخصاً على خادمك يستخدمون Total PDF مجاناً."
 adminTitle = "نظرة عامة للمشرف"
 userBody = "ادعُ زملاءك، وخصص الأدوار، واحفظ مستنداتك منظمة في مساحة عمل آمنة واحدة. فعّل وضع تسجيل الدخول عندما تكون مستعداً للتوسع بعد الاستخدام الفردي."
 userTitle = "نظرة عامة على الخطة"
@@ -4951,9 +4951,9 @@ userTitle = "نظرة عامة على الخطة"
 message = "خضعت التطبيق لتغييرات كبيرة مؤخراً. قد يتطلب ذلك انتباه مشرف الخادم. يرجى تأكيد دورك للمتابعة."
 
 [onboarding.serverLicense]
-freeBody = "ترخيص <strong>Open-Core</strong> لدينا يسمح حتى <strong>{{freeTierLimit}}</strong> مستخدمين مجاناً لكل خادم. للتوسع بسلاسة والحصول على وصول مبكر إلى <strong>أداة تحرير نصوص PDF</strong> الجديدة، نوصي بخطة خادم Stirling - تحرير كامل و<strong>مقاعد غير محدودة</strong> مقابل $99/خادم/شهرياً."
+freeBody = "ترخيص <strong>Open-Core</strong> لدينا يسمح حتى <strong>{{freeTierLimit}}</strong> مستخدمين مجاناً لكل خادم. للتوسع بسلاسة والحصول على وصول مبكر إلى <strong>أداة تحرير نصوص PDF</strong> الجديدة، نوصي بخطة خادم Total PDF - تحرير كامل و<strong>مقاعد غير محدودة</strong> مقابل $99/خادم/شهرياً."
 freeTitle = "ترخيص الخادم"
-overLimitBody = "ترخيصنا يسمح حتى <strong>{{freeTierLimit}}</strong> مستخدمين مجاناً لكل خادم. لديك <strong>{{overLimitUserCopy}}</strong> مستخدمي Stirling. للمتابعة دون انقطاع، ارقَ إلى خطة خادم Stirling - <strong>مقاعد غير محدودة</strong>، تحرير نصوص PDF، وتحكم إداري كامل مقابل $99/خادم/شهرياً."
+overLimitBody = "ترخيصنا يسمح حتى <strong>{{freeTierLimit}}</strong> مستخدمين مجاناً لكل خادم. لديك <strong>{{overLimitUserCopy}}</strong> مستخدمي Total PDF. للمتابعة دون انقطاع، ارقَ إلى خطة خادم Total PDF - <strong>مقاعد غير محدودة</strong>، تحرير نصوص PDF، وتحكم إداري كامل مقابل $99/خادم/شهرياً."
 overLimitTitle = "مطلوب ترخيص خادم"
 seePlans = "عرض الخطط →"
 skip = "تخطي الآن"
@@ -4973,7 +4973,7 @@ title = "مرحبًا بك في Total PDF!"
 
 [onboarding.welcomeSlide]
 body = "Total PDF أصبح جاهزاً الآن للفرق من جميع الأحجام. يتضمن هذا التحديث تخطيطاً جديداً، وإمكانات إدارية قوية، وأكثر ميزة طُلبت - <strong>تحرير النص</strong>."
-title = "مرحباً بك في Stirling"
+title = "مرحباً بك في Total PDF"
 
 [onboarding.whatsNew]
 activeFilesView = "استخدم الملفات النشطة لرؤية كل ما فتحته واختيار ما ستعمل عليه."
@@ -6791,7 +6791,7 @@ user = "تم تسجيل الدخول باسم"
 
 [settings.connection.mode]
 local = "محلي فقط"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "مستضاف ذاتياً"
 
 [settings.developer]
@@ -6913,7 +6913,7 @@ usageAnalytics = "تحليلات الاستخدام"
 [settings.planBilling]
 currentPlan = "الخطة الحالية"
 loading = "جارٍ تحميل معلومات الفوترة..."
-notAvailable = "الخطة والفوترة متاحتان فقط عند الاتصال بـ Stirling Cloud (وضع SaaS)."
+notAvailable = "الخطة والفوترة متاحتان فقط عند الاتصال بـ Total PDF Cloud (وضع SaaS)."
 title = "الخطة والفوترة"
 
 [settings.planBilling.billing]
@@ -7063,16 +7063,16 @@ label = "اسم المستخدم"
 placeholder = "أدخل اسم المستخدم"
 
 [setup.mode.saas]
-description = "سجّل الدخول بحساب Stirling الخاص بك"
-title = "Stirling Cloud"
+description = "سجّل الدخول بحساب Total PDF الخاص بك"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "اتصل بخادم Total PDF الخاص بك"
 title = "خادم مستضاف ذاتياً"
 
 [setup.saas]
-subtitle = "سجّل الدخول بحساب Stirling الخاص بك"
-title = "سجّل الدخول إلى Stirling"
+subtitle = "سجّل الدخول بحساب Total PDF الخاص بك"
+title = "سجّل الدخول إلى Total PDF"
 
 [setup.selfhosted]
 changeServerLocked = "لقد قيّدت مؤسستك هذا التطبيق بخادم محدد"

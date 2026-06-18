@@ -195,7 +195,7 @@ public class EmailService {
                     </div>
                     <!-- Footer -->
                     <div style="text-align: center; padding: 15px; font-size: 12px; color: #777; background-color: #f0f0f0;">
-                      &copy; 2025 Stirling PDF. All rights reserved.
+                      &copy; 2025 Total PDF. All rights reserved.
                     </div>
                   </div>
                 </div>
@@ -249,7 +249,7 @@ public class EmailService {
                     </div>
                     <!-- Footer -->
                     <div style="text-align: center; padding: 15px; font-size: 12px; color: #777; background-color: #f0f0f0;">
-                      &copy; 2025 Stirling PDF. All rights reserved.
+                      &copy; 2025 Total PDF. All rights reserved.
                     </div>
                   </div>
                 </div>
@@ -299,7 +299,7 @@ public class EmailService {
                       </div>
                     </div>
                     <div style=\"text-align: center; padding: 15px; font-size: 12px; color: #777; background-color: #f0f0f0;\">
-                      &copy; 2025 Stirling PDF. All rights reserved.
+                      &copy; 2025 Total PDF. All rights reserved.
                     </div>
                   </div>
                 </div>

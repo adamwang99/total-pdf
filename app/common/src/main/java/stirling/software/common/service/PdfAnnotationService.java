@@ -41,10 +41,10 @@ public class PdfAnnotationService {
     private static final String ANNOTATION_ICON_NAME = "Comment";
 
     /** Default subject shown in the annotation popup when a spec does not supply one. */
-    private static final String DEFAULT_SUBJECT = "Stirling AI Comment";
+    private static final String DEFAULT_SUBJECT = "Total PDF AI Comment";
 
     /** Default author label shown in the annotation popup when a spec does not supply one. */
-    private static final String DEFAULT_AUTHOR = "Stirling AI";
+    private static final String DEFAULT_AUTHOR = "Total PDF AI";
 
     /**
      * Cap on sticky-note text length. PDF annotation bodies can technically be much longer, but

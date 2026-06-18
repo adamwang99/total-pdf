@@ -99,9 +99,9 @@ class FormUtilsTest {
             attachField(setup, checkBox, new PDRectangle(60, 680, 16, 16));
 
             FormUtils.applyFieldValues(
-                    document, Map.of("company", "Stirling", "subscribed", true), false);
+                    document, Map.of("company", "Total PDF", "subscribed", true), false);
 
-            assertEquals("Stirling", textField.getValueAsString());
+            assertEquals("Total PDF", textField.getValueAsString());
             assertTrue(checkBox.isChecked());
 
             FormUtils.applyFieldValues(document, Map.of("subscribed", false), false);

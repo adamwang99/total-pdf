@@ -3014,7 +3014,7 @@ upgradeButton = "升级账户"
 chartAriaLabel = "额度使用：包含 {{includedUsed}} / {{includedTotal}}，已购 {{purchasedUsed}} / {{purchasedTotal}}"
 copyKeyAriaLabel = "复制 API 密钥"
 creditsRemaining = "剩余点数"
-description = "用于访问 Stirling 的一套 PDF 工具的 API 密钥。复制到您的项目，或刷新以生成新的密钥。"
+description = "用于访问 Total PDF 的一套 PDF 工具的 API 密钥。复制到您的项目，或刷新以生成新的密钥。"
 docsDescription = "了解如何集成 Total PDF："
 docsLink = "API 文档"
 docsTitle = "API 文档"
@@ -3066,7 +3066,7 @@ system = "系统配置"
 [connectionMode.status]
 localOffline = "离线模式运行中"
 localOnline = "离线模式运行中"
-saas = "已连接到 Stirling Cloud"
+saas = "已连接到 Total PDF Cloud"
 selfhostedChecking = "已连接到自建服务器（检查中...）"
 selfhostedOffline = "自建服务器不可达"
 selfhostedOnline = "已连接到自建服务器"
@@ -4526,7 +4526,7 @@ title = "ཕྱི་ཡི་ཆོག་མཆན།"
 version = "པར་གཞི།"
 
 [localMode]
-toolUnavailable = "此工具需要账户。请登录 Stirling Cloud 或连接到自建服务器以使用。"
+toolUnavailable = "此工具需要账户。请登录 Total PDF Cloud 或连接到自建服务器以使用。"
 
 [localMode.banner]
 message = "登录以解锁全部工具。"
@@ -4927,7 +4927,7 @@ skipForNow = "暂时跳过"
 skipTheTour = "跳过引导"
 
 [onboarding.desktopInstall]
-body = "Stirling 作为桌面应用效果最佳。可离线使用、更快访问文档，并在本机进行编辑。"
+body = "Total PDF 作为桌面应用效果最佳。可离线使用、更快访问文档，并在本机进行编辑。"
 title = "下载"
 titleWithOs = "适用于 {{osLabel}} 的下载"
 
@@ -4941,8 +4941,8 @@ title = "您的 30 天 Pro 试用"
 trialEnds = "试用于 {{date}} 结束"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "启用登录模式后，您可以管理用户、配置设置并监控服务器健康状况。服务器上的前 <strong>{{freeTierLimit}}</strong> 位用户可免费使用 Stirling。"
-adminBodyLoginEnabled = "作为管理员，您可以管理用户、配置设置并监控服务器健康状况。服务器上的前 <strong>{{freeTierLimit}}</strong> 位用户可免费使用 Stirling。"
+adminBodyLoginDisabled = "启用登录模式后，您可以管理用户、配置设置并监控服务器健康状况。服务器上的前 <strong>{{freeTierLimit}}</strong> 位用户可免费使用 Total PDF。"
+adminBodyLoginEnabled = "作为管理员，您可以管理用户、配置设置并监控服务器健康状况。服务器上的前 <strong>{{freeTierLimit}}</strong> 位用户可免费使用 Total PDF。"
 adminTitle = "管理员概览"
 userBody = "邀请队友、分配角色，并在一个安全的工作区中整理文档。准备扩大规模时，可随时启用登录模式。"
 userTitle = "方案概览"
@@ -4951,9 +4951,9 @@ userTitle = "方案概览"
 message = "应用近期发生重大变更，可能需要服务器管理员留意。请确认您的角色以继续。"
 
 [onboarding.serverLicense]
-freeBody = "我们的 <strong>开源内核（Open-Core）</strong> 许可允许每台服务器最多 <strong>{{freeTierLimit}}</strong> 名用户免费使用。为顺畅扩展并抢先体验全新的 <strong>PDF 文本编辑工具</strong>，我们推荐 Stirling Server 方案 - 完整编辑与 <strong>无限席位</strong>，$99/服务器/月。"
+freeBody = "我们的 <strong>开源内核（Open-Core）</strong> 许可允许每台服务器最多 <strong>{{freeTierLimit}}</strong> 名用户免费使用。为顺畅扩展并抢先体验全新的 <strong>PDF 文本编辑工具</strong>，我们推荐 Total PDF Server 方案 - 完整编辑与 <strong>无限席位</strong>，$99/服务器/月。"
 freeTitle = "服务器许可证"
-overLimitBody = "我们的许可每台服务器最多允许 <strong>{{freeTierLimit}}</strong> 名用户免费使用。您共有 <strong>{{overLimitUserCopy}}</strong> 名 Stirling 用户。为避免中断，请升级到 Stirling Server 方案 - <strong>无限席位</strong>、PDF 文本编辑，以及每台服务器 $99/月 的完整管理员控制。"
+overLimitBody = "我们的许可每台服务器最多允许 <strong>{{freeTierLimit}}</strong> 名用户免费使用。您共有 <strong>{{overLimitUserCopy}}</strong> 名 Total PDF 用户。为避免中断，请升级到 Total PDF Server 方案 - <strong>无限席位</strong>、PDF 文本编辑，以及每台服务器 $99/月 的完整管理员控制。"
 overLimitTitle = "需要服务器许可证"
 seePlans = "查看方案 →"
 skip = "暂时跳过"
@@ -4973,7 +4973,7 @@ title = "欢迎使用 Total PDF！"
 
 [onboarding.welcomeSlide]
 body = "Total PDF 现已适用于各类规模的团队。本次更新包含全新布局、更强大的管理员能力，以及呼声最高的功能 - <strong>编辑文本</strong>。"
-title = "欢迎使用 Stirling"
+title = "欢迎使用 Total PDF"
 
 [onboarding.whatsNew]
 activeFilesView = "使用活动文件查看所有已打开的内容并选择要处理的文件。"
@@ -6791,7 +6791,7 @@ user = "登录身份"
 
 [settings.connection.mode]
 local = "仅本地"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "自托管"
 
 [settings.developer]
@@ -6913,7 +6913,7 @@ usageAnalytics = "使用分析"
 [settings.planBilling]
 currentPlan = "当前套餐"
 loading = "正在加载计费信息..."
-notAvailable = "“套餐与计费”仅在连接到 Stirling Cloud（SaaS 模式）时可用。"
+notAvailable = "“套餐与计费”仅在连接到 Total PDF Cloud（SaaS 模式）时可用。"
 title = "套餐与计费"
 
 [settings.planBilling.billing]
@@ -7063,16 +7063,16 @@ label = "用户名"
 placeholder = "输入用户名"
 
 [setup.mode.saas]
-description = "使用 Stirling 账户登录"
-title = "Stirling Cloud"
+description = "使用 Total PDF 账户登录"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "连接到您自己的 Total PDF 服务器"
 title = "自托管服务器"
 
 [setup.saas]
-subtitle = "使用您的 Stirling 账户登录"
-title = "登录 Stirling"
+subtitle = "使用您的 Total PDF 账户登录"
+title = "登录 Total PDF"
 
 [setup.selfhosted]
 changeServerLocked = "您的组织已将此应用限制为连接特定服务器"

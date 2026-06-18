@@ -53,7 +53,7 @@ public class OpenApiConfig {
                         .termsOfService("https://www.stirlingpdf.com/terms")
                         .contact(
                                 new Contact()
-                                        .name("Stirling Software")
+                                        .name("Total PDF Software")
                                         .url("https://www.stirlingpdf.com")
                                         .email("contact@stirlingpdf.com"))
                         .description(DEFAULT_DESCRIPTION);

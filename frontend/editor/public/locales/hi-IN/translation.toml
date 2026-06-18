@@ -3014,7 +3014,7 @@ upgradeButton = "खाता अपग्रेड करें"
 chartAriaLabel = "क्रेडिट उपयोग: शामिल {{includedUsed}}/{{includedTotal}}, खरीदे गए {{purchasedUsed}}/{{purchasedTotal}}"
 copyKeyAriaLabel = "API कुंजी कॉपी करें"
 creditsRemaining = "शेष क्रेडिट्स"
-description = "Stirling के PDF टूल्स के सूट तक पहुंच के लिए आपकी API कुंजी। इसे अपने प्रोजेक्ट में कॉपी करें या नया जनरेट करने के लिए रीफ़्रेश करें।"
+description = "Total PDF के PDF टूल्स के सूट तक पहुंच के लिए आपकी API कुंजी। इसे अपने प्रोजेक्ट में कॉपी करें या नया जनरेट करने के लिए रीफ़्रेश करें।"
 docsDescription = "Total PDF के साथ इंटीग्रेशन के बारे में और जानें:"
 docsLink = "API दस्तावेज़"
 docsTitle = "API दस्तावेज़"
@@ -3066,7 +3066,7 @@ system = "सिस्टम कॉन्फ़िगरेशन"
 [connectionMode.status]
 localOffline = "ऑफलाइन मोड चल रहा है"
 localOnline = "ऑफलाइन मोड चल रहा है"
-saas = "Stirling Cloud से कनेक्टेड"
+saas = "Total PDF Cloud से कनेक्टेड"
 selfhostedChecking = "स्व-होस्टेड सर्वर से कनेक्टेड (जाँच हो रही है...)"
 selfhostedOffline = "स्व-होस्टेड सर्वर तक पहुँचा नहीं जा सका"
 selfhostedOnline = "स्व-होस्टेड सर्वर से कनेक्टेड"
@@ -4526,7 +4526,7 @@ title = "तृतीय-पक्ष लाइसेंस"
 version = "संस्करण"
 
 [localMode]
-toolUnavailable = "यह टूल एक खाते की आवश्यकता रखता है। इसका उपयोग करने के लिए Stirling Cloud में साइन इन करें या स्व-होस्टेड सर्वर से कनेक्ट करें।"
+toolUnavailable = "यह टूल एक खाते की आवश्यकता रखता है। इसका उपयोग करने के लिए Total PDF Cloud में साइन इन करें या स्व-होस्टेड सर्वर से कनेक्ट करें।"
 
 [localMode.banner]
 message = "सभी टूल्स अनलॉक करने के लिए साइन इन करें।"
@@ -4927,7 +4927,7 @@ skipForNow = "अभी छोड़ें"
 skipTheTour = "टूर छोड़ें"
 
 [onboarding.desktopInstall]
-body = "Stirling एक डेस्कटॉप ऐप के रूप में सबसे अच्छा काम करता है। आप इसे ऑफ़लाइन उपयोग कर सकते हैं, दस्तावेज़ों तक तेज़ी से पहुँच सकते हैं, और अपने कंप्यूटर पर स्थानीय रूप से संपादन कर सकते हैं।"
+body = "Total PDF एक डेस्कटॉप ऐप के रूप में सबसे अच्छा काम करता है। आप इसे ऑफ़लाइन उपयोग कर सकते हैं, दस्तावेज़ों तक तेज़ी से पहुँच सकते हैं, और अपने कंप्यूटर पर स्थानीय रूप से संपादन कर सकते हैं।"
 title = "डाउनलोड"
 titleWithOs = "{{osLabel}} के लिए डाउनलोड"
 
@@ -4941,8 +4941,8 @@ title = "आपका 30-दिवसीय Pro ट्रायल"
 trialEnds = "ट्रायल {{date}} को समाप्त होगा"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "एक बार आप लॉगिन मोड सक्षम कर दें, आप उपयोगकर्ताओं को प्रबंधित कर सकते हैं, सेटिंग्स कॉन्फ़िगर कर सकते हैं, और सर्वर स्वास्थ्य मॉनिटर कर सकते हैं। आपके सर्वर पर पहले <strong>{{freeTierLimit}}</strong> लोग Stirling मुफ्त में उपयोग कर पाएँगे।"
-adminBodyLoginEnabled = "एडमिन के रूप में, आप उपयोगकर्ताओं को प्रबंधित कर सकते हैं, सेटिंग्स कॉन्फ़िगर कर सकते हैं, और सर्वर स्वास्थ्य मॉनिटर कर सकते हैं। आपके सर्वर पर पहले <strong>{{freeTierLimit}}</strong> लोग Stirling मुफ्त में उपयोग कर पाएँगे।"
+adminBodyLoginDisabled = "एक बार आप लॉगिन मोड सक्षम कर दें, आप उपयोगकर्ताओं को प्रबंधित कर सकते हैं, सेटिंग्स कॉन्फ़िगर कर सकते हैं, और सर्वर स्वास्थ्य मॉनिटर कर सकते हैं। आपके सर्वर पर पहले <strong>{{freeTierLimit}}</strong> लोग Total PDF मुफ्त में उपयोग कर पाएँगे।"
+adminBodyLoginEnabled = "एडमिन के रूप में, आप उपयोगकर्ताओं को प्रबंधित कर सकते हैं, सेटिंग्स कॉन्फ़िगर कर सकते हैं, और सर्वर स्वास्थ्य मॉनिटर कर सकते हैं। आपके सर्वर पर पहले <strong>{{freeTierLimit}}</strong> लोग Total PDF मुफ्त में उपयोग कर पाएँगे।"
 adminTitle = "एडमिन अवलोकन"
 userBody = "टीममेट्स को आमंत्रित करें, भूमिकाएँ असाइन करें, और अपने दस्तावेज़ों को एक सुरक्षित वर्कस्पेस में व्यवस्थित रखें। जब भी आप सोलो उपयोग से आगे बढ़ने के लिए तैयार हों, लॉगिन मोड सक्षम करें।"
 userTitle = "प्लान अवलोकन"
@@ -4951,9 +4951,9 @@ userTitle = "प्लान अवलोकन"
 message = "एप्लिकेशन में हाल ही में महत्वपूर्ण बदलाव हुए हैं। आपके सर्वर एडमिन का ध्यान आवश्यक हो सकता है। कृपया जारी रखने के लिए अपनी भूमिका की पुष्टि करें।"
 
 [onboarding.serverLicense]
-freeBody = "हमारा <strong>Open-Core</strong> लाइसेंसिंग प्रति सर्वर अधिकतम <strong>{{freeTierLimit}}</strong> उपयोगकर्ताओं को मुफ्त अनुमति देता है। बिना बाधा स्केल करने और हमारे नए <strong>PDF टेक्स्ट एडिटिंग टूल</strong> की प्रारंभिक पहुँच पाने के लिए हम Stirling Server प्लान की सलाह देते हैं - पूर्ण एडिटिंग और <strong>अनलिमिटेड सीट्स</strong> $99/server/mo में।"
+freeBody = "हमारा <strong>Open-Core</strong> लाइसेंसिंग प्रति सर्वर अधिकतम <strong>{{freeTierLimit}}</strong> उपयोगकर्ताओं को मुफ्त अनुमति देता है। बिना बाधा स्केल करने और हमारे नए <strong>PDF टेक्स्ट एडिटिंग टूल</strong> की प्रारंभिक पहुँच पाने के लिए हम Total PDF Server प्लान की सलाह देते हैं - पूर्ण एडिटिंग और <strong>अनलिमिटेड सीट्स</strong> $99/server/mo में।"
 freeTitle = "सर्वर लाइसेंस"
-overLimitBody = "हमारा लाइसेंसिंग प्रति सर्वर अधिकतम <strong>{{freeTierLimit}}</strong> उपयोगकर्ताओं को मुफ्त अनुमति देता है। आपके पास <strong>{{overLimitUserCopy}}</strong> Stirling उपयोगकर्ता हैं। बिना बाधा के जारी रखने के लिए, Stirling Server प्लान में अपग्रेड करें - <strong>अनलिमिटेड सीट्स</strong>, PDF टेक्स्ट एडिटिंग, और पूर्ण एडमिन नियंत्रण $99/server/mo में।"
+overLimitBody = "हमारा लाइसेंसिंग प्रति सर्वर अधिकतम <strong>{{freeTierLimit}}</strong> उपयोगकर्ताओं को मुफ्त अनुमति देता है। आपके पास <strong>{{overLimitUserCopy}}</strong> Total PDF उपयोगकर्ता हैं। बिना बाधा के जारी रखने के लिए, Total PDF Server प्लान में अपग्रेड करें - <strong>अनलिमिटेड सीट्स</strong>, PDF टेक्स्ट एडिटिंग, और पूर्ण एडमिन नियंत्रण $99/server/mo में।"
 overLimitTitle = "सर्वर लाइसेंस आवश्यक"
 seePlans = "प्लान देखें →"
 skip = "अभी छोड़ें"
@@ -4973,7 +4973,7 @@ title = "Total PDF में आपका स्वागत है!"
 
 [onboarding.welcomeSlide]
 body = "Total PDF अब हर आकार की टीमों के लिए तैयार है। इस अपडेट में नया लेआउट, शक्तिशाली नए एडमिन फीचर्स, और हमारा सबसे अनुरोधित फीचर - <strong>Edit Text</strong> शामिल है।"
-title = "Stirling में आपका स्वागत है"
+title = "Total PDF में आपका स्वागत है"
 
 [onboarding.whatsNew]
 activeFilesView = "Active Files में अपनी सभी खुली फ़ाइलें देखें और जिस पर काम करना है उसे चुनें।"
@@ -6791,7 +6791,7 @@ user = "के रूप में लॉग इन"
 
 [settings.connection.mode]
 local = "केवल लोकल"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "सेल्फ-होस्टेड"
 
 [settings.developer]
@@ -6913,7 +6913,7 @@ usageAnalytics = "उपयोग एनालिटिक्स"
 [settings.planBilling]
 currentPlan = "वर्तमान प्लान"
 loading = "बिलिंग जानकारी लोड हो रही है..."
-notAvailable = "प्लान और बिलिंग केवल Stirling Cloud (SaaS मोड) से कनेक्ट होने पर उपलब्ध है।"
+notAvailable = "प्लान और बिलिंग केवल Total PDF Cloud (SaaS मोड) से कनेक्ट होने पर उपलब्ध है।"
 title = "प्लान और बिलिंग"
 
 [settings.planBilling.billing]
@@ -7063,16 +7063,16 @@ label = "उपयोगकर्ता नाम"
 placeholder = "अपना उपयोगकर्ता नाम दर्ज करें"
 
 [setup.mode.saas]
-description = "अपने Stirling खाते से साइन इन करें"
-title = "Stirling Cloud"
+description = "अपने Total PDF खाते से साइन इन करें"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "अपने Total PDF सर्वर से कनेक्ट करें"
 title = "सेल्फ-होस्टेड सर्वर"
 
 [setup.saas]
-subtitle = "अपने Stirling खाते से साइन इन करें"
-title = "Stirling में साइन इन"
+subtitle = "अपने Total PDF खाते से साइन इन करें"
+title = "Total PDF में साइन इन"
 
 [setup.selfhosted]
 changeServerLocked = "आपके संगठन ने इस ऐप को एक विशिष्ट सर्वर तक सीमित कर दिया है"

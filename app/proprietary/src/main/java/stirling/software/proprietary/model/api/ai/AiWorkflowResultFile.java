@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Schema(description = "Descriptor for a file produced by an AI workflow")
 public class AiWorkflowResultFile {
 
-    @Schema(description = "Stirling file ID — download with GET /api/v1/general/files/{fileId}")
+    @Schema(description = "Total PDF file ID — download with GET /api/v1/general/files/{fileId}")
     private String fileId;
 
     @Schema(description = "Original filename for the file")

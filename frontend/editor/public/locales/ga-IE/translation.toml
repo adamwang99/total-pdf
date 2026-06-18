@@ -1516,11 +1516,11 @@ webOnlyUser = "Úsáideoir Gréasáin Amháin"
 disable = "Díchumasaigh anailísíocht"
 enable = "Cumasaigh anailísíocht"
 learnMore = "Tuilleadh eolais"
-paragraph1 = "Tá rogha an diúltaithe ag PDF Stirling chun cabhrú linn an táirge a fheabhsú. Ní rianaimid aon fhaisnéis phearsanta nó ábhar comhaid."
+paragraph1 = "Tá rogha an diúltaithe ag PDF Total PDF chun cabhrú linn an táirge a fheabhsú. Ní rianaimid aon fhaisnéis phearsanta nó ábhar comhaid."
 paragraph2 = "Smaoinigh le do thoil ar anailísíocht a chumasú chun cabhrú le Total-PDF fás agus chun ligean dúinn ár n-úsáideoirí a thuiscint níos fearr."
 privacyAssurance = "Ní dhéanaimid rianú ar aon fhaisnéis phearsanta ná ar ábhar do chuid comhad."
 settings = "Is féidir leat na socruithe don anailísíocht a athrú sa chomhad config/settings.yml"
-title = "An bhfuil fonn ort PDF Stirling a fheabhsú?"
+title = "An bhfuil fonn ort PDF Total PDF a fheabhsú?"
 
 [annotation]
 annotationStyle = "Stíl anótála"
@@ -3014,7 +3014,7 @@ upgradeButton = "Uasghrádaigh an Cuntas"
 chartAriaLabel = "Úsáid creidmheasanna: san áireamh {{includedUsed}} as {{includedTotal}}, ceannaithe {{purchasedUsed}} as {{purchasedTotal}}"
 copyKeyAriaLabel = "Cóipeáil eochair API"
 creditsRemaining = "Creidiúintí Fágtha"
-description = "Do eochair API chun rochtain a fháil ar shraith uirlisí PDF Stirling. Cóipeáil chuig do thionscadal í nó déan athnuachan chun ceann nua a ghiniúint."
+description = "Do eochair API chun rochtain a fháil ar shraith uirlisí PDF Total PDF. Cóipeáil chuig do thionscadal í nó déan athnuachan chun ceann nua a ghiniúint."
 docsDescription = "Tuilleadh eolais faoi chomhtháthú le Total PDF:"
 docsLink = "Doiciméadú API"
 docsTitle = "Doiciméadú API"
@@ -3066,7 +3066,7 @@ system = "Cumraíocht Córais"
 [connectionMode.status]
 localOffline = "Mód as líne ag rith"
 localOnline = "Mód as líne ag rith"
-saas = "Ceangailte le Stirling Cloud"
+saas = "Ceangailte le Total PDF Cloud"
 selfhostedChecking = "Ceangailte le freastalaí féinóstáilte (ag seiceáil...)"
 selfhostedOffline = "Ní féidir freastalaí féinóstáilte a bhaint amach"
 selfhostedOnline = "Ceangailte le freastalaí féinóstáilte"
@@ -4526,7 +4526,7 @@ title = "Ceadúnais 3ú Páirtí"
 version = "Leagan"
 
 [localMode]
-toolUnavailable = "Teastaíonn cuntas ón uirlis seo. Sínigh isteach le Stirling Cloud nó ceangail le freastalaí féinóstáilte chun é a úsáid."
+toolUnavailable = "Teastaíonn cuntas ón uirlis seo. Sínigh isteach le Total PDF Cloud nó ceangail le freastalaí féinóstáilte chun é a úsáid."
 
 [localMode.banner]
 message = "Sínigh isteach chun na huirlisí go léir a dhíghlasáil."
@@ -4927,7 +4927,7 @@ skipForNow = "Scipeáil faoi láthair"
 skipTheTour = "Scipeáil an turas"
 
 [onboarding.desktopInstall]
-body = "Oibríonn Stirling is fearr mar aip deisce. Is féidir leat é a úsáid as líne, rochtain níos tapúla a fháil ar dhoiciméid, agus eagarthóireacht a dhéanamh go háitiúil ar do ríomhaire."
+body = "Oibríonn Total PDF is fearr mar aip deisce. Is féidir leat é a úsáid as líne, rochtain níos tapúla a fháil ar dhoiciméid, agus eagarthóireacht a dhéanamh go háitiúil ar do ríomhaire."
 title = "Íoslódáil"
 titleWithOs = "Íoslódáil do {{osLabel}}"
 
@@ -4941,8 +4941,8 @@ title = "Do thriail Pro 30 lá"
 trialEnds = "Críochnaíonn an triail {{date}}"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "Nuair a chumasaíonn tú mód logála isteach, is féidir leat úsáideoirí a bhainistiú, socruithe a chumrú, agus sláinte an fhreastalaí a mheas. Faigheann an chéad <strong>{{freeTierLimit}}</strong> duine ar do fhreastalaí Stirling saor in aisce."
-adminBodyLoginEnabled = "Mar riarthóir, is féidir leat úsáideoirí a bhainistiú, socruithe a chumrú, agus sláinte an fhreastalaí a mheas. Faigheann an chéad <strong>{{freeTierLimit}}</strong> duine ar do fhreastalaí Stirling saor in aisce."
+adminBodyLoginDisabled = "Nuair a chumasaíonn tú mód logála isteach, is féidir leat úsáideoirí a bhainistiú, socruithe a chumrú, agus sláinte an fhreastalaí a mheas. Faigheann an chéad <strong>{{freeTierLimit}}</strong> duine ar do fhreastalaí Total PDF saor in aisce."
+adminBodyLoginEnabled = "Mar riarthóir, is féidir leat úsáideoirí a bhainistiú, socruithe a chumrú, agus sláinte an fhreastalaí a mheas. Faigheann an chéad <strong>{{freeTierLimit}}</strong> duine ar do fhreastalaí Total PDF saor in aisce."
 adminTitle = "Forbhreathnú Riarthóra"
 userBody = "Tabhair cuireadh do chomhoibrithe, sann róil, agus coinnigh do dhoiciméid eagraithe in aon spás oibre slán amháin. Cumasaigh mód logála isteach aon uair is mian leat dul thar úsáid aonair."
 userTitle = "Forbhreathnú Plean"
@@ -4951,9 +4951,9 @@ userTitle = "Forbhreathnú Plean"
 message = "Tá athruithe suntasacha déanta ar an bhfeidhmchlár le déanaí. B’fhéidir go mbeidh aird riarthóir do fhreastalaí ag teastáil. Deimhnigh do ról le leanúint ar aghaidh."
 
 [onboarding.serverLicense]
-freeBody = "Ceadaíonn ár gceadúnú <strong>Open-Core</strong> suas le <strong>{{freeTierLimit}}</strong> úsáideoirí saor in aisce in aghaidh an fhreastalaí. Chun scálú gan bhriseadh, molaimid an plean Stirling Server - <strong>suíocháin neamhtheoranta</strong> agus <strong>tacaíocht SSO</strong> ar $99/server/mo."
+freeBody = "Ceadaíonn ár gceadúnú <strong>Open-Core</strong> suas le <strong>{{freeTierLimit}}</strong> úsáideoirí saor in aisce in aghaidh an fhreastalaí. Chun scálú gan bhriseadh, molaimid an plean Total PDF Server - <strong>suíocháin neamhtheoranta</strong> agus <strong>tacaíocht SSO</strong> ar $99/server/mo."
 freeTitle = "Ceadúnas Freastalaí"
-overLimitBody = "Ceadaíonn ár gceadúnú suas le <strong>{{freeTierLimit}}</strong> úsáideoir in aisce in aghaidh freastalaí. Tá <strong>{{overLimitUserCopy}}</strong> úsáideoir Stirling agat. Chun leanúint gan bhriseadh, uasghrádaigh go plean Freastalaí Stirling - <strong>suíocháin neamhtheoranta</strong>, eagarthóireacht téacs PDF, agus lánrialú riaracháin ar $99/freastalaí/mí."
+overLimitBody = "Ceadaíonn ár gceadúnú suas le <strong>{{freeTierLimit}}</strong> úsáideoir in aisce in aghaidh freastalaí. Tá <strong>{{overLimitUserCopy}}</strong> úsáideoir Total PDF agat. Chun leanúint gan bhriseadh, uasghrádaigh go plean Freastalaí Total PDF - <strong>suíocháin neamhtheoranta</strong>, eagarthóireacht téacs PDF, agus lánrialú riaracháin ar $99/freastalaí/mí."
 overLimitTitle = "Ceadúnas Freastalaí de dhíth"
 seePlans = "Féach ar Phleananna →"
 skip = "Scipeáil faoi láthair"
@@ -4973,7 +4973,7 @@ title = "Fáilte go Total PDF!"
 
 [onboarding.welcomeSlide]
 body = "Tá Total PDF réidh anois do fhoirne de gach méid. Cuimsíonn an nuashonrú seo leagan amach nua, cumais riaracháin chumhachtacha nua, agus ár ngné is mó a iarradh - <strong>Cuir Téacs in Eagar</strong>."
-title = "Fáilte go Stirling"
+title = "Fáilte go Total PDF"
 
 [onboarding.whatsNew]
 activeFilesView = "Bain úsáid as Comhaid Ghníomhacha chun gach rud atá oscailte agat a fheiceáil agus chun a roghnú cad atá le hoibriú air."
@@ -6791,7 +6791,7 @@ user = "Logáilte isteach mar"
 
 [settings.connection.mode]
 local = "Áitiúil Amháin"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "Féin-óstáilte"
 
 [settings.developer]
@@ -6913,7 +6913,7 @@ usageAnalytics = "Anailísíocht Úsáide"
 [settings.planBilling]
 currentPlan = "Plean Reatha"
 loading = "Eolas billeála á lódáil..."
-notAvailable = "Tá Plean & Billeáil ar fáil ach amháin nuair a bhíonn ceangal le Stirling Cloud (mód SaaS)."
+notAvailable = "Tá Plean & Billeáil ar fáil ach amháin nuair a bhíonn ceangal le Total PDF Cloud (mód SaaS)."
 title = "Plean & Billeáil"
 
 [settings.planBilling.billing]
@@ -7063,16 +7063,16 @@ label = "Ainm Úsáideora"
 placeholder = "Cuir isteach d’ainm úsáideora"
 
 [setup.mode.saas]
-description = "Sínigh isteach le do chuntas Stirling"
-title = "Stirling Cloud"
+description = "Sínigh isteach le do chuntas Total PDF"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "Ceangail le do fhreastalaí Total PDF féin"
 title = "Freastalaí Féin-Óstáilte"
 
 [setup.saas]
-subtitle = "Sínigh isteach le do chuntas Stirling"
-title = "Sínigh isteach i Stirling"
+subtitle = "Sínigh isteach le do chuntas Total PDF"
+title = "Sínigh isteach i Total PDF"
 
 [setup.selfhosted]
 changeServerLocked = "Tá do eagraíocht tar éis an aip seo a shrianadh le freastalaí ar leith"

@@ -622,7 +622,7 @@ public class AiWorkflowService {
             List<String> inputFileNames,
             JsonNode report)
             throws IOException {
-        // Store every output file individually so each gets its own Stirling file ID and the
+        // Store every output file individually so each gets its own Total PDF file ID and the
         // frontend can add them as independent variants without going through a zip.
         boolean preserveInputNames = inputFileNames.size() == resultFiles.size();
         List<AiWorkflowResultFile> descriptors = new ArrayList<>();

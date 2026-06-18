@@ -397,7 +397,7 @@ class ApiDocServiceTest {
     }
 
     /**
-     * Coverage test: every Stirling endpoint whose ZIP response is a transport for multiple typed
+     * Coverage test: every Total PDF endpoint whose ZIP response is a transport for multiple typed
      * results (SIMO/MIMO or Output:ZIP-PDF / Output:IMAGE/ZIP etc.) must be classified as {@code
      * shouldUnpackZipResponse = true}. Descriptions below are the real
      * {@code @Operation(description=...)} strings from each controller, so if a controller is

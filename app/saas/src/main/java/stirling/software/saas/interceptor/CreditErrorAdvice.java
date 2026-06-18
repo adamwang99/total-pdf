@@ -57,7 +57,7 @@ public class CreditErrorAdvice {
     private final SaasTeamExtensionService saasTeamExtensionService;
     private final CreditHeaderUtils creditHeaderUtils;
     private final Counter creditsConsumedCounter;
-    // Inlined: Stirling's parent build uses Jackson 3 (tools.jackson), no Jackson 2 ObjectMapper
+    // Inlined: Total PDF's parent build uses Jackson 3 (tools.jackson), no Jackson 2 ObjectMapper
     // bean in the context. Stateless usage, so a fresh instance is fine.
     private final ObjectMapper objectMapper = new ObjectMapper();
 

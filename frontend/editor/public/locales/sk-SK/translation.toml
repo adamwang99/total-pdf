@@ -3014,7 +3014,7 @@ upgradeButton = "Inovovať účet"
 chartAriaLabel = "Využitie kreditov: zahrnuté {{includedUsed}} z {{includedTotal}}, zakúpené {{purchasedUsed}} z {{purchasedTotal}}"
 copyKeyAriaLabel = "Kopírovať API kľúč"
 creditsRemaining = "Zostávajúce kredity"
-description = "Váš API kľúč na prístup k sade nástrojov PDF od Stirling. Skopírujte ho do svojho projektu alebo obnovte na vygenerovanie nového."
+description = "Váš API kľúč na prístup k sade nástrojov PDF od Total PDF. Skopírujte ho do svojho projektu alebo obnovte na vygenerovanie nového."
 docsDescription = "Zistite viac o integrácii so Total PDF:"
 docsLink = "Dokumentácia API"
 docsTitle = "Dokumentácia API"
@@ -3066,7 +3066,7 @@ system = "Systémová konfigurácia"
 [connectionMode.status]
 localOffline = "Beží offline režim"
 localOnline = "Beží offline režim"
-saas = "Pripojené k Stirling Cloud"
+saas = "Pripojené k Total PDF Cloud"
 selfhostedChecking = "Pripojené k vlastnému serveru (overuje sa...)"
 selfhostedOffline = "Vlastný server je nedostupný"
 selfhostedOnline = "Pripojené k vlastnému serveru"
@@ -4526,7 +4526,7 @@ title = "Licencie tretích strán"
 version = "Verzia"
 
 [localMode]
-toolUnavailable = "Tento nástroj vyžaduje účet. Prihláste sa do Stirling Cloud alebo sa pripojte k vlastnému serveru, aby ste ho mohli používať."
+toolUnavailable = "Tento nástroj vyžaduje účet. Prihláste sa do Total PDF Cloud alebo sa pripojte k vlastnému serveru, aby ste ho mohli používať."
 
 [localMode.banner]
 message = "Prihláste sa a odomknite všetky nástroje."
@@ -4927,7 +4927,7 @@ skipForNow = "Preskočiť zatiaľ"
 skipTheTour = "Preskočiť prehliadku"
 
 [onboarding.desktopInstall]
-body = "Stirling najlepšie funguje ako desktopová aplikácia. Môžete ju používať offline, pristupovať k dokumentom rýchlejšie a upravovať lokálne na počítači."
+body = "Total PDF najlepšie funguje ako desktopová aplikácia. Môžete ju používať offline, pristupovať k dokumentom rýchlejšie a upravovať lokálne na počítači."
 title = "Stiahnuť"
 titleWithOs = "Stiahnuť pre {{osLabel}}"
 
@@ -4941,8 +4941,8 @@ title = "Vaše 30‑dňové Pro skúšobné obdobie"
 trialEnds = "Skúšobné obdobie končí {{date}}"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "Keď zapnete režim prihlásenia, môžete spravovať používateľov, konfigurovať nastavenia a monitorovať stav servera. Prvých <strong>{{freeTierLimit}}</strong> ľudí na vašom serveri môže používať Stirling bezplatne."
-adminBodyLoginEnabled = "Ako admin môžete spravovať používateľov, konfigurovať nastavenia a monitorovať stav servera. Prvých <strong>{{freeTierLimit}}</strong> ľudí na vašom serveri môže používať Stirling bezplatne."
+adminBodyLoginDisabled = "Keď zapnete režim prihlásenia, môžete spravovať používateľov, konfigurovať nastavenia a monitorovať stav servera. Prvých <strong>{{freeTierLimit}}</strong> ľudí na vašom serveri môže používať Total PDF bezplatne."
+adminBodyLoginEnabled = "Ako admin môžete spravovať používateľov, konfigurovať nastavenia a monitorovať stav servera. Prvých <strong>{{freeTierLimit}}</strong> ľudí na vašom serveri môže používať Total PDF bezplatne."
 adminTitle = "Prehľad pre admina"
 userBody = "Pozvite kolegov, priraďujte roly a udržujte dokumenty organizované v jednom bezpečnom pracovnom priestore. Režim prihlásenia zapnite, keď ste pripravení rásť nad sólo použitie."
 userTitle = "Prehľad plánu"
@@ -4951,9 +4951,9 @@ userTitle = "Prehľad plánu"
 message = "Aplikácia prešla nedávno významnými zmenami. Môže byť potrebná pozornosť vášho správcu servera. Potvrďte svoju rolu, aby ste pokračovali."
 
 [onboarding.serverLicense]
-freeBody = "Naše licencovanie <strong>Open-Core</strong> povoľuje až <strong>{{freeTierLimit}}</strong> používateľov zdarma na server. Ak chcete škálovať bez prerušenia a získať skorý prístup k nášmu novému <strong>nástroju na úpravu textu PDF</strong>, odporúčame plán Stirling Server - plné úpravy a <strong>neobmedzené miesta</strong> za $99/server/mo."
+freeBody = "Naše licencovanie <strong>Open-Core</strong> povoľuje až <strong>{{freeTierLimit}}</strong> používateľov zdarma na server. Ak chcete škálovať bez prerušenia a získať skorý prístup k nášmu novému <strong>nástroju na úpravu textu PDF</strong>, odporúčame plán Total PDF Server - plné úpravy a <strong>neobmedzené miesta</strong> za $99/server/mo."
 freeTitle = "Serverová licencia"
-overLimitBody = "Naše licencovanie povoľuje až <strong>{{freeTierLimit}}</strong> používateľov zdarma na server. Máte <strong>{{overLimitUserCopy}}</strong> používateľov Stirling. Ak chcete pokračovať bez prerušenia, prejdite na plán Stirling Server - <strong>neobmedzené miesta</strong>, úpravy textu PDF a plná správa pre $99/server/mo."
+overLimitBody = "Naše licencovanie povoľuje až <strong>{{freeTierLimit}}</strong> používateľov zdarma na server. Máte <strong>{{overLimitUserCopy}}</strong> používateľov Total PDF. Ak chcete pokračovať bez prerušenia, prejdite na plán Total PDF Server - <strong>neobmedzené miesta</strong>, úpravy textu PDF a plná správa pre $99/server/mo."
 overLimitTitle = "Potrebná serverová licencia"
 seePlans = "Zobraziť plány →"
 skip = "Preskočiť zatiaľ"
@@ -4973,7 +4973,7 @@ title = "Vitajte v Total PDF!"
 
 [onboarding.welcomeSlide]
 body = "Total PDF je teraz pripravený pre tímy všetkých veľkostí. Táto aktualizácia prináša nové rozloženie, silné admin schopnosti a našu najžiadanejšiu funkciu - <strong>Upraviť text</strong>."
-title = "Vitajte v Stirling"
+title = "Vitajte v Total PDF"
 
 [onboarding.whatsNew]
 activeFilesView = "Použite Aktívne súbory na zobrazenie všetkého, čo máte otvorené, a vyberte si, na čom pracovať."
@@ -6791,7 +6791,7 @@ user = "Prihlásený ako"
 
 [settings.connection.mode]
 local = "Len lokálne"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "Self-hostovaný"
 
 [settings.developer]
@@ -6913,7 +6913,7 @@ usageAnalytics = "Analytika používania"
 [settings.planBilling]
 currentPlan = "Aktuálny plán"
 loading = "Načítavajú sa fakturačné informácie..."
-notAvailable = "Plán a fakturácia sú dostupné len pri pripojení k Stirling Cloud (režim SaaS)."
+notAvailable = "Plán a fakturácia sú dostupné len pri pripojení k Total PDF Cloud (režim SaaS)."
 title = "Plán a fakturácia"
 
 [settings.planBilling.billing]
@@ -7063,16 +7063,16 @@ label = "Používateľské meno"
 placeholder = "Zadajte používateľské meno"
 
 [setup.mode.saas]
-description = "Prihláste sa pomocou účtu Stirling"
-title = "Stirling Cloud"
+description = "Prihláste sa pomocou účtu Total PDF"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "Pripojte sa k svojmu vlastnému serveru Total PDF"
 title = "Self-hostovaný server"
 
 [setup.saas]
-subtitle = "Prihláste sa pomocou svojho účtu Stirling"
-title = "Prihláste sa do Stirling"
+subtitle = "Prihláste sa pomocou svojho účtu Total PDF"
+title = "Prihláste sa do Total PDF"
 
 [setup.selfhosted]
 changeServerLocked = "Vaša organizácia obmedzila túto aplikáciu na konkrétny server"

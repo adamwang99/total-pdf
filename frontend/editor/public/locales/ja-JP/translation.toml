@@ -3014,7 +3014,7 @@ upgradeButton = "アカウントをアップグレード"
 chartAriaLabel = "クレジット使用状況：含まれる分 {{includedUsed}} / {{includedTotal}}、購入分 {{purchasedUsed}} / {{purchasedTotal}}"
 copyKeyAriaLabel = "API キーをコピー"
 creditsRemaining = "残りクレジット"
-description = "Stirling の PDF ツール群にアクセスするための API キーです。プロジェクトにコピーするか、更新して新しいキーを生成できます。"
+description = "Total PDF の PDF ツール群にアクセスするための API キーです。プロジェクトにコピーするか、更新して新しいキーを生成できます。"
 docsDescription = "Total PDF との統合について詳しくはこちら:"
 docsLink = "API ドキュメント"
 docsTitle = "API ドキュメント"
@@ -3066,7 +3066,7 @@ system = "システム構成"
 [connectionMode.status]
 localOffline = "オフラインモードで実行中"
 localOnline = "オフラインモードで実行中"
-saas = "Stirling Cloud に接続しました"
+saas = "Total PDF Cloud に接続しました"
 selfhostedChecking = "セルフホストサーバーに接続（確認中...）"
 selfhostedOffline = "セルフホストサーバーに到達できません"
 selfhostedOnline = "セルフホストサーバーに接続しました"
@@ -4526,7 +4526,7 @@ title = "サードパーティライセンス"
 version = "バージョン"
 
 [localMode]
-toolUnavailable = "このツールにはアカウントが必要です。Stirling Cloud にサインインするか、セルフホストサーバーに接続して使用してください。"
+toolUnavailable = "このツールにはアカウントが必要です。Total PDF Cloud にサインインするか、セルフホストサーバーに接続して使用してください。"
 
 [localMode.banner]
 message = "サインインしてすべてのツールを利用可能にします。"
@@ -4927,7 +4927,7 @@ skipForNow = "今はスキップ"
 skipTheTour = "ツアーをスキップ"
 
 [onboarding.desktopInstall]
-body = "Stirling はデスクトップアプリとして最適に動作します。オフラインでも使えて、文書に素早くアクセスし、PC上でローカル編集できます。"
+body = "Total PDF はデスクトップアプリとして最適に動作します。オフラインでも使えて、文書に素早くアクセスし、PC上でローカル編集できます。"
 title = "ダウンロード"
 titleWithOs = "{{osLabel}} 用をダウンロード"
 
@@ -4941,8 +4941,8 @@ title = "30 日間の Pro トライアル"
 trialEnds = "トライアル終了: {{date}}"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "ログインモードを有効にすると、ユーザー管理、設定の構成、サーバーの健全性監視が可能です。サーバー上の最初の <strong>{{freeTierLimit}}</strong> 人は無料で Stirling を利用できます。"
-adminBodyLoginEnabled = "管理者として、ユーザー管理、設定の構成、サーバーの健全性監視ができます。サーバー上の最初の <strong>{{freeTierLimit}}</strong> 人は無料で Stirling を利用できます。"
+adminBodyLoginDisabled = "ログインモードを有効にすると、ユーザー管理、設定の構成、サーバーの健全性監視が可能です。サーバー上の最初の <strong>{{freeTierLimit}}</strong> 人は無料で Total PDF を利用できます。"
+adminBodyLoginEnabled = "管理者として、ユーザー管理、設定の構成、サーバーの健全性監視ができます。サーバー上の最初の <strong>{{freeTierLimit}}</strong> 人は無料で Total PDF を利用できます。"
 adminTitle = "管理者向け概要"
 userBody = "メンバーを招待し、役割を割り当て、1つの安全なワークスペースで文書を整理できます。ソロ利用を超えて拡大する準備ができたら、いつでもログインモードを有効にしてください。"
 userTitle = "プラン概要"
@@ -4951,9 +4951,9 @@ userTitle = "プラン概要"
 message = "アプリケーションに最近大きな変更がありました。サーバー管理者の対応が必要な場合があります。続行するには、ご自身の役割を確認してください。"
 
 [onboarding.serverLicense]
-freeBody = "当社の <strong>オープンコア</strong> ライセンスでは、サーバーごとに最大 <strong>{{freeTierLimit}}</strong> ユーザーまで無料です。中断なく拡張し、新しい <strong>PDF テキスト編集ツール</strong> に早期アクセスするには、Stirling Server プランをお勧めします。完全編集と <strong>無制限席数</strong> が $99/サーバー/月 です。"
+freeBody = "当社の <strong>オープンコア</strong> ライセンスでは、サーバーごとに最大 <strong>{{freeTierLimit}}</strong> ユーザーまで無料です。中断なく拡張し、新しい <strong>PDF テキスト編集ツール</strong> に早期アクセスするには、Total PDF Server プランをお勧めします。完全編集と <strong>無制限席数</strong> が $99/サーバー/月 です。"
 freeTitle = "サーバーライセンス"
-overLimitBody = "当社のライセンスでは、サーバーごとに <strong>{{freeTierLimit}}</strong> ユーザーまで無料です。現在 <strong>{{overLimitUserCopy}}</strong> の Stirling ユーザーがいます。中断なく利用を続けるには、Stirling Server プランにアップグレードしてください - <strong>無制限席数</strong>、PDF テキスト編集、完全な管理機能が $99/サーバー/月 です。"
+overLimitBody = "当社のライセンスでは、サーバーごとに <strong>{{freeTierLimit}}</strong> ユーザーまで無料です。現在 <strong>{{overLimitUserCopy}}</strong> の Total PDF ユーザーがいます。中断なく利用を続けるには、Total PDF Server プランにアップグレードしてください - <strong>無制限席数</strong>、PDF テキスト編集、完全な管理機能が $99/サーバー/月 です。"
 overLimitTitle = "サーバーライセンスが必要です"
 seePlans = "プランを見る →"
 skip = "今はスキップ"
@@ -4973,7 +4973,7 @@ title = "Total PDF へようこそ！"
 
 [onboarding.welcomeSlide]
 body = "Total PDF はあらゆる規模のチームで使えるようになりました。このアップデートには新しいレイアウト、強力な管理機能、そして最も要望の多かった機能 - <strong>テキスト編集</strong> が含まれます。"
-title = "Stirling へようこそ"
+title = "Total PDF へようこそ"
 
 [onboarding.whatsNew]
 activeFilesView = "アクティブファイルで開いているすべてを確認し、作業対象を選択できます。"
@@ -6791,7 +6791,7 @@ user = "ログイン中:"
 
 [settings.connection.mode]
 local = "ローカルのみ"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "セルフホスト"
 
 [settings.developer]
@@ -6913,7 +6913,7 @@ usageAnalytics = "利用分析"
 [settings.planBilling]
 currentPlan = "現在のプラン"
 loading = "請求情報を読み込み中..."
-notAvailable = "プランと請求は、Stirling Cloud（SaaS モード）に接続している場合にのみ利用できます。"
+notAvailable = "プランと請求は、Total PDF Cloud（SaaS モード）に接続している場合にのみ利用できます。"
 title = "プランと請求"
 
 [settings.planBilling.billing]
@@ -7063,16 +7063,16 @@ label = "ユーザー名"
 placeholder = "ユーザー名を入力"
 
 [setup.mode.saas]
-description = "Stirling アカウントでサインイン"
-title = "Stirling Cloud"
+description = "Total PDF アカウントでサインイン"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "自分の Total PDF サーバーに接続"
 title = "セルフホスト サーバー"
 
 [setup.saas]
-subtitle = "Stirling アカウントでサインイン"
-title = "Stirling にサインイン"
+subtitle = "Total PDF アカウントでサインイン"
+title = "Total PDF にサインイン"
 
 [setup.selfhosted]
 changeServerLocked = "あなたの組織はこのアプリを特定のサーバーに制限しています"

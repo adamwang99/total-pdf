@@ -97,8 +97,8 @@ premium:
     CustomMetadata:
       autoUpdateMetadata: false
       author: username
-      creator: Stirling-PDF
-      producer: Stirling-PDF
+      creator: Total PDF
+      producer: Total PDF
     googleDrive:
       enabled: false # Enable Google Drive file picker integration
       clientId: "" # Google OAuth 2.0 client ID (obtain from Google Cloud Console)
@@ -191,8 +191,8 @@ system:
     pageFormat: A4 # Page format for converted PDFs: 'keep' (original image dimensions), 'A4' (A4 page size), or 'letter' (US Letter page size). Only applies when convertToPdf is true.
     stretchToFit: false # Whether to stretch images to fill the entire page (may distort aspect ratio). If false, images are centered with preserved aspect ratio. Only applies when convertToPdf is true.
   serverCertificate:
-    enabled: true # Enable server-side certificate for "Sign with Stirling-PDF" option
-    organizationName: Stirling-PDF # Organization name for generated certificates
+    enabled: true # Enable server-side certificate for "Sign with Total PDF" option
+    organizationName: Total PDF # Organization name for generated certificates
     validity: 365 # Certificate validity in days
     regenerateOnStartup: false # Generate new certificate on each startup
   html:

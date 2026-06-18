@@ -3014,7 +3014,7 @@ upgradeButton = "Nadogradi nalog"
 chartAriaLabel = "Upotreba kredita: uključeno {{includedUsed}} od {{includedTotal}}, kupljeno {{purchasedUsed}} od {{purchasedTotal}}"
 copyKeyAriaLabel = "Kopiraj API ključ"
 creditsRemaining = "Preostali krediti"
-description = "Vaš API ključ za pristup Stirlingovom paketu PDF alata. Kopirajte ga u svoj projekat ili osvežite da generišete novi."
+description = "Vaš API ključ za pristup Total PDF paketu PDF alata. Kopirajte ga u svoj projekat ili osvežite da generišete novi."
 docsDescription = "Saznajte više o integraciji sa Total PDF:"
 docsLink = "API dokumentacija"
 docsTitle = "API dokumentacija"
@@ -3066,7 +3066,7 @@ system = "Sistemska konfiguracija"
 [connectionMode.status]
 localOffline = "Režim van mreže je aktivan"
 localOnline = "Režim van mreže je aktivan"
-saas = "Povezano sa Stirling Cloud"
+saas = "Povezano sa Total PDF Cloud"
 selfhostedChecking = "Povezano na samohostovani server (provera...)"
 selfhostedOffline = "Samohostovani server je nedostupan"
 selfhostedOnline = "Povezano na samohostovani server"
@@ -4526,7 +4526,7 @@ title = "3rd Party Licenses"
 version = "Verzija"
 
 [localMode]
-toolUnavailable = "Ovaj alat zahteva nalog. Prijavite se na Stirling Cloud ili se povežite na samohostovani server da biste ga koristili."
+toolUnavailable = "Ovaj alat zahteva nalog. Prijavite se na Total PDF Cloud ili se povežite na samohostovani server da biste ga koristili."
 
 [localMode.banner]
 message = "Prijavite se da otključate sve alate."
@@ -4927,7 +4927,7 @@ skipForNow = "Preskoči za sada"
 skipTheTour = "Preskoči obilazak"
 
 [onboarding.desktopInstall]
-body = "Stirling najbolje radi kao desktop aplikacija. Možete je koristiti offline, brže pristupati dokumentima i praviti izmene lokalno na računaru."
+body = "Total PDF najbolje radi kao desktop aplikacija. Možete je koristiti offline, brže pristupati dokumentima i praviti izmene lokalno na računaru."
 title = "Preuzmi"
 titleWithOs = "Preuzmi za {{osLabel}}"
 
@@ -4941,8 +4941,8 @@ title = "Vaš 30-dnevni Pro probni period"
 trialEnds = "Probni period se završava {{date}}"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "Kada omogućite režim prijave, možete upravljati korisnicima, podešavati opcije i pratiti stanje servera. Prvih <strong>{{freeTierLimit}}</strong> ljudi na vašem serveru koristi Stirling besplatno."
-adminBodyLoginEnabled = "Kao admin, možete upravljati korisnicima, podešavati opcije i pratiti stanje servera. Prvih <strong>{{freeTierLimit}}</strong> ljudi na vašem serveru koristi Stirling besplatno."
+adminBodyLoginDisabled = "Kada omogućite režim prijave, možete upravljati korisnicima, podešavati opcije i pratiti stanje servera. Prvih <strong>{{freeTierLimit}}</strong> ljudi na vašem serveru koristi Total PDF besplatno."
+adminBodyLoginEnabled = "Kao admin, možete upravljati korisnicima, podešavati opcije i pratiti stanje servera. Prvih <strong>{{freeTierLimit}}</strong> ljudi na vašem serveru koristi Total PDF besplatno."
 adminTitle = "Admin pregled"
 userBody = "Pozovite kolege, dodeljujte uloge i držite dokumente organizovanim u jednom bezbednom prostoru. Omogućite režim prijave kad god ste spremni da pređete preko solo upotrebe."
 userTitle = "Pregled plana"
@@ -4951,9 +4951,9 @@ userTitle = "Pregled plana"
 message = "Aplikacija je nedavno značajno promenjena. Možda je potrebna pažnja administratora servera. Potvrdite svoju ulogu da nastavite."
 
 [onboarding.serverLicense]
-freeBody = "Naše <strong>Open-Core</strong> licenciranje dozvoljava do <strong>{{freeTierLimit}}</strong> korisnika besplatno po serveru. Da se bez prekida skalirate i dobijete rani pristup našem novom <strong>alatu za uređivanje PDF teksta</strong>, preporučujemo Stirling Server plan - puno uređivanje i <strong>neograničena mesta</strong> za $99/server/mes."
+freeBody = "Naše <strong>Open-Core</strong> licenciranje dozvoljava do <strong>{{freeTierLimit}}</strong> korisnika besplatno po serveru. Da se bez prekida skalirate i dobijete rani pristup našem novom <strong>alatu za uređivanje PDF teksta</strong>, preporučujemo Total PDF Server plan - puno uređivanje i <strong>neograničena mesta</strong> za $99/server/mes."
 freeTitle = "Serverska licenca"
-overLimitBody = "Naše licenciranje dozvoljava do <strong>{{freeTierLimit}}</strong> korisnika besplatno po serveru. Imate <strong>{{overLimitUserCopy}}</strong> Stirling korisnika. Da nastavite bez prekida, pređite na Stirling Server plan - <strong>neograničena mesta</strong>, uređivanje PDF teksta i puna admin kontrola za $99/server/mes."
+overLimitBody = "Naše licenciranje dozvoljava do <strong>{{freeTierLimit}}</strong> korisnika besplatno po serveru. Imate <strong>{{overLimitUserCopy}}</strong> Total PDF korisnika. Da nastavite bez prekida, pređite na Total PDF Server plan - <strong>neograničena mesta</strong>, uređivanje PDF teksta i puna admin kontrola za $99/server/mes."
 overLimitTitle = "Potrebna serverska licenca"
 seePlans = "Pogledajte planove →"
 skip = "Preskoči za sada"
@@ -4973,7 +4973,7 @@ title = "Dobrodošli u Total PDF!"
 
 [onboarding.welcomeSlide]
 body = "Total PDF je sada spreman za timove svih veličina. Ovo ažuriranje donosi novi raspored, moćne admin mogućnosti i našu najtraženiju funkciju - <strong>Uredi tekst</strong>."
-title = "Dobrodošli u Stirling"
+title = "Dobrodošli u Total PDF"
 
 [onboarding.whatsNew]
 activeFilesView = "Koristite Aktivne fajlove da vidite sve što je otvoreno i izaberete na čemu ćete raditi."
@@ -6791,7 +6791,7 @@ user = "Prijavljeni kao"
 
 [settings.connection.mode]
 local = "Samo lokalno"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "Samohostovano"
 
 [settings.developer]
@@ -6913,7 +6913,7 @@ usageAnalytics = "Analitika korišćenja"
 [settings.planBilling]
 currentPlan = "Trenutni plan"
 loading = "Učitavanje informacija o naplati..."
-notAvailable = "Plan i naplata su dostupni samo kada ste povezani na Stirling Cloud (SaaS režim)."
+notAvailable = "Plan i naplata su dostupni samo kada ste povezani na Total PDF Cloud (SaaS režim)."
 title = "Plan i naplata"
 
 [settings.planBilling.billing]
@@ -7063,16 +7063,16 @@ label = "Korisničko ime"
 placeholder = "Unesite korisničko ime"
 
 [setup.mode.saas]
-description = "Prijavite se svojim Stirling nalogom"
-title = "Stirling Cloud"
+description = "Prijavite se svojim Total PDF nalogom"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "Povežite se na svoj Total PDF server"
 title = "Samohostovani server"
 
 [setup.saas]
-subtitle = "Prijavite se svojim Stirling nalogom"
-title = "Prijavite se u Stirling"
+subtitle = "Prijavite se svojim Total PDF nalogom"
+title = "Prijavite se u Total PDF"
 
 [setup.selfhosted]
 changeServerLocked = "Vaša organizacija je ograničila ovu aplikaciju na određeni server"

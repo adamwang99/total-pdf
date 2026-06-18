@@ -41,6 +41,6 @@ public class CertificateSubmission {
     /** Participant's reason for signing (included in digital signature metadata). */
     private String reason;
 
-    /** Whether to show the Stirling logo in the digital signature block. */
+    /** Whether to show the Total PDF logo in the digital signature block. */
     private Boolean showLogo;
 }

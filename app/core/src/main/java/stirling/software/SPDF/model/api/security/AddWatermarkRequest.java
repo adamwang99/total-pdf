@@ -22,7 +22,7 @@ public class AddWatermarkRequest extends PDFFile {
             requiredMode = Schema.RequiredMode.REQUIRED)
     private String watermarkType;
 
-    @Schema(description = "The watermark text", defaultValue = "Stirling Software")
+    @Schema(description = "The watermark text", defaultValue = "Total PDF Software")
     private String watermarkText;
 
     @Schema(description = "The watermark image")

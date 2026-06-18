@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 
 /**
- * Shortcut for a POST endpoint that is executed through the Stirling "auto‑job" framework.
+ * Shortcut for a POST endpoint that is executed through the Total PDF "auto‑job" framework.
  *
  * <p>Behaviour notes:
  *

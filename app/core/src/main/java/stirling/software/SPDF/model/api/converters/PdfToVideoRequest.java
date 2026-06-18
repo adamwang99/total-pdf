@@ -47,7 +47,7 @@ public class PdfToVideoRequest extends PDFFile {
 
     @Schema(
             description = "Watermark text to overlay on the video",
-            example = "Stirling Software",
-            defaultValue = "Stirling Software")
+            example = "Total PDF Software",
+            defaultValue = "Total PDF Software")
     private String watermarkText;
 }

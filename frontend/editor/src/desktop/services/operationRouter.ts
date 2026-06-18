@@ -159,7 +159,7 @@ export class OperationRouter {
             throw new Error(
               i18n.t(
                 "localMode.toolUnavailable",
-                "This tool requires an account. Sign in to Stirling Cloud or connect to a self-hosted server to use it.",
+                "This tool requires an account. Sign in to Total PDF Cloud or connect to a self-hosted server to use it.",
               ),
             );
           }

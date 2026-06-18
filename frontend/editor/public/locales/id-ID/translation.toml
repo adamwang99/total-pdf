@@ -3014,7 +3014,7 @@ upgradeButton = "Tingkatkan Akun"
 chartAriaLabel = "Penggunaan kredit: termasuk {{includedUsed}} dari {{includedTotal}}, dibeli {{purchasedUsed}} dari {{purchasedTotal}}"
 copyKeyAriaLabel = "Salin kunci API"
 creditsRemaining = "Sisa Kredit"
-description = "Kunci API Anda untuk mengakses rangkaian alat PDF Stirling. Salin ke proyek Anda atau segarkan untuk membuat yang baru."
+description = "Kunci API Anda untuk mengakses rangkaian alat PDF Total PDF. Salin ke proyek Anda atau segarkan untuk membuat yang baru."
 docsDescription = "Pelajari lebih lanjut tentang integrasi dengan Total PDF:"
 docsLink = "Dokumentasi API"
 docsTitle = "Dokumentasi API"
@@ -3066,7 +3066,7 @@ system = "Konfigurasi Sistem"
 [connectionMode.status]
 localOffline = "Mode offline sedang berjalan"
 localOnline = "Mode offline sedang berjalan"
-saas = "Terhubung ke Stirling Cloud"
+saas = "Terhubung ke Total PDF Cloud"
 selfhostedChecking = "Terhubung ke server self-hosted (memeriksa...)"
 selfhostedOffline = "Server self-hosted tidak dapat dijangkau"
 selfhostedOnline = "Terhubung ke server self-hosted"
@@ -4526,7 +4526,7 @@ title = "Lisensi Pihak Ketiga"
 version = "Versi"
 
 [localMode]
-toolUnavailable = "Alat ini memerlukan akun. Masuk ke Stirling Cloud atau hubungkan ke server self-hosted untuk menggunakannya."
+toolUnavailable = "Alat ini memerlukan akun. Masuk ke Total PDF Cloud atau hubungkan ke server self-hosted untuk menggunakannya."
 
 [localMode.banner]
 message = "Masuk untuk membuka semua alat."
@@ -4927,7 +4927,7 @@ skipForNow = "Lewati dulu"
 skipTheTour = "Lewati tur"
 
 [onboarding.desktopInstall]
-body = "Stirling paling baik digunakan sebagai aplikasi desktop. Anda dapat menggunakannya offline, mengakses dokumen lebih cepat, dan mengedit secara lokal di komputer Anda."
+body = "Total PDF paling baik digunakan sebagai aplikasi desktop. Anda dapat menggunakannya offline, mengakses dokumen lebih cepat, dan mengedit secara lokal di komputer Anda."
 title = "Unduh"
 titleWithOs = "Unduh untuk {{osLabel}}"
 
@@ -4941,8 +4941,8 @@ title = "Uji Coba Pro 30 Hari Anda"
 trialEnds = "Uji coba berakhir {{date}}"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "Setelah Anda mengaktifkan mode login, Anda dapat mengelola pengguna, mengonfigurasi pengaturan, dan memantau kesehatan server. <strong>{{freeTierLimit}}</strong> orang pertama di server Anda dapat menggunakan Stirling gratis."
-adminBodyLoginEnabled = "Sebagai admin, Anda dapat mengelola pengguna, mengonfigurasi pengaturan, dan memantau kesehatan server. <strong>{{freeTierLimit}}</strong> orang pertama di server Anda dapat menggunakan Stirling gratis."
+adminBodyLoginDisabled = "Setelah Anda mengaktifkan mode login, Anda dapat mengelola pengguna, mengonfigurasi pengaturan, dan memantau kesehatan server. <strong>{{freeTierLimit}}</strong> orang pertama di server Anda dapat menggunakan Total PDF gratis."
+adminBodyLoginEnabled = "Sebagai admin, Anda dapat mengelola pengguna, mengonfigurasi pengaturan, dan memantau kesehatan server. <strong>{{freeTierLimit}}</strong> orang pertama di server Anda dapat menggunakan Total PDF gratis."
 adminTitle = "Ringkasan Admin"
 userBody = "Undang rekan, tetapkan peran, dan jaga dokumen Anda tetap teratur dalam satu workspace yang aman. Aktifkan mode login kapan pun Anda siap berkembang dari penggunaan solo."
 userTitle = "Ringkasan Paket"
@@ -4951,9 +4951,9 @@ userTitle = "Ringkasan Paket"
 message = "Aplikasi telah mengalami perubahan signifikan baru-baru ini. Perhatian admin server Anda mungkin diperlukan. Harap konfirmasi peran Anda untuk melanjutkan."
 
 [onboarding.serverLicense]
-freeBody = "Lisensi <strong>Open-Core</strong> kami mengizinkan hingga <strong>{{freeTierLimit}}</strong> pengguna gratis per server. Untuk skala tanpa hambatan dan mendapatkan akses awal ke <strong>alat pengeditan teks PDF</strong> baru kami, kami sarankan paket Stirling Server - pengeditan penuh dan <strong>kursi tanpa batas</strong> seharga $99/server/bulan."
+freeBody = "Lisensi <strong>Open-Core</strong> kami mengizinkan hingga <strong>{{freeTierLimit}}</strong> pengguna gratis per server. Untuk skala tanpa hambatan dan mendapatkan akses awal ke <strong>alat pengeditan teks PDF</strong> baru kami, kami sarankan paket Total PDF Server - pengeditan penuh dan <strong>kursi tanpa batas</strong> seharga $99/server/bulan."
 freeTitle = "Lisensi Server"
-overLimitBody = "Lisensi kami mengizinkan hingga <strong>{{freeTierLimit}}</strong> pengguna gratis per server. Anda memiliki <strong>{{overLimitUserCopy}}</strong> pengguna Stirling. Untuk terus berjalan tanpa gangguan, upgrade ke paket Stirling Server - <strong>kursi tanpa batas</strong>, pengeditan teks PDF, dan kontrol admin penuh seharga $99/server/bulan."
+overLimitBody = "Lisensi kami mengizinkan hingga <strong>{{freeTierLimit}}</strong> pengguna gratis per server. Anda memiliki <strong>{{overLimitUserCopy}}</strong> pengguna Total PDF. Untuk terus berjalan tanpa gangguan, upgrade ke paket Total PDF Server - <strong>kursi tanpa batas</strong>, pengeditan teks PDF, dan kontrol admin penuh seharga $99/server/bulan."
 overLimitTitle = "Perlu Lisensi Server"
 seePlans = "Lihat Paket →"
 skip = "Lewati dulu"
@@ -4973,7 +4973,7 @@ title = "Selamat datang di Total PDF!"
 
 [onboarding.welcomeSlide]
 body = "Total PDF kini siap untuk tim dari semua ukuran. Pembaruan ini mencakup tata letak baru, kemampuan admin yang kuat, dan fitur paling banyak diminta - <strong>Edit Text</strong>."
-title = "Selamat datang di Stirling"
+title = "Selamat datang di Total PDF"
 
 [onboarding.whatsNew]
 activeFilesView = "Gunakan File Aktif untuk melihat semua yang Anda buka dan memilih yang akan dikerjakan."
@@ -6791,7 +6791,7 @@ user = "Masuk sebagai"
 
 [settings.connection.mode]
 local = "Hanya Lokal"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "Self-Hosted"
 
 [settings.developer]
@@ -6913,7 +6913,7 @@ usageAnalytics = "Analitik Penggunaan"
 [settings.planBilling]
 currentPlan = "Paket Saat Ini"
 loading = "Memuat informasi penagihan..."
-notAvailable = "Paket & Penagihan hanya tersedia saat terhubung ke Stirling Cloud (mode SaaS)."
+notAvailable = "Paket & Penagihan hanya tersedia saat terhubung ke Total PDF Cloud (mode SaaS)."
 title = "Paket & Penagihan"
 
 [settings.planBilling.billing]
@@ -7063,16 +7063,16 @@ label = "Nama pengguna"
 placeholder = "Masukkan nama pengguna"
 
 [setup.mode.saas]
-description = "Masuk dengan akun Stirling Anda"
-title = "Stirling Cloud"
+description = "Masuk dengan akun Total PDF Anda"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "Sambungkan ke server Total PDF Anda sendiri"
 title = "Server Self-Hosted"
 
 [setup.saas]
-subtitle = "Masuk dengan akun Stirling Anda"
-title = "Masuk ke Stirling"
+subtitle = "Masuk dengan akun Total PDF Anda"
+title = "Masuk ke Total PDF"
 
 [setup.selfhosted]
 changeServerLocked = "Organisasi Anda membatasi aplikasi ini ke server tertentu"

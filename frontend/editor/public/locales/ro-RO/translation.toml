@@ -3014,7 +3014,7 @@ upgradeButton = "Actualizați contul"
 chartAriaLabel = "Utilizare credite: incluse {{includedUsed}} din {{includedTotal}}, achiziționate {{purchasedUsed}} din {{purchasedTotal}}"
 copyKeyAriaLabel = "Copiați cheia API"
 creditsRemaining = "Credite rămase"
-description = "Cheia dvs. API pentru accesarea suitei de instrumente PDF Stirling. Copiați-o în proiectul dvs. sau reîmprospătați pentru a genera una nouă."
+description = "Cheia dvs. API pentru accesarea suitei de instrumente PDF Total PDF. Copiați-o în proiectul dvs. sau reîmprospătați pentru a genera una nouă."
 docsDescription = "Aflați mai multe despre integrarea cu Total PDF:"
 docsLink = "Documentație API"
 docsTitle = "Documentație API"
@@ -3066,7 +3066,7 @@ system = "Configurație sistem"
 [connectionMode.status]
 localOffline = "Mod offline activ"
 localOnline = "Mod offline activ"
-saas = "Conectat la Stirling Cloud"
+saas = "Conectat la Total PDF Cloud"
 selfhostedChecking = "Conectat la server self-hosted (se verifică...)"
 selfhostedOffline = "Serverul self-hosted este inaccesibil"
 selfhostedOnline = "Conectat la serverul self-hosted"
@@ -4526,7 +4526,7 @@ title = "Licențe Terțe Părți"
 version = "Versiune"
 
 [localMode]
-toolUnavailable = "Acest instrument necesită un cont. Autentificați-vă în Stirling Cloud sau conectați-vă la un server self-hosted pentru a-l utiliza."
+toolUnavailable = "Acest instrument necesită un cont. Autentificați-vă în Total PDF Cloud sau conectați-vă la un server self-hosted pentru a-l utiliza."
 
 [localMode.banner]
 message = "Autentificați-vă pentru a debloca toate instrumentele."
@@ -4927,7 +4927,7 @@ skipForNow = "Sari peste deocamdată"
 skipTheTour = "Sari peste tur"
 
 [onboarding.desktopInstall]
-body = "Stirling funcționează cel mai bine ca aplicație desktop. O poți folosi offline, accesezi documentele mai rapid și faci editări local pe computer."
+body = "Total PDF funcționează cel mai bine ca aplicație desktop. O poți folosi offline, accesezi documentele mai rapid și faci editări local pe computer."
 title = "Descărcare"
 titleWithOs = "Descărcare pentru {{osLabel}}"
 
@@ -4941,8 +4941,8 @@ title = "Perioada de probă Pro de 30 de zile"
 trialEnds = "Perioada de probă se încheie la {{date}}"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "După ce activezi modul de autentificare, poți gestiona utilizatori, configura setări și monitoriza starea serverului. Primele <strong>{{freeTierLimit}}</strong> persoane de pe serverul tău folosesc Stirling gratuit."
-adminBodyLoginEnabled = "Ca admin, poți gestiona utilizatori, configura setări și monitoriza starea serverului. Primele <strong>{{freeTierLimit}}</strong> persoane de pe serverul tău folosesc Stirling gratuit."
+adminBodyLoginDisabled = "După ce activezi modul de autentificare, poți gestiona utilizatori, configura setări și monitoriza starea serverului. Primele <strong>{{freeTierLimit}}</strong> persoane de pe serverul tău folosesc Total PDF gratuit."
+adminBodyLoginEnabled = "Ca admin, poți gestiona utilizatori, configura setări și monitoriza starea serverului. Primele <strong>{{freeTierLimit}}</strong> persoane de pe serverul tău folosesc Total PDF gratuit."
 adminTitle = "Prezentare admin"
 userBody = "Invite colegi, atribuie roluri și ține documentele organizate într-un spațiu de lucru sigur. Activează modul de autentificare când ești pregătit să treci dincolo de utilizarea solo."
 userTitle = "Prezentare plan"
@@ -4951,9 +4951,9 @@ userTitle = "Prezentare plan"
 message = "Aplicația a suferit schimbări semnificative recent. Poate fi nevoie de atenția adminului serverului. Confirmă-ți rolul pentru a continua."
 
 [onboarding.serverLicense]
-freeBody = "Licențierea noastră <strong>Open-Core</strong> permite până la <strong>{{freeTierLimit}}</strong> utilizatori gratuit per server. Pentru a scala fără întreruperi și a primi acces timpuriu la noul nostru <strong>instrument de editare text PDF</strong>, recomandăm planul Stirling Server - editare completă și <strong>locuri nelimitate</strong> pentru $99/server/lună."
+freeBody = "Licențierea noastră <strong>Open-Core</strong> permite până la <strong>{{freeTierLimit}}</strong> utilizatori gratuit per server. Pentru a scala fără întreruperi și a primi acces timpuriu la noul nostru <strong>instrument de editare text PDF</strong>, recomandăm planul Total PDF Server - editare completă și <strong>locuri nelimitate</strong> pentru $99/server/lună."
 freeTitle = "Licență server"
-overLimitBody = "Politica noastră de licențiere permite până la <strong>{{freeTierLimit}}</strong> utilizatori gratuit per server. Ai <strong>{{overLimitUserCopy}}</strong> utilizatori Stirling. Pentru a continua fără întreruperi, fă upgrade la planul Stirling Server - <strong>locuri nelimitate</strong>, editare text PDF și control complet de admin pentru $99/server/lună."
+overLimitBody = "Politica noastră de licențiere permite până la <strong>{{freeTierLimit}}</strong> utilizatori gratuit per server. Ai <strong>{{overLimitUserCopy}}</strong> utilizatori Total PDF. Pentru a continua fără întreruperi, fă upgrade la planul Total PDF Server - <strong>locuri nelimitate</strong>, editare text PDF și control complet de admin pentru $99/server/lună."
 overLimitTitle = "Necesită licență de server"
 seePlans = "Vezi planuri →"
 skip = "Sari peste deocamdată"
@@ -4973,7 +4973,7 @@ title = "Bun venit la Total PDF!"
 
 [onboarding.welcomeSlide]
 body = "Total PDF este acum pregătit pentru echipe de orice dimensiune. Această actualizare include un nou aspect, capabilități puternice pentru admin și cea mai solicitată funcție - <strong>Edit Text</strong>."
-title = "Bun venit la Stirling"
+title = "Bun venit la Total PDF"
 
 [onboarding.whatsNew]
 activeFilesView = "Folosiți Fișiere active pentru a vedea tot ce aveți deschis și a alege la ce să lucrați."
@@ -6791,7 +6791,7 @@ user = "Conectat ca"
 
 [settings.connection.mode]
 local = "Doar local"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "Găzduit local"
 
 [settings.developer]
@@ -6913,7 +6913,7 @@ usageAnalytics = "Analytics de utilizare"
 [settings.planBilling]
 currentPlan = "Plan curent"
 loading = "Se încarcă informațiile de facturare..."
-notAvailable = "Planul și facturarea sunt disponibile doar când sunteți conectat la Stirling Cloud (mod SaaS)."
+notAvailable = "Planul și facturarea sunt disponibile doar când sunteți conectat la Total PDF Cloud (mod SaaS)."
 title = "Plan și facturare"
 
 [settings.planBilling.billing]
@@ -7063,16 +7063,16 @@ label = "Utilizator"
 placeholder = "Introdu numele de utilizator"
 
 [setup.mode.saas]
-description = "Autentifică-te cu contul tău Stirling"
-title = "Stirling Cloud"
+description = "Autentifică-te cu contul tău Total PDF"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "Conectează-te la propriul tău server Total PDF"
 title = "Server Self-Hosted"
 
 [setup.saas]
-subtitle = "Autentifică-te cu contul tău Stirling"
-title = "Autentifică-te în Stirling"
+subtitle = "Autentifică-te cu contul tău Total PDF"
+title = "Autentifică-te în Total PDF"
 
 [setup.selfhosted]
 changeServerLocked = "Organizația dvs. a restricționat această aplicație la un anumit server"

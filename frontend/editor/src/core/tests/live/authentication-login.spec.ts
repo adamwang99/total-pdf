@@ -14,7 +14,7 @@ test.describe("1. Authentication and Login", () => {
       await expect(
         page
           .locator(
-            'img[alt*="Stirling"], img[src*="stirling"], img[src*="logo"]',
+            'img[alt*="Total PDF"], img[src*="stirling"], img[src*="logo"]',
           )
           .first(),
       ).toBeVisible();

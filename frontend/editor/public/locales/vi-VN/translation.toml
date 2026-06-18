@@ -3014,7 +3014,7 @@ upgradeButton = "Nâng cấp tài khoản"
 chartAriaLabel = "Sử dụng tín dụng: đã dùng {{includedUsed}} trên {{includedTotal}} đi kèm, đã dùng {{purchasedUsed}} trên {{purchasedTotal}} đã mua"
 copyKeyAriaLabel = "Sao chép khóa API"
 creditsRemaining = "Tín dụng còn lại"
-description = "Khóa API của bạn để truy cập bộ công cụ PDF của Stirling. Sao chép vào dự án của bạn hoặc làm mới để tạo khóa mới."
+description = "Khóa API của bạn để truy cập bộ công cụ PDF của Total PDF. Sao chép vào dự án của bạn hoặc làm mới để tạo khóa mới."
 docsDescription = "Tìm hiểu thêm về tích hợp với Total PDF:"
 docsLink = "Tài liệu API"
 docsTitle = "Tài liệu API"
@@ -3066,7 +3066,7 @@ system = "Cấu hình hệ thống"
 [connectionMode.status]
 localOffline = "Đang chạy ở chế độ ngoại tuyến"
 localOnline = "Đang chạy ở chế độ ngoại tuyến"
-saas = "Đã kết nối với Stirling Cloud"
+saas = "Đã kết nối với Total PDF Cloud"
 selfhostedChecking = "Đã kết nối tới máy chủ tự lưu trữ (đang kiểm tra...)"
 selfhostedOffline = "Máy chủ tự lưu trữ không thể truy cập"
 selfhostedOnline = "Đã kết nối tới máy chủ tự lưu trữ"
@@ -4526,7 +4526,7 @@ title = "Giấy phép bên thứ 3"
 version = "Phiên bản"
 
 [localMode]
-toolUnavailable = "Công cụ này cần có tài khoản. Đăng nhập vào Stirling Cloud hoặc kết nối với máy chủ tự lưu trữ để sử dụng."
+toolUnavailable = "Công cụ này cần có tài khoản. Đăng nhập vào Total PDF Cloud hoặc kết nối với máy chủ tự lưu trữ để sử dụng."
 
 [localMode.banner]
 message = "Đăng nhập để mở khóa tất cả công cụ."
@@ -4927,7 +4927,7 @@ skipForNow = "Bỏ qua tạm thời"
 skipTheTour = "Bỏ qua hướng dẫn"
 
 [onboarding.desktopInstall]
-body = "Stirling hoạt động tốt nhất như ứng dụng desktop. Bạn có thể dùng offline, truy cập tài liệu nhanh hơn và chỉnh sửa trực tiếp trên máy."
+body = "Total PDF hoạt động tốt nhất như ứng dụng desktop. Bạn có thể dùng offline, truy cập tài liệu nhanh hơn và chỉnh sửa trực tiếp trên máy."
 title = "Tải xuống"
 titleWithOs = "Tải cho {{osLabel}}"
 
@@ -4941,8 +4941,8 @@ title = "Dùng thử Pro 30 ngày của bạn"
 trialEnds = "Dùng thử kết thúc vào {{date}}"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "Khi bật chế độ đăng nhập, bạn có thể quản lý người dùng, cấu hình cài đặt và theo dõi tình trạng server. <strong>{{freeTierLimit}}</strong> người đầu tiên trên server của bạn được dùng Stirling miễn phí."
-adminBodyLoginEnabled = "Là admin, bạn có thể quản lý người dùng, cấu hình cài đặt và theo dõi tình trạng server. <strong>{{freeTierLimit}}</strong> người đầu tiên trên server của bạn được dùng Stirling miễn phí."
+adminBodyLoginDisabled = "Khi bật chế độ đăng nhập, bạn có thể quản lý người dùng, cấu hình cài đặt và theo dõi tình trạng server. <strong>{{freeTierLimit}}</strong> người đầu tiên trên server của bạn được dùng Total PDF miễn phí."
+adminBodyLoginEnabled = "Là admin, bạn có thể quản lý người dùng, cấu hình cài đặt và theo dõi tình trạng server. <strong>{{freeTierLimit}}</strong> người đầu tiên trên server của bạn được dùng Total PDF miễn phí."
 adminTitle = "Tổng quan Admin"
 userBody = "Mời đồng đội, gán vai trò và quản lý tài liệu gọn gàng trong một không gian làm việc an toàn. Bật chế độ đăng nhập khi bạn sẵn sàng vượt qua chế độ dùng cá nhân."
 userTitle = "Tổng quan gói"
@@ -4951,9 +4951,9 @@ userTitle = "Tổng quan gói"
 message = "Ứng dụng vừa có nhiều thay đổi. Có thể cần sự chú ý của quản trị viên server. Vui lòng xác nhận vai trò của bạn để tiếp tục."
 
 [onboarding.serverLicense]
-freeBody = "Giấy phép <strong>Open-Core</strong> của chúng tôi cho phép tối đa <strong>{{freeTierLimit}}</strong> người dùng miễn phí mỗi server. Để mở rộng không gián đoạn và truy cập sớm <strong>công cụ chỉnh sửa văn bản PDF</strong> mới, chúng tôi khuyến nghị gói Stirling Server - chỉnh sửa đầy đủ và <strong>số ghế không giới hạn</strong> với $99/server/tháng."
+freeBody = "Giấy phép <strong>Open-Core</strong> của chúng tôi cho phép tối đa <strong>{{freeTierLimit}}</strong> người dùng miễn phí mỗi server. Để mở rộng không gián đoạn và truy cập sớm <strong>công cụ chỉnh sửa văn bản PDF</strong> mới, chúng tôi khuyến nghị gói Total PDF Server - chỉnh sửa đầy đủ và <strong>số ghế không giới hạn</strong> với $99/server/tháng."
 freeTitle = "Giấy phép Server"
-overLimitBody = "Giấy phép của chúng tôi cho phép tối đa <strong>{{freeTierLimit}}</strong> người dùng miễn phí mỗi server. Bạn có <strong>{{overLimitUserCopy}}</strong> người dùng Stirling. Để tiếp tục không gián đoạn, hãy nâng cấp lên gói Stirling Server - <strong>số ghế không giới hạn</strong>, chỉnh sửa văn bản PDF và toàn quyền quản trị với $99/server/tháng."
+overLimitBody = "Giấy phép của chúng tôi cho phép tối đa <strong>{{freeTierLimit}}</strong> người dùng miễn phí mỗi server. Bạn có <strong>{{overLimitUserCopy}}</strong> người dùng Total PDF. Để tiếp tục không gián đoạn, hãy nâng cấp lên gói Total PDF Server - <strong>số ghế không giới hạn</strong>, chỉnh sửa văn bản PDF và toàn quyền quản trị với $99/server/tháng."
 overLimitTitle = "Cần giấy phép Server"
 seePlans = "Xem gói →"
 skip = "Bỏ qua tạm thời"
@@ -4973,7 +4973,7 @@ title = "Chào mừng đến với Total PDF!"
 
 [onboarding.welcomeSlide]
 body = "Total PDF nay sẵn sàng cho mọi quy mô đội nhóm. Bản cập nhật này có bố cục mới, khả năng quản trị mạnh mẽ và tính năng được yêu cầu nhiều nhất - <strong>Chỉnh sửa văn bản</strong>."
-title = "Chào mừng đến với Stirling"
+title = "Chào mừng đến với Total PDF"
 
 [onboarding.whatsNew]
 activeFilesView = "Dùng Tệp đang hoạt động để xem mọi thứ bạn đang mở và chọn việc cần làm."
@@ -6791,7 +6791,7 @@ user = "Đăng nhập với tư cách"
 
 [settings.connection.mode]
 local = "Chỉ cục bộ"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "Tự lưu trữ"
 
 [settings.developer]
@@ -6913,7 +6913,7 @@ usageAnalytics = "Phân tích sử dụng"
 [settings.planBilling]
 currentPlan = "Gói hiện tại"
 loading = "Đang tải thông tin thanh toán..."
-notAvailable = "Gói & Thanh toán chỉ khả dụng khi kết nối với Stirling Cloud (chế độ SaaS)."
+notAvailable = "Gói & Thanh toán chỉ khả dụng khi kết nối với Total PDF Cloud (chế độ SaaS)."
 title = "Gói & Thanh toán"
 
 [settings.planBilling.billing]
@@ -7063,16 +7063,16 @@ label = "Tên người dùng"
 placeholder = "Nhập tên người dùng"
 
 [setup.mode.saas]
-description = "Đăng nhập bằng tài khoản Stirling"
-title = "Stirling Cloud"
+description = "Đăng nhập bằng tài khoản Total PDF"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "Kết nối đến server Total PDF của bạn"
 title = "Server tự lưu trữ"
 
 [setup.saas]
-subtitle = "Đăng nhập bằng tài khoản Stirling"
-title = "Đăng nhập vào Stirling"
+subtitle = "Đăng nhập bằng tài khoản Total PDF"
+title = "Đăng nhập vào Total PDF"
 
 [setup.selfhosted]
 changeServerLocked = "Tổ chức của bạn đã giới hạn ứng dụng này vào một máy chủ cụ thể"

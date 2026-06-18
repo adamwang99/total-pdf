@@ -23,7 +23,7 @@ const DesktopInstallBody = () => {
     <span>
       {t(
         "onboarding.desktopInstall.body",
-        "Stirling works best as a desktop app. You can use it offline, access documents faster, and make edits locally on your computer.",
+        "Total PDF works best as a desktop app. You can use it offline, access documents faster, and make edits locally on your computer.",
       )}
     </span>
   );

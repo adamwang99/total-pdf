@@ -255,7 +255,7 @@ public class ApplicationProperties {
     }
 
     /**
-     * HTTP timeouts for loopback calls to internal Stirling API endpoints, used by the AI workflow
+     * HTTP timeouts for loopback calls to internal Total PDF API endpoints, used by the AI workflow
      * executor and the pipeline processor. A bounded read timeout prevents a hung tool (e.g. an
      * infinite loop in a PDF processing service) from stalling the entire chat workflow forever.
      * Tools that legitimately need longer than the read timeout should be invoked through the async

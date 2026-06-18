@@ -3066,7 +3066,7 @@ system = "Rendszerkonfiguráció"
 [connectionMode.status]
 localOffline = "Offline mód fut"
 localOnline = "Offline mód fut"
-saas = "Csatlakozva a Stirling Cloudhoz"
+saas = "Csatlakozva a Total PDF Cloudhoz"
 selfhostedChecking = "Csatlakozva az önhosztolt szerverhez (ellenőrzés...)"
 selfhostedOffline = "Az önhosztolt szerver nem érhető el"
 selfhostedOnline = "Csatlakozva az önhosztolt szerverhez"
@@ -4526,7 +4526,7 @@ title = "Külső licencek"
 version = "Verzió"
 
 [localMode]
-toolUnavailable = "Ehhez az eszközhöz fiók szükséges. Jelentkezzen be a Stirling Cloudba, vagy csatlakozzon egy önhosztolt szerverhez a használatához."
+toolUnavailable = "Ehhez az eszközhöz fiók szükséges. Jelentkezzen be a Total PDF Cloudba, vagy csatlakozzon egy önhosztolt szerverhez a használatához."
 
 [localMode.banner]
 message = "Jelentkezzen be az összes eszköz feloldásához."
@@ -4927,7 +4927,7 @@ skipForNow = "Kihagyás most"
 skipTheTour = "Körbevezetés kihagyása"
 
 [onboarding.desktopInstall]
-body = "A Stirling asztali alkalmazásként működik a legjobban. Használhatja offline, gyorsabban érheti el a dokumentumokat, és helyben szerkeszthet a gépén."
+body = "A Total PDF asztali alkalmazásként működik a legjobban. Használhatja offline, gyorsabban érheti el a dokumentumokat, és helyben szerkeszthet a gépén."
 title = "Letöltés"
 titleWithOs = "Letöltés: {{osLabel}}"
 
@@ -4941,8 +4941,8 @@ title = "30 napos Pro próbaidőszak"
 trialEnds = "A próbaidőszak vége: {{date}}"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "A bejelentkezési mód engedélyezése után kezelheti a felhasználókat, beállításokat és figyelheti a szerver állapotát. A szerver első <strong>{{freeTierLimit}}</strong> felhasználója ingyen használhatja a Stirlinget."
-adminBodyLoginEnabled = "Adminisztrátorként kezelheti a felhasználókat, beállításokat és figyelheti a szerver állapotát. A szerver első <strong>{{freeTierLimit}}</strong> felhasználója ingyen használhatja a Stirlinget."
+adminBodyLoginDisabled = "A bejelentkezési mód engedélyezése után kezelheti a felhasználókat, beállításokat és figyelheti a szerver állapotát. A szerver első <strong>{{freeTierLimit}}</strong> felhasználója ingyen használhatja a Total PDF."
+adminBodyLoginEnabled = "Adminisztrátorként kezelheti a felhasználókat, beállításokat és figyelheti a szerver állapotát. A szerver első <strong>{{freeTierLimit}}</strong> felhasználója ingyen használhatja a Total PDF."
 adminTitle = "Admin áttekintés"
 userBody = "Hívja meg a csapattagokat, rendeljen szerepköröket, és tartsa rendezve dokumentumait egy biztonságos munkaterületen. Engedélyezze a bejelentkezési módot, amikor továbblépne az egyéni használatról."
 userTitle = "Csomag áttekintése"
@@ -4951,9 +4951,9 @@ userTitle = "Csomag áttekintése"
 message = "Az alkalmazás nemrég jelentős változásokon ment keresztül. Előfordulhat, hogy a szerver adminisztrátorának beavatkozása szükséges. A folytatáshoz erősítse meg a szerepkörét."
 
 [onboarding.serverLicense]
-freeBody = "Az <strong>Open-Core</strong> licencelésünk szerverenként legfeljebb <strong>{{freeTierLimit}}</strong> felhasználót enged ingyen. A zavartalan bővüléshez és az új <strong>PDF szövegszerkesztő eszköz</strong> korai eléréséhez a Stirling Server csomagot ajánljuk – teljes szerkesztés és <strong>korlátlan hely</strong> $99/szerver/hó áron."
+freeBody = "Az <strong>Open-Core</strong> licencelésünk szerverenként legfeljebb <strong>{{freeTierLimit}}</strong> felhasználót enged ingyen. A zavartalan bővüléshez és az új <strong>PDF szövegszerkesztő eszköz</strong> korai eléréséhez a Total PDF Server csomagot ajánljuk – teljes szerkesztés és <strong>korlátlan hely</strong> $99/szerver/hó áron."
 freeTitle = "Szerverlicenc"
-overLimitBody = "Licencelésünk szerverenként legfeljebb <strong>{{freeTierLimit}}</strong> felhasználót enged ingyen. Önnek <strong>{{overLimitUserCopy}}</strong> Stirling felhasználója van. A zavartalan használathoz váltson a Stirling Server csomagra – <strong>korlátlan hely</strong>, PDF szövegszerkesztés és teljes adminisztrátori vezérlés $99/szerver/hó áron."
+overLimitBody = "Licencelésünk szerverenként legfeljebb <strong>{{freeTierLimit}}</strong> felhasználót enged ingyen. Önnek <strong>{{overLimitUserCopy}}</strong> Total PDF felhasználója van. A zavartalan használathoz váltson a Total PDF Server csomagra – <strong>korlátlan hely</strong>, PDF szövegszerkesztés és teljes adminisztrátori vezérlés $99/szerver/hó áron."
 overLimitTitle = "Szerverlicenc szükséges"
 seePlans = "Csomagok megtekintése →"
 skip = "Kihagyás most"
@@ -4973,7 +4973,7 @@ title = "Üdvözli a Total PDF!"
 
 [onboarding.welcomeSlide]
 body = "A Total PDF mostantól minden méretű csapat számára készen áll. Ez a frissítés új elrendezést, erőteljes új adminisztrátori képességeket és a leggyakrabban kért funkciónkat – a <strong>Szöveg szerkesztése</strong>-t tartalmazza."
-title = "Üdvözöljük a Stirlingben"
+title = "Üdvözöljük a Total PDF"
 
 [onboarding.whatsNew]
 activeFilesView = "Az Aktív fájlokban láthat mindent, ami meg van nyitva, és kiválaszthatja, min dolgozik."
@@ -6791,7 +6791,7 @@ user = "Bejelentkezve mint"
 
 [settings.connection.mode]
 local = "Csak helyi"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "Önhostolt"
 
 [settings.developer]
@@ -6913,7 +6913,7 @@ usageAnalytics = "Használati analitika"
 [settings.planBilling]
 currentPlan = "Jelenlegi csomag"
 loading = "Számlázási információk betöltése..."
-notAvailable = "A Csomag és számlázás csak Stirling Cloud kapcsolattal érhető el (SaaS mód)."
+notAvailable = "A Csomag és számlázás csak Total PDF Cloud kapcsolattal érhető el (SaaS mód)."
 title = "Csomag és számlázás"
 
 [settings.planBilling.billing]
@@ -7063,16 +7063,16 @@ label = "Felhasználónév"
 placeholder = "Adja meg a felhasználónevét"
 
 [setup.mode.saas]
-description = "Jelentkezzen be Stirling-fiókjával"
-title = "Stirling Cloud"
+description = "Jelentkezzen be Total PDF-fiókjával"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "Csatlakozás a saját Total PDF szerveréhez"
 title = "Önhostolt szerver"
 
 [setup.saas]
-subtitle = "Jelentkezzen be Stirling-fiókjával"
-title = "Bejelentkezés a Stirlingbe"
+subtitle = "Jelentkezzen be Total PDF-fiókjával"
+title = "Bejelentkezés a Total PDF"
 
 [setup.selfhosted]
 changeServerLocked = "A szervezete egy konkrét szerverre korlátozta az alkalmazást"

@@ -3002,7 +3002,7 @@ upgradeButton = "Actualizar Cuenta"
 chartAriaLabel = "Uso de créditos: incluidos {{includedUsed}} de {{includedTotal}}, comprados {{purchasedUsed}} de {{purchasedTotal}}"
 copyKeyAriaLabel = "Copiar clave API"
 creditsRemaining = "Créditos Restantes"
-description = "Tu clave API para acceder al conjunto de herramientas PDF de Stirling. Cópiala en tu proyecto o actualízala para generar una nueva."
+description = "Tu clave API para acceder al conjunto de herramientas PDF de Total PDF. Cópiala en tu proyecto o actualízala para generar una nueva."
 docsDescription = "Más información sobre cómo integrar con Total PDF:"
 docsLink = "Documentación de la API"
 docsTitle = "Documentación de la API"
@@ -3054,7 +3054,7 @@ system = "Configuración del sistema"
 [connectionMode.status]
 localOffline = "Modo sin conexión activo"
 localOnline = "Modo sin conexión activo"
-saas = "Conectado a Stirling Cloud"
+saas = "Conectado a Total PDF Cloud"
 selfhostedChecking = "Conectado al servidor autoalojado (comprobando...)"
 selfhostedOffline = "No se puede acceder al servidor autoalojado"
 selfhostedOnline = "Conectado al servidor autoalojado"
@@ -4514,7 +4514,7 @@ title = "Licencias de terceros"
 version = "Versión"
 
 [localMode]
-toolUnavailable = "Esta herramienta requiere una cuenta. Inicia sesión en Stirling Cloud o conéctate a un servidor autoalojado para usarla."
+toolUnavailable = "Esta herramienta requiere una cuenta. Inicia sesión en Total PDF Cloud o conéctate a un servidor autoalojado para usarla."
 
 [localMode.banner]
 message = "Inicia sesión para desbloquear todas las herramientas."
@@ -4915,7 +4915,7 @@ skipForNow = "Omitir por ahora"
 skipTheTour = "Saltar el recorrido"
 
 [onboarding.desktopInstall]
-body = "Stirling funciona mejor como aplicación de escritorio. Puede usarla sin conexión, acceder a los documentos más rápido y editar localmente en su ordenador."
+body = "Total PDF funciona mejor como aplicación de escritorio. Puede usarla sin conexión, acceder a los documentos más rápido y editar localmente en su ordenador."
 title = "Descargar"
 titleWithOs = "Descargar para {{osLabel}}"
 
@@ -4929,8 +4929,8 @@ title = "Tu Prueba Pro de 30 Días"
 trialEnds = "La prueba finaliza el {{date}}"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "Cuando habilite el modo de inicio de sesión, podrá gestionar usuarios, configurar ajustes y supervisar la salud del servidor. Las primeras <strong>{{freeTierLimit}}</strong> personas de su servidor pueden usar Stirling gratis."
-adminBodyLoginEnabled = "Como administrador, puede gestionar usuarios, configurar ajustes y supervisar la salud del servidor. Las primeras <strong>{{freeTierLimit}}</strong> personas de su servidor pueden usar Stirling gratis."
+adminBodyLoginDisabled = "Cuando habilite el modo de inicio de sesión, podrá gestionar usuarios, configurar ajustes y supervisar la salud del servidor. Las primeras <strong>{{freeTierLimit}}</strong> personas de su servidor pueden usar Total PDF gratis."
+adminBodyLoginEnabled = "Como administrador, puede gestionar usuarios, configurar ajustes y supervisar la salud del servidor. Las primeras <strong>{{freeTierLimit}}</strong> personas de su servidor pueden usar Total PDF gratis."
 adminTitle = "Resumen de administrador"
 userBody = "Invite a sus compañeros, asigne roles y mantenga sus documentos organizados en un espacio de trabajo seguro. Active el modo de inicio de sesión cuando esté listo para pasar del uso individual."
 userTitle = "Resumen del plan"
@@ -4939,9 +4939,9 @@ userTitle = "Resumen del plan"
 message = "La aplicación ha sufrido cambios importantes recientemente. Puede requerirse la atención del administrador del servidor. Confirme su rol para continuar."
 
 [onboarding.serverLicense]
-freeBody = "Nuestra licencia <strong>Open-Core</strong> permite hasta <strong>{{freeTierLimit}}</strong> usuarios gratis por servidor. Para escalar sin interrupciones y obtener acceso anticipado a nuestra nueva <strong>herramienta de edición de texto PDF</strong>, recomendamos el plan Stirling Server: edición completa y <strong>plazas ilimitadas</strong> por 99 $/servidor/mes."
+freeBody = "Nuestra licencia <strong>Open-Core</strong> permite hasta <strong>{{freeTierLimit}}</strong> usuarios gratis por servidor. Para escalar sin interrupciones y obtener acceso anticipado a nuestra nueva <strong>herramienta de edición de texto PDF</strong>, recomendamos el plan Total PDF Server: edición completa y <strong>plazas ilimitadas</strong> por 99 $/servidor/mes."
 freeTitle = "Licencia del servidor"
-overLimitBody = "Nuestra licencia permite hasta <strong>{{freeTierLimit}}</strong> usuarios gratis por servidor. Tiene <strong>{{overLimitUserCopy}}</strong> usuarios de Stirling. Para continuar sin interrupciones, actualice al plan Stirling Server: <strong>plazas ilimitadas</strong>, edición de texto PDF y control total de administración por 99 $/servidor/mes."
+overLimitBody = "Nuestra licencia permite hasta <strong>{{freeTierLimit}}</strong> usuarios gratis por servidor. Tiene <strong>{{overLimitUserCopy}}</strong> usuarios de Total PDF. Para continuar sin interrupciones, actualice al plan Total PDF Server: <strong>plazas ilimitadas</strong>, edición de texto PDF y control total de administración por 99 $/servidor/mes."
 overLimitTitle = "Se necesita licencia de servidor"
 seePlans = "Ver planes →"
 skip = "Omitir por ahora"
@@ -4961,7 +4961,7 @@ title = "¡Bienvenido a Total PDF!"
 
 [onboarding.welcomeSlide]
 body = "Total PDF ya está listo para equipos de todos los tamaños. Esta actualización incluye un nuevo diseño, potentes capacidades de administración y nuestra función más solicitada: <strong>Editar texto</strong>."
-title = "Bienvenido a Stirling"
+title = "Bienvenido a Total PDF"
 
 [onboarding.whatsNew]
 activeFilesView = "Usa Archivos activos para ver todo lo que tienes abierto y elegir en qué trabajar."
@@ -6781,7 +6781,7 @@ user = "Conectado como"
 
 [settings.connection.mode]
 local = "Solo local"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "Autoalojado"
 
 [settings.developer]
@@ -6903,7 +6903,7 @@ usageAnalytics = "Analítica de uso"
 [settings.planBilling]
 currentPlan = "Plan actual"
 loading = "Cargando información de facturación..."
-notAvailable = "Plan y facturación solo están disponibles cuando estás conectado a Stirling Cloud (modo SaaS)."
+notAvailable = "Plan y facturación solo están disponibles cuando estás conectado a Total PDF Cloud (modo SaaS)."
 title = "Plan y facturación"
 
 [settings.planBilling.billing]
@@ -7053,16 +7053,16 @@ label = "Nombre de usuario"
 placeholder = "Introduzca su nombre de usuario"
 
 [setup.mode.saas]
-description = "Inicie sesión con su cuenta de Stirling"
-title = "Stirling Cloud"
+description = "Inicie sesión con su cuenta de Total PDF"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "Conéctese a su propio servidor de Total PDF"
 title = "Servidor autoalojado"
 
 [setup.saas]
-subtitle = "Inicie sesión con su cuenta de Stirling"
-title = "Inicie sesión en Stirling"
+subtitle = "Inicie sesión con su cuenta de Total PDF"
+title = "Inicie sesión en Total PDF"
 
 [setup.selfhosted]
 changeServerLocked = "Tu organización ha restringido esta aplicación a un servidor específico"

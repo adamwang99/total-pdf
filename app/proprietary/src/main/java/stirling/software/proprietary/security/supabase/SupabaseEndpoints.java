@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 /**
- * Stirling's customer-facing Supabase project endpoints ({@code auth.stirling.com} in production).
+ * Total PDF's customer-facing Supabase project endpoints ({@code auth.stirling.com} in production).
  * Overridable via {@code stirling.supabase.url} / {@code stirling.supabase.publishable-key}.
  */
 @Component

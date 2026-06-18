@@ -3002,7 +3002,7 @@ upgradeButton = "Upgrade Account"
 chartAriaLabel = "Credits usage: included {{includedUsed}} of {{includedTotal}}, purchased {{purchasedUsed}} of {{purchasedTotal}}"
 copyKeyAriaLabel = "Copy API key"
 creditsRemaining = "Credits Remaining"
-description = "Your API key for accessing Stirling's suite of PDF tools. Copy it to your project or refresh to generate a new one."
+description = "Your API key for accessing Total PDF's suite of PDF tools. Copy it to your project or refresh to generate a new one."
 docsDescription = "Learn more about integrating with Total PDF:"
 docsLink = "API Documentation"
 docsTitle = "API Documentation"
@@ -3054,7 +3054,7 @@ system = "System Configuration"
 [connectionMode.status]
 localOffline = "Offline mode running"
 localOnline = "Offline mode running"
-saas = "Connected to Stirling Cloud"
+saas = "Connected to Total PDF Cloud"
 selfhostedChecking = "Connected to self-hosted server (checking...)"
 selfhostedOffline = "Self-hosted server unreachable"
 selfhostedOnline = "Connected to self-hosted server"
@@ -4514,7 +4514,7 @@ title = "3rd Party Licences"
 version = "Version"
 
 [localMode]
-toolUnavailable = "This tool requires an account. Sign in to Stirling Cloud or connect to a self-hosted server to use it."
+toolUnavailable = "This tool requires an account. Sign in to Total PDF Cloud or connect to a self-hosted server to use it."
 
 [localMode.banner]
 message = "Sign in to unlock all tools."
@@ -4915,7 +4915,7 @@ skipForNow = "Skip for now"
 skipTheTour = "Skip the tour"
 
 [onboarding.desktopInstall]
-body = "Stirling works best as a desktop app. You can use it offline, access documents faster, and make edits locally on your computer."
+body = "Total PDF works best as a desktop app. You can use it offline, access documents faster, and make edits locally on your computer."
 title = "Download"
 titleWithOs = "Download for {{osLabel}}"
 
@@ -4929,8 +4929,8 @@ title = "Your 30-Day Pro Trial"
 trialEnds = "Trial ends {{date}}"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "Once you enable login mode, you can manage users, configure settings, and monitor server health. The first <strong>{{freeTierLimit}}</strong> people on your server get to use Stirling free of charge."
-adminBodyLoginEnabled = "As an admin, you can manage users, configure settings, and monitor server health. The first <strong>{{freeTierLimit}}</strong> people on your server get to use Stirling free of charge."
+adminBodyLoginDisabled = "Once you enable login mode, you can manage users, configure settings, and monitor server health. The first <strong>{{freeTierLimit}}</strong> people on your server get to use Total PDF free of charge."
+adminBodyLoginEnabled = "As an admin, you can manage users, configure settings, and monitor server health. The first <strong>{{freeTierLimit}}</strong> people on your server get to use Total PDF free of charge."
 adminTitle = "Admin Overview"
 userBody = "Invite teammates, assign roles, and keep your documents organized in one secure workspace. Enable login mode whenever you're ready to grow beyond solo use."
 userTitle = "Plan Overview"
@@ -4939,9 +4939,9 @@ userTitle = "Plan Overview"
 message = "The application has undergone significant changes recently. Your server admin's attention may be required. Please confirm your role to continue."
 
 [onboarding.serverLicense]
-freeBody = "Our <strong>Open-Core</strong> licensing permits up to <strong>{{freeTierLimit}}</strong> users for free per server. To scale uninterrupted, we recommend the Stirling Server plan - <strong>unlimited seats</strong> and <strong>SSO support</strong> for $99/server/mo."
+freeBody = "Our <strong>Open-Core</strong> licensing permits up to <strong>{{freeTierLimit}}</strong> users for free per server. To scale uninterrupted, we recommend the Total PDF Server plan - <strong>unlimited seats</strong> and <strong>SSO support</strong> for $99/server/mo."
 freeTitle = "Server License"
-overLimitBody = "Our licensing permits up to <strong>{{freeTierLimit}}</strong> users for free per server. You have <strong>{{overLimitUserCopy}}</strong> Stirling users. To continue uninterrupted, upgrade to the Stirling Server plan - <strong>unlimited seats</strong>, PDF text editing, and full admin control for $99/server/mo."
+overLimitBody = "Our licensing permits up to <strong>{{freeTierLimit}}</strong> users for free per server. You have <strong>{{overLimitUserCopy}}</strong> Total PDF users. To continue uninterrupted, upgrade to the Total PDF Server plan - <strong>unlimited seats</strong>, PDF text editing, and full admin control for $99/server/mo."
 overLimitTitle = "Server License Needed"
 seePlans = "See Plans →"
 skip = "Skip for now"
@@ -4961,7 +4961,7 @@ title = "Welcome to Total PDF!"
 
 [onboarding.welcomeSlide]
 body = "Total PDF is now ready for teams of all sizes. This update includes a new layout, powerful new admin capabilities, and our most requested feature - <strong>Edit Text</strong>."
-title = "Welcome to Stirling"
+title = "Welcome to Total PDF"
 
 [onboarding.whatsNew]
 activeFilesView = "Use Active Files to see everything you have open and pick what to work on."
@@ -6826,7 +6826,7 @@ user = "Logged in as"
 
 [settings.connection.mode]
 local = "Local Only"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "Self-Hosted"
 
 [settings.developer]
@@ -6934,7 +6934,7 @@ usageAnalytics = "Usage Analytics"
 [settings.planBilling]
 currentPlan = "Current Plan"
 loading = "Loading billing information..."
-notAvailable = "Plan & Billing is only available when connected to Stirling Cloud (SaaS mode)."
+notAvailable = "Plan & Billing is only available when connected to Total PDF Cloud (SaaS mode)."
 title = "Plan & Billing"
 
 [settings.planBilling.billing]
@@ -7098,16 +7098,16 @@ label = "Username"
 placeholder = "Enter your username"
 
 [setup.mode.saas]
-description = "Sign in with your Stirling account"
-title = "Stirling Cloud"
+description = "Sign in with your Total PDF account"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "Connect to your own Total PDF server with your personal account"
 title = "Self-Hosted Server"
 
 [setup.saas]
-subtitle = "Sign in with your Stirling account"
-title = "Sign in to Stirling"
+subtitle = "Sign in with your Total PDF account"
+title = "Sign in to Total PDF"
 
 [setup.selfhosted]
 changeServerLocked = "Your organisation has restricted this app to a specific server"

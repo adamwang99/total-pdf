@@ -3,7 +3,7 @@ package stirling.software.common.service;
 import java.time.Duration;
 
 /**
- * Thrown when an internal Stirling tool invocation exceeds its configured read timeout or otherwise
+ * Thrown when an internal Total PDF tool invocation exceeds its configured read timeout or otherwise
  * fails at the transport layer. Distinguishes a hung/timed-out tool from a tool that returned a
  * non-2xx HTTP response (which is reported via the response status itself), so callers can present
  * a clear "the tool didn't respond in time" message to the user instead of a generic stack trace.

@@ -33,7 +33,7 @@ import tools.jackson.databind.node.ObjectNode;
  * <p>Accepts a PDF and a natural-language prompt, delegates to {@link PdfCommentAgentOrchestrator}
  * which consults the Python engine and applies {@code PDAnnotationText} sticky-note annotations,
  * then streams the annotated PDF back in the response body. This shape matches the rest of the
- * Stirling tool endpoints ({@code /api/v1/misc/*}, {@code /api/v1/general/*}) and is what the AI
+ * Total PDF tool endpoints ({@code /api/v1/misc/*}, {@code /api/v1/general/*}) and is what the AI
  * workflow orchestrator expects when dispatching this tool as a plan step.
  *
  * <p>The raw PDF never leaves Java. Python only receives positioned text chunks.

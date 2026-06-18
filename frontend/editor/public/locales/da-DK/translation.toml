@@ -3014,7 +3014,7 @@ upgradeButton = "Opgradér konto"
 chartAriaLabel = "Forbrug af kreditter: inkluderet {{includedUsed}} af {{includedTotal}}, købt {{purchasedUsed}} af {{purchasedTotal}}"
 copyKeyAriaLabel = "Kopiér API-nøgle"
 creditsRemaining = "Tilbageværende kreditter"
-description = "Din API-nøgle til adgang til Stirlings pakke af PDF-værktøjer. Kopiér den til dit projekt, eller opdatér for at generere en ny."
+description = "Din API-nøgle til adgang til Total PDF pakke af PDF-værktøjer. Kopiér den til dit projekt, eller opdatér for at generere en ny."
 docsDescription = "Lær mere om integration med Total PDF:"
 docsLink = "API-dokumentation"
 docsTitle = "API-dokumentation"
@@ -3066,7 +3066,7 @@ system = "Systemkonfiguration"
 [connectionMode.status]
 localOffline = "Offline-tilstand aktiv"
 localOnline = "Offline-tilstand aktiv"
-saas = "Forbundet til Stirling Cloud"
+saas = "Forbundet til Total PDF Cloud"
 selfhostedChecking = "Forbundet til selvhostet server (kontrollerer...)"
 selfhostedOffline = "Selvhostet server utilgængelig"
 selfhostedOnline = "Forbundet til selvhostet server"
@@ -4526,7 +4526,7 @@ title = "Trejdepartslicenser"
 version = "Version"
 
 [localMode]
-toolUnavailable = "Dette værktøj kræver en konto. Log ind på Stirling Cloud eller opret forbindelse til en selvhostet server for at bruge det."
+toolUnavailable = "Dette værktøj kræver en konto. Log ind på Total PDF Cloud eller opret forbindelse til en selvhostet server for at bruge det."
 
 [localMode.banner]
 message = "Log ind for at låse alle værktøjer op."
@@ -4927,7 +4927,7 @@ skipForNow = "Spring over for nu"
 skipTheTour = "Spring rundvisningen over"
 
 [onboarding.desktopInstall]
-body = "Stirling fungerer bedst som desktop-app. Du kan bruge den offline, få hurtigere adgang til dokumenter og redigere lokalt på din computer."
+body = "Total PDF fungerer bedst som desktop-app. Du kan bruge den offline, få hurtigere adgang til dokumenter og redigere lokalt på din computer."
 title = "Download"
 titleWithOs = "Download til {{osLabel}}"
 
@@ -4941,8 +4941,8 @@ title = "Din 30-dages Pro-prøveperiode"
 trialEnds = "Prøveperioden slutter {{date}}"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "Når du aktiverer login-tilstand, kan du administrere brugere, konfigurere indstillinger og overvåge serverens tilstand. De første <strong>{{freeTierLimit}}</strong> personer på din server kan bruge Stirling gratis."
-adminBodyLoginEnabled = "Som admin kan du administrere brugere, konfigurere indstillinger og overvåge serverens tilstand. De første <strong>{{freeTierLimit}}</strong> personer på din server kan bruge Stirling gratis."
+adminBodyLoginDisabled = "Når du aktiverer login-tilstand, kan du administrere brugere, konfigurere indstillinger og overvåge serverens tilstand. De første <strong>{{freeTierLimit}}</strong> personer på din server kan bruge Total PDF gratis."
+adminBodyLoginEnabled = "Som admin kan du administrere brugere, konfigurere indstillinger og overvåge serverens tilstand. De første <strong>{{freeTierLimit}}</strong> personer på din server kan bruge Total PDF gratis."
 adminTitle = "Admin-overblik"
 userBody = "Invitér teammedlemmer, tildel roller, og hold dine dokumenter organiseret i ét sikkert arbejdsområde. Aktiver login-tilstand, når du er klar til at vokse ud over solo-brug."
 userTitle = "Plan-overblik"
@@ -4951,9 +4951,9 @@ userTitle = "Plan-overblik"
 message = "Applikationen har gennemgået væsentlige ændringer for nylig. Din serveradmins opmærksomhed kan være påkrævet. Bekræft din rolle for at fortsætte."
 
 [onboarding.serverLicense]
-freeBody = "Vores <strong>Open-Core</strong>-licens tillader op til <strong>{{freeTierLimit}}</strong> brugere gratis pr. server. For at skalere uden afbrydelser og få tidlig adgang til vores nye <strong>PDF-tekstredigeringsværktøj</strong> anbefaler vi Stirling Server-planen – fuld redigering og <strong>ubegrænsede pladser</strong> for $99/server/md."
+freeBody = "Vores <strong>Open-Core</strong>-licens tillader op til <strong>{{freeTierLimit}}</strong> brugere gratis pr. server. For at skalere uden afbrydelser og få tidlig adgang til vores nye <strong>PDF-tekstredigeringsværktøj</strong> anbefaler vi Total PDF Server-planen – fuld redigering og <strong>ubegrænsede pladser</strong> for $99/server/md."
 freeTitle = "Serverlicens"
-overLimitBody = "Vores licens tillader op til <strong>{{freeTierLimit}}</strong> brugere gratis pr. server. Du har <strong>{{overLimitUserCopy}}</strong> Stirling-brugere. For at fortsætte uden afbrydelser skal du opgradere til Stirling Server-abonnementet – <strong>ubegrænsede pladser</strong>, PDF-tekstredigering og fuld admin-kontrol for $99/server/md."
+overLimitBody = "Vores licens tillader op til <strong>{{freeTierLimit}}</strong> brugere gratis pr. server. Du har <strong>{{overLimitUserCopy}}</strong> Total PDF-brugere. For at fortsætte uden afbrydelser skal du opgradere til Total PDF Server-abonnementet – <strong>ubegrænsede pladser</strong>, PDF-tekstredigering og fuld admin-kontrol for $99/server/md."
 overLimitTitle = "Serverlicens påkrævet"
 seePlans = "Se planer →"
 skip = "Spring over for nu"
@@ -4973,7 +4973,7 @@ title = "Velkommen til Total PDF!"
 
 [onboarding.welcomeSlide]
 body = "Total PDF er nu klar til teams i alle størrelser. Denne opdatering indeholder et nyt layout, stærke nye admin-funktioner og vores mest efterspurgte funktion – <strong>Rediger tekst</strong>."
-title = "Velkommen til Stirling"
+title = "Velkommen til Total PDF"
 
 [onboarding.whatsNew]
 activeFilesView = "Brug Aktive filer til at se alt, du har åbent, og vælge, hvad du vil arbejde på."
@@ -6791,7 +6791,7 @@ user = "Logget ind som"
 
 [settings.connection.mode]
 local = "Kun lokalt"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "Selvhostet"
 
 [settings.developer]
@@ -6913,7 +6913,7 @@ usageAnalytics = "Brugsanalyse"
 [settings.planBilling]
 currentPlan = "Aktuel plan"
 loading = "Indlæser faktureringsoplysninger..."
-notAvailable = "Plan og fakturering er kun tilgængelig ved forbindelse til Stirling Cloud (SaaS-tilstand)."
+notAvailable = "Plan og fakturering er kun tilgængelig ved forbindelse til Total PDF Cloud (SaaS-tilstand)."
 title = "Plan og fakturering"
 
 [settings.planBilling.billing]
@@ -7063,16 +7063,16 @@ label = "Brugernavn"
 placeholder = "Indtast dit brugernavn"
 
 [setup.mode.saas]
-description = "Log ind med din Stirling-konto"
-title = "Stirling Cloud"
+description = "Log ind med din Total PDF-konto"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "Forbind til din egen Total PDF-server"
 title = "Selvhostet server"
 
 [setup.saas]
-subtitle = "Log ind med din Stirling-konto"
-title = "Log ind på Stirling"
+subtitle = "Log ind med din Total PDF-konto"
+title = "Log ind på Total PDF"
 
 [setup.selfhosted]
 changeServerLocked = "Din organisation har begrænset denne app til en specifik server"

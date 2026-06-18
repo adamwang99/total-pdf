@@ -228,8 +228,8 @@ class FormUtilsAdditionalTest {
             textField.setPartialName("company");
             attachWidget(setup, textField, new PDRectangle(60, 720, 220, 20));
 
-            FormUtils.applyFieldValues(doc, Map.of("company", "Stirling"), false);
-            assertEquals("Stirling", textField.getValueAsString());
+            FormUtils.applyFieldValues(doc, Map.of("company", "Total PDF"), false);
+            assertEquals("Total PDF", textField.getValueAsString());
         }
     }
 
@@ -297,7 +297,7 @@ class FormUtilsAdditionalTest {
             textField.setPartialName("company");
             attachWidget(setup, textField, new PDRectangle(60, 720, 220, 20));
 
-            FormUtils.applyFieldValues(doc, Map.of("company", "Stirling"), true, false);
+            FormUtils.applyFieldValues(doc, Map.of("company", "Total PDF"), true, false);
 
             PDAcroForm after = doc.getDocumentCatalog().getAcroForm();
             assertTrue(after == null || after.getFields().isEmpty());

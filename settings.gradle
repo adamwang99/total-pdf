@@ -49,7 +49,7 @@ buildCache {
 rootProject.name = 'Total PDF'
 
 // Flavors: core | proprietary (default) | saas.
-// Selectable via STIRLING_FLAVOR or by setting DISABLE_ADDITIONAL_FEATURES/ENABLE_SAAS directly.
+// Selectable via TOTALPDF_FLAVOR or by setting DISABLE_ADDITIONAL_FEATURES/ENABLE_SAAS directly.
 // Accepts env var, -D system property, or -P gradle property (camelCase alias too).
 
 def lookupEnvOrProperty = { String name ->
@@ -72,13 +72,13 @@ def lookupEnvOrProperty = { String name ->
 
 def asBool = { String value -> 'true'.equalsIgnoreCase(value) }
 
-def stirlingFlavor = lookupEnvOrProperty('STIRLING_FLAVOR')?.toLowerCase()
+def totalPdfFlavor = lookupEnvOrProperty('TOTALPDF_FLAVOR')?.toLowerCase()
 
 boolean disableAdditional
 boolean enableSaas
 
-if (stirlingFlavor != null && !stirlingFlavor.isEmpty()) {
-    switch (stirlingFlavor) {
+if (totalPdfFlavor != null && !totalPdfFlavor.isEmpty()) {
+    switch (totalPdfFlavor) {
         case 'core':
             disableAdditional = true
             enableSaas = false
@@ -93,7 +93,7 @@ if (stirlingFlavor != null && !stirlingFlavor.isEmpty()) {
             break
         default:
             throw new GradleException(
-                "Unknown STIRLING_FLAVOR='${stirlingFlavor}'. Expected one of: core, proprietary, saas.")
+                "Unknown TOTALPDF_FLAVOR='${totalPdfFlavor}'. Expected one of: core, proprietary, saas.")
     }
 } else {
     disableAdditional = asBool(lookupEnvOrProperty('DISABLE_ADDITIONAL_FEATURES'))
@@ -109,9 +109,9 @@ if (enableSaas && disableAdditional) {
 gradle.ext.disableAdditional = disableAdditional
 gradle.ext.enableSaas = enableSaas
 
-include 'stirling-pdf', 'common', 'proprietary'
+include 'total-pdf', 'common', 'proprietary'
 
-project(':stirling-pdf').projectDir = file('app/core')
+project(':total-pdf').projectDir = file('app/core')
 project(':common'      ).projectDir = file('app/common')
 project(':proprietary' ).projectDir = file('app/proprietary')
 

@@ -56,12 +56,12 @@ test.describe("Total PDF seed", () => {
     await expect(
       page
         .locator(
-          '.h-screen, .mobile-layout, [data-testid="dashboard"], img[alt*="Stirling"]',
+          '.h-screen, .mobile-layout, [data-testid="dashboard"], img[alt*="Total PDF"]',
         )
         .first(),
     ).toBeVisible({ timeout: 15000 });
 
     // Verify the title contains Total PDF
-    await expect(page).toHaveTitle(/Stirling/i);
+    await expect(page).toHaveTitle(/Total PDF/i);
   });
 });

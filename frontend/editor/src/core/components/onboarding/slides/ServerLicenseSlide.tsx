@@ -31,7 +31,7 @@ export default function ServerLicenseSlide({
       components={{
         strong: <strong />,
       }}
-      defaults="Our licensing permits up to <strong>{{freeTierLimit}}</strong> users for free per server. You have <strong>{{overLimitUserCopy}}</strong> Stirling users. To continue uninterrupted, upgrade to the Stirling Server plan - <strong>unlimited seats</strong>, PDF text editing, and full admin control for $99/server/mo."
+      defaults="Our licensing permits up to <strong>{{freeTierLimit}}</strong> users for free per server. You have <strong>{{overLimitUserCopy}}</strong> Total PDF users. To continue uninterrupted, upgrade to the Total PDF Server plan - <strong>unlimited seats</strong>, PDF text editing, and full admin control for $99/server/mo."
     />
   );
 
@@ -42,7 +42,7 @@ export default function ServerLicenseSlide({
       components={{
         strong: <strong />,
       }}
-      defaults="Our <strong>Open-Core</strong> licensing permits up to <strong>{{freeTierLimit}}</strong> users for free per server. To scale uninterrupted, we recommend the Stirling Server plan - <strong>unlimited seats</strong> and <strong>SSO support</strong> for $99/server/mo."
+      defaults="Our <strong>Open-Core</strong> licensing permits up to <strong>{{freeTierLimit}}</strong> users for free per server. To scale uninterrupted, we recommend the Total PDF Server plan - <strong>unlimited seats</strong> and <strong>SSO support</strong> for $99/server/mo."
     />
   );
 

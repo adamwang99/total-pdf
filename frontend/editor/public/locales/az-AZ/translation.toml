@@ -3014,7 +3014,7 @@ upgradeButton = "Hesabı yüksəlt"
 chartAriaLabel = "Kredit istifadəsi: daxili {{includedTotal}}-dən {{includedUsed}}, alınmış {{purchasedTotal}}-dən {{purchasedUsed}}"
 copyKeyAriaLabel = "API açarını kopyala"
 creditsRemaining = "Qalan kreditlər"
-description = "Stirling-in PDF alətləri paketinə çıxış üçün API açarınız. Layihənizə kopyalayın və ya yenisini yaratmaq üçün yeniləyin."
+description = "Total PDF-in PDF alətləri paketinə çıxış üçün API açarınız. Layihənizə kopyalayın və ya yenisini yaratmaq üçün yeniləyin."
 docsDescription = "Total PDF ilə inteqrasiya haqqında daha çox öyrənin:"
 docsLink = "API Sənədləri"
 docsTitle = "API Sənədləri"
@@ -3066,7 +3066,7 @@ system = "Sistem konfiqurasiyası"
 [connectionMode.status]
 localOffline = "Oflayn rejim işləyir"
 localOnline = "Oflayn rejim işləyir"
-saas = "Stirling Cloud-a qoşuldu"
+saas = "Total PDF Cloud-a qoşuldu"
 selfhostedChecking = "Öz serverinizə qoşuldu (yoxlanılır...)"
 selfhostedOffline = "Öz serveriniz əlçatmazdır"
 selfhostedOnline = "Öz serverinizə qoşuldu"
@@ -4526,7 +4526,7 @@ title = "3-cü Tərəf Lisenziyalar"
 version = "Versiya"
 
 [localMode]
-toolUnavailable = "Bu alət hesab tələb edir. İstifadə etmək üçün Stirling Cloud-a daxil olun və ya öz serverinizə qoşulun."
+toolUnavailable = "Bu alət hesab tələb edir. İstifadə etmək üçün Total PDF Cloud-a daxil olun və ya öz serverinizə qoşulun."
 
 [localMode.banner]
 message = "Bütün alətləri açmaq üçün daxil olun."
@@ -4927,7 +4927,7 @@ skipForNow = "Hələlik ötür"
 skipTheTour = "Turu keç"
 
 [onboarding.desktopInstall]
-body = "Stirling masaüstü tətbiq kimi ən yaxşı işləyir. Onu oflayn istifadə edə, sənədlərə daha sürətli baxa və düzəlişləri yerli olaraq kompüterinizdə edə bilərsiniz."
+body = "Total PDF masaüstü tətbiq kimi ən yaxşı işləyir. Onu oflayn istifadə edə, sənədlərə daha sürətli baxa və düzəlişləri yerli olaraq kompüterinizdə edə bilərsiniz."
 title = "Yüklə"
 titleWithOs = "{{osLabel}} üçün yüklə"
 
@@ -4941,8 +4941,8 @@ title = "30 günlük Pro sınağınız"
 trialEnds = "Sınaq bitir: {{date}}"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "Giriş rejimini aktivləşdirdikdən sonra istifadəçiləri idarə edə, ayarları konfiqurasiya edə və serverin vəziyyətini izləyə bilərsiniz. Serverinizdə ilk <strong>{{freeTierLimit}}</strong> nəfər Stirling-dən pulsuz istifadə edir."
-adminBodyLoginEnabled = "Admin kimi istifadəçiləri idarə edə, ayarları konfiqurasiya edə və serverin vəziyyətini izləyə bilərsiniz. Serverinizdə ilk <strong>{{freeTierLimit}}</strong> nəfər Stirling-dən pulsuz istifadə edir."
+adminBodyLoginDisabled = "Giriş rejimini aktivləşdirdikdən sonra istifadəçiləri idarə edə, ayarları konfiqurasiya edə və serverin vəziyyətini izləyə bilərsiniz. Serverinizdə ilk <strong>{{freeTierLimit}}</strong> nəfər Total PDF-dən pulsuz istifadə edir."
+adminBodyLoginEnabled = "Admin kimi istifadəçiləri idarə edə, ayarları konfiqurasiya edə və serverin vəziyyətini izləyə bilərsiniz. Serverinizdə ilk <strong>{{freeTierLimit}}</strong> nəfər Total PDF-dən pulsuz istifadə edir."
 adminTitle = "Admin icmalı"
 userBody = "Komanda yoldaşlarını dəvət edin, rollar təyin edin və sənədlərinizi bir təhlükəsiz iş mühitində səliqəli saxlayın. Tək istifadədən böyüməyə hazır olduqda giriş rejimini aktivləşdirin."
 userTitle = "Plan icmalı"
@@ -4951,9 +4951,9 @@ userTitle = "Plan icmalı"
 message = "Tətbiq son vaxtlar əhəmiyyətli dəyişikliklərdən keçib. Server administratorunun müdaxiləsi tələb oluna bilər. Davam etmək üçün rolunuzu təsdiqləyin."
 
 [onboarding.serverLicense]
-freeBody = "Bizim <strong>Open-Core</strong> lisenziyası hər server üçün pulsuz olaraq maksimum <strong>{{freeTierLimit}}</strong> istifadəçiyə icazə verir. Fasiləsiz miqyaslanmaq və yeni <strong>PDF mətn redaktəsi alətimizə</strong> erkən çıxış əldə etmək üçün Stirling Server planını tövsiyə edirik — tam redaktə və <strong>limitsiz yerlər</strong> $99/server/ay."
+freeBody = "Bizim <strong>Open-Core</strong> lisenziyası hər server üçün pulsuz olaraq maksimum <strong>{{freeTierLimit}}</strong> istifadəçiyə icazə verir. Fasiləsiz miqyaslanmaq və yeni <strong>PDF mətn redaktəsi alətimizə</strong> erkən çıxış əldə etmək üçün Total PDF Server planını tövsiyə edirik — tam redaktə və <strong>limitsiz yerlər</strong> $99/server/ay."
 freeTitle = "Server lisenziyası"
-overLimitBody = "Lisenziyalaşmamız hər server üçün pulsuz olaraq maksimum <strong>{{freeTierLimit}}</strong> istifadəçiyə icazə verir. Sizdə <strong>{{overLimitUserCopy}}</strong> Stirling istifadəçisi var. Fasiləsiz davam etmək üçün Stirling Server planına yüksəldin - <strong>limitsiz yerlər</strong>, PDF mətn redaktəsi və tam admin nəzarəti cəmi $99/server/ay."
+overLimitBody = "Lisenziyalaşmamız hər server üçün pulsuz olaraq maksimum <strong>{{freeTierLimit}}</strong> istifadəçiyə icazə verir. Sizdə <strong>{{overLimitUserCopy}}</strong> Total PDF istifadəçisi var. Fasiləsiz davam etmək üçün Total PDF Server planına yüksəldin - <strong>limitsiz yerlər</strong>, PDF mətn redaktəsi və tam admin nəzarəti cəmi $99/server/ay."
 overLimitTitle = "Server lisenziyası tələb olunur"
 seePlans = "Planlara baxın →"
 skip = "Hələlik ötür"
@@ -4973,7 +4973,7 @@ title = "Total PDF-ə xoş gəlmisiniz!"
 
 [onboarding.welcomeSlide]
 body = "Total PDF artıq hər ölçüdə komanda üçün hazırdır. Bu yeniləmə yeni düzən, güclü admin imkanları və ən çox tələb olunan xüsusiyyətimizi ehtiva edir - <strong>Mətni redaktə et</strong>."
-title = "Stirling-ə xoş gəlmisiniz"
+title = "Total PDF-ə xoş gəlmisiniz"
 
 [onboarding.whatsNew]
 activeFilesView = "Açıq olan hər şeyə baxmaq və işləyəcəyinizi seçmək üçün Aktiv Fayllardan istifadə edin."
@@ -6791,7 +6791,7 @@ user = "Daxil olub:"
 
 [settings.connection.mode]
 local = "Yalnız yerli"
-saas = "Stirling Cloud"
+saas = "Total PDF Cloud"
 selfhosted = "Öz serverində"
 
 [settings.developer]
@@ -6913,7 +6913,7 @@ usageAnalytics = "İstifadə analitikası"
 [settings.planBilling]
 currentPlan = "Cari plan"
 loading = "Hesab-faktura məlumatları yüklənir..."
-notAvailable = "Plan və Hesab-faktura yalnız Stirling Cloud-a (SaaS rejimi) qoşulduqda mövcuddur."
+notAvailable = "Plan və Hesab-faktura yalnız Total PDF Cloud-a (SaaS rejimi) qoşulduqda mövcuddur."
 title = "Plan və Hesab-faktura"
 
 [settings.planBilling.billing]
@@ -7063,16 +7063,16 @@ label = "İstifadəçi adı"
 placeholder = "İstifadəçi adınızı daxil edin"
 
 [setup.mode.saas]
-description = "Stirling hesabınızla daxil olun"
-title = "Stirling Cloud"
+description = "Total PDF hesabınızla daxil olun"
+title = "Total PDF Cloud"
 
 [setup.mode.selfhosted]
 description = "Öz Total PDF serverinizə qoşulun"
 title = "Öz serveriniz"
 
 [setup.saas]
-subtitle = "Stirling hesabınızla daxil olun"
-title = "Stirling-ə daxil olun"
+subtitle = "Total PDF hesabınızla daxil olun"
+title = "Total PDF-ə daxil olun"
 
 [setup.selfhosted]
 changeServerLocked = "Təşkilatınız bu tətbiqi konkret serverlə məhdudlaşdırıb"
