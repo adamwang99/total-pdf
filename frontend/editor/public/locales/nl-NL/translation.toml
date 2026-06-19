@@ -598,7 +598,7 @@ description = "Configureer opslag en opschoongedrag voor tijdelijke bestanden"
 label = "Beheer tijdelijke bestanden"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Basismap voor tijdelijke bestanden (laat leeg voor standaard: java.io.tmpdir/stirling-pdf)"
+description = "Basismap voor tijdelijke bestanden (laat leeg voor standaard: java.io.tmpdir/total-pdf)"
 label = "Basismap voor tijdelijke bestanden"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

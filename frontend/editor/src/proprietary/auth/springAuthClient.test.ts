@@ -50,7 +50,7 @@ describe("SpringAuthClient", () => {
         role: "USER",
       };
 
-      localStorage.setItem("stirling_jwt", mockToken);
+      localStorage.setItem("totalpdf_jwt", mockToken);
 
       vi.mocked(apiClient.get).mockResolvedValueOnce({
         status: 200,
@@ -72,7 +72,7 @@ describe("SpringAuthClient", () => {
 
     it("should clear invalid JWT on 401 error", async () => {
       const mockToken = "invalid-jwt-token";
-      localStorage.setItem("stirling_jwt", mockToken);
+      localStorage.setItem("totalpdf_jwt", mockToken);
 
       const mockError = new AxiosError(
         "Unauthorized",
@@ -92,7 +92,7 @@ describe("SpringAuthClient", () => {
 
       const result = await springAuth.getSession();
 
-      expect(localStorage.getItem("stirling_jwt")).toBeNull();
+      expect(localStorage.getItem("totalpdf_jwt")).toBeNull();
       expect(result.data.session).toBeNull();
       // 401 is handled gracefully, so error should be null
       expect(result.error).toBeNull();
@@ -100,7 +100,7 @@ describe("SpringAuthClient", () => {
 
     it("should clear invalid JWT on 403 error", async () => {
       const mockToken = "forbidden-jwt-token";
-      localStorage.setItem("stirling_jwt", mockToken);
+      localStorage.setItem("totalpdf_jwt", mockToken);
 
       const mockError = new AxiosError(
         "Forbidden",
@@ -120,7 +120,7 @@ describe("SpringAuthClient", () => {
 
       const result = await springAuth.getSession();
 
-      expect(localStorage.getItem("stirling_jwt")).toBeNull();
+      expect(localStorage.getItem("totalpdf_jwt")).toBeNull();
       expect(result.data.session).toBeNull();
       // 403 is handled gracefully, so error should be null
       expect(result.error).toBeNull();
@@ -166,7 +166,7 @@ describe("SpringAuthClient", () => {
         },
         { withCredentials: true },
       );
-      expect(localStorage.getItem("stirling_jwt")).toBe(mockToken);
+      expect(localStorage.getItem("totalpdf_jwt")).toBe(mockToken);
       expect(dispatchEventSpy).toHaveBeenCalledWith(
         expect.objectContaining({ type: "jwt-available" }),
       );
@@ -264,7 +264,7 @@ describe("SpringAuthClient", () => {
   describe("signOut", () => {
     it("should successfully sign out and clear JWT", async () => {
       const mockToken = "jwt-to-clear";
-      localStorage.setItem("stirling_jwt", mockToken);
+      localStorage.setItem("totalpdf_jwt", mockToken);
 
       vi.mocked(apiClient.post).mockResolvedValueOnce({
         status: 200,
@@ -278,13 +278,13 @@ describe("SpringAuthClient", () => {
         null,
         expect.objectContaining({ withCredentials: true }),
       );
-      expect(localStorage.getItem("stirling_jwt")).toBeNull();
+      expect(localStorage.getItem("totalpdf_jwt")).toBeNull();
       expect(result.error).toBeNull();
     });
 
     it("should clear JWT even if logout request fails", async () => {
       const mockToken = "jwt-to-clear";
-      localStorage.setItem("stirling_jwt", mockToken);
+      localStorage.setItem("totalpdf_jwt", mockToken);
 
       vi.mocked(apiClient.post).mockRejectedValueOnce({
         isAxiosError: true,
@@ -294,7 +294,7 @@ describe("SpringAuthClient", () => {
 
       const result = await springAuth.signOut();
 
-      expect(localStorage.getItem("stirling_jwt")).toBeNull();
+      expect(localStorage.getItem("totalpdf_jwt")).toBeNull();
       expect(result.error).toBeTruthy();
     });
   });
@@ -322,14 +322,14 @@ describe("SpringAuthClient", () => {
 
       const result = await springAuth.refreshSession();
 
-      expect(localStorage.getItem("stirling_jwt")).toBe(newToken);
+      expect(localStorage.getItem("totalpdf_jwt")).toBe(newToken);
       // Note: refreshSession does not dispatch jwt-available event, only notifies listeners
       expect(result.data.session?.access_token).toBe(newToken);
       expect(result.error).toBeNull();
     });
 
     it("should clear JWT and return error on 401", async () => {
-      localStorage.setItem("stirling_jwt", "expired-token");
+      localStorage.setItem("totalpdf_jwt", "expired-token");
 
       vi.mocked(apiClient.post).mockRejectedValueOnce({
         isAxiosError: true,
@@ -339,7 +339,7 @@ describe("SpringAuthClient", () => {
 
       const result = await springAuth.refreshSession();
 
-      expect(localStorage.getItem("stirling_jwt")).toBeNull();
+      expect(localStorage.getItem("totalpdf_jwt")).toBeNull();
       expect(result.data.session).toBeNull();
       expect(result.error).toBeTruthy();
     });

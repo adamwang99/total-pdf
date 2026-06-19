@@ -598,7 +598,7 @@ description = "Cấu hình lưu trữ tạm thời và hành vi dọn dẹp"
 label = "Quản lý tệp tạm"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Thư mục cơ sở cho tệp tạm (để trống dùng mặc định: java.io.tmpdir/stirling-pdf)"
+description = "Thư mục cơ sở cho tệp tạm (để trống dùng mặc định: java.io.tmpdir/total-pdf)"
 label = "Thư mục tạm cơ sở"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

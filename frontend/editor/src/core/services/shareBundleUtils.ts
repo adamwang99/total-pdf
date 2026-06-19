@@ -2,7 +2,7 @@ import JSZip from "jszip";
 
 import type { ShareBundleManifest } from "@app/services/serverStorageBundle";
 
-const MANIFEST_FILENAME = "stirling-share.json";
+const MANIFEST_FILENAME = "totalpdf-share.json";
 
 export function parseContentDispositionFilename(
   disposition?: string,

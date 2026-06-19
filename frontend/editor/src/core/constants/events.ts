@@ -1,10 +1,10 @@
 import type { LicenseNotice } from "@app/types/types";
 
-export const SERVER_LICENSE_REQUEST_EVENT = "stirling:server-license-requested";
-export const UPGRADE_BANNER_TEST_EVENT = "stirling:upgrade-banner-test";
-export const UPGRADE_BANNER_ALERT_EVENT = "stirling:upgrade-banner-alert";
-export const START_TOUR_EVENT = "stirling:start-tour";
-export const TOUR_STATE_EVENT = "stirling:tour-state";
+export const SERVER_LICENSE_REQUEST_EVENT = "totalpdf:server-license-requested";
+export const UPGRADE_BANNER_TEST_EVENT = "totalpdf:upgrade-banner-test";
+export const UPGRADE_BANNER_ALERT_EVENT = "totalpdf:upgrade-banner-alert";
+export const START_TOUR_EVENT = "totalpdf:start-tour";
+export const TOUR_STATE_EVENT = "totalpdf:tour-state";
 
 export interface ServerLicenseRequestPayload {
   licenseNotice?: Partial<LicenseNotice>;

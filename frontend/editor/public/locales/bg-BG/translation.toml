@@ -598,7 +598,7 @@ description = "Конфигурирайте съхранението и почи
 label = "Управление на временни файлове"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Базова директория за временни файлове (оставете празно за подразбиране: java.io.tmpdir/stirling-pdf)"
+description = "Базова директория за временни файлове (оставете празно за подразбиране: java.io.tmpdir/total-pdf)"
 label = "Базова временна директория"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

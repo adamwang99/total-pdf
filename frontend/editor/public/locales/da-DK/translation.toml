@@ -598,7 +598,7 @@ description = "Konfigurer lagring af midlertidige filer og oprydningsadfærd"
 label = "Håndtering af midlertidige filer"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Basismappe til midlertidige filer (lad tom for standard: java.io.tmpdir/stirling-pdf)"
+description = "Basismappe til midlertidige filer (lad tom for standard: java.io.tmpdir/total-pdf)"
 label = "Basis-mappe for midlertidige filer"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

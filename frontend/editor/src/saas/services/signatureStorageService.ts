@@ -17,7 +17,7 @@ interface SignatureStorageCapabilities {
 class SignatureStorageService {
   private capabilities: SignatureStorageCapabilities | null = null;
   private blobUrls: Set<string> = new Set();
-  private readonly STORAGE_KEY = "stirling:saved-signatures:v1";
+  private readonly STORAGE_KEY = "totalpdf:saved-signatures:v1";
 
   /**
    * Detect capabilities - in SaaS mode, always returns localStorage

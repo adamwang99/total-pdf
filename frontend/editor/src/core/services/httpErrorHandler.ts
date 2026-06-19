@@ -17,7 +17,7 @@ const recentSpecialByEndpoint: Record<string, number> = {};
 const SPECIAL_SUPPRESS_MS = 1500; // brief window to suppress generic duplicate after special toast
 
 // Mirrors the key in proprietary/auth/springAuthClient.ts; AuthCallback consumes it.
-const POST_LOGIN_REDIRECT_STORAGE_KEY = "stirling_post_login_path";
+const POST_LOGIN_REDIRECT_STORAGE_KEY = "totalpdf_post_login_path";
 
 function isSafePostLoginPath(path: string): boolean {
   if (
@@ -77,7 +77,7 @@ export async function handleHttpError(error: any): Promise<boolean> {
       stashPostLoginRedirect(currentLocation);
       let hadStoredJwt = false;
       try {
-        hadStoredJwt = Boolean(localStorage.getItem("stirling_jwt"));
+        hadStoredJwt = Boolean(localStorage.getItem("totalpdf_jwt"));
       } catch {
         // ignore storage access failures
       }

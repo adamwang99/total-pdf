@@ -598,7 +598,7 @@ description = "Configurar armazenamento de ficheiros temporários e comportament
 label = "Gestão de ficheiros temporários"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Diretório base para ficheiros temporários (deixe vazio para predefinição: java.io.tmpdir/stirling-pdf)"
+description = "Diretório base para ficheiros temporários (deixe vazio para predefinição: java.io.tmpdir/total-pdf)"
 label = "Diretório base temporário"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

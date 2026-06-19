@@ -64,7 +64,7 @@ export const test = base.extend<StubFixtures>({
       // so those overlays don't block clicks.
       await bypassOnboarding(page);
       await page.addInitScript((token) => {
-        localStorage.setItem("stirling_jwt", token);
+        localStorage.setItem("totalpdf_jwt", token);
       }, STUB_JWT);
     } else {
       await skipOnboarding(page);

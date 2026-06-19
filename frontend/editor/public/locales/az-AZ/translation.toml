@@ -598,7 +598,7 @@ description = "Müvəqqəti fayl saxlama və təmizləmə davranışını konfiq
 label = "Müvəqqəti Fayl İdarəetməsi"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Müvəqqəti fayllar üçün baza qovluq (defolt üçün boş saxlayın: java.io.tmpdir/stirling-pdf)"
+description = "Müvəqqəti fayllar üçün baza qovluq (defolt üçün boş saxlayın: java.io.tmpdir/total-pdf)"
 label = "Baza Müvəqqəti Qovluq"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

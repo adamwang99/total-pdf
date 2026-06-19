@@ -104,8 +104,8 @@ test.describe("1. Authentication and Login", () => {
       // then re-add the cookie consent cookie so the banner doesn't block after redirect
       await page.context().clearCookies();
       await page.evaluate(() => {
-        localStorage.removeItem("stirling_jwt");
-        localStorage.removeItem("stirling_refresh_token");
+        localStorage.removeItem("totalpdf_jwt");
+        localStorage.removeItem("totalpdf_refresh_token");
       });
       await page.context().addCookies([
         {

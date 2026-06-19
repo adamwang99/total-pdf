@@ -94,7 +94,7 @@ export async function buildHistoryBundle(
     entries,
   };
 
-  zip.file("stirling-share.json", JSON.stringify(manifest, null, 2));
+  zip.file("totalpdf-share.json", JSON.stringify(manifest, null, 2));
 
   const zipBlob = await zip.generateAsync({
     type: "blob",
@@ -157,7 +157,7 @@ export async function buildSharePackage(stubs: StirlingFileStub[]): Promise<{
     entries,
   };
 
-  zip.file("stirling-share.json", JSON.stringify(manifest, null, 2));
+  zip.file("totalpdf-share.json", JSON.stringify(manifest, null, 2));
 
   const zipBlob = await zip.generateAsync({
     type: "blob",

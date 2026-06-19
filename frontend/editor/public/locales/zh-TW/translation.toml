@@ -598,7 +598,7 @@ description = "設定暫存檔案的儲存與清理行為"
 label = "暫存檔案管理"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "暫存檔案的基本目錄（留空使用預設：java.io.tmpdir/stirling-pdf）"
+description = "暫存檔案的基本目錄（留空使用預設：java.io.tmpdir/total-pdf）"
 label = "基本暫存目錄"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

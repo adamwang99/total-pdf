@@ -215,7 +215,7 @@ class JwtServiceTest {
         assertEquals("IT", extractedClaims.get("department"));
         assertEquals(username, extractedClaims.get("sub"));
         // Verify the constant issuer is set correctly
-        assertEquals("https://stirling.com", extractedClaims.get("iss"));
+        assertEquals("https://totalpdf.info", extractedClaims.get("iss"));
     }
 
     @Test

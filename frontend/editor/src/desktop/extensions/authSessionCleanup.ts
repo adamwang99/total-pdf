@@ -20,7 +20,7 @@ export async function clearPlatformAuthOnLoginInit(): Promise<void> {
     // If token exists, user just logged in and we should keep it
     const token =
       typeof window !== "undefined"
-        ? localStorage.getItem("stirling_jwt")
+        ? localStorage.getItem("totalpdf_jwt")
         : null;
     console.log(
       "[AuthCleanup] Login init check - token exists:",

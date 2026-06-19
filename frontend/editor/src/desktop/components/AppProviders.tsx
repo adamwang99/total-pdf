@@ -40,6 +40,8 @@ const COMMON_TOOL_ENDPOINTS = [
   "/api/v1/general/extract-pages",
 ];
 
+const loginEnabled = DESKTOP_DEFAULT_APP_CONFIG.enableLogin !== false;
+
 /**
  * Desktop application providers
  * Wraps proprietary providers and adds desktop-specific configuration
@@ -51,7 +53,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
   const [connectionMode, setConnectionMode] = useState<
     "saas" | "selfhosted" | "local" | null
   >(null);
-  const [authChecked, setAuthChecked] = useState(false);
+  const [authChecked, setAuthChecked] = useState(loginEnabled ? false : true);
   const [pendingSignIn, setPendingSignIn] = useState(false);
   // Prevent first-launch setup from running twice when connectionMode state update re-triggers the effect
   const firstLaunchInitiated = useRef(false);
@@ -84,6 +86,9 @@ export function AppProviders({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
+    // Desktop standalone mode: login is disabled, skip all auth checks
+    if (!loginEnabled) return;
+
     // Wait until connection mode is loaded before checking auth
     if (connectionMode === null) return;
 
@@ -169,7 +174,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
         .catch(console.error)
         .finally(() => setAuthChecked(true));
     }
-  }, [isFirstLaunch, setupComplete, connectionMode]);
+  }, [loginEnabled, isFirstLaunch, setupComplete, connectionMode]);
 
   // Initialize backend health monitoring for self-hosted mode
   useEffect(() => {
@@ -239,12 +244,13 @@ export function AppProviders({ children }: { children: ReactNode }) {
   // `if (!cfg?.lock_connection_mode)` branches above, so locked deployments never set
   // pendingSignIn and therefore never reach this dispatch.
   useEffect(() => {
+    if (!loginEnabled) return;
     if (!authChecked || !pendingSignIn) return;
     window.dispatchEvent(
       new CustomEvent(OPEN_SIGN_IN_EVENT, { detail: { locked: false } }),
     );
     setPendingSignIn(false);
-  }, [authChecked, pendingSignIn]);
+  }, [loginEnabled, authChecked, pendingSignIn]);
 
   useEffect(() => {
     if (!authChecked) {
@@ -282,6 +288,31 @@ export function AppProviders({ children }: { children: ReactNode }) {
     );
   }
 
+  // Desktop standalone mode: skip SaaS providers entirely — no billing, no teams, no credit checks.
+  // These providers call auth/subscription APIs that may trigger sign-in prompts.
+  if (!loginEnabled) {
+    return (
+      <ProprietaryAppProviders
+        appConfigRetryOptions={{
+          maxRetries: 5,
+          initialDelay: 1000,
+        }}
+        appConfigProviderProps={{
+          initialConfig: DESKTOP_DEFAULT_APP_CONFIG,
+          bootstrapMode: "non-blocking",
+          autoFetch: false,
+        }}
+      >
+        <DesktopConfigSync />
+        <DesktopBannerInitializer />
+        <SaveShortcutListener />
+        {children}
+        <DesktopOnboardingModal />
+        <SignInModal />
+      </ProprietaryAppProviders>
+    );
+  }
+
   // Normal app flow
   return (
     <ProprietaryAppProviders
@@ -309,9 +340,9 @@ export function AppProviders({ children }: { children: ReactNode }) {
               <SaveShortcutListener />
               <CreditModalBootstrap />
               {children}
-              {/* Desktop onboarding modal: welcome slide → sign-in slide, shown once on first launch */}
+              {/* Desktop onboarding modal: welcome slide only — shown once on first launch */}
               <DesktopOnboardingModal />
-              {/* Global sign-in modal, opened via stirling:open-sign-in event */}
+              {/* Global sign-in modal, opened via totalpdf:open-sign-in event */}
               <SignInModal />
             </SaaSCheckoutProvider>
           </SaasBillingProvider>

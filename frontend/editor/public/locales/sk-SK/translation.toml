@@ -598,7 +598,7 @@ description = "Nakonfigurujte ukladanie dočasných súborov a správanie čiste
 label = "Správa dočasných súborov"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Základný adresár pre dočasné súbory (ponechajte prázdne pre predvolené: java.io.tmpdir/stirling-pdf)"
+description = "Základný adresár pre dočasné súbory (ponechajte prázdne pre predvolené: java.io.tmpdir/total-pdf)"
 label = "Základný dočasný adresár"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

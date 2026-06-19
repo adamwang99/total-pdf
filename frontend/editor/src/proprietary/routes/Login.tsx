@@ -76,9 +76,9 @@ export default function Login() {
   const isSsoOnlyMode = loginMethod !== "all" && loginMethod !== "normal";
   const isSingleSsoOnly = !isUserPassAllowed && enabledProviders.length === 1;
 
-  const AUTO_LOGIN_ATTEMPTS_KEY = "stirling_sso_auto_login_attempts";
-  const AUTO_LOGIN_ERRORS_KEY = "stirling_sso_auto_login_errors";
-  const AUTO_LOGIN_LOGOUT_KEY = "stirling_sso_auto_login_logged_out";
+  const AUTO_LOGIN_ATTEMPTS_KEY = "totalpdf_sso_auto_login_attempts";
+  const AUTO_LOGIN_ERRORS_KEY = "totalpdf_sso_auto_login_errors";
+  const AUTO_LOGIN_LOGOUT_KEY = "totalpdf_sso_auto_login_logged_out";
   const MAX_AUTO_LOGIN_ATTEMPTS = 2;
   const MAX_AUTO_LOGIN_ERRORS = 1;
 
@@ -234,7 +234,7 @@ export default function Login() {
         }
 
         // Use the full paths from providerList as provider identifiers
-        // The backend provides paths like "/oauth2/authorization/google" or "/saml2/authenticate/stirling"
+        // The backend provides paths like "/oauth2/authorization/google" or "/saml2/authenticate/totalpdf"
         // We'll use these full paths so the auth client knows where to redirect
         const providerPaths = Object.keys(data.providerList || {});
 

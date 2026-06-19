@@ -598,7 +598,7 @@ description = "Настройка хранения временных файло
 label = "Управление временными файлами"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Базовый каталог для временных файлов (оставьте пустым по умолчанию: java.io.tmpdir/stirling-pdf)"
+description = "Базовый каталог для временных файлов (оставьте пустым по умолчанию: java.io.tmpdir/total-pdf)"
 label = "Базовый каталог временных файлов"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

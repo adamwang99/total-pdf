@@ -6,7 +6,7 @@ import { bypassOnboarding } from "@app/tests/helpers/api-stubs";
  * OAuth login round-trip via Keycloak.
  *
  * Requires the docker-compose-keycloak-oauth stack to be running:
- *   - Keycloak on http://localhost:9080 with realm `stirling-oauth`
+ *   - Keycloak on http://localhost:9080 with realm `totalpdf-oauth`
  *   - Total PDF on http://localhost:8080 with PREMIUM_KEY set
  *
  * Validates:
@@ -43,7 +43,7 @@ test.describe("Enterprise OAuth (Keycloak) — full SSO flow", () => {
     await expect(keycloakBtn).toBeVisible({ timeout: 10_000 });
     await keycloakBtn.click();
 
-    await page.waitForURL(/\/realms\/stirling-oauth\/protocol\/openid-connect/);
+    await page.waitForURL(/\/realms\/totalpdf-oauth\/protocol\/openid-connect/);
     await page.locator("#username").fill("oauthuser@example.com");
     await page.locator("#password").fill("oauthpassword");
     await page.locator('input[type="submit"], button[type="submit"]').click();

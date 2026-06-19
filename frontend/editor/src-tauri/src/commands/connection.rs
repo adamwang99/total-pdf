@@ -37,7 +37,7 @@ pub async fn get_connection_config(
     let mode = store
         .get(CONNECTION_MODE_KEY)
         .and_then(|v| serde_json::from_value(v.clone()).ok())
-        .unwrap_or(ConnectionMode::SaaS);
+        .unwrap_or(ConnectionMode::Local);
 
     let server_config: Option<ServerConfig> = store
         .get(SERVER_CONFIG_KEY)

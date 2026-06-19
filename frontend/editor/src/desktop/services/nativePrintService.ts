@@ -40,7 +40,7 @@ export async function printPdfNatively(
 
   const tempPath = await join(
     await tempDir(),
-    `stirling-print-${crypto.randomUUID()}-${sanitizeFileName(fileName)}`,
+    `totalpdf-print-${crypto.randomUUID()}-${sanitizeFileName(fileName)}`,
   );
 
   await writeFile(tempPath, new Uint8Array(await source.arrayBuffer()));

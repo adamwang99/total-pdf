@@ -598,7 +598,7 @@ description = "Configura el almacenamiento de archivos temporales y el comportam
 label = "Gestión de archivos temporales"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Directorio base para archivos temporales (dejar vacío para el valor predeterminado: java.io.tmpdir/stirling-pdf)"
+description = "Directorio base para archivos temporales (dejar vacío para el valor predeterminado: java.io.tmpdir/total-pdf)"
 label = "Directorio temporal base"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

@@ -3,7 +3,7 @@
  * Generates and persists a unique UUID in localStorage for WAU tracking
  */
 
-const BROWSER_ID_KEY = "stirling_browser_id";
+const BROWSER_ID_KEY = "totalpdf_browser_id";
 
 /**
  * Gets or creates a unique browser identifier

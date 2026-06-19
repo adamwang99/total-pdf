@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0060f0"/>
+      <stop offset="1" stop-color="#00d0d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="420" fill="white"/>
+
+  <!-- icon -->
+  <g transform="translate(70,40) scale(0.66)">
+    <path d="M120 96 h212 l84 84 v236 a24 24 0 0 1 -24 24 h-248 a24 24 0 0 1 -24 -24 v-296 a24 24 0 0 1 24 -24 z"
+          fill="none" stroke="url(#g)" stroke-width="34" stroke-linejoin="round"/>
+    <path d="M332 96 l84 84 h-60 a24 24 0 0 1 -24 -24 z" fill="none" stroke="url(#g)" stroke-width="34" stroke-linejoin="round"/>
+    <circle cx="256" cy="300" r="86" fill="none" stroke="url(#g)" stroke-width="34"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="430" y="240" font-size="170" font-family="DejaVu Sans, Arial, sans-serif" font-weight="800" fill="#001020">Total<tspan fill="url(#g)"> PDF</tspan></text>
+  <text x="434" y="320" font-size="46" font-family="DejaVu Sans, Arial, sans-serif" font-weight="500" fill="#64748b" letter-spacing="7">COMPLETE PDF TOOLKIT</text>
+</svg>

@@ -598,7 +598,7 @@ description = "پیکربندی ذخیره‌سازی فایل‌های موقت
 label = "مدیریت فایل‌های موقت"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "دایرکتوری پایه برای فایل‌های موقت (خالی بگذارید برای پیش‌فرض: java.io.tmpdir/stirling-pdf)"
+description = "دایرکتوری پایه برای فایل‌های موقت (خالی بگذارید برای پیش‌فرض: java.io.tmpdir/total-pdf)"
 label = "دایرکتوری موقت پایه"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

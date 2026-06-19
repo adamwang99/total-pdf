@@ -22,7 +22,7 @@ async function setUpAdminPage(
   await bypassOnboarding(page);
   await page.addInitScript(() => {
     localStorage.setItem(
-      "stirling_jwt",
+      "totalpdf_jwt",
       "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiJ9.signature",
     );
   });

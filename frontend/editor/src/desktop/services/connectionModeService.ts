@@ -37,8 +37,8 @@ export interface ConnectionTestResult {
   diagnostics?: DiagnosticResult[];
 }
 
-export const LOCAL_MODE_STORAGE_KEY = "stirling-local-mode";
-export const JWT_EXPIRED_PROMPTED_KEY = "stirling-jwt-expired-prompted";
+export const LOCAL_MODE_STORAGE_KEY = "totalpdf-local-mode";
+export const JWT_EXPIRED_PROMPTED_KEY = "totalpdf-jwt-expired-prompted";
 
 export class ConnectionModeService {
   private static instance: ConnectionModeService;

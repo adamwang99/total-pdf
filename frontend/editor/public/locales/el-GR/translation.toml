@@ -598,7 +598,7 @@ description = "Ρυθμίστε την αποθήκευση και τον καθ
 label = "Διαχείριση προσωρινών αρχείων"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Βασικός κατάλογος για προσωρινά αρχεία (αφήστε κενό για προεπιλογή: java.io.tmpdir/stirling-pdf)"
+description = "Βασικός κατάλογος για προσωρινά αρχεία (αφήστε κενό για προεπιλογή: java.io.tmpdir/total-pdf)"
 label = "Βασικός κατάλογος προσωρινών"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

@@ -692,7 +692,7 @@ const useSAML2Provider = (): Provider => {
           "provider.saml2.registrationId.description",
           "The name of your Service Provider (SP) app name",
         ),
-        defaultValue: "stirling",
+        defaultValue: "totalpdf",
       },
       {
         key: "idpMetadataUri",

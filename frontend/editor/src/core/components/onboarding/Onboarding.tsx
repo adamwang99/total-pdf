@@ -97,6 +97,7 @@ export default function Onboarding() {
     if (
       !isLoading &&
       !analyticsModalDismissed &&
+      serverExperience.loginEnabled &&
       serverExperience.effectiveIsAdmin &&
       config?.enableAnalytics == null
     ) {

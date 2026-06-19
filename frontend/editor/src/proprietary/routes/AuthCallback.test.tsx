@@ -74,7 +74,7 @@ describe("AuthCallback", () => {
 
     await waitFor(() => {
       // Verify JWT was stored
-      expect(localStorage.getItem("stirling_jwt")).toBe(mockToken);
+      expect(localStorage.getItem("totalpdf_jwt")).toBe(mockToken);
 
       // Verify jwt-available event was dispatched
       expect(dispatchEventSpy).toHaveBeenCalledWith(
@@ -104,7 +104,7 @@ describe("AuthCallback", () => {
         replace: true,
         state: { error: "OAuth login failed - no token received." },
       });
-      expect(localStorage.getItem("stirling_jwt")).toBeNull();
+      expect(localStorage.getItem("totalpdf_jwt")).toBeNull();
     });
   });
 
@@ -126,7 +126,7 @@ describe("AuthCallback", () => {
 
     await waitFor(() => {
       // JWT should be stored initially
-      expect(localStorage.getItem("stirling_jwt")).toBeNull(); // Cleared after validation failure
+      expect(localStorage.getItem("totalpdf_jwt")).toBeNull(); // Cleared after validation failure
 
       // Verify redirect to login
       expect(mockNavigate).toHaveBeenCalledWith("/login", {

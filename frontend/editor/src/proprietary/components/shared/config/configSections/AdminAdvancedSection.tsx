@@ -874,7 +874,7 @@ export default function AdminAdvancedSection() {
                   "admin.settings.advanced.tempFileManagement.prefix.description",
                   "Prefix for temp file names",
                 )}
-                value={settings.tempFileManagement?.prefix || "stirling-pdf-"}
+                value={settings.tempFileManagement?.prefix || "total-pdf-"}
                 onChange={(e) =>
                   setSettings({
                     ...settings,

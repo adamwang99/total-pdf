@@ -15,7 +15,6 @@ import styles from "@app/components/layout/Workbench.module.css";
 
 import WorkbenchBar from "@app/components/shared/WorkbenchBar";
 import LandingPage from "@app/components/shared/LandingPage";
-import Footer from "@app/components/shared/Footer";
 import DismissAllErrorsButton from "@app/components/shared/DismissAllErrorsButton";
 
 // Workbench panels are loaded on demand. Viewer pulls in pdfjs-dist and the
@@ -227,14 +226,6 @@ export default function Workbench() {
         </Suspense>
       </Box>
 
-      <Footer
-        analyticsEnabled={config?.enableAnalytics === true}
-        termsAndConditions={config?.termsAndConditions}
-        privacyPolicy={config?.privacyPolicy}
-        cookiePolicy={config?.cookiePolicy}
-        impressum={config?.impressum}
-        accessibilityStatement={config?.accessibilityStatement}
-      />
     </Box>
   );
 }

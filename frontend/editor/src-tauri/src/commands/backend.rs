@@ -89,7 +89,7 @@ fn find_stirling_jar(resource_dir: &PathBuf) -> Result<PathBuf, String> {
             path.extension().and_then(|s| s.to_str()).map(|ext| ext.eq_ignore_ascii_case("jar")).unwrap_or(false)
                 && path.file_name()
                     .and_then(|f| f.to_str())
-                    .map(|name| name.to_ascii_lowercase().contains("stirling-pdf"))
+                    .map(|name| name.to_ascii_lowercase().contains("total-pdf"))
                     .unwrap_or(false)
         })
         .collect();
@@ -252,6 +252,13 @@ fn run_stirling_pdf_jar(app: &tauri::AppHandle, java_path: &PathBuf, jar_path: &
         }
     }
 
+    // Build PATH for the backend process — ensure Homebrew and Python tools are discoverable
+    let current_path = std::env::var("PATH").unwrap_or_default();
+    let custom_path = format!(
+        "/opt/homebrew/bin:/Applications/LibreOffice.app/Contents/MacOS:/Users/tuan/Library/Python/3.9/bin:{}",
+        current_path
+    );
+
     let sidecar_command = app
         .shell()
         .command(java_path.to_str().unwrap())
@@ -260,7 +267,9 @@ fn run_stirling_pdf_jar(app: &tauri::AppHandle, java_path: &PathBuf, jar_path: &
         .env("TAURI_PARENT_PID", std::process::id().to_string())
         .env("STIRLING_PDF_CONFIG_DIR", config_dir.to_str().unwrap())
         .env("STIRLING_PDF_LOG_DIR", log_dir.to_str().unwrap())
-        .env("STIRLING_PDF_WORK_DIR", work_dir.to_str().unwrap());
+        .env("STIRLING_PDF_WORK_DIR", work_dir.to_str().unwrap())
+        .env("PATH", &custom_path)
+        .env("TESSDATA_PREFIX", "/opt/homebrew/share/tessdata");
 
     add_log("⚙️ Starting backend with bundled JRE...".to_string());
 

@@ -2,7 +2,7 @@
  * Helper utilities for clearing cached OAuth redirect/session state
  */
 
-const OAUTH_REDIRECT_COOKIE = "stirling_redirect_path";
+const OAUTH_REDIRECT_COOKIE = "totalpdf_redirect_path";
 
 /**
  * Clear any persisted OAuth redirect path/cached state so the app

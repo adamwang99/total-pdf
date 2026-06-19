@@ -214,7 +214,7 @@ class SignatureStorageService {
   }
 
   // LocalStorage methods
-  private readonly STORAGE_KEY = "stirling:saved-signatures:v1";
+  private readonly STORAGE_KEY = "totalpdf:saved-signatures:v1";
 
   private _loadFromLocalStorage(): SavedSignature[] {
     try {

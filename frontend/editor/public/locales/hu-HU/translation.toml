@@ -598,7 +598,7 @@ description = "Ideiglenes fájltárolás és takarítási viselkedés konfigurá
 label = "Ideiglenes fájlok kezelése"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Alapkönyvtár az ideiglenes fájlokhoz (hagyja üresen az alapértelmezettért: java.io.tmpdir/stirling-pdf)"
+description = "Alapkönyvtár az ideiglenes fájlokhoz (hagyja üresen az alapértelmezettért: java.io.tmpdir/total-pdf)"
 label = "Alap ideiglenes könyvtár"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

@@ -598,7 +598,7 @@ description = "Konfigurirajte shranjevanje in vedenje čiščenja začasnih dato
 label = "Upravljanje začasnih datotek"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Osnovni imenik za začasne datoteke (pustite prazno za privzeto: java.io.tmpdir/stirling-pdf)"
+description = "Osnovni imenik za začasne datoteke (pustite prazno za privzeto: java.io.tmpdir/total-pdf)"
 label = "Osnovni imenik za začasne datoteke"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

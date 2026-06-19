@@ -48,7 +48,7 @@ export default function AuthCallback() {
 
       if (
         typeof window !== "undefined" &&
-        window.sessionStorage.getItem("stirling_sso_auto_login_logged_out") ===
+        window.sessionStorage.getItem("totalpdf_sso_auto_login_logged_out") ===
           "1"
       ) {
         console.warn(
@@ -102,7 +102,7 @@ export default function AuthCallback() {
         );
 
         // Store JWT in localStorage
-        localStorage.setItem("stirling_jwt", token);
+        localStorage.setItem("totalpdf_jwt", token);
         console.log(
           `[AuthCallback:${executionId}] ✓ JWT stored in localStorage`,
         );
@@ -129,7 +129,7 @@ export default function AuthCallback() {
             `[AuthCallback:${executionId}] ❌ Failed to validate token:`,
             error,
           );
-          localStorage.removeItem("stirling_jwt");
+          localStorage.removeItem("totalpdf_jwt");
           navigate("/login", {
             replace: true,
             state: { error: "OAuth login failed - invalid token." },

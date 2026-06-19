@@ -106,7 +106,7 @@ export function getFormFillFileId(
   if (!file) return null;
 
   if (isStirlingFile(file)) {
-    return `stirling-${file.fileId}`;
+    return `totalpdf-${file.fileId}`;
   }
 
   if (file instanceof File) {

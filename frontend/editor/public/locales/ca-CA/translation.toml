@@ -598,7 +598,7 @@ description = "Configureu l'emmagatzematge de fitxers temporals i el comportamen
 label = "Gestió de fitxers temporals"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Directori base per als fitxers temporals (deixeu-ho buit per al valor per defecte: java.io.tmpdir/stirling-pdf)"
+description = "Directori base per als fitxers temporals (deixeu-ho buit per al valor per defecte: java.io.tmpdir/total-pdf)"
 label = "Directori temporal base"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

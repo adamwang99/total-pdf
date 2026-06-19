@@ -5,7 +5,7 @@ import { useAuth } from "@app/auth/UseSession";
 import SaasOnboardingModal from "@app/components/onboarding/SaasOnboardingModal";
 
 const STORAGE_KEY = "saas_onboarding_seen";
-const ONBOARDING_SESSION_BLOCK_KEY = "stirling-onboarding-session-active";
+const ONBOARDING_SESSION_BLOCK_KEY = "totalpdf-onboarding-session-active";
 
 /**
  * SaaS-only bootstrap to clear deferred tour requests, mark tool panel prompt as completed,

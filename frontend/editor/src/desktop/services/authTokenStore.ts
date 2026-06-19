@@ -1,6 +1,6 @@
 import { invoke } from "@tauri-apps/api/core";
 
-const TOKEN_KEY = "stirling_jwt";
+const TOKEN_KEY = "totalpdf_jwt";
 
 /**
  * Read auth token from any available source (Tauri store or localStorage).

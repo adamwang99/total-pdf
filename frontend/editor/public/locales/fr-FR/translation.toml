@@ -598,7 +598,7 @@ description = "Configurer le stockage des fichiers temporaires et le comportemen
 label = "Gestion des fichiers temporaires"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Répertoire de base pour les fichiers temporaires (laisser vide pour la valeur par défaut : java.io.tmpdir/stirling-pdf)"
+description = "Répertoire de base pour les fichiers temporaires (laisser vide pour la valeur par défaut : java.io.tmpdir/total-pdf)"
 label = "Répertoire temporaire de base"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

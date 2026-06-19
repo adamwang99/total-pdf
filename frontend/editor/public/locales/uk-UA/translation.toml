@@ -598,7 +598,7 @@ description = "Налаштуйте зберігання тимчасових ф
 label = "Керування тимчасовими файлами"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Базовий каталог для тимчасових файлів (залиште порожнім для типового: java.io.tmpdir/stirling-pdf)"
+description = "Базовий каталог для тимчасових файлів (залиште порожнім для типового: java.io.tmpdir/total-pdf)"
 label = "Базовий тимчасовий каталог"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

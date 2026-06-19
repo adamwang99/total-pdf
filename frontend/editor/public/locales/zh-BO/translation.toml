@@ -598,7 +598,7 @@ description = "配置临时文件存储和清理行为"
 label = "临时文件管理"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "临时文件的基础目录（留空使用默认：java.io.tmpdir/stirling-pdf）"
+description = "临时文件的基础目录（留空使用默认：java.io.tmpdir/total-pdf）"
 label = "基础临时目录"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

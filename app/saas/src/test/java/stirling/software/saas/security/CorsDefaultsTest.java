@@ -24,9 +24,9 @@ class CorsDefaultsTest {
                     "http://localhost:3000",
                     "http://localhost:5173",
                     "http://localhost:8080",
-                    "https://stirling.com",
-                    "https://app.stirling.com",
-                    "https://api.stirling.com");
+                    "https://totalpdf.info",
+                    "https://app.totalpdf.info",
+                    "https://api.totalpdf.info");
 
     @Test
     void defaultCorsOriginsContainNoWildcards() {

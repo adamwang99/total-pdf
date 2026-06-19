@@ -16,7 +16,7 @@ async function setUpFirstLoginPage(page: Page) {
   // orchestrator's checkFirstLogin effect actually fires.
   await page.addInitScript(() => {
     localStorage.setItem(
-      "stirling_jwt",
+      "totalpdf_jwt",
       // Minimal JWT-shape value — the proprietary client only checks presence
       // before deciding to call /account, then trusts the API mocks.
       "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiJ9.signature",

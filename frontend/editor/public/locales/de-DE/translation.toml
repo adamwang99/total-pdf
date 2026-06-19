@@ -598,7 +598,7 @@ description = "Speicherung und Bereinigung temporärer Dateien konfigurieren"
 label = "Verwaltung temporärer Dateien"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Basisverzeichnis für temporäre Dateien (leer lassen für Standard: java.io.tmpdir/stirling-pdf)"
+description = "Basisverzeichnis für temporäre Dateien (leer lassen für Standard: java.io.tmpdir/total-pdf)"
 label = "Basis-Verzeichnis für temporäre Dateien"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

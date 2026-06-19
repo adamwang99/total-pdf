@@ -598,7 +598,7 @@ description = "താൽക്കാലിക ഫയൽ സംഭരണവും
 label = "ടെംപ് ഫയൽ മാനേജ്മെന്റ്"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "താൽക്കാലിക ഫയലുകളുടെ അടിസ്ഥാന ഡയറക്ടറി (ഡീഫാൾട്ട് ഉപയോഗിക്കാൻ ശൂന്യം വിടുക: java.io.tmpdir/stirling-pdf)"
+description = "താൽക്കാലിക ഫയലുകളുടെ അടിസ്ഥാന ഡയറക്ടറി (ഡീഫാൾട്ട് ഉപയോഗിക്കാൻ ശൂന്യം വിടുക: java.io.tmpdir/total-pdf)"
 label = "ബേസ് ടെംപ് ഡയറക്ടറി"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

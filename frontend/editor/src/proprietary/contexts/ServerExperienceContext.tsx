@@ -17,7 +17,7 @@ import {
   getSimulatedWauResponse,
 } from "@app/testing/serverExperienceSimulations";
 
-const SELF_REPORTED_ADMIN_KEY = "stirling-self-reported-admin";
+const SELF_REPORTED_ADMIN_KEY = "totalpdf-self-reported-admin";
 const FREE_TIER_LIMIT = 5;
 
 type UserCountSource = "admin" | "estimate" | "unknown";

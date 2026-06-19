@@ -355,7 +355,7 @@ public class SigningFinalizationService {
                 final float logoY = PAGE_H - HEADER_H + (HEADER_H - LOGO_H) / 2f;
                 try {
                     ClassPathResource logoRes =
-                            new ClassPathResource("static/images/stirling-logo-white.png");
+                            new ClassPathResource("static/images/total-pdf-logo-white.png");
                     try (InputStream logoIn = logoRes.getInputStream()) {
                         BufferedImage logoImg = ImageIO.read(logoIn);
                         if (logoImg != null) {

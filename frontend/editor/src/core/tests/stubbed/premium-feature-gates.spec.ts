@@ -56,7 +56,7 @@ test.describe("Premium / endpoint gating", () => {
     // dashboard chrome never renders.
     await page.addInitScript(() => {
       localStorage.setItem(
-        "stirling_jwt",
+        "totalpdf_jwt",
         "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIn0.signature",
       );
     });

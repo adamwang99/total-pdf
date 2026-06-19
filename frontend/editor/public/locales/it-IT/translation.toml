@@ -598,7 +598,7 @@ description = "Configura l'archiviazione e la pulizia dei file temporanei"
 label = "Gestione file temporanei"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Directory base per i file temporanei (lascia vuoto per default: java.io.tmpdir/stirling-pdf)"
+description = "Directory base per i file temporanei (lascia vuoto per default: java.io.tmpdir/total-pdf)"
 label = "Directory temporanea base"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

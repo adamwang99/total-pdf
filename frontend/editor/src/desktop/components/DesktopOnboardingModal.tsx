@@ -5,65 +5,37 @@ import CloseIcon from "@mui/icons-material/Close";
 import LocalIcon from "@app/components/shared/LocalIcon";
 import AnimatedSlideBackground from "@app/components/onboarding/slides/AnimatedSlideBackground";
 import OnboardingStepper from "@app/components/onboarding/OnboardingStepper";
-import { SetupWizard } from "@app/components/SetupWizard";
 import WelcomeSlide from "@app/components/onboarding/slides/WelcomeSlide";
 import { Z_INDEX_OVER_FULLSCREEN_SURFACE } from "@app/styles/zIndex";
 import styles from "@app/components/onboarding/InitialOnboardingModal/InitialOnboardingModal.module.css";
-import { connectionModeService } from "@app/services/connectionModeService";
-
 const ONBOARDING_KEY = "totalpdf-desktop-onboarding-v2";
-
-const SIGN_IN_GRADIENT: [string, string] = ["#3B82F6", "#7C3AED"];
 
 /**
  * Desktop-specific onboarding modal.
- * Shown on first launch: welcome slide → sign-in slide.
- * Replaces the core onboarding (which targets server/admin users).
+ * Shown on first launch: welcome slide only (no sign-in slide).
+ * Desktop standalone mode has login disabled, so sign-in is not needed.
  */
 export function DesktopOnboardingModal() {
   const { t } = useTranslation();
   const [visible, setVisible] = useState(
     () => !localStorage.getItem(ONBOARDING_KEY),
   );
-  const [step, setStep] = useState(0);
 
   const dismissFinal = () => {
     localStorage.setItem(ONBOARDING_KEY, "true");
     setVisible(false);
-    // If the user dismissed the sign-in slide without authenticating, fall back to local mode
-    // so the app is usable without a server connection.
-    connectionModeService.switchToLocal().catch(console.error);
-  };
-
-  // X on slide 0 advances to sign-in slide rather than dismissing entirely
-  const handleClose = () => {
-    if (step === 0) {
-      setStep(1);
-    } else {
-      dismissFinal();
-    }
-  };
-
-  const handleComplete = () => {
-    localStorage.setItem(ONBOARDING_KEY, "true");
-    setVisible(false);
-    // No reload needed — AppProviders subscribes to connectionModeService and remounts
-    // the SaaS provider tree when mode changes, avoiding the Windows WebView2 freeze
-    // that window.location.reload() causes during a backgrounded OAuth flow.
   };
 
   // Call WelcomeSlide as a data factory (not a component render) — memoised so it
   // isn't reconstructed on every render while the modal is open.
   const welcomeSlide = useMemo(() => WelcomeSlide(), []);
-  const totalSteps = 2;
 
   if (!visible) return null;
 
   return (
     <Modal
       opened={visible}
-      onClose={handleClose}
-      closeOnClickOutside={step === 1}
+      onClose={dismissFinal}
       centered
       size="lg"
       radius="lg"
@@ -91,20 +63,16 @@ export function DesktopOnboardingModal() {
           flexDirection: "column",
         }}
       >
-        {/* Hero section — gradient changes per slide */}
+        {/* Hero section */}
         <div className={styles.heroWrapper} style={{ flexShrink: 0 }}>
           <AnimatedSlideBackground
-            gradientStops={
-              step === 0
-                ? welcomeSlide.background.gradientStops
-                : SIGN_IN_GRADIENT
-            }
+            gradientStops={welcomeSlide.background.gradientStops}
             circles={welcomeSlide.background.circles}
             isActive
-            slideKey={step === 0 ? "desktop-welcome" : "desktop-sign-in"}
+            slideKey="desktop-welcome"
           />
           <ActionIcon
-            onClick={handleClose}
+            onClick={dismissFinal}
             radius="md"
             size={36}
             style={{
@@ -124,72 +92,50 @@ export function DesktopOnboardingModal() {
           >
             <CloseIcon fontSize="small" />
           </ActionIcon>
-          <div className={styles.heroLogo} key={`logo-${step}`}>
+          <div className={styles.heroLogo}>
             <div className={styles.heroLogoCircle}>
-              {step === 0 ? (
-                <LocalIcon
-                  icon="rocket-launch"
-                  width={64}
-                  height={64}
-                  className={styles.heroIcon}
-                />
-              ) : (
-                <LocalIcon
-                  icon="login"
-                  width={64}
-                  height={64}
-                  className={styles.heroIcon}
-                />
-              )}
+              <LocalIcon
+                icon="rocket-launch"
+                width={64}
+                height={64}
+                className={styles.heroIcon}
+              />
             </div>
           </div>
         </div>
 
-        {/* Body section */}
+        {/* Body section — welcome slide only (no sign-in for desktop standalone) */}
         <div
           className={styles.modalBody}
           style={{ flex: 1, overflowY: "auto", overflowX: "hidden" }}
         >
-          {step === 0 ? (
-            // Welcome slide
-            <Stack gap={16}>
-              <div className={`${styles.title} ${styles.titleText}`}>
-                {welcomeSlide.title}
+          <Stack gap={16}>
+            <div className={`${styles.title} ${styles.titleText}`}>
+              {welcomeSlide.title}
+            </div>
+            <div className={styles.bodyText}>
+              <div className={`${styles.bodyCopy} ${styles.bodyCopyInner}`}>
+                {welcomeSlide.body}
               </div>
-              <div className={styles.bodyText}>
-                <div className={`${styles.bodyCopy} ${styles.bodyCopyInner}`}>
-                  {welcomeSlide.body}
-                </div>
-                <style>{`.${styles.bodyCopyInner} strong { color: var(--onboarding-title); font-weight: 600; }`}</style>
-              </div>
-              <OnboardingStepper totalSteps={totalSteps} activeStep={step} />
-              <div className={styles.buttonContainer}>
-                <Group justify="flex-end">
-                  <Button
-                    onClick={() => setStep(1)}
-                    styles={{
-                      root: {
-                        background: "var(--onboarding-primary-button-bg)",
-                        color: "var(--onboarding-primary-button-text)",
-                      },
-                    }}
-                  >
-                    {t("onboarding.buttons.next", "Next →")}
-                  </Button>
-                </Group>
-              </div>
-            </Stack>
-          ) : (
-            // Sign-in slide
-            <Stack gap={12}>
-              <OnboardingStepper totalSteps={totalSteps} activeStep={step} />
-              <SetupWizard
-                noLayout
-                onComplete={handleComplete}
-                onClose={dismissFinal}
-              />
-            </Stack>
-          )}
+              <style>{`.${styles.bodyCopyInner} strong { color: var(--onboarding-title); font-weight: 600; }`}</style>
+            </div>
+            <OnboardingStepper totalSteps={1} activeStep={0} />
+            <div className={styles.buttonContainer}>
+              <Group justify="flex-end">
+                <Button
+                  onClick={dismissFinal}
+                  styles={{
+                    root: {
+                      background: "var(--onboarding-primary-button-bg)",
+                      color: "var(--onboarding-primary-button-text)",
+                    },
+                  }}
+                >
+                  {t("onboarding.buttons.getStarted", "Bắt đầu →")}
+                </Button>
+              </Group>
+            </div>
+          </Stack>
         </div>
       </Stack>
     </Modal>

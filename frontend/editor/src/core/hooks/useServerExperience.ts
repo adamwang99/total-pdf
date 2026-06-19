@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useAppConfig } from "@app/contexts/AppConfigContext";
 
-const SELF_REPORTED_ADMIN_KEY = "stirling-self-reported-admin";
+const SELF_REPORTED_ADMIN_KEY = "totalpdf-self-reported-admin";
 const FREE_TIER_LIMIT = 5;
 
 type UserCountSource = "admin" | "estimate" | "unknown";
@@ -66,10 +66,8 @@ export function useServerExperience(): ServerExperienceValue {
 
   const loginEnabled = config?.enableLogin !== false;
   const configIsAdmin = Boolean(config?.isAdmin);
-  // For no-login servers, treat everyone as a regular user (no effective admin)
-  // Commented out the previous self-reported admin path to avoid elevating users.
-  // const effectiveIsAdmin = configIsAdmin || (!loginEnabled && selfReportedAdmin);
-  const effectiveIsAdmin = loginEnabled ? configIsAdmin : false;
+  // Desktop standalone (no-login mode): config explicitly has isAdmin: true, so use that.
+  const effectiveIsAdmin = configIsAdmin || (!loginEnabled && selfReportedAdmin);
   const hasPaidLicense =
     config?.license === "SERVER" ||
     config?.license === "PRO" ||

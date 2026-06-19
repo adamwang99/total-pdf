@@ -598,7 +598,7 @@ description = "Cumraigh stóráil agus iompar glanta comhad sealadach"
 label = "Bainistíocht Comhad Sealadach"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Bun‑chomhadlann do chomhaid shealadacha (fág folamh don réamhshocrú: java.io.tmpdir/stirling-pdf)"
+description = "Bun‑chomhadlann do chomhaid shealadacha (fág folamh don réamhshocrú: java.io.tmpdir/total-pdf)"
 label = "Bun‑Chomhadlann Shealadach"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

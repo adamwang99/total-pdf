@@ -598,7 +598,7 @@ description = "Konfigurera lagring och rensning av temporära filer"
 label = "Hantering av temporära filer"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Baskatalog för temporära filer (lämna tomt för standard: java.io.tmpdir/stirling-pdf)"
+description = "Baskatalog för temporära filer (lämna tomt för standard: java.io.tmpdir/total-pdf)"
 label = "Baskatalog för temporära filer"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

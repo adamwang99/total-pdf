@@ -130,7 +130,7 @@ public class InitialSecuritySetup {
 
     private void createDefaultAdminUser() throws SQLException, UnsupportedProviderException {
         String defaultUsername = "admin";
-        String defaultPassword = "stirling";
+        String defaultPassword = "totalpdf";
 
         if (userService.findByUsernameIgnoreCase(defaultUsername).isEmpty()) {
             Team team = teamService.getOrCreateDefaultTeam();

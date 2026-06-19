@@ -598,7 +598,7 @@ description = "임시 파일 저장 및 정리 동작을 구성합니다"
 label = "임시 파일 관리"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "임시 파일의 기본 디렉터리(기본값 사용 시 비워두세요: java.io.tmpdir/stirling-pdf)"
+description = "임시 파일의 기본 디렉터리(기본값 사용 시 비워두세요: java.io.tmpdir/total-pdf)"
 label = "기본 임시 디렉터리"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

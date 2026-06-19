@@ -30,7 +30,7 @@ interface OAuthButtonsProps {
   onProviderClick: (provider: OAuthProvider) => void;
   isSubmitting: boolean;
   layout?: "vertical" | "grid" | "icons";
-  enabledProviders?: OAuthProvider[]; // List of full auth paths from backend (e.g., '/oauth2/authorization/google', '/saml2/authenticate/stirling')
+  enabledProviders?: OAuthProvider[]; // List of full auth paths from backend (e.g., '/oauth2/authorization/google', '/saml2/authenticate/totalpdf')
   ctaPrefix?: string;
   styleVariant?: "neutral" | "tinted" | "outline" | "light";
   demoMode?: boolean;
@@ -56,7 +56,7 @@ export default function OAuthButtons({
 
   // Build provider list - extract provider ID from full path for display
   const providers = providersToShow.map((pathOrId) => {
-    // Extract provider ID from full path (e.g., '/saml2/authenticate/stirling' -> 'stirling')
+    // Extract provider ID from full path (e.g., '/saml2/authenticate/totalpdf' -> 'stirling')
     const providerId = pathOrId.split("/").pop() || pathOrId;
 
     if (providerId in oauthProviderConfig) {

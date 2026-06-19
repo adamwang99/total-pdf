@@ -598,7 +598,7 @@ description = "Konfigurirajte pohranu privremenih datoteka i ponašanje čišće
 label = "Upravljanje privremenim datotekama"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Osnovni direktorij za privremene datoteke (ostavite prazno za zadano: java.io.tmpdir/stirling-pdf)"
+description = "Osnovni direktorij za privremene datoteke (ostavite prazno za zadano: java.io.tmpdir/total-pdf)"
 label = "Osnovni direktorij za privremene datoteke"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

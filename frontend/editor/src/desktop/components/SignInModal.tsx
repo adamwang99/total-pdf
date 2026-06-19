@@ -3,12 +3,17 @@ import { Modal } from "@mantine/core";
 import { SetupWizard } from "@app/components/SetupWizard";
 import { OPEN_SIGN_IN_EVENT } from "@app/constants/signInEvents";
 import { Z_INDEX_SIGN_IN_MODAL } from "@app/styles/zIndex";
+import { DESKTOP_DEFAULT_APP_CONFIG } from "@app/config/defaultAppConfig";
 
 export function SignInModal() {
   const [opened, setOpened] = useState(false);
   const [locked, setLocked] = useState(false);
 
   useEffect(() => {
+    // Desktop standalone mode: no sign-in UI needed
+    if (DESKTOP_DEFAULT_APP_CONFIG.enableLogin === false) {
+      return;
+    }
     const handler = (e: Event) => {
       const detail = (e as CustomEvent).detail;
       setLocked(detail?.locked === true);

@@ -598,7 +598,7 @@ description = "تهيئة تخزين الملفات المؤقتة وسلوك ا
 label = "إدارة الملفات المؤقتة"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "الدليل الأساسي للملفات المؤقتة (اتركه فارغًا للإعداد الافتراضي: java.io.tmpdir/stirling-pdf)"
+description = "الدليل الأساسي للملفات المؤقتة (اتركه فارغًا للإعداد الافتراضي: java.io.tmpdir/total-pdf)"
 label = "الدليل الأساسي للملفات المؤقتة"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

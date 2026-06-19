@@ -598,7 +598,7 @@ description = "Skonfiguruj przechowywanie plików tymczasowych i ich czyszczenie
 label = "Zarządzanie plikami tymczasowymi"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Katalog bazowy dla plików tymczasowych (pozostaw puste, aby użyć domyślnego: java.io.tmpdir/stirling-pdf)"
+description = "Katalog bazowy dla plików tymczasowych (pozostaw puste, aby użyć domyślnego: java.io.tmpdir/total-pdf)"
 label = "Podstawowy katalog tymczasowy"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

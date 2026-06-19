@@ -36,7 +36,7 @@ public class EmailServiceTest {
     void testSendEmailWithAttachment() throws MessagingException {
         // Mock the values returned by ApplicationProperties
         when(applicationProperties.getMail()).thenReturn(mailProperties);
-        when(mailProperties.getFrom()).thenReturn("no-reply@stirling-software.com");
+        when(mailProperties.getFrom()).thenReturn("no-reply@totalpdf.info");
 
         // Create a mock Email object
         Email email = new Email();

@@ -68,11 +68,13 @@ export const useConfigNavSections = (
     ],
   };
 
-  // In local mode only show Preferences + Connection Mode — everything else
-  // requires a server and will 500 or show irrelevant admin UI.
+  // In local mode show: Preferences, Help (includes About + Tours), and Connection Mode.
+  // Help section is at index 1 in core sections — must include it so users can see
+  // About/Help/Onboarding on desktop without a server.
   if (isLocalMode) {
     const result: ConfigNavSection[] = [];
     if (sections.length > 0) result.push(sections[0]);
+    if (sections.length > 1) result.push(sections[1]);
     result.push(connectionModeSection);
     return result;
   }

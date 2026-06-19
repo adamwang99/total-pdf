@@ -598,7 +598,7 @@ description = "Configurați stocarea fișierelor temporare și comportamentul de
 label = "Gestionarea fișierelor temporare"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Directorul de bază pentru fișiere temporare (lăsați gol pentru implicit: java.io.tmpdir/stirling-pdf)"
+description = "Directorul de bază pentru fișiere temporare (lăsați gol pentru implicit: java.io.tmpdir/total-pdf)"
 label = "Director temporar de bază"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

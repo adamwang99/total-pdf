@@ -6,7 +6,7 @@ import { bypassOnboarding } from "@app/tests/helpers/api-stubs";
  * SAML login round-trip via Keycloak.
  *
  * Requires the docker-compose-keycloak-saml stack:
- *   - Keycloak on http://localhost:9080 with realm `stirling-saml`
+ *   - Keycloak on http://localhost:9080 with realm `totalpdf-saml`
  *   - Total PDF on http://localhost:8080 with PREMIUM_KEY set and
  *     security.saml2.enabled=true
  *
@@ -36,7 +36,7 @@ test.describe("Enterprise SAML (Keycloak) — full SSO flow", () => {
     await expect(samlBtn).toBeVisible({ timeout: 10_000 });
     await samlBtn.click();
 
-    await page.waitForURL(/\/realms\/stirling-saml\//, {
+    await page.waitForURL(/\/realms\/totalpdf-saml\//, {
       timeout: 30_000,
     });
     await page.locator("#username").fill("samluser");

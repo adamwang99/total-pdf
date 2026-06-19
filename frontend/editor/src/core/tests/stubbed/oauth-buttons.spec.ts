@@ -52,7 +52,7 @@ test.describe("OAuth/SSO login buttons", () => {
           providerList: {
             "/oauth2/authorization/keycloak": "Keycloak",
             "/oauth2/authorization/google": "Google",
-            "/saml2/authenticate/stirling": "Authentik",
+            "/saml2/authenticate/totalpdf": "Authentik",
           },
           ssoAutoLogin: false,
           firstTimeSetup: false,

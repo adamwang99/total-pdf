@@ -6,14 +6,18 @@ import {
   type ConnectionMode,
 } from "@app/services/connectionModeService";
 import { OPEN_SIGN_IN_EVENT } from "@app/constants/signInEvents";
+import { useAppConfig } from "@app/contexts/AppConfigContext";
 
 /**
  * Desktop-only footer shown at the bottom of the tool list.
- * In local (offline) mode: prompts the user to sign in to unlock cloud tools.
- * In other modes: renders nothing.
+ * In local (offline) mode with login enabled: prompts the user to sign in
+ * to unlock cloud tools.
+ * In desktop standalone (login disabled) or other modes: renders nothing.
  */
 export function ToolPickerFooterExtensions() {
   const { t } = useTranslation();
+  const { config } = useAppConfig();
+  const loginEnabled = config?.enableLogin !== false;
   const [connectionMode, setConnectionMode] = useState<ConnectionMode | null>(
     null,
   );
@@ -28,6 +32,8 @@ export function ToolPickerFooterExtensions() {
     return unsubscribe;
   }, []);
 
+  // Desktop standalone mode: no sign-in needed, all tools available locally
+  if (!loginEnabled) return null;
   if (connectionMode !== "local") return null;
 
   return (

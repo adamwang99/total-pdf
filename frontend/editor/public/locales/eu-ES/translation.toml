@@ -598,7 +598,7 @@ description = "Konfiguratu aldi baterako fitxategien biltegiratzea eta garbiketa
 label = "Aldi baterako fitxategien kudeaketa"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Aldi baterako fitxategietarako oinarrizko direktorioa (utzi hutsik lehenetsia erabiltzeko: java.io.tmpdir/stirling-pdf)"
+description = "Aldi baterako fitxategietarako oinarrizko direktorioa (utzi hutsik lehenetsia erabiltzeko: java.io.tmpdir/total-pdf)"
 label = "Oinarrizko aldi baterako direktorioa"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

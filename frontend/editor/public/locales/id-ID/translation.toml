@@ -598,7 +598,7 @@ description = "Konfigurasikan penyimpanan file sementara dan perilaku pembersiha
 label = "Manajemen File Temp"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Direktori dasar untuk file sementara (biarkan kosong untuk default: java.io.tmpdir/stirling-pdf)"
+description = "Direktori dasar untuk file sementara (biarkan kosong untuk default: java.io.tmpdir/total-pdf)"
 label = "Direktori Temp Dasar"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]

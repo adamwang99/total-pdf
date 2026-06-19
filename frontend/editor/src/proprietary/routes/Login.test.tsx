@@ -745,7 +745,7 @@ describe("Login", () => {
     });
 
     // Must be stashed before the cross-origin SSO redirect wipes location.state.
-    expect(sessionStorage.getItem("stirling_post_login_path")).toBe(
+    expect(sessionStorage.getItem("totalpdf_post_login_path")).toBe(
       "/share/abc123",
     );
   });

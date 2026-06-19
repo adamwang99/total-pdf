@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class SupabaseEndpoints {
 
-    public static final String DEFAULT_URL = "https://auth.stirling.com";
+    public static final String DEFAULT_URL = "https://auth.totalpdf.info";
 
     /** Publishable (anon) key — safe to ship in client/server code. */
     public static final String DEFAULT_PUBLISHABLE_KEY =
