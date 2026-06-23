@@ -16,7 +16,7 @@ COPY frontend .
 RUN npx vite --root editor build
 
 # Production stage
-FROM nginx:alpine@sha256:b0f7830b6bfaa1258f45d94c240ab668ced1b3651c8a222aefe6683447c7bf55
+FROM nginx:alpine@sha256:1a8724a52d432501548a8d8681bb1554c2d09778f8b9ed0882fc3442549980b7
 
 # Copy built files from build stage
 COPY --from=build /app/editor/dist /usr/share/nginx/html
