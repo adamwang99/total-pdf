@@ -1,5 +1,6 @@
 use tauri_plugin_shell::ShellExt;
 use tauri::Manager;
+use std::ffi::OsString;
 use std::sync::Mutex;
 use std::path::{Path, PathBuf};
 use crate::utils::{add_log, app_data_dir};
@@ -124,6 +125,98 @@ fn normalize_path(path: &PathBuf) -> PathBuf {
     } else {
         path.clone()
     }
+}
+
+fn platform_tool_dirs() -> Vec<PathBuf> {
+    let mut directories = Vec::new();
+
+    #[cfg(target_os = "macos")]
+    {
+        directories.extend([
+            PathBuf::from("/opt/homebrew/bin"),
+            PathBuf::from("/usr/local/bin"),
+            PathBuf::from("/Applications/LibreOffice.app/Contents/MacOS"),
+        ]);
+    }
+
+    #[cfg(target_os = "linux")]
+    {
+        directories.extend([PathBuf::from("/usr/local/bin"), PathBuf::from("/usr/bin")]);
+    }
+
+    #[cfg(target_os = "windows")]
+    {
+        for variable in ["ProgramW6432", "ProgramFiles", "ProgramFiles(x86)"] {
+            if let Some(base) = std::env::var_os(variable) {
+                let base = PathBuf::from(base);
+                directories.push(base.join("Tesseract-OCR"));
+                directories.push(base.join("LibreOffice").join("program"));
+            }
+        }
+        if let Some(chocolatey) = std::env::var_os("ChocolateyInstall") {
+            directories.push(PathBuf::from(chocolatey).join("bin"));
+        }
+    }
+
+    directories
+}
+
+fn build_backend_path() -> OsString {
+    let inherited_path = std::env::var_os("PATH").unwrap_or_default();
+    let mut directories: Vec<PathBuf> = platform_tool_dirs()
+        .into_iter()
+        .filter(|path| path.is_dir())
+        .collect();
+
+    for path in std::env::split_paths(&inherited_path) {
+        if !directories.contains(&path) {
+            directories.push(path);
+        }
+    }
+
+    std::env::join_paths(directories).unwrap_or(inherited_path)
+}
+
+fn find_tessdata_dir(resource_dir: Option<&Path>) -> Option<PathBuf> {
+    if let Some(configured) = std::env::var_os("TESSDATA_PREFIX") {
+        let configured = PathBuf::from(configured);
+        if configured.is_dir() {
+            return Some(configured);
+        }
+    }
+
+    let mut candidates = Vec::new();
+    if let Some(resource_dir) = resource_dir {
+        candidates.push(resource_dir.join("tessdata"));
+    }
+
+    #[cfg(target_os = "macos")]
+    {
+        candidates.extend([
+            PathBuf::from("/opt/homebrew/share/tessdata"),
+            PathBuf::from("/usr/local/share/tessdata"),
+        ]);
+    }
+
+    #[cfg(target_os = "linux")]
+    {
+        candidates.extend([
+            PathBuf::from("/usr/share/tesseract-ocr/5/tessdata"),
+            PathBuf::from("/usr/share/tessdata"),
+            PathBuf::from("/usr/local/share/tessdata"),
+        ]);
+    }
+
+    #[cfg(target_os = "windows")]
+    {
+        for variable in ["ProgramW6432", "ProgramFiles", "ProgramFiles(x86)"] {
+            if let Some(base) = std::env::var_os(variable) {
+                candidates.push(PathBuf::from(base).join("Tesseract-OCR").join("tessdata"));
+            }
+        }
+    }
+
+    candidates.into_iter().find(|path| path.is_dir())
 }
 
 fn migrate_legacy_workspace(legacy_dir: &PathBuf, target_root: &PathBuf) -> std::io::Result<()> {
@@ -252,14 +345,18 @@ fn run_stirling_pdf_jar(app: &tauri::AppHandle, java_path: &PathBuf, jar_path: &
         }
     }
 
-    // Build PATH for the backend process — ensure Homebrew and Python tools are discoverable
-    let current_path = std::env::var("PATH").unwrap_or_default();
-    let custom_path = format!(
-        "/opt/homebrew/bin:/Applications/LibreOffice.app/Contents/MacOS:/Users/tuan/Library/Python/3.9/bin:{}",
-        current_path
-    );
+    // Build a platform-correct PATH so optional desktop tools can be detected.
+    let backend_path = build_backend_path();
+    let resource_dir = app.path().resource_dir().ok();
+    let tessdata_dir = find_tessdata_dir(resource_dir.as_deref());
 
-    let sidecar_command = app
+    if let Some(path) = &tessdata_dir {
+        add_log(format!("✅ Found Tesseract language data: {}", path.display()));
+    } else {
+        add_log("⚠️ Tesseract language data not found; OCR will remain disabled until Tesseract is installed".to_string());
+    }
+
+    let mut sidecar_command = app
         .shell()
         .command(java_path.to_str().unwrap())
         .args(java_options)
@@ -268,8 +365,11 @@ fn run_stirling_pdf_jar(app: &tauri::AppHandle, java_path: &PathBuf, jar_path: &
         .env("STIRLING_PDF_CONFIG_DIR", config_dir.to_str().unwrap())
         .env("STIRLING_PDF_LOG_DIR", log_dir.to_str().unwrap())
         .env("STIRLING_PDF_WORK_DIR", work_dir.to_str().unwrap())
-        .env("PATH", &custom_path)
-        .env("TESSDATA_PREFIX", "/opt/homebrew/share/tessdata");
+        .env("PATH", &backend_path);
+
+    if let Some(path) = tessdata_dir {
+        sidecar_command = sidecar_command.env("TESSDATA_PREFIX", path);
+    }
 
     add_log("⚙️ Starting backend with bundled JRE...".to_string());
 

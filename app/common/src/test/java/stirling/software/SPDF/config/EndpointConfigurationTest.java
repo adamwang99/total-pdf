@@ -31,6 +31,11 @@ class EndpointConfigurationTest {
     }
 
     @Test
+    void endpointKeyForUriKeepsUiDataAvailableWhenToolIsDisabled() {
+        assertEquals("ui-data", EndpointConfiguration.endpointKeyForUri("/api/v1/ui-data/ocr-pdf"));
+    }
+
+    @Test
     void endpointKeyForUriReturnsNullForNonApiPaths() {
         assertNull(EndpointConfiguration.endpointKeyForUri(null));
         assertNull(EndpointConfiguration.endpointKeyForUri("/some-page"));

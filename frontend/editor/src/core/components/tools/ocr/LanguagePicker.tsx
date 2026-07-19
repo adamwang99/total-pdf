@@ -163,7 +163,7 @@ const LanguagePicker: React.FC<LanguagePickerProps> = ({
           }}
           onClick={() =>
             window.open(
-              "https://docs.totalpdf.com/Configuration/OCR",
+              "https://docs.stirlingpdf.com/Configuration/OCR/",
               "_blank",
             )
           }
@@ -179,6 +179,10 @@ const LanguagePicker: React.FC<LanguagePickerProps> = ({
       value={value}
       onChange={(newValue) => onChange(newValue as string[])}
       items={availableLanguages}
+      emptyMessage={t(
+        "ocr.languagePicker.notInstalled",
+        "OCR language data is not installed. Install Tesseract, then restart Total PDF.",
+      )}
       placeholder={placeholder}
       disabled={disabled}
       label={label}

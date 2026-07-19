@@ -2,9 +2,26 @@ package stirling.software.common.util;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
+import org.springframework.core.io.ClassPathResource;
 
 class GeneralUtilsAdditionalTest {
+
+    @Test
+    void defaultPipelineResourcesAreAlwaysPackagedWithTheBackend() {
+        List.of(
+                        "OCR images.json",
+                        "Prepare-pdfs-for-email.json",
+                        "Pre-publish-sanitization.json",
+                        "split-rotate-auto-rename.json")
+                .forEach(
+                        name ->
+                                assertTrue(
+                                        new ClassPathResource("default-pipeline/" + name).exists(),
+                                        () -> "Missing default pipeline resource: " + name));
+    }
 
     @Test
     void testConvertSizeToBytes() {

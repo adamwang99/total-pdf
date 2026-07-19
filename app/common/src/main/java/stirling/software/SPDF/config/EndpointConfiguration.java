@@ -70,7 +70,9 @@ public class EndpointConfiguration {
 
     /**
      * Translate a full request URI like {@code /api/v1/general/remove-pages} into the endpoint key
-     * used by this configuration ({@code remove-pages}). Convert endpoints are a special case -
+     * used by this configuration ({@code remove-pages}). UI-data endpoints remain available even
+     * when the corresponding processing tool is disabled, so the frontend can explain missing
+     * dependencies instead of reporting a network error. Convert endpoints are a special case -
      * {@code /api/v1/convert/pdf/img} is registered as {@code pdf-to-img}. Returns {@code null} if
      * the URI is not an {@code /api/v1/<group>/<endpoint>} path.
      */
@@ -81,6 +83,9 @@ public class EndpointConfiguration {
         String[] parts = uri.split("/");
         if (parts.length <= 4) {
             return null;
+        }
+        if ("ui-data".equals(parts[3])) {
+            return "ui-data";
         }
         if ("convert".equals(parts[3]) && parts.length > 5) {
             return parts[4] + "-to-" + parts[5];

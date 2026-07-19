@@ -27,6 +27,7 @@ export interface DropdownListWithFooterProps {
   // Items and display
   items: DropdownItem[];
   placeholder?: string;
+  emptyMessage?: ReactNode;
   disabled?: boolean;
 
   // Labels and headers
@@ -56,6 +57,7 @@ const DropdownListWithFooter: React.FC<DropdownListWithFooterProps> = ({
   onChange,
   items,
   placeholder = "Select option",
+  emptyMessage,
   disabled = false,
   label,
   header,
@@ -200,7 +202,7 @@ const DropdownListWithFooter: React.FC<DropdownListWithFooterProps> = ({
                   <Text size="sm" c="dimmed">
                     {searchable && searchTerm
                       ? "No results found"
-                      : "No items available"}
+                      : emptyMessage || "No items available"}
                   </Text>
                 </Box>
               ) : (

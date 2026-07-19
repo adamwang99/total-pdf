@@ -53,6 +53,7 @@ public class GeneralUtils {
                     "split-rotate-auto-rename.json");
 
     private final String DEFAULT_WEBUI_CONFIGS_DIR = "defaultWebUIConfigs";
+    private final String DEFAULT_PIPELINE_RESOURCE_DIR = "default-pipeline";
     private final String PYTHON_SCRIPTS_DIR = "python";
     private final RegexPatternUtils patternCache = RegexPatternUtils.getInstance();
     // Valid size units used for convertSizeToBytes validation and parsing
@@ -984,8 +985,7 @@ public class GeneralUtils {
             }
             Path target = pipelineDir.resolve(name);
             ClassPathResource res =
-                    new ClassPathResource(
-                            "static/pipeline/" + DEFAULT_WEBUI_CONFIGS_DIR + "/" + name);
+                    new ClassPathResource(DEFAULT_PIPELINE_RESOURCE_DIR + "/" + name);
             if (!res.exists()) {
                 log.error("Resource not found: {}", res.getPath());
                 throw new IOException("Resource not found: " + res.getPath());
