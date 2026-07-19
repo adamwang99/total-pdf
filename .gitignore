@@ -143,6 +143,7 @@ app/core/src/main/resources/static/vendor/
 
 # Package Files #
 *.jar
+!gradle/wrapper/gradle-wrapper.jar
 *.war
 *.nar
 *.ear
