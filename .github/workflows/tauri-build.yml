@@ -420,13 +420,13 @@ jobs:
           if [ "${{ matrix.platform }}" = "windows-latest" ]; then
             # Only ship the MSI installer. The loose exe and WiX toolset exes
             # are not the user-facing installer - the MSI contains the signed inner exe.
-            find . -name "*.msi" -exec cp {} "../../../dist/Total-PDF-${{ matrix.name }}.msi" \;
+            find . -name "*.msi" -exec cp {} "../../../../dist/Total-PDF-${{ matrix.name }}.msi" \;
           elif [ "${{ matrix.platform }}" = "macos-15" ]; then
-            find . -name "*.dmg" -exec cp {} "../../../dist/Total-PDF-${{ matrix.name }}.dmg" \;
+            find . -name "*.dmg" -exec cp {} "../../../../dist/Total-PDF-${{ matrix.name }}.dmg" \;
           else
-            find . -name "*.deb" -exec cp {} "../../../dist/Total-PDF-${{ matrix.name }}.deb" \;
-            find . -name "*.rpm" -exec cp {} "../../../dist/Total-PDF-${{ matrix.name }}.rpm" \;
-            find . -name "*.AppImage" -exec cp {} "../../../dist/Total-PDF-${{ matrix.name }}.AppImage" \;
+            find . -name "*.deb" -exec cp {} "../../../../dist/Total-PDF-${{ matrix.name }}.deb" \;
+            find . -name "*.rpm" -exec cp {} "../../../../dist/Total-PDF-${{ matrix.name }}.rpm" \;
+            find . -name "*.AppImage" -exec cp {} "../../../../dist/Total-PDF-${{ matrix.name }}.AppImage" \;
           fi
 
       # Verify the MSI AND the inner exe extracted from it are signed.
@@ -452,7 +452,7 @@ jobs:
             if (Test-Path $extractDir) { Remove-Item $extractDir -Recurse -Force }
             $proc = Start-Process msiexec.exe -ArgumentList '/a', $msiPath, '/qn', "TARGETDIR=$extractDir" -Wait -PassThru -NoNewWindow
             if ($proc.ExitCode -eq 0) {
-              $innerExe = Get-ChildItem -Path $extractDir -Filter "stirling-pdf.exe" -Recurse -File | Select-Object -First 1
+              $innerExe = Get-ChildItem -Path $extractDir -Filter "total-pdf.exe" -Recurse -File | Select-Object -First 1
               if ($innerExe) {
                 $sig = Get-AuthenticodeSignature -FilePath $innerExe.FullName
                 Write-Host "Inner EXE: Status=$($sig.Status), Signer=$($sig.SignerCertificate.Subject)"
@@ -499,35 +499,18 @@ jobs:
         with:
           name: Total-PDF-${{ matrix.name }}
           path: ./dist/*
+          if-no-files-found: error
           retention-days: 7
 
       - name: Verify build artifacts
         shell: bash
         run: |
-          cd ./frontend/editor/src-tauri/target
-
-          # Check for expected artifacts based on platform
           if [ "${{ matrix.platform }}" = "windows-latest" ]; then
-            echo "Checking for Windows artifacts..."
-            find . -name "*.exe" -o -name "*.msi" | head -5
-            if [ $(find . -name "*.exe" | wc -l) -eq 0 ]; then
-              echo "❌ No Windows executable found"
-              exit 1
-            fi
+            test -s "./dist/Total-PDF-${{ matrix.name }}.msi"
           elif [ "${{ matrix.platform }}" = "macos-15" ]; then
-            echo "Checking for macOS artifacts..."
-            find . -name "*.dmg" | head -5
-            if [ $(find . -name "*.dmg" | wc -l) -eq 0 ]; then
-              echo "❌ No macOS artifacts found"
-              exit 1
-            fi
+            test -s "./dist/Total-PDF-${{ matrix.name }}.dmg"
           else
-            echo "Checking for Linux artifacts..."
-            find . -name "*.deb" -o -name "*.rpm" -o -name "*.AppImage" | head -5
-            if [ $(find . -name "*.deb" -o -name "*.rpm" -o -name "*.AppImage" | wc -l) -eq 0 ]; then
-              echo "❌ No Linux artifacts found"
-              exit 1
-            fi
+            test -n "$(find ./dist -maxdepth 1 -type f \( -name '*.deb' -o -name '*.rpm' -o -name '*.AppImage' \) -print -quit)"
           fi
 
           echo "✅ Build artifacts found for ${{ matrix.name }}"
@@ -535,9 +518,8 @@ jobs:
       - name: Test artifact sizes
         shell: bash
         run: |
-          cd ./frontend/editor/src-tauri/target
           echo "Artifact sizes for ${{ matrix.name }}:"
-          find . -name "*.exe" -o -name "*.dmg" -o -name "*.deb" -o -name "*.rpm" -o -name "*.AppImage" -o -name "*.msi" | while read file; do
+          find ./dist -maxdepth 1 -type f | while read file; do
             if [ -f "$file" ]; then
               size=$(stat -c%s "$file" 2>/dev/null || stat -f%z "$file" 2>/dev/null || echo "unknown")
               echo "$file: $size bytes"
