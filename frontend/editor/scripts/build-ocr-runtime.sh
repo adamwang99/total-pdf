@@ -383,8 +383,9 @@ if [[ "$target_platform" == darwin-* && "${OCR_RUNTIME_VENDOR_HOMEBREW:-1}" == "
 fi
 
 if [[ "$target_platform" == "windows-x64" && "${OCR_RUNTIME_VENDOR_MSYS2:-1}" == "1" ]]; then
-  vendor_windows_tool "unpaper" "mingw-w64-x86_64-unpaper" || true
-  vendor_windows_tool "pngquant" "mingw-w64-x86_64-pngquant" || true
+  windows_package_prefix="${MINGW_PACKAGE_PREFIX:-mingw-w64-ucrt-x86_64}"
+  vendor_windows_tool "unpaper" "$windows_package_prefix-unpaper" || true
+  vendor_windows_tool "pngquant" "$windows_package_prefix-pngquant" || true
 fi
 
 cat > "$output_dir/TOTAL_PDF_OCR_RUNTIME_VERSION" <<VERSION
