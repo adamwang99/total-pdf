@@ -1,6 +1,6 @@
 name: Build Tauri Applications
 
-# Multi-OS Tauri desktop bundle build matrix (Windows / macOS universal /
+# Multi-OS Tauri desktop bundle build matrix (Windows / macOS Intel+ARM /
 # Linux). Called from build.yml on PRs that touch desktop sources (gated
 # via the `tauri` filter in .github/config/.files.yaml). Also runnable
 # on demand via workflow_dispatch with a per-platform selector.
@@ -48,14 +48,15 @@ jobs:
           PLATFORM: ${{ inputs.platform }}
         run: |
           WINDOWS='{"platform":"windows-latest","args":"--target x86_64-pc-windows-msvc","name":"windows-x86_64","jpdfium_platforms":"windows-x64"}'
-          MACOS='{"platform":"macos-15","args":"--target universal-apple-darwin","name":"macos-universal","jpdfium_platforms":"darwin-arm64,darwin-x64"}'
+          MACOS_ARM='{"platform":"macos-15","args":"--target aarch64-apple-darwin","name":"macos-aarch64","jpdfium_platforms":"darwin-arm64","rust_targets":"aarch64-apple-darwin","ocr_runtime_platforms":"darwin-arm64"}'
+          MACOS_INTEL='{"platform":"macos-15-intel","args":"--target x86_64-apple-darwin","name":"macos-x86_64","jpdfium_platforms":"darwin-x64","rust_targets":"x86_64-apple-darwin","ocr_runtime_platforms":"darwin-x64"}'
           LINUX='{"platform":"ubuntu-22.04","args":"","name":"linux-x86_64","jpdfium_platforms":"linux-x64"}'
 
           case "$PLATFORM" in
             windows) ENTRIES=("$WINDOWS") ;;
-            macos)   ENTRIES=("$MACOS") ;;
+            macos)   ENTRIES=("$MACOS_ARM" "$MACOS_INTEL") ;;
             linux)   ENTRIES=("$LINUX") ;;
-            *)       ENTRIES=("$WINDOWS" "$MACOS" "$LINUX") ;;
+            *)       ENTRIES=("$WINDOWS" "$MACOS_ARM" "$MACOS_INTEL" "$LINUX") ;;
           esac
 
           # Drop macOS entries when Apple certificate secret is unavailable
@@ -109,10 +110,10 @@ jobs:
         uses: dtolnay/rust-toolchain@4be9e76fd7c4901c61fb841f559994984270fce7 # stable
         with:
           toolchain: stable
-          targets: ${{ matrix.platform == 'macos-15' && 'aarch64-apple-darwin,x86_64-apple-darwin' || '' }}
+          targets: ${{ matrix.rust_targets || '' }}
 
       - name: Set up x86_64 JDK 25 (macOS universal JRE)
-        if: matrix.platform == 'macos-15'
+        if: matrix.name == 'macos-universal'
         uses: actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654 # v5.2.0
         with:
           java-version: "25"
@@ -120,7 +121,7 @@ jobs:
           architecture: "x64"
 
       - name: Capture x86_64 JAVA_HOME
-        if: matrix.platform == 'macos-15'
+        if: matrix.name == 'macos-universal'
         run: echo "X64_JAVA_HOME=$JAVA_HOME" >> "$GITHUB_ENV"
 
       - name: Set up JDK 25
@@ -138,11 +139,42 @@ jobs:
         uses: go-task/setup-task@3be4020d41929789a01026e0e427a4321ce0ad44 # v2.0.0
 
       - name: Build universal macOS JRE
-        if: matrix.platform == 'macos-15'
+        if: matrix.name == 'macos-universal'
         env:
           AARCH64_JAVA_HOME: ${{ env.JAVA_HOME }}
           JPDFIUM_PLATFORMS: ${{ matrix.jpdfium_platforms }}
         run: task desktop:jlink:universal-mac
+
+      - name: Setup Windows OCR helper toolchain
+        if: matrix.platform == 'windows-latest'
+        id: setup-msys2
+        uses: msys2/setup-msys2@66cd2cce69caa17b53920067426061ca1de3a884 # v2.32.0
+        with:
+          msystem: MINGW64
+          update: true
+          install: >-
+            mingw-w64-x86_64-unpaper
+            mingw-w64-x86_64-pngquant
+
+      - name: Build bundled OCR runtime (Windows)
+        if: matrix.platform == 'windows-latest'
+        shell: msys2 {0}
+        env:
+          MSYS2_LOCATION: ${{ steps.setup-msys2.outputs.msys2-location }}
+        run: frontend/editor/scripts/build-ocr-runtime.sh windows-x64
+
+      - name: Build bundled OCR runtime
+        if: matrix.platform != 'windows-latest'
+        shell: bash
+        run: |
+          if [ -n "${{ matrix.ocr_runtime_platforms || '' }}" ]; then
+            IFS=',' read -ra OCR_PLATFORMS <<< "${{ matrix.ocr_runtime_platforms }}"
+            for ocr_platform in "${OCR_PLATFORMS[@]}"; do
+              frontend/editor/scripts/build-ocr-runtime.sh "$ocr_platform"
+            done
+          else
+            frontend/editor/scripts/build-ocr-runtime.sh linux-x64
+          fi
 
       - name: Prepare desktop build
         env:
@@ -232,7 +264,7 @@ jobs:
           }
 
       - name: Import Apple Developer Certificate
-        if: matrix.platform == 'macos-15' && env.APPLE_CERTIFICATE != ''
+        if: startsWith(matrix.platform, 'macos-15') && env.APPLE_CERTIFICATE != ''
         env:
           APPLE_CERTIFICATE: ${{ secrets.APPLE_CERTIFICATE }}
           APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
@@ -253,7 +285,7 @@ jobs:
           rm certificate.p12
 
       - name: Verify Certificate
-        if: matrix.platform == 'macos-15' && env.APPLE_CERTIFICATE != ''
+        if: startsWith(matrix.platform, 'macos-15') && env.APPLE_CERTIFICATE != ''
         run: |
           echo "Verifying Apple Developer Certificate..."
           KEYCHAIN_PATH=$RUNNER_TEMP/app-signing.keychain-db
@@ -265,11 +297,11 @@ jobs:
           echo "Certificate imported successfully."
 
       - name: Sign JPDFium dylibs inside bootJar (macOS only)
-        if: matrix.platform == 'macos-15' && env.APPLE_CERTIFICATE != ''
+        if: startsWith(matrix.platform, 'macos-15') && env.APPLE_CERTIFICATE != ''
         run: bash frontend/scripts/sign-jpdfium-dylibs-in-bootjar.sh
 
       - name: Check DMG creation dependencies (macOS only)
-        if: matrix.platform == 'macos-15'
+        if: startsWith(matrix.platform, 'macos-15')
         run: |
           echo "🔍 Checking DMG creation dependencies on ${{ matrix.platform }}..."
           echo "hdiutil version: $(hdiutil --version || echo 'NOT FOUND')"
@@ -396,7 +428,7 @@ jobs:
           fi
 
       - name: Verify notarization (macOS only)
-        if: matrix.platform == 'macos-15'
+        if: startsWith(matrix.platform, 'macos-15')
         run: |
           echo "🔍 Verifying notarization status..."
           cd ./frontend/editor/src-tauri/target
@@ -421,7 +453,7 @@ jobs:
             # Only ship the MSI installer. The loose exe and WiX toolset exes
             # are not the user-facing installer - the MSI contains the signed inner exe.
             find . -name "*.msi" -exec cp {} "../../../../dist/Total-PDF-${{ matrix.name }}.msi" \;
-          elif [ "${{ matrix.platform }}" = "macos-15" ]; then
+          elif [[ "${{ matrix.platform }}" == macos-15* ]]; then
             find . -name "*.dmg" -exec cp {} "../../../../dist/Total-PDF-${{ matrix.name }}.dmg" \;
           else
             find . -name "*.deb" -exec cp {} "../../../../dist/Total-PDF-${{ matrix.name }}.deb" \;
@@ -507,7 +539,7 @@ jobs:
         run: |
           if [ "${{ matrix.platform }}" = "windows-latest" ]; then
             test -s "./dist/Total-PDF-${{ matrix.name }}.msi"
-          elif [ "${{ matrix.platform }}" = "macos-15" ]; then
+          elif [[ "${{ matrix.platform }}" == macos-15* ]]; then
             test -s "./dist/Total-PDF-${{ matrix.name }}.dmg"
           else
             test -n "$(find ./dist -maxdepth 1 -type f \( -name '*.deb' -o -name '*.rpm' -o -name '*.AppImage' \) -print -quit)"
@@ -560,8 +592,9 @@ jobs:
 
             // Map of expected artifact names to display info
             const artifactMap = {
-              'Total-PDF-windows-x86_64': { icon: '🪟', platform: 'Windows x64', files: '.exe, .msi' },
-              'Total-PDF-macos-universal': { icon: '🍎', platform: 'macOS Universal', files: '.dmg' },
+              'Total-PDF-windows-x86_64': { icon: '🪟', platform: 'Windows x64', files: '.msi' },
+              'Total-PDF-macos-aarch64': { icon: '🍎', platform: 'macOS ARM64', files: '.dmg' },
+              'Total-PDF-macos-x86_64': { icon: '🍎', platform: 'macOS Intel', files: '.dmg' },
               'Total-PDF-linux-x86_64': { icon: '🐧', platform: 'Linux x64', files: '.deb, .rpm, .AppImage' }
             };
 

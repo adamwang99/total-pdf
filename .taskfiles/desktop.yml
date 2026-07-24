@@ -19,11 +19,26 @@ vars:
           esac
       fi
 
+  OCR_RUNTIME_PLATFORM:
+    sh: |
+      if [ -n "${OCR_RUNTIME_PLATFORM:-}" ]; then
+          echo "$OCR_RUNTIME_PLATFORM"
+      else
+          case "{{OS}}-{{ARCH}}" in
+              darwin-arm64)  echo "darwin-arm64";;
+              darwin-amd64)  echo "darwin-x64";;
+              linux-amd64)   echo "linux-x64";;
+              windows-amd64) echo "windows-x64";;
+              *)             echo "unsupported";;
+          esac
+      fi
+
 tasks:
   prepare:
     desc: "Prepare desktop build dependencies"
     deps:
       - jlink
+      - ocr:runtime
       - task: ":frontend:prepare"
         vars: { MODE: desktop }
       - provisioner
@@ -33,6 +48,13 @@ tasks:
     platforms: [windows]
     cmds:
       - node editor/scripts/build-provisioner.mjs
+
+  ocr:runtime:
+    desc: "Build bundled OCRmyPDF runtime for Tauri"
+    cmds:
+      - editor/scripts/build-ocr-runtime.sh {{.OCR_RUNTIME_PLATFORM}}
+    status:
+      - test -f editor/src-tauri/runtime/ocr/{{.OCR_RUNTIME_PLATFORM}}/TOTAL_PDF_OCR_RUNTIME_VERSION
 
   dev:
     desc: "Start Tauri desktop dev mode"

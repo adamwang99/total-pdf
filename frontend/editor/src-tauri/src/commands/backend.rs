@@ -220,12 +220,249 @@ fn add_python_bin_dirs(directories: &mut Vec<PathBuf>, parent: PathBuf, bin_dir:
     }
 }
 
-fn build_backend_path() -> OsString {
-    let inherited_path = std::env::var_os("PATH").unwrap_or_default();
-    let mut directories: Vec<PathBuf> = platform_tool_dirs()
+#[derive(Debug, Clone)]
+struct BundledOcrRuntime {
+    root: PathBuf,
+    path_dirs: Vec<PathBuf>,
+    ocrmypdf_path: Option<PathBuf>,
+    tessdata_dir: Option<PathBuf>,
+}
+
+fn current_ocr_runtime_platform() -> &'static str {
+    match (std::env::consts::OS, std::env::consts::ARCH) {
+        ("macos", "x86_64") => "darwin-x64",
+        ("macos", "aarch64") => "darwin-arm64",
+        ("windows", "x86_64") => "windows-x64",
+        ("linux", "x86_64") => "linux-x64",
+        _ => "current",
+    }
+}
+
+fn find_bundled_ocr_runtime_source(resource_dir: Option<&Path>) -> Option<PathBuf> {
+    let ocr_base = resource_dir?.join("runtime").join("ocr");
+    let platform_root = ocr_base.join(current_ocr_runtime_platform());
+
+    if platform_root.is_dir() {
+        Some(platform_root)
+    } else if ocr_base.is_dir() && looks_like_ocr_runtime(&ocr_base) {
+        Some(ocr_base)
+    } else {
+        None
+    }
+}
+
+fn looks_like_ocr_runtime(root: &Path) -> bool {
+    root.join("TOTAL_PDF_OCR_RUNTIME_VERSION").is_file()
+        || root.join("bin").join("ocrmypdf").is_file()
+        || root.join("Scripts").join("ocrmypdf.exe").is_file()
+        || root.join("Scripts").join("ocrmypdf.cmd").is_file()
+        || root.join("share").join("tessdata").is_dir()
+        || root.join("Library").join("share").join("tessdata").is_dir()
+}
+
+fn inspect_ocr_runtime_root(root: PathBuf) -> BundledOcrRuntime {
+    #[cfg(target_os = "windows")]
+    let path_candidates = {
+        let mut candidates = vec![
+            root.join("bin"),
+            root.join("Scripts"),
+            root.join("Library").join("bin"),
+            root.clone(),
+        ];
+        // Conda packages on Windows commonly place DLLs and command-line tools here.
+        candidates.extend([
+            root.join("Library").join("usr").join("bin"),
+            root.join("Library").join("mingw-w64").join("bin"),
+        ]);
+        candidates
+    };
+
+    #[cfg(not(target_os = "windows"))]
+    let path_candidates = vec![
+        root.join("bin"),
+        root.join("Scripts"),
+        root.join("Library").join("bin"),
+        root.clone(),
+    ];
+
+    let path_dirs = path_candidates
         .into_iter()
         .filter(|path| path.is_dir())
-        .collect();
+        .collect::<Vec<_>>();
+
+    let ocrmypdf_candidates = if cfg!(target_os = "windows") {
+        vec![
+            root.join("Scripts").join("ocrmypdf.exe"),
+            root.join("Scripts").join("ocrmypdf.cmd"),
+            root.join("bin").join("ocrmypdf.exe"),
+            root.join("ocrmypdf.exe"),
+            root.join("ocrmypdf.cmd"),
+        ]
+    } else {
+        vec![
+            root.join("bin").join("ocrmypdf"),
+            root.join("Scripts").join("ocrmypdf"),
+            root.join("ocrmypdf"),
+        ]
+    };
+
+    let ocrmypdf_path = ocrmypdf_candidates.into_iter().find(|path| path.is_file());
+
+    let tessdata_candidates = vec![
+        root.join("share").join("tessdata"),
+        root.join("Library").join("share").join("tessdata"),
+        root.join("share")
+            .join("tesseract-ocr")
+            .join("5")
+            .join("tessdata"),
+        root.join("tessdata"),
+    ];
+
+    let tessdata_dir = tessdata_candidates.into_iter().find(|path| path.is_dir());
+
+    BundledOcrRuntime {
+        root,
+        path_dirs,
+        ocrmypdf_path,
+        tessdata_dir,
+    }
+}
+
+fn read_runtime_version(root: &Path) -> String {
+    std::fs::read_to_string(root.join("TOTAL_PDF_OCR_RUNTIME_VERSION"))
+        .map(|value| value.trim().to_string())
+        .ok()
+        .filter(|value| !value.is_empty())
+        .unwrap_or_else(|| "unversioned".to_string())
+}
+
+fn prepare_bundled_ocr_runtime(
+    resource_dir: Option<&Path>,
+    app_data_dir: &Path,
+) -> Option<BundledOcrRuntime> {
+    let source_root = find_bundled_ocr_runtime_source(resource_dir)?;
+    let source_version = read_runtime_version(&source_root);
+    let target_root = app_data_dir
+        .join("ocr-runtime")
+        .join(current_ocr_runtime_platform());
+    let target_version_file = target_root.join("TOTAL_PDF_OCR_RUNTIME_VERSION");
+    let existing_version = std::fs::read_to_string(&target_version_file)
+        .map(|value| value.trim().to_string())
+        .unwrap_or_default();
+    let ready_marker = target_root.join(".total-pdf-ocr-runtime-ready");
+
+    if existing_version != source_version || !ready_marker.is_file() {
+        add_log(format!(
+            "📦 Installing bundled OCR runtime {} into {}",
+            source_version,
+            target_root.display()
+        ));
+
+        if target_root.exists() {
+            if let Err(err) = std::fs::remove_dir_all(&target_root) {
+                add_log(format!(
+                    "⚠️ Failed to remove old OCR runtime at {}: {}",
+                    target_root.display(),
+                    err
+                ));
+                return Some(inspect_ocr_runtime_root(source_root));
+            }
+        }
+
+        if let Err(err) = copy_dir_recursive(&source_root, &target_root) {
+            add_log(format!(
+                "⚠️ Failed to copy bundled OCR runtime from {} to {}: {}",
+                source_root.display(),
+                target_root.display(),
+                err
+            ));
+            return Some(inspect_ocr_runtime_root(source_root));
+        }
+
+        run_conda_unpack_if_present(&target_root);
+
+        if let Err(err) = std::fs::write(&ready_marker, source_version.as_bytes()) {
+            add_log(format!(
+                "⚠️ Failed to write OCR runtime ready marker at {}: {}",
+                ready_marker.display(),
+                err
+            ));
+        }
+    } else {
+        add_log(format!(
+            "✅ Bundled OCR runtime already installed: {}",
+            target_root.display()
+        ));
+    }
+
+    Some(inspect_ocr_runtime_root(target_root))
+}
+
+fn run_conda_unpack_if_present(runtime_root: &Path) {
+    let candidates = if cfg!(target_os = "windows") {
+        vec![
+            runtime_root.join("Scripts").join("conda-unpack.exe"),
+            runtime_root.join("Scripts").join("conda-unpack.cmd"),
+            runtime_root.join("conda-unpack.exe"),
+            runtime_root.join("conda-unpack.cmd"),
+        ]
+    } else {
+        vec![
+            runtime_root.join("bin").join("conda-unpack"),
+            runtime_root.join("conda-unpack"),
+        ]
+    };
+
+    let Some(conda_unpack) = candidates.into_iter().find(|path| path.is_file()) else {
+        add_log("ℹ️ OCR runtime has no conda-unpack hook; skipping relocation step".to_string());
+        return;
+    };
+
+    add_log(format!(
+        "🔧 Relocating OCR runtime with {}",
+        conda_unpack.display()
+    ));
+
+    let runtime_path =
+        build_backend_path(Some(&inspect_ocr_runtime_root(runtime_root.to_path_buf())));
+
+    match std::process::Command::new(&conda_unpack)
+        .current_dir(runtime_root)
+        .env("PATH", runtime_path)
+        .status()
+    {
+        Ok(status) if status.success() => {
+            add_log("✅ OCR runtime relocation completed".to_string());
+        }
+        Ok(status) => {
+            add_log(format!(
+                "⚠️ OCR runtime relocation exited with status: {}",
+                status
+            ));
+        }
+        Err(err) => {
+            add_log(format!("⚠️ Failed to run OCR runtime relocation: {}", err));
+        }
+    }
+}
+
+fn build_backend_path(bundled_ocr: Option<&BundledOcrRuntime>) -> OsString {
+    let inherited_path = std::env::var_os("PATH").unwrap_or_default();
+    let mut directories: Vec<PathBuf> = Vec::new();
+
+    if let Some(runtime) = bundled_ocr {
+        for path in &runtime.path_dirs {
+            if !directories.contains(path) {
+                directories.push(path.clone());
+            }
+        }
+    }
+
+    for path in platform_tool_dirs() {
+        if path.is_dir() && !directories.contains(&path) {
+            directories.push(path);
+        }
+    }
 
     for path in std::env::split_paths(&inherited_path) {
         if !directories.contains(&path) {
@@ -246,6 +483,30 @@ fn find_tessdata_dir(resource_dir: Option<&Path>) -> Option<PathBuf> {
 
     let mut candidates = Vec::new();
     if let Some(resource_dir) = resource_dir {
+        candidates.push(
+            resource_dir
+                .join("runtime")
+                .join("ocr")
+                .join("share")
+                .join("tessdata"),
+        );
+        candidates.push(
+            resource_dir
+                .join("runtime")
+                .join("ocr")
+                .join(current_ocr_runtime_platform())
+                .join("share")
+                .join("tessdata"),
+        );
+        candidates.push(
+            resource_dir
+                .join("runtime")
+                .join("ocr")
+                .join(current_ocr_runtime_platform())
+                .join("Library")
+                .join("share")
+                .join("tessdata"),
+        );
         candidates.push(resource_dir.join("tessdata"));
     }
 
@@ -307,7 +568,9 @@ fn copy_dir_recursive(src: &Path, dest: &Path) -> std::io::Result<()> {
         let src_path = entry.path();
         let dest_path = dest.join(entry.file_name());
 
-        if file_type.is_dir() {
+        if file_type.is_symlink() {
+            copy_symlink_or_target(&src_path, &dest_path)?;
+        } else if file_type.is_dir() {
             copy_dir_recursive(&src_path, &dest_path)?;
         } else if file_type.is_file() {
             std::fs::copy(&src_path, &dest_path)?;
@@ -315,6 +578,33 @@ fn copy_dir_recursive(src: &Path, dest: &Path) -> std::io::Result<()> {
     }
 
     Ok(())
+}
+
+#[cfg(unix)]
+fn copy_symlink_or_target(src: &Path, dest: &Path) -> std::io::Result<()> {
+    let target = std::fs::read_link(src)?;
+    std::os::unix::fs::symlink(target, dest)
+}
+
+#[cfg(windows)]
+fn copy_symlink_or_target(src: &Path, dest: &Path) -> std::io::Result<()> {
+    let target = std::fs::read_link(src)?;
+    let target_metadata = std::fs::metadata(src)?;
+    let result = if target_metadata.is_dir() {
+        std::os::windows::fs::symlink_dir(&target, dest)
+    } else {
+        std::os::windows::fs::symlink_file(&target, dest)
+    };
+
+    if result.is_ok() {
+        return result;
+    }
+
+    if target_metadata.is_dir() {
+        copy_dir_recursive(src, dest)
+    } else {
+        std::fs::copy(src, dest).map(|_| ())
+    }
 }
 
 // Create, configure and run the Java command to run Total PDF JAR
@@ -363,19 +653,65 @@ fn run_stirling_pdf_jar(
 
     // Define all Java options with Tauri-specific paths
     let log_path_option = format!("-Dlogging.file.path={}", log_dir.display());
+    let resource_dir = app.path().resource_dir().ok();
+    let bundled_ocr = prepare_bundled_ocr_runtime(resource_dir.as_deref(), &app_data_dir);
 
-    let java_options = vec![
-        "-Xmx2g",
-        "-DBROWSER_OPEN=false",
-        "-DSTIRLING_PDF_TAURI_MODE=true",
-        &log_path_option,
-        "-Dlogging.file.name=total-pdf.log",
-        "-Dserver.port=0",              // Let OS assign an available port
-        "-Dsecurity.enableLogin=false", // Disable login for desktop mode
-        "-Dsecurity.csrfDisabled=true", // Disable CSRF for desktop mode
-        "-jar",
-        jar_path.to_str().unwrap(),
+    if let Some(runtime) = &bundled_ocr {
+        add_log(format!(
+            "✅ Found bundled OCR runtime: {}",
+            runtime.root.display()
+        ));
+        if let Some(ocrmypdf_path) = &runtime.ocrmypdf_path {
+            add_log(format!(
+                "✅ Found bundled OCRmyPDF: {}",
+                ocrmypdf_path.display()
+            ));
+        } else {
+            add_log("⚠️ Bundled OCR runtime found, but OCRmyPDF executable is missing".to_string());
+        }
+        if let Some(tessdata_dir) = &runtime.tessdata_dir {
+            add_log(format!(
+                "✅ Found bundled Tesseract language data: {}",
+                tessdata_dir.display()
+            ));
+        } else {
+            add_log(
+                "⚠️ Bundled OCR runtime found, but Tesseract language data is missing".to_string(),
+            );
+        }
+    }
+
+    let tessdata_dir = bundled_ocr
+        .as_ref()
+        .and_then(|runtime| runtime.tessdata_dir.clone())
+        .or_else(|| find_tessdata_dir(resource_dir.as_deref()));
+
+    let mut java_options = vec![
+        "-Xmx2g".to_string(),
+        "-DBROWSER_OPEN=false".to_string(),
+        "-DSTIRLING_PDF_TAURI_MODE=true".to_string(),
+        log_path_option,
+        "-Dlogging.file.name=total-pdf.log".to_string(),
+        "-Dserver.port=0".to_string(), // Let OS assign an available port
+        "-Dsecurity.enableLogin=false".to_string(), // Disable login for desktop mode
+        "-Dsecurity.csrfDisabled=true".to_string(), // Disable CSRF for desktop mode
+        "-jar".to_string(),
+        jar_path.to_str().unwrap().to_string(),
     ];
+
+    if let Some(ocrmypdf_path) = bundled_ocr
+        .as_ref()
+        .and_then(|runtime| runtime.ocrmypdf_path.as_ref())
+    {
+        java_options.push(format!(
+            "--system.customPaths.operations.ocrmypdf={}",
+            ocrmypdf_path.display()
+        ));
+    }
+
+    if let Some(path) = &tessdata_dir {
+        java_options.push(format!("--system.tessdataDir={}", path.display()));
+    }
 
     // Log the equivalent command for external testing
     let java_command = format!(
@@ -414,9 +750,7 @@ fn run_stirling_pdf_jar(
     }
 
     // Build a platform-correct PATH so optional desktop tools can be detected.
-    let backend_path = build_backend_path();
-    let resource_dir = app.path().resource_dir().ok();
-    let tessdata_dir = find_tessdata_dir(resource_dir.as_deref());
+    let backend_path = build_backend_path(bundled_ocr.as_ref());
 
     if let Some(path) = &tessdata_dir {
         add_log(format!(
