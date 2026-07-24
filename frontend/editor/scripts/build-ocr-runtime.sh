@@ -74,10 +74,31 @@ find_or_download_micromamba() {
 
   local archive="$work_dir/micromamba.tar.bz2"
   local extract_dir="$work_dir/micromamba"
+  local candidate
   mkdir -p "$extract_dir"
   curl -fsSL "https://micro.mamba.pm/api/micromamba/$host_platform/latest" -o "$archive"
-  tar -xjf "$archive" -C "$extract_dir" bin/micromamba
-  echo "$extract_dir/bin/micromamba"
+  tar -xjf "$archive" -C "$extract_dir"
+
+  for candidate in \
+    "$extract_dir/bin/micromamba" \
+    "$extract_dir/Library/bin/micromamba.exe" \
+    "$extract_dir/micromamba" \
+    "$extract_dir/micromamba.exe"; do
+    if [[ -x "$candidate" ]]; then
+      echo "$candidate"
+      return
+    fi
+  done
+
+  candidate="$(find "$extract_dir" -type f \( -name micromamba -o -name micromamba.exe \) -print -quit)"
+  if [[ -n "$candidate" ]]; then
+    chmod +x "$candidate" 2>/dev/null || true
+    echo "$candidate"
+    return
+  fi
+
+  echo "Downloaded micromamba archive, but no micromamba executable was found" >&2
+  exit 1
 }
 
 micromamba_bin="$(find_or_download_micromamba)"
