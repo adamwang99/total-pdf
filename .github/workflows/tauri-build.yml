@@ -59,16 +59,6 @@ jobs:
             *)       ENTRIES=("$WINDOWS" "$MACOS_ARM" "$MACOS_INTEL" "$LINUX") ;;
           esac
 
-          # Drop macOS entries when Apple certificate secret is unavailable
-          if [ -z "$APPLE_CERTIFICATE" ]; then
-            echo "⚠️ APPLE_CERTIFICATE secret not available - skipping macOS builds"
-            FILTERED=()
-            for entry in "${ENTRIES[@]}"; do
-              [[ "$entry" != *'"macos'* ]] && FILTERED+=("$entry")
-            done
-            ENTRIES=("${FILTERED[@]}")
-          fi
-
           JOINED=$(IFS=','; echo "${ENTRIES[*]}")
           echo "matrix={\"include\":[$JOINED]}" >> $GITHUB_OUTPUT
 
