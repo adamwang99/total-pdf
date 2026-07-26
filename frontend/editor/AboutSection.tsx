@@ -1,11 +1,8 @@
 import React from "react";
 import { Paper, Stack, Text, Group, Badge, Anchor, ThemeIcon, List, Title, Code, Box, Flex, Image } from "@mantine/core";
-import { useTranslation } from "react-i18next";
 import LocalIcon from "@app/components/shared/LocalIcon";
 
 const AboutSection: React.FC = () => {
-  const { t } = useTranslation();
-
   const tools = [
     { group: "onboarding.about.groups.edit", label: "Soạn thảo & Chú thích", tools: ["AddText", "AddImage", "AddStamp", "AddWatermark", "AddPageNumbers", "Annotate", "pdfTextEditor"] },
     { group: "onboarding.about.groups.organize", label: "Sắp xếp & Tổ chức", tools: ["Merge", "Split", "ExtractPages", "RemovePages", "ReorganizePages", "Rotate", "Crop", "PageLayout", "BookletImposition"] },

@@ -383,7 +383,10 @@ fn prepare_bundled_ocr_runtime(
         .map(|value| value.trim().to_string())
         .unwrap_or_default();
     let ready_marker = target_root.join(".total-pdf-ocr-runtime-ready");
-    let ready_marker_value = format!("{}\nrelocation=python-command-v2\n", source_version);
+    let ready_marker_value = format!(
+        "{}\nrelocation=python-command-v2\nquarantine=removed-v1\n",
+        source_version
+    );
     let existing_ready_marker = std::fs::read_to_string(&ready_marker).unwrap_or_default();
 
     if existing_version != source_version || existing_ready_marker != ready_marker_value {
@@ -414,6 +417,10 @@ fn prepare_bundled_ocr_runtime(
             return Some(inspect_ocr_runtime_root(source_root));
         }
 
+        if !remove_quarantine_from_runtime(&target_root) {
+            return Some(inspect_ocr_runtime_root(target_root));
+        }
+
         if run_conda_unpack_if_present(&target_root) {
             if let Err(err) = std::fs::write(&ready_marker, ready_marker_value.as_bytes()) {
                 add_log(format!(
@@ -433,9 +440,49 @@ fn prepare_bundled_ocr_runtime(
             "✅ Bundled OCR runtime already installed: {}",
             target_root.display()
         ));
+        let _ = remove_quarantine_from_runtime(&target_root);
     }
 
     Some(inspect_ocr_runtime_root(target_root))
+}
+
+#[cfg(target_os = "macos")]
+fn remove_quarantine_from_runtime(runtime_root: &Path) -> bool {
+    add_log(format!(
+        "🔓 Removing macOS quarantine attribute from OCR runtime: {}",
+        runtime_root.display()
+    ));
+
+    match std::process::Command::new("/usr/bin/xattr")
+        .arg("-dr")
+        .arg("com.apple.quarantine")
+        .arg(runtime_root)
+        .status()
+    {
+        Ok(status) if status.success() => {
+            add_log("✅ OCR runtime quarantine cleanup completed".to_string());
+            true
+        }
+        Ok(status) => {
+            add_log(format!(
+                "⚠️ OCR runtime quarantine cleanup exited with status: {}",
+                status
+            ));
+            false
+        }
+        Err(err) => {
+            add_log(format!(
+                "⚠️ Failed to remove OCR runtime quarantine attribute: {}",
+                err
+            ));
+            false
+        }
+    }
+}
+
+#[cfg(not(target_os = "macos"))]
+fn remove_quarantine_from_runtime(_runtime_root: &Path) -> bool {
+    true
 }
 
 fn run_conda_unpack_if_present(runtime_root: &Path) -> bool {

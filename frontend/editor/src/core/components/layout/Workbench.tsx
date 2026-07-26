@@ -10,7 +10,6 @@ import {
 } from "@app/contexts/NavigationContext";
 import { isBaseWorkbench } from "@app/types/workbench";
 import { VIEWER_SUPPORTED_EXTENSIONS } from "@app/utils/fileUtils";
-import { useAppConfig } from "@app/contexts/AppConfigContext";
 import styles from "@app/components/layout/Workbench.module.css";
 
 import WorkbenchBar from "@app/components/shared/WorkbenchBar";
@@ -30,7 +29,6 @@ const Viewer = lazy(() => import("@app/components/viewer/Viewer"));
 // No props needed - component uses contexts directly
 export default function Workbench() {
   const { isRainbowMode } = useRainbowThemeContext();
-  const { config } = useAppConfig();
 
   // Use context-based hooks to eliminate all prop drilling
   const { selectors } = useFileState();

@@ -7,6 +7,7 @@ import {
   useFileSelection,
   useFileManagement,
   useFileContext,
+  useAllFiles,
 } from "@app/contexts/FileContext";
 import {
   useNavigationActions,
@@ -64,6 +65,16 @@ const getAutoLoadKey = (file: File): string => {
     return withId.quickKey;
   }
   return `${file.name}|${file.size}|${file.lastModified}`;
+};
+
+const isSupportedEditorFile = (file: File): boolean => {
+  const name = file.name.toLowerCase();
+  return (
+    file.type === "application/pdf" ||
+    file.type === "application/json" ||
+    name.endsWith(".pdf") ||
+    name.endsWith(".json")
+  );
 };
 
 const normalizeLineArray = (
@@ -382,6 +393,7 @@ const PdfTextEditor = ({ onComplete, onError }: BaseToolProps) => {
     [t],
   );
   const { selectedFiles } = useFileSelection();
+  const { files: workbenchFiles } = useAllFiles();
 
   const resetToDocument = useCallback(
     (
@@ -1917,7 +1929,11 @@ const PdfTextEditor = ({ onComplete, onError }: BaseToolProps) => {
   }, [isLazyMode, loadedDocument, selectedPage, loadImagesForPage]);
 
   useEffect(() => {
-    if (selectedFiles.length === 0) {
+    const candidateFiles = (
+      selectedFiles.length > 0 ? selectedFiles : workbenchFiles
+    ).filter(isSupportedEditorFile);
+
+    if (candidateFiles.length === 0) {
       autoLoadKeyRef.current = null;
       sourceFileIdRef.current = null;
       return;
@@ -1927,7 +1943,7 @@ const PdfTextEditor = ({ onComplete, onError }: BaseToolProps) => {
       return;
     }
 
-    const file = selectedFiles[0];
+    const file = candidateFiles[0];
     if (!file) {
       return;
     }
@@ -1941,7 +1957,12 @@ const PdfTextEditor = ({ onComplete, onError }: BaseToolProps) => {
     // Capture the source file ID for save-to-workbench functionality
     sourceFileIdRef.current = (file as any).fileId ?? null;
     void handleLoadFile(file);
-  }, [selectedFiles, navigationState.selectedTool, handleLoadFile]);
+  }, [
+    selectedFiles,
+    workbenchFiles,
+    navigationState.selectedTool,
+    handleLoadFile,
+  ]);
 
   // Auto-navigate to workbench when tool is selected
   const hasAutoOpenedWorkbenchRef = useRef(false);
