@@ -39,6 +39,7 @@ tasks:
     deps:
       - jlink
       - ocr:runtime
+      - scripts:runtime
       - task: ":frontend:prepare"
         vars: { MODE: desktop }
       - provisioner
@@ -55,6 +56,14 @@ tasks:
       - editor/scripts/build-ocr-runtime.sh {{.OCR_RUNTIME_PLATFORM}}
     status:
       - test -f editor/src-tauri/runtime/ocr/{{.OCR_RUNTIME_PLATFORM}}/TOTAL_PDF_OCR_RUNTIME_VERSION
+
+  scripts:runtime:
+    desc: "Copy desktop helper scripts into Tauri resources"
+    cmds:
+      - mkdir -p editor/src-tauri/runtime/scripts
+      - cp ../scripts/convert_cff_to_ttf.py editor/src-tauri/runtime/scripts/convert_cff_to_ttf.py
+    status:
+      - test editor/src-tauri/runtime/scripts/convert_cff_to_ttf.py -nt ../scripts/convert_cff_to_ttf.py
 
   dev:
     desc: "Start Tauri desktop dev mode"

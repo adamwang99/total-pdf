@@ -226,6 +226,7 @@ struct BundledOcrRuntime {
     path_dirs: Vec<PathBuf>,
     ocrmypdf_path: Option<PathBuf>,
     tessdata_dir: Option<PathBuf>,
+    python_path: Option<PathBuf>,
 }
 
 fn current_ocr_runtime_platform() -> &'static str {
@@ -320,12 +321,44 @@ fn inspect_ocr_runtime_root(root: PathBuf) -> BundledOcrRuntime {
 
     let tessdata_dir = tessdata_candidates.into_iter().find(|path| path.is_dir());
 
+    let python_candidates = if cfg!(target_os = "windows") {
+        vec![
+            root.join("python.exe"),
+            root.join("Scripts").join("python.exe"),
+            root.join("bin").join("python.exe"),
+        ]
+    } else {
+        vec![
+            root.join("bin").join("python"),
+            root.join("bin").join("python3"),
+            root.join("bin").join("python3.12"),
+            root.join("python"),
+        ]
+    };
+
+    let python_path = python_candidates.into_iter().find(|path| path.is_file());
+
     BundledOcrRuntime {
         root,
         path_dirs,
         ocrmypdf_path,
         tessdata_dir,
+        python_path,
     }
+}
+
+fn find_bundled_cff_converter_script(resource_dir: Option<&Path>) -> Option<PathBuf> {
+    let resource_dir = resource_dir?;
+    [
+        resource_dir
+            .join("runtime")
+            .join("scripts")
+            .join("convert_cff_to_ttf.py"),
+        resource_dir.join("scripts").join("convert_cff_to_ttf.py"),
+        resource_dir.join("convert_cff_to_ttf.py"),
+    ]
+    .into_iter()
+    .find(|path| path.is_file())
 }
 
 fn read_runtime_version(root: &Path) -> String {
@@ -379,14 +412,19 @@ fn prepare_bundled_ocr_runtime(
             return Some(inspect_ocr_runtime_root(source_root));
         }
 
-        run_conda_unpack_if_present(&target_root);
-
-        if let Err(err) = std::fs::write(&ready_marker, source_version.as_bytes()) {
-            add_log(format!(
-                "⚠️ Failed to write OCR runtime ready marker at {}: {}",
-                ready_marker.display(),
-                err
-            ));
+        if run_conda_unpack_if_present(&target_root) {
+            if let Err(err) = std::fs::write(&ready_marker, source_version.as_bytes()) {
+                add_log(format!(
+                    "⚠️ Failed to write OCR runtime ready marker at {}: {}",
+                    ready_marker.display(),
+                    err
+                ));
+            }
+        } else {
+            add_log(
+                "⚠️ OCR runtime relocation did not complete; runtime will be prepared again on next launch"
+                    .to_string(),
+            );
         }
     } else {
         add_log(format!(
@@ -398,7 +436,7 @@ fn prepare_bundled_ocr_runtime(
     Some(inspect_ocr_runtime_root(target_root))
 }
 
-fn run_conda_unpack_if_present(runtime_root: &Path) {
+fn run_conda_unpack_if_present(runtime_root: &Path) -> bool {
     let candidates = if cfg!(target_os = "windows") {
         vec![
             runtime_root.join("Scripts").join("conda-unpack.exe"),
@@ -415,7 +453,7 @@ fn run_conda_unpack_if_present(runtime_root: &Path) {
 
     let Some(conda_unpack) = candidates.into_iter().find(|path| path.is_file()) else {
         add_log("ℹ️ OCR runtime has no conda-unpack hook; skipping relocation step".to_string());
-        return;
+        return true;
     };
 
     add_log(format!(
@@ -423,25 +461,40 @@ fn run_conda_unpack_if_present(runtime_root: &Path) {
         conda_unpack.display()
     ));
 
-    let runtime_path =
-        build_backend_path(Some(&inspect_ocr_runtime_root(runtime_root.to_path_buf())));
+    let runtime = inspect_ocr_runtime_root(runtime_root.to_path_buf());
+    let runtime_path = build_backend_path(Some(&runtime));
 
-    match std::process::Command::new(&conda_unpack)
+    let mut command = if !cfg!(target_os = "windows") {
+        if let Some(python_path) = &runtime.python_path {
+            let mut command = std::process::Command::new(python_path);
+            command.arg(&conda_unpack);
+            command
+        } else {
+            std::process::Command::new(&conda_unpack)
+        }
+    } else {
+        std::process::Command::new(&conda_unpack)
+    };
+
+    match command
         .current_dir(runtime_root)
         .env("PATH", runtime_path)
         .status()
     {
         Ok(status) if status.success() => {
             add_log("✅ OCR runtime relocation completed".to_string());
+            true
         }
         Ok(status) => {
             add_log(format!(
                 "⚠️ OCR runtime relocation exited with status: {}",
                 status
             ));
+            false
         }
         Err(err) => {
             add_log(format!("⚠️ Failed to run OCR runtime relocation: {}", err));
+            false
         }
     }
 }
@@ -679,12 +732,21 @@ fn run_stirling_pdf_jar(
                 "⚠️ Bundled OCR runtime found, but Tesseract language data is missing".to_string(),
             );
         }
+        if let Some(python_path) = &runtime.python_path {
+            add_log(format!(
+                "✅ Found bundled Python runtime: {}",
+                python_path.display()
+            ));
+        } else {
+            add_log("⚠️ Bundled OCR runtime found, but Python executable is missing".to_string());
+        }
     }
 
     let tessdata_dir = bundled_ocr
         .as_ref()
         .and_then(|runtime| runtime.tessdata_dir.clone())
         .or_else(|| find_tessdata_dir(resource_dir.as_deref()));
+    let cff_converter_script = find_bundled_cff_converter_script(resource_dir.as_deref());
 
     let mut java_options = vec![
         "-Xmx2g".to_string(),
@@ -711,6 +773,37 @@ fn run_stirling_pdf_jar(
 
     if let Some(path) = &tessdata_dir {
         java_options.push(format!("--system.tessdataDir={}", path.display()));
+    }
+
+    match (
+        bundled_ocr
+            .as_ref()
+            .and_then(|runtime| runtime.python_path.as_ref()),
+        cff_converter_script.as_ref(),
+    ) {
+        (Some(python_path), Some(script_path)) => {
+            add_log(format!(
+                "✅ Using bundled Python CFF converter: {} {}",
+                python_path.display(),
+                script_path.display()
+            ));
+            java_options.push(format!(
+                "--pdfEditor.cff-converter.python-command={}",
+                python_path.display()
+            ));
+            java_options.push(format!(
+                "--pdfEditor.cff-converter.python-script={}",
+                script_path.display()
+            ));
+        }
+        _ if cfg!(any(target_os = "macos", target_os = "windows", target_os = "linux")) => {
+            add_log(
+                "ℹ️ Bundled Python CFF converter unavailable; disabling desktop CFF converter"
+                    .to_string(),
+            );
+            java_options.push("--pdfEditor.cff-converter.enabled=false".to_string());
+        }
+        _ => {}
     }
 
     // Log the equivalent command for external testing
