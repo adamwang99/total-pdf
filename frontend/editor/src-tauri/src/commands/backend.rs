@@ -383,8 +383,10 @@ fn prepare_bundled_ocr_runtime(
         .map(|value| value.trim().to_string())
         .unwrap_or_default();
     let ready_marker = target_root.join(".total-pdf-ocr-runtime-ready");
+    let ready_marker_value = format!("{}\nrelocation=python-command-v2\n", source_version);
+    let existing_ready_marker = std::fs::read_to_string(&ready_marker).unwrap_or_default();
 
-    if existing_version != source_version || !ready_marker.is_file() {
+    if existing_version != source_version || existing_ready_marker != ready_marker_value {
         add_log(format!(
             "📦 Installing bundled OCR runtime {} into {}",
             source_version,
@@ -413,7 +415,7 @@ fn prepare_bundled_ocr_runtime(
         }
 
         if run_conda_unpack_if_present(&target_root) {
-            if let Err(err) = std::fs::write(&ready_marker, source_version.as_bytes()) {
+            if let Err(err) = std::fs::write(&ready_marker, ready_marker_value.as_bytes()) {
                 add_log(format!(
                     "⚠️ Failed to write OCR runtime ready marker at {}: {}",
                     ready_marker.display(),
