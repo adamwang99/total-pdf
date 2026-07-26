@@ -195,23 +195,62 @@ export class TauriBackendService {
     return this.startPromise;
   }
 
-  private async waitForPort(): Promise<void> {
-    while (true) {
-      try {
-        const port = await invoke<number | null>("get_backend_port");
-        if (port) {
-          this.backendPort = port;
-          // Notify status listeners so hooks reading getBackendUrl() re-evaluate
-          this.statusListeners.forEach((listener) =>
-            listener(this.backendStatus),
-          );
-          return;
-        }
-      } catch (error) {
-        console.error("Failed to get backend port:", error);
+  private async discoverBackendPortOnce(): Promise<boolean> {
+    try {
+      const port = await invoke<number | null>("get_backend_port");
+      if (!port) {
+        return false;
       }
+
+      if (this.backendPort !== port) {
+        this.backendPort = port;
+        // Notify status listeners so hooks reading getBackendUrl() re-evaluate
+        this.statusListeners.forEach((listener) =>
+          listener(this.backendStatus),
+        );
+      }
+      return true;
+    } catch (error) {
+      console.error("Failed to get backend port:", error);
+      return false;
+    }
+  }
+
+  private async waitForPort(): Promise<void> {
+    while (!(await this.discoverBackendPortOnce())) {
       await new Promise((resolve) => setTimeout(resolve, 500));
     }
+  }
+
+  async waitUntilReady(timeoutMs = 45000): Promise<boolean> {
+    if (this.isOnline) {
+      return true;
+    }
+
+    // The Rust setup starts the bundled backend before React is fully mounted.
+    // API calls can arrive while the JS service is still discovering the port;
+    // mark it active so health checks do not short-circuit as "stopped".
+    if (!this.backendStarted) {
+      this.backendStarted = true;
+      this.setStatus("starting");
+      this.beginHealthMonitoring();
+    }
+
+    const deadline = Date.now() + timeoutMs;
+    while (Date.now() < deadline) {
+      await this.discoverBackendPortOnce();
+
+      if (this.backendPort) {
+        const healthy = await this.checkBackendHealth();
+        if (healthy) {
+          return true;
+        }
+      }
+
+      await new Promise((resolve) => setTimeout(resolve, 500));
+    }
+
+    return this.isOnline;
   }
 
   private beginHealthMonitoring() {

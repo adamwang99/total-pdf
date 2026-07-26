@@ -14,6 +14,7 @@ import { OPEN_SIGN_IN_EVENT } from "@app/constants/signInEvents";
 import i18n from "@app/i18n";
 
 const BACKEND_TOAST_COOLDOWN_MS = 4000;
+const BACKEND_READY_WAIT_TIMEOUT_MS = 45000;
 let lastBackendToast = 0;
 
 // Extended config for custom properties
@@ -47,6 +48,41 @@ export function setupApiInterceptors(client: AxiosInstance): void {
       const skipCheck = extendedConfig.skipBackendReadyCheck === true;
       const skipForSaaSBackend =
         await operationRouter.shouldSkipBackendReadyCheck(originalUrl);
+
+      const connectionMode = await connectionModeService.getCurrentMode();
+      const shouldWaitForLocalBackend =
+        (connectionMode === "saas" || connectionMode === "local") &&
+        !skipCheck &&
+        !skipForSaaSBackend;
+
+      if (shouldWaitForLocalBackend && !tauriBackendService.isOnline) {
+        console.debug(
+          `[apiClientSetup] Waiting for local backend before ${originalUrl}`,
+        );
+        const ready = await tauriBackendService.waitUntilReady(
+          BACKEND_READY_WAIT_TIMEOUT_MS,
+        );
+
+        if (!ready) {
+          const method = (extendedConfig.method || "get").toLowerCase();
+          if (method !== "get") {
+            const now = Date.now();
+            if (now - lastBackendToast > BACKEND_TOAST_COOLDOWN_MS) {
+              lastBackendToast = now;
+              alert({
+                alertType: "error",
+                title: i18n.t("backendHealth.offline", "Backend Offline"),
+                body: i18n.t(
+                  "backendHealth.wait",
+                  "Please wait for the backend to finish launching and try again.",
+                ),
+                isPersistentPopup: false,
+              });
+            }
+          }
+          return Promise.reject(createBackendNotReadyError());
+        }
+      }
 
       try {
         // Get the appropriate base URL for this request
